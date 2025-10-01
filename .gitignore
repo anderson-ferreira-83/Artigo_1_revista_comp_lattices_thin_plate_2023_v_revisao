@@ -10,6 +10,30 @@ manuscript_mssp2_vf.pdf
 *.synctex.gz
 *.dvi
 *.spl
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.figlist
+*.makefile
+*.nav
+*.snm
+*.vrb
+*.idx
+*.ind
+*.ilg
+*.glo
+*.gls
+*.ist
+*.acn
+*.acr
+*.alg
 
 # Arquivos de backup
 *_backup.*
@@ -17,3 +41,21 @@ manuscript_mssp2_vf.pdf
 
 # Arquivos EPS convertidos automaticamente
 *-eps-converted-to.pdf
+
+# Arquivos específicos do sistema
+desktop.ini
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários do editor
+*.swp
+*.swo
+*~
+.vscode/settings.json
+
+# Arquivos de compilação MATLAB
+*.asv
+*.m~
+
+# Arquivos de cache
+*.cache

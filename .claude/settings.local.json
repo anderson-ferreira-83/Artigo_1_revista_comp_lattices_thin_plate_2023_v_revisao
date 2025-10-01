@@ -51,7 +51,8 @@
       "Bash(git init:*)",
       "Bash(git remote add:*)",
       "Bash(git push:*)",
-      "WebFetch(domain:www.hexcel.com)"
+      "WebFetch(domain:www.hexcel.com)",
+      "Bash(true)"
     ],
     "deny": []
   }
