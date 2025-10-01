@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.28)  1 OCT 2025 13:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.28)  1 OCT 2025 13:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1449,59 +1449,6 @@ Overfull \hbox (2.8624pt too wide) in paragraph at lines 1257--1259
 
 [63]
 
-! LaTeX Error: Unicode character ν (U+03BD)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1299 ...aterials Handbook-17 \cite{CMH17_2012}.}
-                                                  
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character ρ (U+03C1)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1299 ...aterials Handbook-17 \cite{CMH17_2012}.}
-                                                  
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character ν (U+03BD)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1299 ...aterials Handbook-17 \cite{CMH17_2012}.}
-                                                  
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character ≪ (U+226A)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1319 ...e thin plate assumptions (h/a = 0.02 ≪
-                                                   0.1).
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-
 [64]
 Overfull \hbox (56.2539pt too wide) in paragraph at lines 1323--1324
 []\T1/cmr/m/n/10 The char-ac-ter-is-tic fre-quency scal-ing fol-lows the re-la-
@@ -1524,80 +1471,103 @@ e 1411.
 
 
 [66]
-Runaway argument?
-{table> 
-! Paragraph ended before \end  was complete.
-<to be read again> 
-                   \par 
-l.1432 
-       
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
+
+[67]
+
+[68]
+Overfull \hbox (15.39339pt too wide) in paragraph at lines 1469--1470
+[]\T1/cmr/bx/n/10 Balanced Per-for-mance Cat-e-gory (Hon-ey-comb, Square): \T1/
+cmr/m/n/10 Pro-vides moderate-
+ []
 
 
-! LaTeX Error: Unicode character √ (U+221A)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1449 ...nce ratios scale proportionally with √
-                                                  (D/ρh), enabling systemat...
-
-You may provide a definition with
-\DeclareUnicodeCharacter 
+Overfull \hbox (6.16315pt too wide) in paragraph at lines 1469--1470
+\T1/cmr/m/n/10 [dB]) of-fers dual-mode ca-pa-bil-ity for frequency-selective ap
+-pli-ca-tions, while square
+ []
 
 
-! LaTeX Error: Unicode character ρ (U+03C1)
-               not set up for use with LaTeX.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1449 ...atios scale proportionally with √(D/ρ
-                                                  h), enabling systematic ma...
+[69]
 
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-LaTeX Warning: Reference `tab_selection_framework_app' on page 67 undefined on 
+LaTeX Warning: Reference `tab_selection_framework_app' on page 70 undefined on 
 input line 1477.
-
-
-! LaTeX Error: Not in outer par mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1479 \begin{table}[htb]
-                         
-You've lost some text.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
 
 
 Overfull \hbox (41.87845pt too wide) in paragraph at lines 1483--1511
  [][] 
  []
 
-(manuscript_mssp2_vf.bbl)
 
-! LaTeX Error: \begin{table} on input line 1415 ended by \end{document}.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1531 \end{document}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+[70]
+Overfull \hbox (10.9964pt too wide) in paragraph at lines 1522--1523
+\T1/cmr/m/n/10 fre-quency com-po-nents re-quir-ing se-lec-tive at-ten-u-a-tion 
+(in-dus-trial ma-chin-ery, HVAC
+ []
 
+
+Overfull \hbox (11.72623pt too wide) in paragraph at lines 1524--1525
+\T1/cmr/m/n/10 ge-o-met-ric con-straints or di-rec-tional re-quire-ments (ar-ch
+i-tec-tural in-te-gra-tion, retrofit
+ []
+
+
+
+[71] (manuscript_mssp2_vf.bbl
+
+[72]
+
+[73]
+
+[74]
+
+[75]
+
+[76]
+
+[77]
+
+[78])
+
+[79]
+
+[80 <./2_2_disp_frf_rect.pdf>]
+
+[81 <./1_3_disp_frf_trian.pdf>]
+
+[82 <./2_3_disp_frf_trian.pdf>]
+
+[83 <./1_4_disp_frf_hex.pdf>]
+
+[84 <./2_4_disp_frf_hex.pdf>]
+
+[85 <./1_5_disp_frf_kag.pdf>]
+
+[86 <./2_5_disp_frf_kag.pdf>]
+
+[87 <./0_disp_comp_lattices.pdf>]
+
+[88 <./ilustr_bound_force_frf_modal.pdf> <./1_1_disp_frf_square_pwe_epwe_recep1
+.pdf>]
+
+[89 <./2_1_disp_frf_square_3_receps.pdf>]
+
+[90 <./1_2_disp_frf_rect_pwe_epwe_recep1.pdf>]
+
+[91 <./2_2_disp_frf_rect_3_receps.pdf>]
+
+[92 <./1_3_disp_frf_trian_pwe_epwe_recep1.pdf>]
+
+[93 <./2_3_disp_frf_trian_3_receps.pdf>]
+
+[94 <./1_4_disp_frf_hex_pwe_epwe_recep1.pdf>]
+
+[95 <./2_4_disp_frf_hex_3_receps.pdf>]
+
+[96 <./1_5_disp_frf_kag_pwe_epwe_recep1.pdf>]
+
+[97 <./2_5_disp_frf_kag_3_receps.pdf> <./all_comp_frf_stat_lat.pdf>]
 (manuscript_mssp2_vf.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
@@ -1607,55 +1577,71 @@ L3 programming layer <2025-09-02>
 
 LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `manuscript_mssp2_vf.out' has not changed.
-(rerunfilecheck)             Checksum: 1EF6D4C4FCF3149E09D2BF1A7CC16105;7979.
-! You can't use `\end' in internal vertical mode.
-\enddocument ...cument/end}\deadcycles \z@ \@@end 
-                                                  
-l.1531 \end{document}
-                     
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
-! LaTeX Error: \begin{table} on input line 1415 ended by \end{document}.
+Package rerunfilecheck Warning: File `manuscript_mssp2_vf.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1531 \end{document}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.1531 \end{document}
-                     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-)
-! Emergency stop.
-<*> ./manuscript_mssp2_vf.tex
-                             
-*** (job aborted, no legal \end found)
-
- 
+Package rerunfilecheck Info: Checksums for `manuscript_mssp2_vf.out':
+(rerunfilecheck)             Before: 1EF6D4C4FCF3149E09D2BF1A7CC16105;7979
+(rerunfilecheck)             After:  F8F025FF0676AD002A975D45EC476D10;9591.
+ ) 
 Here is how much of TeX's memory you used:
- 19637 strings out of 468130
- 371934 string characters out of 5440691
- 872632 words of memory out of 5000000
- 47773 multiletter control sequences out of 15000+600000
+ 19703 strings out of 468130
+ 372581 string characters out of 5440691
+ 831863 words of memory out of 5000000
+ 47771 multiletter control sequences out of 15000+600000
  649345 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 78i,13n,81p,2015b,1224s stack positions out of 10000i,1000n,20000p,200000b,200000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 78i,13n,81p,2015b,1394s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\Anderson\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\e
+ctt1000.pk> <C:\Users\Anderson\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ecti0900.pk> <C:\Users\Anderson\AppData\Local\MiKTeX\fonts/pk/ljfour/jk
+nappen/ec/dpi600\ecbx0900.pk> <C:\Users\Anderson\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\ecbx0800.pk> <C:\Users\Anderson\AppData\Local\MiKTeX\
+fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0900.pk> <C:\Users\Anderson\AppData\Loca
+l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\Anderson\App
+Data\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\And
+erson\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\
+Users\Anderson\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi375\ecss0800
+.pk> <C:\Users\Anderson\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600
+\ecti1000.pk> <C:\Users\Anderson\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/
+ec/dpi600\ectt0800.pk> <C:\Users\Anderson\AppData\Local\MiKTeX\fonts/pk/ljfour/
+jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\Anderson\AppData\Local\MiKTeX\fonts/p
+k/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\Anderson\AppData\Local\MiKTe
+X\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0800.pk> <C:\Users\Anderson\AppData\Lo
+cal\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0600.pk> <C:\Users\Anderson\A
+ppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\A
+nderson\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C
+:\Users\Anderson\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm14
+40.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
+ogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx6.pfb><C:/Program Files/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Program Files/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+ex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex8.pfb
+><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program
+ Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.p
+fb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Prog
+ram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pf
+b><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program 
+Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.p
+fb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on manuscript_mssp2_vf.pdf (97 pages, 76158937 bytes).
+PDF statistics:
+ 2356 PDF objects out of 2487 (max. 8388607)
+ 285 named destinations out of 1000 (max. 500000)
+ 16230 words of extra memory for PDF output out of 17280 (max. 10000000)
+

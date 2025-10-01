@@ -1296,7 +1296,7 @@ While this study focuses on polymeric materials for practical validation through
 
 \subsection{Material Properties and Scaling Analysis}
 
-The choice of Vero White Plus polymeric material was strategically motivated by rapid prototyping capabilities through 3D printing, enabling precise fabrication of complex lattice geometries with controlled tolerances for experimental validation. However, structural engineering applications often require materials with significantly higher bending stiffness, necessitating analysis across multiple material scales. \textcolor{red}{The aluminum material properties (E = 70 GPa, ν = 0.3) were obtained from the work of Xiao et al. \cite{Xiao_2012}, while the carbon fiber/epoxy composite properties (E = 135 GPa, ρ = 1580 kg/m³, ν = 0.30) were obtained from the Composite Materials Handbook-17 \cite{CMH17_2012}.}
+The choice of Vero White Plus polymeric material was strategically motivated by rapid prototyping capabilities through 3D printing, enabling precise fabrication of complex lattice geometries with controlled tolerances for experimental validation. However, structural engineering applications often require materials with significantly higher bending stiffness, necessitating analysis across multiple material scales. \textcolor{red}{The aluminum material properties (E = 70 GPa, $\nu$ = 0.3) were obtained from the work of Xiao et al. \cite{Xiao_2012}, while the carbon fiber/epoxy composite properties (E = 135 GPa, $\rho$ = 1580 kg/m³, $\nu$ = 0.30) were obtained from the Composite Materials Handbook-17 \cite{CMH17_2012}.}
 
 Table \ref{tab:material_properties_comparison} presents the comparative material properties used in this multi-scale analysis:
 
@@ -1316,7 +1316,7 @@ Carbon/Epoxy UD & 135 & 1580 & 0.30 & 9.89$\times$10$^{1}$ & 150.1 \\
 \end{tabular}
 \end{table}
 
-The bending stiffness $D = Eh^3/12(1-\nu^2)$ scales dramatically across materials, with carbon/epoxy composite exhibiting 150× higher rigidity than the polymer. This scaling directly affects the operational frequency ranges while maintaining the validity of Kirchhoff-Love thin plate assumptions (h/a = 0.02 ≪ 0.1).
+The bending stiffness $D = Eh^3/12(1-\nu^2)$ scales dramatically across materials, with carbon/epoxy composite exhibiting 150× higher rigidity than the polymer. This scaling directly affects the operational frequency ranges while maintaining the validity of Kirchhoff-Love thin plate assumptions (h/a = 0.02 $\ll$ 0.1).
 
 \subsection{Frequency Scaling and Operational Ranges}
 
@@ -1428,7 +1428,7 @@ Ranking & Vero White Plus & Aluminum 6061 & Carbon/Epoxy UD \\
 5th: Kagomé & 6.9 Hz & 26.3 Hz & 35.9 Hz \\
 \hline
 \end{tabular}
-\end{table>
+\end{table}
 
 \subsection{Design Guidelines for Material Selection}
 
@@ -1446,7 +1446,7 @@ This comprehensive multi-material analysis demonstrates several key findings:
 
 1. \textbf{Geometric principles are material-independent:} The triangular lattice superiority is maintained across materials spanning 278× stiffness variation.
 
-2. \textbf{Frequency scaling is predictable:} Performance ratios scale proportionally with √(D/ρh), enabling systematic material selection for target frequencies.
+2. \textbf{Frequency scaling is predictable:} Performance ratios scale proportionally with $\sqrt{D/\rho h}$, enabling systematic material selection for target frequencies.
 
 3. \textbf{Methodology robustness:} PWE computational stability and accuracy are preserved across the entire material range studied.
 
