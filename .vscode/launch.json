@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Build and View PDF",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/manuscript_mssp2_vf.tex",
+            "preLaunchTask": "Build LaTeX",
+            "console": "integratedTerminal"
+        }
+    ]
+}

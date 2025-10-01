@@ -1,0 +1,63 @@
+.claude/
+
+# LaTeX auxiliary files
+*.aux
+*.bbl
+*.blg
+*.dvi
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex*
+*.spl
+*.toc
+*.nav
+*.snm
+*.vrb
+*.bcf
+*.run.xml
+*.figlist
+*.makefile
+*.figlist
+*.glo
+*.gls
+*.glg
+*.acn
+*.acr
+*.alg
+*.nlo
+*.nls
+*.ist
+*.lof
+*.lot
+*.idx
+*.ilg
+*.ind
+
+# PDF output (manuscript only, keep figures)
+manuscript_mssp2_vf.pdf
+manuscript_mssp2_vf_backup.pdf
+
+# Backup files
+*~
+*.bak
+*.backup
+
+# VSCode settings
+.vscode/
+
+# MATLAB codes directory - local development only
+matlab_codes/
+
+# Research reference materials - local development only
+reference_research/
+
+# Archive files
+*.zip
+*.rar
+*.tar.gz
+*.7z
+
+# Submission template directory - generated for journal submission
+submission_official_template/

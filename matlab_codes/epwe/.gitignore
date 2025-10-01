@@ -1,0 +1,23 @@
+# Ignorar diretorios de base de dados gerados (incluindo logs)
+*database*/
+3_database_epwe/
+1_database/
+
+# Ignorar arquivos temporarios do MATLAB
+*.m~
+*.mat
+*.asv
+
+# Ignorar arquivos de log (caso sejam salvos em outros locais)
+*.log
+0_log_epwe_*.txt
+
+# Ignorar arquivos temporarios do sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignorar arquivos de backup
+*.bak
+*.backup
+*_backup.*

@@ -1,0 +1,1375 @@
+<div class="section">
+    <div class="section-header">
+        IMPLEMENTAÇÕES MATEMÁTICAS DETALHADAS
+    </div>
+    <div class="section-content">
+
+        <h3>1. Cálculo de Largura Relativa</h3>
+        <div class="code-block">
+            # Implementação em Python para cálculo de largura relativa
+            def calcular_largura_relativa(f1, f2):
+            """
+            Calcula largura relativa para comparação justa
+            f1: limite inferior de frequência (Hz)
+            f2: limite superior de frequência (Hz)
+            """
+            fc = (f1 + f2) / 2 # frequência central
+            largura_relativa = (f2 - f1) / fc # largura relativa
+            return largura_relativa, fc
+
+            # Exemplo de uso com seus dados
+            # Rede triangular
+            f1_tri, f2_tri = 140, 150 # Valores de exemplo
+            larg_rel_tri, fc_tri = calcular_largura_relativa(f1_tri, f2_tri)
+
+            # Rede quadrada
+            f1_quad, f2_quad = 100, 108 # Valores de exemplo
+            larg_rel_quad, fc_quad = calcular_largura_relativa(f1_quad, f2_quad)
+
+            print(f"Triangular: Largura Rel. = {larg_rel_tri:.4f} em fc = {fc_tri} Hz")
+            print(f"Quadrada: Largura Rel. = {larg_rel_quad:.4f} em fc = {fc_quad} Hz")
+
+            # IMPORTANTE: Use estes cálculos para substituir TODAS as comparações absolutas
+        </div>
+
+        <h3>2. Definições de Razão de Massa</h3>
+        <div class="formula-box">
+            <div class="formula">Razão de Massa = m<sub>ressonador</sub> / m<sub>célula unitária da placa</sub></div>
+            <div class="formula">Razão de Massa Normalizada = (Razão de Massa)<sub>geometria</sub> / (Razão de
+                Massa)<sub>kagome</sub></div>
+        </div>
+
+        <h3>3. Instruções Específicas para Claude Code</h3>
+        <div class="comment-block">
+            <div class="comment-header">Comandos Diretos para Implementação</div>
+            <div class="comment-content">
+                <div class="code-block">
+                    # SEQUÊNCIA DE COMANDOS PARA CLAUDE CODE:
+
+                    # 1. ANÁLISE INICIAL
+                    "Analise todos os arquivos Python no diretório atual e identifique onde são feitos cálculos de
+                    largura de bandgap. Liste todos os arquivos que contêm comparações entre geometrias de rede."
+
+                    # 2. BACKUP
+                    "Crie um backup completo de todos os arquivos de simulação antes de qualquer modificação."
+
+                    # 3. IMPLEMENTAÇÃO MATEMÁTICA
+                    "Crie um script chamado 'relative_bandwidth_correction.py' que:
+                    1. Leia todos os dados de bandgap das 5 geometrias
+                    2. Calcule largura relativa usando (f2-f1)/fc onde fc=(f2+f1)/2
+                    3. Gere tabela comparativa entre método antigo e novo
+                    4. Salve os resultados corrigidos"
+
+                    # 4. ATUALIZAÇÃO DE SCRIPTS
+                    "Modifique todos os scripts de pós-processamento para usar largura relativa ao invés de absoluta.
+                    Marque todas as mudanças com comentários '# REVIEWER CORRECTION'."
+
+                    # 5. REGENERAÇÃO DE FIGURAS
+                    "Crie um script mestre que regenere todas as figuras do artigo com:
+                    1. Fontes mínimas de 12pt
+                    2. Dados corrigidos de largura relativa
+                    3. Formato profissional (DPI 300, bbox tight)"
+
+                    # 6. ANÁLISE DE LITERATURA
+                    "Pesquise na literatura e crie um resumo da Ref. [46] focando no acoplamento entre ressonância local
+                    e Bragg. Prepare texto para adicionar ao manuscrito."
+
+                    # 7. MODIFICAÇÃO LATEX
+                    "Analise o arquivo LaTeX principal em seções de 2000 tokens cada. Para cada seção, identifique:
+                    1. Onde aplicar largura relativa
+                    2. Onde adicionar discussão da Ref. [46]
+                    3. Onde corrigir contradições sobre Bragg
+                    4. Onde marcar texto em vermelho"
+
+                    # 8. RESPOSTA AOS REVISORES
+                    "Prepare resposta ponto-a-ponto detalhada seguindo o template fornecido, referenciando páginas e
+                    figuras específicas onde mudanças foram feitas."
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="section">
+    <div class="section-header">
+        LISTA DE VERIFICAÇÃO DE REVISÃO
+    </div>
+    <div class="section-content">
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressBar"></div>
+        </div>
+        <p style="text-align: center; margin-top: 10px;">
+            <span id="progressText">0% Completado</span>
+        </p>
+
+        <div class="checklist">
+            <h3>Tarefas de Prioridade Alta (Obrigatórias):</h3>
+
+            <div class="checklist-item" onclick="toggleCheck(this)">
+                <input type="checkbox">
+                <span><strong>Implementar fórmula de largura relativa</strong> para todas as comparações de bandgap em
+                    todo o artigo</span>
+            </div>
+
+            <div class="checklist-item" onclick="toggleCheck(this)">
+                <input type="checkbox">
+                <span><strong>Adicionar discussão abrangente</strong> da Ref. [46] e reconhecer achados
+                    existentes</span>
+            </div>
+
+            <div class="checklist-item" onclick="toggleCheck(this)">
+                <input type="checkbox">
+                <span><strong>Resolver contradição do espalhamento de Bragg</strong> na introdução</span>
+            </div>
+
+            <div class="checklist-item" onclick="toggleCheck(this)">
+                <input type="checkbox">
+                <span><strong>Recalcular e atualizar todas as conclusões</strong> baseadas em métricas de comparação
+                    adequadas</span>
+            </div>
+
+            <div class="checklist-item" onclick="toggleCheck(this)">
+                <input type="checkbox">
+                <span><strong>Executar scripts de correção com Claude Code</strong> para automatizar cálculos
+                    matemáticos</span>
+            </div>
+
+            <h3>Tarefas de Prioridade Média:</h3>
+
+            <div class="checklist-item" onclick="toggleCheck(this)">
+                <input type="checkbox">
+                <span><strong>Definir formulações matemáticas</strong> para razão de massa e normalização kagome</span>
+            </div>
+
+            <div class="checklist-item" onclick="toggleCheck(this)">
+                <input type="checkbox">
+                <span><strong>Recriar todas as figuras</strong> com fontes maiores e clareza melhorada usando scripts
+                    automatizados</span>
+            </div>
+
+            <div class="checklist-item" onclick="toggleCheck(this)">
+                <input type="checkbox">
+                <span><strong>Encurtar Seção 3</strong> mantendo informações essenciais</span>
+            </div>
+
+            <div class="checklist-item" onclick="toggleCheck(this)">
+                <input type="checkbox">
+                <span><strong>Adicionar discussão</strong> sobre limitações de materiais e trabalhos futuros</span>
+            </div>
+
+            <div class="checklist-item" onclick="toggleCheck(this)">
+                <input type="checkbox">
+                <span><strong>Revisar highlights</strong> para serem mais concisos e focados em contribuições
+                    novas</span>
+            </div>
+
+            <h3>Análise de Manuscrito LaTeX (Por Seções):</h3>
+
+            <div class="checklist-item" onclick="toggleCheck(this)">
+                <input type="checkbox">
+                <span><strong>Analisar Seção 1:</strong> Título, Abstract, Palavras-chave, Introdução (≤2000
+                    tokens)</span>
+            </div>
+
+            <div class="checklist-item" onclick="toggleCheck(this)">
+                <input type="checkbox">
+                <span><strong>Analisar Seção 2:</strong> Metodologia e Framework Teórico (≤2000 tokens)</span>
+            </div>
+
+            <div class="checklist-item" onclick="toggleCheck(this)">
+                <input type="checkbox">
+                <span><strong>Analisar Seção 3:</strong> Resultados e Discussão - Parte A (≤2000 tokens)</span>
+            </div>
+
+            <div class="checklist-item" onclick="toggleCheck(this)">
+                <input type="checkbox">
+                <span><strong>Analisar Seção 4:</strong> Resultados e Discussão - Parte B (≤2000 tokens)</span>
+            </div>
+
+            <div class="checklist-item" onclick="toggleCheck(this)">
+                <input type="checkbox">
+                <span><strong>Analisar Seção 5:</strong> Conclusões, Referências, Tabelas, Figuras (≤2000 tokens)</span>
+            </div>
+
+            <h3>Etapas Finais:</h3>
+
+            <div class="checklist-item" onclick="toggleCheck(this)">
+                <input type="checkbox">
+                <span><strong>Preparar resposta ponto-a-ponto</strong> para cada comentário do revisor com referências
+                    específicas</span>
+            </div>
+
+            <div class="checklist-item" onclick="toggleCheck(this)">
+                <input type="checkbox">
+                <span><strong>Marcar todas as modificações em vermelho</strong> no manuscrito LaTeX usando
+                    \textcolor{red}{}</span>
+            </div>
+
+            <div class="checklist-item" onclick="toggleCheck(this)">
+                <input type="checkbox">
+                <span><strong>Executar script de validação</strong> para verificar se todas as correções foram
+                    implementadas</span>
+            </div>
+
+            <div class="checklist-item" onclick="toggleCheck(this)">
+                <input type="checkbox">
+                <span><strong>Revisão final</strong> e verificação de consistência antes da submissão</span>
+            </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <button class="btn" onclick="resetProgress()">Resetar Progresso</button>
+            <button class="btn" onclick="downloadStrategy()">Imprimir Estratégia</button>
+        </div>
+
+    </div>
+</div>
+
+<div class="section">
+    <div class="section-header">
+        NOTAS DE IMPLEMENTAÇÃO ESPECÍFICAS
+    </div>
+    <div class="section-content">
+
+        <h3>Para Correções Matemáticas com Claude Code:</h3>
+        <div class="comment-block">
+            <div class="comment-content">
+                <ul>
+                    <li><strong>Identifique arquivos-chave:</strong> Scripts que calculam f2-f1 e fazem comparações
+                        entre geometrias</li>
+                    <li><strong>Crie função universal:</strong> Uma função que calcule largura relativa e possa ser
+                        importada em todos os scripts</li>
+                    <li><strong>Automatize a atualização:</strong> Use regex para encontrar e substituir cálculos de
+                        largura absoluta</li>
+                    <li><strong>Valide resultados:</strong> Compare resultados antigos vs. novos para garantir correção
+                    </li>
+                    <li><strong>Documente mudanças:</strong> Cada script modificado deve ter log de alterações</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Para Integração de Literatura:</h3>
+        <div class="comment-block">
+            <div class="comment-content">
+                <ul>
+                    <li><strong>Leia Ref. [46] completamente:</strong> Entenda o mecanismo de acoplamento descrito</li>
+                    <li><strong>Posicione seu trabalho:</strong> Como extensão natural para múltiplas geometrias de rede
+                    </li>
+                    <li><strong>Reconheça a base:</strong> Dê crédito adequado às descobertas fundamentais</li>
+                    <li><strong>Compare metodologias:</strong> Destaque semelhanças e diferenças na abordagem</li>
+                    <li><strong>Integre na narrativa:</strong> Não apenas cite, mas construa sobre o trabalho anterior
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Para Modificações no LaTeX:</h3>
+        <div class="comment-block">
+            <div class="comment-content">
+                <ul>
+                    <li><strong>Use \textcolor{red}{}:</strong> Para marcar TODAS as modificações conforme exigido</li>
+                    <li><strong>Mantenha formatação:</strong> Não quebrar estrutura do documento ao adicionar cor</li>
+                    <li><strong>Seja específico:</strong> Marque frases completas, não apenas palavras isoladas</li>
+                    <li><strong>Documente localização:</strong> Mantenha lista das páginas/seções modificadas</li>
+                    <li><strong>Teste compilação:</strong> Verifique que LaTeX compila sem erros após modificações</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Para Regeneração de Figuras:</h3>
+        <div class="comment-block">
+            <div class="comment-content">
+                <ul>
+                    <li><strong>Padronize fontes:</strong> Mínimo 12pt para todos os elementos de texto</li>
+                    <li><strong>Use matplotlib.rcParams:</strong> Configure parâmetros globais de figura</li>
+                    <li><strong>Alta resolução:</strong> DPI 300 ou superior para publicação</li>
+                    <li><strong>Consistência visual:</strong> Mesma paleta de cores e estilos em todas as figuras</li>
+                    <li><strong>Teste legibilidade:</strong> Imprima figuras para verificar clareza</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Para Resposta aos Revisores:</h3>
+        <div class="comment-block">
+            <div class="comment-content">
+                <ul>
+                    <li><strong>Seja específico:</strong> "Mudanças podem ser vistas na página X, linha Y"</li>
+                    <li><strong>Agradeça primeiro:</strong> "Agradecemos este comentário importante..."</li>
+                    <li><strong>Explique a correção:</strong> Como o problema foi resolvido, não apenas que foi</li>
+                    <li><strong>Referencie figuras/tabelas:</strong> "Conforme mostrado na Figura X revisada..."</li>
+                    <li><strong>Mantenha tom profissional:</strong> Respeitoso e construtivo em todas as respostas</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="section">
+    <div class="section-header">
+        CRONOGRAMA DETALHADO DE EXECUÇÃO
+    </div>
+    <div class="section-content">
+
+        <h3>📅 Planejamento Dia-a-Dia (30 dias até o prazo)</h3>
+
+        <div class="comment-block">
+            <div class="comment-header">Semana 1: Dias 1-7 (15-21 Setembro)</div>
+            <div class="comment-content">
+                <strong>Dia 1-2:</strong> Configuração, backup e análise inicial com Claude Code<br>
+                <strong>Dia 3-4:</strong> Implementação da fórmula de largura relativa<br>
+                <strong>Dia 5-6:</strong> Recálculo de todas as comparações e validação<br>
+                <strong>Dia 7:</strong> Revisão da literatura (Ref. [46]) e preparação de texto
+            </div>
+        </div>
+
+        <div class="comment-block">
+            <div class="comment-header">Semana 2: Dias 8-14 (22-28 Setembro)</div>
+            <div class="comment-content">
+                <strong>Dia 8-9:</strong> Análise do LaTeX em seções (Introdução + Metodologia)<br>
+                <strong>Dia 10-11:</strong> Modificações na introdução (contradição Bragg) + adição Ref. [46]<br>
+                <strong>Dia 12-13:</strong> Análise e modificação de Resultados (Seções 3-4)<br>
+                <strong>Dia 14:</strong> Definições matemáticas e encurtamento da Seção 3
+            </div>
+        </div>
+
+        <div class="comment-block">
+            <div class="comment-header">Semana 3: Dias 15-21 (29 Set - 5 Out)</div>
+            <div class="comment-content">
+                <strong>Dia 15-16:</strong> Regeneração completa de todas as figuras<br>
+                <strong>Dia 17-18:</strong> Análise final do LaTeX (Conclusões + Referências)<br>
+                <strong>Dia 19-20:</strong> Aplicação de marcação vermelha em todas as modificações<br>
+                <strong>Dia 21:</strong> Revisão dos highlights e teste de compilação
+            </div>
+        </div>
+
+        <div class="comment-block">
+            <div class="comment-header">Semana 4: Dias 22-28 (6-12 Outubro)</div>
+            <div class="comment-content">
+                <strong>Dia 22-23:</strong> Preparação da resposta ponto-a-ponto completa<br>
+                <strong>Dia 24-25:</strong> Validação final com script automatizado<br>
+                <strong>Dia 26-27:</strong> Revisão final e correções menores<br>
+                <strong>Dia 28:</strong> Submissão (3 dias antes do prazo para segurança)
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="section">
+    <div class="section-header">
+        COMANDOS DIRETOS PARA CLAUDE CODE
+    </div>
+    <div class="section-content">
+
+        <div class="code-block">
+            # LISTA DE COMANDOS SEQUENCIAIS PARA CLAUDE CODE:
+
+            # COMANDO 1: ANÁLISE INICIAL
+            "Liste todos os arquivos Python, MATLAB e LaTeX neste diretório.
+            Identifique especificamente quais arquivos contêm cálculos de largura
+            de bandgap e comparações entre as geometrias triangular, quadrada,
+            hexagonal, kagome e honeycomb."
+
+            # COMANDO 2: BACKUP E VERSIONAMENTO
+            "Crie um backup completo de todos os arquivos de simulação e dados.
+            Configure git se ainda não estiver configurado e faça commit inicial
+            com mensagem 'Pre-revision backup'."
+
+            # COMANDO 3: IMPLEMENTAÇÃO MATEMÁTICA
+            "Crie o arquivo 'relative_bandwidth_correction.py' que:
+            1. Define função calculate_relative_bandwidth(f1, f2)
+            2. Leia dados de todas as 5 geometrias
+            3. Aplique o cálculo (f2-f1)/fc onde fc=(f2+f1)/2
+            4. Gere comparação lado-a-lado: método antigo vs. novo
+            5. Exporte resultados para 'corrected_data.csv'"
+
+            # COMANDO 4: ATUALIZAÇÃO DE SCRIPTS
+            "Identifique todos os scripts que fazem comparações de largura absoluta.
+            Para cada um:
+            1. Crie backup com sufixo '_original'
+            2. Substitua cálculos absolutos por relativos
+            3. Adicione comentários '# REVIEWER CORRECTION'
+            4. Teste execução sem erros"
+
+            # COMANDO 5: REGENERAÇÃO DE FIGURAS
+            "Crie 'figure_regeneration_master.py' que:
+            1. Configure matplotlib com fonte mínima 12pt
+            2. Leia dados corrigidos de 'corrected_data.csv'
+            3. Regenere TODAS as figuras do artigo
+            4. Salve com DPI 300 em 'revision_figures/'
+            5. Compare visualmente com figuras originais"
+
+            # COMANDO 6: ANÁLISE LATEX POR SEÇÕES
+            "Divida o arquivo LaTeX principal em 5 seções de máximo 2000 tokens:
+            1. section1_intro.tex (título até metodologia)
+            2. section2_method.tex (metodologia até resultados)
+            3. section3_results_a.tex (primeira metade dos resultados)
+            4. section4_results_b.tex (segunda metade até conclusão)
+            5. section5_conclusion.tex (conclusão até fim)
+            Salve cada seção separadamente para análise."
+
+            # COMANDO 7: MODIFICAÇÃO SISTEMÁTICA
+            "Para cada seção do LaTeX:
+            1. Identifique onde aplicar largura relativa
+            2. Localize menções à Ref. [46] ou necessidade de adicioná-la
+            3. Encontre contradições sobre espalhamento de Bragg
+            4. Aplique \textcolor{red}{} em TODAS as modificações
+            5. Documente mudanças em 'modification_log.txt'"
+
+            # COMANDO 8: VALIDAÇÃO AUTOMATIZADA
+            "Crie 'validation_checklist.py' que verifique:
+            1. Presença de \textcolor{red} no LaTeX
+            2. Uso de fórmula de largura relativa
+            3. Discussão da Ref. [46] adicionada
+            4. Contradição Bragg resolvida
+            5. Todas as figuras regeneradas
+            6. Definições matemáticas presentes
+            Gere relatório de status para cada item."
+
+            # COMANDO 9: RESPOSTA AOS REVISORES
+            "Gere 'reviewer_response.docx' formatado com:
+            1. Cabeçalho profissional
+            2. Agradecimento aos revisores
+            3. Resposta detalhada para cada um dos 10 comentários
+            4. Referências específicas a páginas/figuras modificadas
+            5. Confirmação de que Revisor #2 foi considerado"
+
+            # COMANDO 10: SUBMISSÃO FINAL
+            "Execute checklist final:
+            1. Compile LaTeX sem erros
+            2. Verifique que todas as figuras estão incluídas
+            3. Confirme que texto vermelho está visível
+            4. Valide que arquivos de resposta estão prontos
+            5. Gere relatório final de status para submissão"
+        </div>
+
+    </div>
+</div>
+
+<script>
+    function toggleCheck(element) {
+        const checkbox = element.querySelector('input[type="checkbox"]');
+        checkbox.checked = !checkbox.checked;
+        updateProgress();
+    }
+
+    function updateProgress() {
+        const checkboxes = document.querySelectorAll('.checklist input[type="checkbox"]');
+        const checked = document.querySelectorAll('.checklist input[type="checkbox"]:checked');
+        const progress = (checked.length / checkboxes.length) * 100;
+
+        document.getElementById('progressBar').style.width = progress + '%';
+        document.getElementById('progressText').textContent = Math.round(progress) + '% Completado';
+    }
+
+    function resetProgress() {
+        const checkboxes = document.querySelectorAll('.checklist input[type="checkbox"]');
+        checkboxes.forEach(cb => cb.checked = false);
+        updateProgress();
+    }
+
+    function downloadStrategy() {
+        alert('Para imprimir esta estratégia, use Ctrl+P ou clique com botão direito → Imprimir...');
+    }
+
+    // Initialize progress
+    updateProgress();
+</script>
+</body>
+
+</html>
+<div class="section">
+    <div class="section-header">
+        ESTRATÉGIA DE REVISÃO - Cronograma de 4 Semanas
+    </div>
+    <div class="section-content">
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-header">Semana 1 (15-22 de Setembro): Correções Matemáticas e Revisão da Literatura
+                </div>
+                <div class="timeline-content">
+                    <ol class="task-list">
+                        <li>Implementar fórmula de largura relativa: (f₂-f₁)/fc onde fc=(f₂+f₁)/2</li>
+                        <li>Recalcular TODAS as comparações entre geometrias de rede</li>
+                        <li>
+                            <!DOCTYPE html>
+                            <html lang="en">
+
+                            <head>
+                                <meta charset="UTF-8">
+                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                <title>Revision Strategy - MSSP25-4032</title>
+                                <style>
+                                    * {
+                                        margin: 0;
+                                        padding: 0;
+                                        box-sizing: border-box;
+                                    }
+
+                                    body {
+                                        font-family: 'Times New Roman', Times, serif;
+                                        line-height: 1.7;
+                                        color: #2c3e50;
+                                        background: #ffffff;
+                                        max-width: 1200px;
+                                        margin: 0 auto;
+                                        padding: 40px 20px;
+                                    }
+
+                                    .header {
+                                        text-align: center;
+                                        margin-bottom: 50px;
+                                        padding: 40px 0;
+                                        border-bottom: 3px solid #34495e;
+                                    }
+
+                                    .header h1 {
+                                        font-size: 2.2em;
+                                        color: #2c3e50;
+                                        margin-bottom: 15px;
+                                        font-weight: 600;
+                                    }
+
+                                    .header .subtitle {
+                                        font-size: 1.1em;
+                                        color: #7f8c8d;
+                                        font-style: italic;
+                                        max-width: 800px;
+                                        margin: 0 auto;
+                                    }
+
+                                    .deadline {
+                                        background: #c0392b;
+                                        color: white;
+                                        padding: 20px;
+                                        text-align: center;
+                                        margin: 30px 0;
+                                        font-weight: 600;
+                                        font-size: 1.1em;
+                                        border: 1px solid #a93226;
+                                    }
+
+                                    .section {
+                                        margin-bottom: 50px;
+                                        background: #f8f9fa;
+                                        border: 1px solid #dee2e6;
+                                        border-radius: 4px;
+                                    }
+
+                                    .section-header {
+                                        background: #34495e;
+                                        color: white;
+                                        padding: 20px 30px;
+                                        font-size: 1.3em;
+                                        font-weight: 600;
+                                    }
+
+                                    .section-content {
+                                        padding: 30px;
+                                    }
+
+                                    .reviewer1 .section-header {
+                                        background: #c0392b;
+                                    }
+
+                                    .reviewer2 .section-header {
+                                        background: #27ae60;
+                                    }
+
+                                    .comment-block {
+                                        background: white;
+                                        border: 1px solid #dee2e6;
+                                        border-radius: 4px;
+                                        margin-bottom: 25px;
+                                        overflow: hidden;
+                                    }
+
+                                    .comment-header {
+                                        background: #ecf0f1;
+                                        padding: 15px 20px;
+                                        font-weight: 600;
+                                        border-bottom: 1px solid #dee2e6;
+                                        color: #2c3e50;
+                                    }
+
+                                    .comment-content {
+                                        padding: 20px;
+                                    }
+
+                                    .priority-tag {
+                                        display: inline-block;
+                                        padding: 4px 12px;
+                                        font-size: 0.8em;
+                                        font-weight: 600;
+                                        text-transform: uppercase;
+                                        letter-spacing: 0.5px;
+                                        margin-bottom: 15px;
+                                        border-radius: 3px;
+                                    }
+
+                                    .high-priority {
+                                        background: #f8d7da;
+                                        color: #721c24;
+                                        border: 1px solid #f5c6cb;
+                                    }
+
+                                    .medium-priority {
+                                        background: #fff3cd;
+                                        color: #856404;
+                                        border: 1px solid #ffeaa7;
+                                    }
+
+                                    .original-comment {
+                                        background: #e8f4f8;
+                                        border-left: 4px solid #3498db;
+                                        padding: 20px;
+                                        margin: 15px 0;
+                                        font-style: italic;
+                                    }
+
+                                    .suggestion-box {
+                                        background: #f0fff4;
+                                        border-left: 4px solid #27ae60;
+                                        padding: 20px;
+                                        margin: 15px 0;
+                                    }
+
+                                    .suggestion-box h4 {
+                                        color: #27ae60;
+                                        margin-bottom: 12px;
+                                        font-weight: 600;
+                                    }
+
+                                    .formula-box {
+                                        background: #f8f9fa;
+                                        border: 1px solid #dee2e6;
+                                        border-radius: 4px;
+                                        padding: 20px;
+                                        margin: 20px 0;
+                                        text-align: center;
+                                    }
+
+                                    .formula {
+                                        font-family: 'Times New Roman', serif;
+                                        font-size: 1.2em;
+                                        margin: 10px 0;
+                                        font-style: italic;
+                                        font-weight: 500;
+                                    }
+
+                                    .timeline {
+                                        margin-top: 30px;
+                                    }
+
+                                    .timeline-item {
+                                        background: white;
+                                        border: 1px solid #dee2e6;
+                                        border-radius: 4px;
+                                        margin-bottom: 20px;
+                                        overflow: hidden;
+                                    }
+
+                                    .timeline-header {
+                                        background: #ecf0f1;
+                                        padding: 15px 20px;
+                                        font-weight: 600;
+                                        color: #2c3e50;
+                                    }
+
+                                    .timeline-content {
+                                        padding: 20px;
+                                    }
+
+                                    .task-list {
+                                        list-style: decimal;
+                                        padding-left: 20px;
+                                    }
+
+                                    .task-list li {
+                                        padding: 8px 0;
+                                        margin-bottom: 5px;
+                                    }
+
+                                    .checklist {
+                                        background: white;
+                                        border: 1px solid #dee2e6;
+                                        border-radius: 4px;
+                                        padding: 25px;
+                                        margin-top: 30px;
+                                    }
+
+                                    .checklist h3 {
+                                        color: #2c3e50;
+                                        margin-bottom: 20px;
+                                        font-weight: 600;
+                                        border-bottom: 1px solid #dee2e6;
+                                        padding-bottom: 10px;
+                                    }
+
+                                    .checklist-item {
+                                        display: flex;
+                                        align-items: flex-start;
+                                        margin-bottom: 12px;
+                                        padding: 12px;
+                                        background: #f8f9fa;
+                                        border-radius: 4px;
+                                        cursor: pointer;
+                                        transition: all 0.2s ease;
+                                        border: 1px solid #e9ecef;
+                                    }
+
+                                    .checklist-item:hover {
+                                        background: #e9ecef;
+                                    }
+
+                                    .checklist-item input[type="checkbox"] {
+                                        margin-right: 15px;
+                                        margin-top: 3px;
+                                        transform: scale(1.2);
+                                    }
+
+                                    .progress-bar {
+                                        width: 100%;
+                                        height: 25px;
+                                        background: #e9ecef;
+                                        border-radius: 4px;
+                                        overflow: hidden;
+                                        margin: 25px 0;
+                                        border: 1px solid #dee2e6;
+                                    }
+
+                                    .progress-fill {
+                                        height: 100%;
+                                        background: #27ae60;
+                                        width: 0%;
+                                        transition: width 0.5s ease;
+                                    }
+
+                                    .code-block {
+                                        background: #2c3e50;
+                                        color: #ecf0f1;
+                                        padding: 20px;
+                                        border-radius: 4px;
+                                        font-family: 'Consolas', 'Monaco', monospace;
+                                        margin: 20px 0;
+                                        overflow-x: auto;
+                                        font-size: 0.9em;
+                                    }
+
+                                    .btn {
+                                        background: #34495e;
+                                        color: white;
+                                        padding: 10px 20px;
+                                        border: none;
+                                        border-radius: 4px;
+                                        cursor: pointer;
+                                        font-size: 0.9em;
+                                        margin: 5px 3px;
+                                        font-family: 'Times New Roman', serif;
+                                    }
+
+                                    .btn:hover {
+                                        background: #2c3e50;
+                                    }
+
+                                    ul,
+                                    ol {
+                                        margin: 10px 0;
+                                        padding-left: 25px;
+                                    }
+
+                                    li {
+                                        margin-bottom: 8px;
+                                    }
+
+                                    strong {
+                                        color: #2c3e50;
+                                    }
+                                </style>
+                            </head>
+
+                            <body>
+                                <div class="header">
+                                    <h1>Revision Strategy for MSSP25-4032</h1>
+                                    <div class="subtitle">
+                                        Bandgap optimization in locally resonant metamaterial plates: A comparative
+                                        study of five lattice geometries for low-frequency wave attenuation
+                                    </div>
+                                </div>
+
+                                <div class="deadline">
+                                    DEADLINE: October 15th, 2025 (30 days remaining)
+                                </div>
+
+                                <div class="section reviewer1">
+                                    <div class="section-header">
+                                        REVISOR #1 - Comentários Detalhados e Ações Necessárias
+                                    </div>
+                                    <div class="section-content">
+
+                                        <div class="comment-block">
+                                            <div class="comment-header">
+                                                Comentário 1: Comparação Injusta da Largura de Bandgap
+                                                <span class="priority-tag high-priority">PRIORIDADE ALTA</span>
+                                            </div>
+                                            <div class="comment-content">
+                                                <div class="original-comment">
+                                                    <strong>Comentário Original:</strong> "É alegado que 'redes
+                                                    triangulares conseguem bandgaps 40% mais largos comparado a
+                                                    configurações quadradas e demonstram características de banda larga
+                                                    superiores'. No entanto, não acho que a largura de seus bandgaps
+                                                    seja comparada de forma justa. Neste trabalho, o bandgap mais largo
+                                                    para o caso da rede triangular abre numa faixa de frequência muito
+                                                    mais alta (~145 Hz) do que para o caso da rede quadrada (~105 Hz),
+                                                    mas a largura do bandgap é quantificada pela largura absoluta dada
+                                                    por (f₂-f₁). Tal comparação de largura absoluta de bandgap não pode
+                                                    ser aceita neste campo."
+                                                </div>
+
+                                                <div class="suggestion-box">
+                                                    <h4>Ações Necessárias:</h4>
+                                                    <ol>
+                                                        <li><strong>Implementar fórmula de largura relativa</strong>
+                                                            para TODAS as comparações</li>
+                                                        <li><strong>Abordagem alternativa:</strong> Ajustar constantes
+                                                            de rede para alcançar faixas de frequência similares</li>
+                                                        <li><strong>Recalcular todas as conclusões</strong> baseadas em
+                                                            métricas de comparação adequadas</li>
+                                                        <li><strong>Atualizar todas as figuras e tabelas</strong> com
+                                                            cálculos corrigidos</li>
+                                                    </ol>
+
+                                                    <div class="formula-box">
+                                                        <div class="formula">Largura Relativa = (f₂ - f₁) / fc</div>
+                                                        <div class="formula">onde fc = (f₂ + f₁) / 2</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="comment-block">
+                                            <div class="comment-header">
+                                                Comentário 2: Falta de Reconhecimento de Trabalhos Anteriores
+                                                <span class="priority-tag high-priority">PRIORIDADE ALTA</span>
+                                            </div>
+                                            <div class="comment-content">
+                                                <div class="original-comment">
+                                                    <strong>Comentário Original:</strong> "Deve ser notado que estudo
+                                                    similar da influência do ajuste da frequência de ressonância local
+                                                    na largura do bandgap foi reportado na Ref.[46] para o caso de rede
+                                                    quadrada. Foi revelado em [46] que o bandgap mais largo ocorre
+                                                    quando o bandgap de ressonância direcional e o bandgap de Bragg
+                                                    estão quase acoplados, e uma fórmula inicial de design aproximada
+                                                    foi fornecida em [46]. Os autores deveriam reconhecer achados
+                                                    existentes e fornecer discussões apropriadas."
+                                                </div>
+
+                                                <div class="suggestion-box">
+                                                    <h4>Ações Necessárias:</h4>
+                                                    <ol>
+                                                        <li><strong>Adicionar discussão abrangente</strong> dos achados
+                                                            da Ref. [46]</li>
+                                                        <li><strong>Comparar seus resultados</strong> com a fórmula
+                                                            inicial de design fornecida</li>
+                                                        <li><strong>Posicionar seu trabalho</strong> como extensão para
+                                                            outras geometrias de rede</li>
+                                                        <li><strong>Reconhecer o mecanismo de acoplamento</strong> entre
+                                                            ressonância direcional e bandgaps de Bragg</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="comment-block">
+                                            <div class="comment-header">
+                                                Comentário 3: Contradição Sobre Espalhamento de Bragg
+                                                <span class="priority-tag high-priority">PRIORIDADE ALTA</span>
+                                            </div>
+                                            <div class="comment-content">
+                                                <div class="original-comment">
+                                                    <strong>Comentário Original:</strong> "Na introdução, é mencionado
+                                                    'a condição de Bragg a = nλ/2 necessita células unitárias grandes
+                                                    para atenuar ondas de baixa frequência [30], desafiando o design
+                                                    compacto de dispositivos, particularmente para ondas flexurais [31]
+                                                    ou elásticas em meios complexos [32].' No entanto, neste estudo, o
+                                                    bandgap mais largo sempre ocorre numa faixa de frequência onde o
+                                                    efeito de espalhamento de Bragg tem um papel importante, e o meio
+                                                    comprimento de onda flexural operacional (λ/2) é comparável à
+                                                    constante de rede."
+                                                </div>
+
+                                                <div class="suggestion-box">
+                                                    <h4>Ações Necessárias:</h4>
+                                                    <ol>
+                                                        <li><strong>Reescrever a introdução</strong> para esclarecer a
+                                                            relação entre ressonância local e espalhamento de Bragg</li>
+                                                        <li><strong>Explicar o mecanismo de acoplamento</strong> entre
+                                                            ambos os efeitos</li>
+                                                        <li><strong>Remover declarações contraditórias</strong> sobre
+                                                            limitações do espalhamento de Bragg</li>
+                                                        <li><strong>Enquadrar o trabalho</strong> como otimização de
+                                                            mecanismos combinados ao invés de substituição</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="comment-block">
+                                            <div class="comment-header">
+                                                Comentário 4: Análise Limitada de Materiais
+                                                <span class="priority-tag medium-priority">PRIORIDADE MÉDIA</span>
+                                            </div>
+                                            <div class="comment-content">
+                                                <div class="original-comment">
+                                                    <strong>Comentário Original:</strong> "A atenção deste trabalho está
+                                                    colocada nas ondas flexurais de baixa frequência (10−200)[Hz]. No
+                                                    entanto, apenas um exemplo de placa fina muito mole feita de
+                                                    material mole (material polimérico imprimível em 3D) é considerado.
+                                                    O que aconteceria para o caso de placa de material metálico duro, ou
+                                                    uma placa mais espessa com rigidez à flexão muito maior?"
+                                                </div>
+
+                                                <div class="suggestion-box">
+                                                    <h4>Ações Necessárias:</h4>
+                                                    <ol>
+                                                        <li><strong>Adicionar discussão</strong> sobre limitações da
+                                                            seleção atual de material</li>
+                                                        <li><strong>Fornecer análise</strong> para materiais metálicos
+                                                            (se dados disponíveis)</li>
+                                                        <li><strong>Discutir efeitos de escala</strong> para diferentes
+                                                            espessuras e rigidezes de placa</li>
+                                                        <li><strong>Adicionar seção de trabalhos futuros</strong>
+                                                            abordando diversidade de materiais</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="comment-block">
+                                            <div class="comment-header">
+                                                Comentário 5: Reiteração da Definição de Bandgap
+                                                <span class="priority-tag high-priority">PRIORIDADE ALTA</span>
+                                            </div>
+                                            <div class="comment-content">
+                                                <div class="original-comment">
+                                                    <strong>Comentário Original:</strong> "A largura de bandgap usada
+                                                    para comparação deve ser definida pela largura relativa de bandgap
+                                                    (f₂-f₁)/fc."
+                                                </div>
+
+                                                <div class="suggestion-box">
+                                                    <h4>Ações Necessárias:</h4>
+                                                    <ol>
+                                                        <li><strong>Implementar esta definição</strong> em todo o artigo
+                                                        </li>
+                                                        <li><strong>Atualizar seção de metodologia</strong> com
+                                                            definição clara</li>
+                                                        <li><strong>Garantir consistência</strong> em todos os cálculos
+                                                            e comparações</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="comment-block">
+                                            <div class="comment-header">
+                                                Comentário 6: Ajuste de Parâmetro de Rede
+                                                <span class="priority-tag medium-priority">PRIORIDADE MÉDIA</span>
+                                            </div>
+                                            <div class="comment-content">
+                                                <div class="original-comment">
+                                                    <strong>Comentário Original:</strong> "Não acho que o parâmetro de
+                                                    rede a deveria ser mantido constante para demonstrar comparação.
+                                                    Acho que o parâmetro de rede pode ser cuidadosamente ajustado para
+                                                    que o bandgap mais largo resultante seja criado na mesma frequência
+                                                    inicial para diferentes casos de rede periódica."
+                                                </div>
+
+                                                <div class="suggestion-box">
+                                                    <h4>Ações Necessárias:</h4>
+                                                    <ol>
+                                                        <li><strong>Considerar estudo paramétrico</strong> com
+                                                            constantes de rede ajustadas</li>
+                                                        <li><strong>Mostrar comparações</strong> em frequências iniciais
+                                                            equivalentes</li>
+                                                        <li><strong>Justificar abordagem atual</strong> ou implementar
+                                                            modificações sugeridas</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="comment-block">
+                                            <div class="comment-header">
+                                                Comentário 7: Definições Matemáticas Ausentes
+                                                <span class="priority-tag medium-priority">PRIORIDADE MÉDIA</span>
+                                            </div>
+                                            <div class="comment-content">
+                                                <div class="original-comment">
+                                                    <strong>Comentário Original:</strong> "Qual é a definição de razão
+                                                    de massa na Tabela 2. Qual é o significado da razão de massa
+                                                    normalizada para kagome na Tabela 3. Por favor forneçam formulações
+                                                    matemáticas."
+                                                </div>
+
+                                                <div class="suggestion-box">
+                                                    <h4>Ações Necessárias:</h4>
+                                                    <ol>
+                                                        <li><strong>Adicionar definições matemáticas claras</strong>
+                                                            para todos os parâmetros</li>
+                                                        <li><strong>Definir razão de massa</strong> com fórmula
+                                                            explícita</li>
+                                                        <li><strong>Explicar metodologia de normalização kagome</strong>
+                                                        </li>
+                                                    </ol>
+
+                                                    <div class="formula-box">
+                                                        <div class="formula">Razão de Massa = (Massa do Ressonador) /
+                                                            (Massa da Célula Unitária da Placa)</div>
+                                                        <div class="formula">Razão de Massa Normalizada = (Razão de
+                                                            Massa da Geometria) / (Razão de Massa do Kagome)</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="comment-block">
+                                            <div class="comment-header">
+                                                Comentário 8: Revisão dos Highlights
+                                                <span class="priority-tag medium-priority">PRIORIDADE MÉDIA</span>
+                                            </div>
+                                            <div class="comment-content">
+                                                <div class="original-comment">
+                                                    <strong>Comentário Original:</strong> "Os highlights deveriam ser
+                                                    revisados para serem mais concisos e focados nas novas contribuições
+                                                    deste trabalho."
+                                                </div>
+
+                                                <div class="suggestion-box">
+                                                    <h4>Ações Necessárias:</h4>
+                                                    <ol>
+                                                        <li><strong>Reescrever highlights</strong> para enfatizar
+                                                            contribuições novas</li>
+                                                        <li><strong>Torná-los mais concisos</strong> e impactantes</li>
+                                                        <li><strong>Focar nos aspectos de análise comparativa</strong>
+                                                        </li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="comment-block">
+                                            <div class="comment-header">
+                                                Comentário 9: Problemas de Qualidade das Figuras
+                                                <span class="priority-tag medium-priority">PRIORIDADE MÉDIA</span>
+                                            </div>
+                                            <div class="comment-content">
+                                                <div class="original-comment">
+                                                    <strong>Comentário Original:</strong> "Muitas figuras não estão
+                                                    claras. As fontes em muitas das figuras são muito pequenas."
+                                                </div>
+
+                                                <div class="suggestion-box">
+                                                    <h4>Ações Necessárias:</h4>
+                                                    <ol>
+                                                        <li><strong>Recriar todas as figuras</strong> com fontes maiores
+                                                            e legíveis (mínimo 12pt)</li>
+                                                        <li><strong>Melhorar clareza visual</strong> e contraste</li>
+                                                        <li><strong>Usar padrões profissionais de figuras</strong> para
+                                                            publicação em revista</li>
+                                                        <li><strong>Garantir consistência</strong> na formatação das
+                                                            figuras</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="comment-block">
+                                            <div class="comment-header">
+                                                Comentário 10: Concisão do Artigo
+                                                <span class="priority-tag medium-priority">PRIORIDADE MÉDIA</span>
+                                            </div>
+                                            <div class="comment-content">
+                                                <div class="original-comment">
+                                                    <strong>Comentário Original:</strong> "O artigo não é conciso o
+                                                    suficiente. A Seção 3 pode ser encurtada."
+                                                </div>
+
+                                                <div class="suggestion-box">
+                                                    <h4>Ações Necessárias:</h4>
+                                                    <ol>
+                                                        <li><strong>Encurtar a Seção 3</strong> mantendo informações
+                                                            essenciais</li>
+                                                        <li><strong>Remover conteúdo redundante</strong> em todo o
+                                                            artigo</li>
+                                                        <li><strong>Melhorar concisão geral</strong> e legibilidade</li>
+                                                        <li><strong>Focar nos achados chave</strong> e eliminar detalhes
+                                                            desnecessários</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="section reviewer2">
+                                    <div class="section-header">
+                                        REVISOR #2 - Aprovação Direta
+                                    </div>
+                                    <div class="section-content">
+                                        <div class="original-comment">
+                                            <strong>Comentário Completo:</strong> "Esta edição do manuscrito pode ser
+                                            aceita."
+                                        </div>
+                                        <p><strong>Interpretação:</strong> O Revisor #2 aprova o manuscrito sem
+                                            modificações. Este é um feedback positivo, mas você ainda deve atender a
+                                            todas as preocupações do Revisor #1 para aprovação final.</p>
+                                    </div>
+                                </div>
+
+                                <div class="section">
+                                    <div class="section-header">
+                                        REVISION STRATEGY - 4-Week Timeline
+                                    </div>
+                                    <div class="section-content">
+
+                                        <div class="timeline">
+                                            <div class="timeline-item">
+                                                <div class="timeline-header">Week 1 (September 15-22): Mathematical
+                                                    Corrections and Literature Review</div>
+                                                <div class="timeline-content">
+                                                    <ol class="task-list">
+                                                        <li>Implement relative bandwidth formula: (f₂-f₁)/fc where
+                                                            fc=(f₂+f₁)/2</li>
+                                                        <li>Recalculate ALL comparisons between lattice geometries</li>
+                                                        <li>Conduct thorough literature review of Ref. [46] and related
+                                                            works</li>
+                                                        <li>Analyze implications of coupling between local resonance and
+                                                            Bragg scattering</li>
+                                                        <li>Prepare parametric study data (if time permits)</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+
+                                            <div class="timeline-item">
+                                                <div class="timeline-header">Week 2 (September 23-30): Content Rewriting
+                                                </div>
+                                                <div class="timeline-content">
+                                                    <ol class="task-list">
+                                                        <li>Rewrite introduction to resolve Bragg scattering
+                                                            contradiction</li>
+                                                        <li>Add comprehensive discussion of previous works (especially
+                                                            Ref. [46])</li>
+                                                        <li>Define all mathematical parameters clearly (mass ratio,
+                                                            normalization, etc.)</li>
+                                                        <li>Shorten Section 3 while maintaining essential content</li>
+                                                        <li>Update conclusions based on new calculations</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+
+                                            <div class="timeline-item">
+                                                <div class="timeline-header">Week 3 (October 1-8): Figures and Visual
+                                                    Elements</div>
+                                                <div class="timeline-content">
+                                                    <ol class="task-list">
+                                                        <li>Recreate ALL figures with proper font sizes (≥12pt)</li>
+                                                        <li>Update all graphs with corrected relative bandwidth
+                                                            calculations</li>
+                                                        <li>Improve visual clarity and professional appearance</li>
+                                                        <li>Ensure consistency in figure formatting</li>
+                                                        <li>Create additional figures if needed for clarity</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+
+                                            <div class="timeline-item">
+                                                <div class="timeline-header">Week 4 (October 9-15): Finalization and
+                                                    Submission</div>
+                                                <div class="timeline-content">
+                                                    <ol class="task-list">
+                                                        <li>Prepare detailed point-by-point response to each reviewer
+                                                            comment</li>
+                                                        <li>Mark ALL modifications in red throughout the manuscript</li>
+                                                        <li>Revise highlights to be more concise and focused</li>
+                                                        <li>Final proofreading and consistency check</li>
+                                                        <li>Submit revision well before the October 15th deadline</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="section">
+                                    <div class="section-header">
+                                        MATHEMATICAL IMPLEMENTATIONS
+                                    </div>
+                                    <div class="section-content">
+
+                                        <h3>1. Relative Bandwidth Calculation</h3>
+                                        <div class="code-block">
+                                            # Python implementation for relative bandwidth calculation
+                                            def calculate_relative_bandwidth(f1, f2):
+                                            """
+                                            Calculate relative bandwidth for fair comparison
+                                            f1: lower frequency bound (Hz)
+                                            f2: upper frequency bound (Hz)
+                                            """
+                                            fc = (f1 + f2) / 2 # center frequency
+                                            relative_bw = (f2 - f1) / fc # relative bandwidth
+                                            return relative_bw, fc
+
+                                            # Example usage with your data
+                                            # Triangular lattice
+                                            f1_tri, f2_tri = 140, 150 # Example values
+                                            rel_bw_tri, fc_tri = calculate_relative_bandwidth(f1_tri, f2_tri)
+
+                                            # Square lattice
+                                            f1_sq, f2_sq = 100, 108 # Example values
+                                            rel_bw_sq, fc_sq = calculate_relative_bandwidth(f1_sq, f2_sq)
+
+                                            print(f"Triangular: Relative BW = {rel_bw_tri:.4f} at fc = {fc_tri} Hz")
+                                            print(f"Square: Relative BW = {rel_bw_sq:.4f} at fc = {fc_sq} Hz")
+                                        </div>
+
+                                        <h3>2. Mass Ratio Definitions</h3>
+                                        <div class="formula-box">
+                                            <div class="formula">Mass Ratio = m<sub>resonator</sub> / m<sub>unit cell
+                                                    plate</sub></div>
+                                            <div class="formula">Normalized Mass Ratio = (Mass Ratio)<sub>geometry</sub>
+                                                / (Mass Ratio)<sub>kagome</sub></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="section">
+                                    <div class="section-header">
+                                        REVISION CHECKLIST
+                                    </div>
+                                    <div class="section-content">
+
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" id="progressBar"></div>
+                                        </div>
+                                        <p style="text-align: center; margin-top: 10px;">
+                                            <span id="progressText">0% Completed</span>
+                                        </p>
+
+                                        <div class="checklist">
+                                            <h3>High Priority Tasks (Must Complete):</h3>
+
+                                            <div class="checklist-item" onclick="toggleCheck(this)">
+                                                <input type="checkbox">
+                                                <span><strong>Implement relative bandwidth formula</strong> for all
+                                                    bandgap comparisons throughout the paper</span>
+                                            </div>
+
+                                            <div class="checklist-item" onclick="toggleCheck(this)">
+                                                <input type="checkbox">
+                                                <span><strong>Add comprehensive discussion</strong> of Ref. [46] and
+                                                    acknowledge existing findings</span>
+                                            </div>
+
+                                            <div class="checklist-item" onclick="toggleCheck(this)">
+                                                <input type="checkbox">
+                                                <span><strong>Resolve Bragg scattering contradiction</strong> in the
+                                                    introduction</span>
+                                            </div>
+
+                                            <div class="checklist-item" onclick="toggleCheck(this)">
+                                                <input type="checkbox">
+                                                <span><strong>Recalculate and update all conclusions</strong> based on
+                                                    proper comparison metrics</span>
+                                            </div>
+
+                                            <h3>Medium Priority Tasks:</h3>
+
+                                            <div class="checklist-item" onclick="toggleCheck(this)">
+                                                <input type="checkbox">
+                                                <span><strong>Define mathematical formulations</strong> for mass ratio
+                                                    and kagome normalization</span>
+                                            </div>
+
+                                            <div class="checklist-item" onclick="toggleCheck(this)">
+                                                <input type="checkbox">
+                                                <span><strong>Recreate all figures</strong> with larger fonts and
+                                                    improved clarity</span>
+                                            </div>
+
+                                            <div class="checklist-item" onclick="toggleCheck(this)">
+                                                <input type="checkbox">
+                                                <span><strong>Shorten Section 3</strong> while maintaining essential
+                                                    information</span>
+                                            </div>
+
+                                            <div class="checklist-item" onclick="toggleCheck(this)">
+                                                <input type="checkbox">
+                                                <span><strong>Add discussion</strong> about material limitations and
+                                                    future work</span>
+                                            </div>
+
+                                            <div class="checklist-item" onclick="toggleCheck(this)">
+                                                <input type="checkbox">
+                                                <span><strong>Revise highlights</strong> to be more concise and focused
+                                                    on novel contributions</span>
+                                            </div>
+
+                                            <h3>Final Steps:</h3>
+
+                                            <div class="checklist-item" onclick="toggleCheck(this)">
+                                                <input type="checkbox">
+                                                <span><strong>Prepare point-by-point response</strong> to each reviewer
+                                                    comment</span>
+                                            </div>
+
+                                            <div class="checklist-item" onclick="toggleCheck(this)">
+                                                <input type="checkbox">
+                                                <span><strong>Mark all modifications in red</strong> throughout the
+                                                    manuscript</span>
+                                            </div>
+
+                                            <div class="checklist-item" onclick="toggleCheck(this)">
+                                                <input type="checkbox">
+                                                <span><strong>Final proofreading</strong> and consistency check before
+                                                    submission</span>
+                                            </div>
+
+                                        </div>
+
+                                        <div style="text-align: center; margin-top: 30px;">
+                                            <button class="btn" onclick="resetProgress()">Reset Progress</button>
+                                            <button class="btn" onclick="downloadStrategy()">Print Strategy</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="section">
+                                    <div class="section-header">
+                                        IMPLEMENTATION NOTES
+                                    </div>
+                                    <div class="section-content">
+
+                                        <h3>For Mathematical Corrections:</h3>
+                                        <ul>
+                                            <li>Create a systematic approach to recalculate all bandgap comparisons</li>
+                                            <li>Use automated scripts to ensure consistency across all calculations</li>
+                                            <li>Document the new methodology clearly in the revised manuscript</li>
+                                        </ul>
+
+                                        <h3>For Literature Integration:</h3>
+                                        <ul>
+                                            <li>Read Ref. [46] thoroughly and understand the coupling mechanism
+                                                described</li>
+                                            <li>Position your work as a natural extension to multiple lattice geometries
+                                            </li>
+                                            <li>Acknowledge the foundation provide

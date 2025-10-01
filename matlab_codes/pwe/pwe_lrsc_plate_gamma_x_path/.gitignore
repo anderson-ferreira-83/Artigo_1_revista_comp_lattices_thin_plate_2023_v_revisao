@@ -1,0 +1,30 @@
+# PWE Gamma-X Path Database - Git Ignore Rules
+# This file excludes generated database files from version control
+
+# Database directory (generated data)
+../../2_database_gamma_x_path/
+
+# CSV data files (wherever they might be)
+*.csv
+
+# Compressed database files
+*.mat
+*.zip
+
+# Log files  
+0_log_*.txt
+log_*.txt
+
+# MATLAB temporary files
+*.asv
+*.m~
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Backup files
+*~
+*.bak
+*.tmp

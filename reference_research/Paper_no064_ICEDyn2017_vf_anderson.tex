@@ -1,0 +1,589 @@
+\documentclass[a4paper]{ICEDyn}
+
+\title{Semi-analytical formulation for sound transmission loss analysis through a thick plate with periodically attached spring-mass resonators}
+
+\author{Ferreira, A.H.R.$ ^{1} $, Dos Santos, J.M.C.$ ^{1} $, Miranda J\'{u}nior.$ ^{1} $, E.J.P.$ ^{1} $, Ramos, R.$ ^{2} $\space}
+
+\address{$ ^{1} $University of Campinas - UNICAMP-FEM-DMC, \space \\ Rua Mendeleyev, 200 Campinas - SP, 13083-860, Brazil. \hspace{1cm}\\ 
+$ ^{2} $University of S\~{a}o Paulo - USP-IF \space \\ R. do Mat\~{a}o, 1371 - Butant\~{a}, S\~{a}o Paulo - SP, 05508-090, Brazil. \hspace{1cm}\\
+	E-mail of the corresponding author: \href{mailto: a058899@dac.unicamp.br} anderson.ferreira.fem.unicamp@gmail.com \space }
+
+
+\abstract
+{This paper presents a new semi-analytical formulation based on the plane wave expansion (PWE) method and Reissner-Mindlin plate theory to calculate sound transmission loss in metamaterial plates. The metamaterial consists in an unbounded homogeneous thick plate with periodically attached multiple arrays of spring-mass resonators. Simulated examples are performed and results show that the metamaterial plate can increases sound transmission loss as compared to a bare plate (without resonators but with the same mass density) within the mass-law and coincidence frequency region. The sound transmission loss performance of the metamaterial thick plate is compared with the one of a metamaterial thin plate. The results demonstrated that a metamaterial thick plate can be applied as a potential sound insulation material with effective solution for high performance as compared with an equivalent bare plate.}
+
+\keywords{Sound insulation, Metamaterial plate,Transmission loss and PWE.}
+
+\begin{document}	
+	\maketitle
+	
+	\section{Introduction}
+	One of the most important problems in engineering noise and vibration control is the determination of the acoustic and vibration energy transmitted through structures. Elastic wave propagation in periodic systems has been studied a long time ago \cite{Brillouin53,Mead75}, and it is well known that such systems present an important feature of filtering waves. Thus, the elastic waves cannot propagate freely through periodic structures within some frequency ranges, which are called band gaps, forbidden bands or stop bands. This property became important for many engineering applications such as acoustics and mechanical filters, acoustic barriers, vibration isolators, etc. In the last decades, periodic composite materials known as phononic crystals, have received renewed attention because they exhibit complete elastic band gaps within which sound and structural waves are forbidden to propagate. These band gaps are based on the Bragg scattering mechanism \cite{Sigalas92}, whose frequency location is governed by the Bragg condition $d=n(\lambda/2), n=1,2,3,\ldots$, where $d$ is the lattice constant of periodic system, and $\lambda$ is the wavelength in host material. Bragg condition implies spatial modulation of the same order as the wavelength, which means difficulties to achieve low frequency band gaps for small size systems. More recently a resonance-type band gap was obtained in frequency bands two orders of magnitude lower than the Bragg limit. Proposed by Liu \textit{et al.} \cite{Liu2000}, it is a metamaterial containing a crystal or structure including attached periodic arrays of local resonators. The investigation of locally resonant metamaterials has been extended to a newly emerging field of acoustic metamaterials. Metamaterial plate including attached low-frequency resonators is a promising solution to obtain light weight acoustic filter. This subject have been one of the most studied in the last decade. Two different types of resonators have been used: one based on Bragg scattering mechanism and other in locally resonant effect.  Bragg type resonators uses cylindrical shape (pillar or stubs) that provides resonant frequencies fixed by the periodic distribution of the cylinders \cite{Pennec2008,Wu2006,Wu2010}. These systems works better to control structural wave propagation \cite{Oudich2010}. Acoustic waves propagation using metamaterial plate for noise reduction using local resonators was investigated theoretically by Xiao \textit{et al.}\cite{Xiao2012s}. A thin plate with attached spring-mass resonators is modeled using plane wave expansion (PWE) method \cite{Sigalas94} together with Kircchoff's thin plate theory, and an analytical model to calculate the STL is developed. Recently, Oudich \textit{at al.} \cite{Oudich2014} improved this approach to calculate the STL for thick and thin plates with spring-mass resonators using PWE method together with an elastic solid model. 
+In the present work, the STL of an unbounded homogeneous thick plate with periodically attached multiple arrays of spring-mass resonators is calculated using plane wave expansion (PWE) method together with Reissner-Mindlin's thick plate theory. The Bloch wave vectors are also calculate to quantify the attenuation performance of band gaps. Unlikely Kircchoff's thin plate, the Reissner-Mindlin's thick plate take into account shearing of cross sections and rotational inertia. Results indicate that the different plate theories as Kirchoff and Mindlin can produce quite distinct behaviour \cite{Norris}. An appropriate condition for the validity of the thin plate assumption is ($\lambda > 6h$), where $h$ is the plate thickness \cite{Cremer}. This is a general rule for the validity of pure bending wave motion, that is, the bending wavelength must be much larger than the thickness of plate. When flexural wavelengths become short with respect to the beam thickness ($\lambda = 6h$), other terms become important such as resistance to shear deformation and the rotatory mass inertia \cite{Hambric}. So the bending wave equation (thin plate) must be modified for thick plates to include terms that account for shear deformation and rotatory inertia. The bending wave effectively becomes a combination of pure bending waves and transverse shear waves. For very high frequencies, the shear resistance terms become dominant, so that the flexural wave equation simplifies to the shear wave equation \cite{Hambric}. Simulated examples are performed and results show that the metamaterial plate can increases sound transmission loss as compared to a bare plate (without resonators but with the same mass density) within the mass-law and coincidence frequency region. The influence of plate thickness on the width of complete frequency band gap is also evaluated and discussed. The sound transmission loss performance of the metamaterial thick plate is compared with the one of a metamaterial thin plate. The results demonstrated that a metamaterial thick plate can be applied as a potential sound insulation material with good performance as compared with an equivalent bare plate.  	
+	
+	\section{Model and formulations}
+	
+	\subsection{The Band Structure}
+	
+	Consider a infinitely homogeneous thick plate in the $x-y$ plane with periodically attached spring-mass resonators, as sketched in Figure \ref{fig:1}.	
+	%
+	\begin{figure}[!htb]
+		\includegraphics[width=.6\linewidth]{fig_1_1draw.eps}
+		\caption{Top of view schematic diagram of a {\bf LR} thick plate with a 2D periodic array of attached spring mass ressonators. Square lattice and the red area is the irreducible region of the Brillouin Zone. $\Gamma = (0,0)$, $X=(\pi/a,0)$ and $M=(\pi/a,\pi/a)$, are the higher symmetry points in the reciprocal space.}
+         \label{fig:1}
+	\end{figure}
+    
+	In Figure \ref{fig:1} each resonator is composed by a set of $N_o$ independent springs with elastic constants $k_j$ and masses $m_j$, which determine multiple resonant frequencies, $f_j = (1/2\pi)(k_j/m_j)^{1/2}$. Damping is included as a complex stiffness, $ k_{j}(1-i\eta_{j}) $, where $ \eta_{j} $ is the loss factor. These $N_o$ independent resonators are periodically attached in the direct lattice places indexed by:
+	
+	\begin{eqnarray}\label{dir_latt}
+	{\bf R} = n_1{\bf a_1}+n_2{\bf a_2}\nonumber
+	\end{eqnarray}
+	
+	where $n_1$ and $n_2$ are integers  and ${\bf a_1 }= (a,0), {\bf a_2}=(0,a)$ are basis vectors of the direct lattice. The linear system of $3+N_o$ differential equations governing out of plane harmonic vibration of a plate coupled to the lattice of resonators are obtained based on the classical theory of Reissner-Mindlin thick plate \cite{Szilard}. The governing equation for the time-harmonic vibration of the plate-resonator coupled system Figure~\ref{fig:1} can be written as:
+     	
+	\begin{equation}\label{eq:1}
+	\left \{
+	\begin{array}{r c l}
+	%psi_x
+	\frac{D}{2}\left[ (1-\nu)\nabla^2\psi_x({\bf r}) + (1+\nu)(\partial_x \partial_y\psi_y({\bf r})+\partial_x^2\psi_x({\bf r}))\right ]&+&\kappa_{1}^{2}Gh\left( \partial_x w({\bf r})-\psi_x({\bf r}) \right)-\rho\omega^2 I_p \psi_x({\bf r})
+	=  0 \\
+	%psi_y
+	\frac{D}{2}\left[(1-\nu) \nabla^2\psi_y({\bf r}) + (1+\nu)(\partial_x\partial_y \psi_x({\bf r}) + \partial_y^2\psi_y({\bf r}))\right ] &+&\kappa_{1}^{2}Gh\left(\partial_y w({\bf r})-\psi_y({\bf r}) \right)-\rho\omega^2 I_p \psi_y({\bf r}) = 0\\
+	%w
+	Gh\kappa_{1}^{2}\left [\nabla^2 w_1({\bf r}) + \partial_x\psi_x({\bf r}) +\partial_y\psi_y({\bf r}) \right ]-\omega^2\rho h  w({\bf r})& = & - \sum_{{R}}\sum_{j=1}^{N_o} f_{j}({ \bf R})\delta({ \bf r}-{ \bf R})\\
+	% Ressonator
+	-\omega^2 m_j w_j({\bf R}) &=& f_j({\bf R})
+	\end{array}
+	\right .
+	\end{equation}
+	
+	Where $w(\mathbf{r})$, $\psi_x(\mathbf{r})$ and $\psi_y(\mathbf{r})$ are the vertical displacement and angles of rotations at the mid-plane around $ x $ and $ y $ directions, respectively; $ D = Eh^3/12(1-\nu^2) $ represents the plate bending rigidity; $ h $ is the plate thickness; $ \omega $ is the angular frequency;  $I_{p} = h^3/12 $;  $ E $, $ G $, $ \kappa^2 $, $ \rho $ and $ \nu $	are Young's modulus of elasticity, shear modulus, shear correction factor, mass density and Poisson's ratio, respectively. $w_j(\mathbf{R})$ is the displacement of the $j-th$ independent resonator attached to the plate at $\mathbf{R}$ position. Damping is included as a complex Young's modulus, $ E(1+i\eta_p) $, where $ \eta_p $ is the material plate loss factor.\\ 
+	In the summation term of Eq.~(\ref{eq:1}), $f_j(\mathbf{R})$ is the resonator force applied to the plate located at $\mathbf{R} $, and $ \delta(\mathbf{r}-\mathbf{R}) $ is a 2D delta function defined by:
+	
+	\begin{equation} \label{eq:delta}
+	\delta \left( \mathbf{r}-\mathbf{R}\right)   = \delta \left(x-\mathbf{R}_x\right) \delta \left( y-\mathbf{R}_y \right) .	
+	\end{equation}   
+		
+	The total force intensity, $\sum_{j=1}^{N_o}f_{j}({\bf R})$, acting on the plate at each lattice position is described in terms of Hooke's law, Eq. (\ref{eq:2}):
+	
+	\begin{equation}\label{eq:2}
+	\sum_{j=1}^{N_o}f_{j}({\bf R}) = \sum_{j=1}^{N_o}k_{j}[w({\bf R})-w_j({\bf R})],
+    \end{equation}
+	
+    The analytical formulation here adopted follows closely the approach of Xiao {\it et al.} on Ref. \cite{Xiao2012s} to Kirchoff's model, however by adopting here the set of Reissner-Mindlin's equation, which includes the torsional degree of freedom of middle plane of the plate, then our modeled plate has an extra internal coupling which is absent in the Xiao's model.
+    The assumed periodicity of the system in the $x-y$ plane can be used to expand the displacement fields of the plate in Fourier series. In addition by imposing also the Bloch form to describe the propagating waves in the structure we write the following equations:
+	
+	\begin{eqnarray}
+	\psi_x({\bf r}) &=& \sum_{{\bf G}}\Psi_{{ x,{\bf G}}}e^{-i({\bf k}+{\bf G} )\cdot{\bf r}},\label{eq:3}\\
+	%
+	\psi_y({\bf r}) &=& \sum_{{\bf G}}\Psi_{{ y,{\bf G}}}e^{-i({\bf k}+{\bf G} ) \cdot{\bf r}}\label{eq:4},\\
+	%
+	w({\bf r}) &=& \sum_{{\bf G}}W_{{\bf G}}e^{-i\left( {\bf k}+{\bf G}\right) \cdot{\bf r}}\label{eq:5},
+	\end{eqnarray}
+	
+	where ${\bf k} = (k_x,k_y)$ is Bloch wave vector (wave number), and ${\bf G}=(G_x,G_y)$ run over the set of $N$ reciprocal-lattice vector used in the Fourier expansion given by:
+	
+	\begin{equation}\label{eqG}
+	{\bf G} = n_1{\bf b_1}+n_2{\bf b_2},
+	\end{equation}
+	
+	where $n_1$,$n_2$ are integers varying in $\{-n,-n+1,...-1,0,1,...,n\}$ (where n is an positive integer). Therefore $N=(2n+1)^2$ plane waves are used in the Fourier expansion of plate displacements. The reciprocal-lattice basis vectors are ${\bf b_1}=(b_{11},b_{12})$ and ${\bf b_2}=(b_{21},b_{22})$ are defined as ${\bf a}_p\cdot {\bf b}_q = 2\pi\delta_{pq} {\ \ \ } (p,q = 1,2)$. Hence to the square lattice of primitive vectors $a_1= (a,0)$ and $a_2=(0,a)$ considered the derived reciprocal-lattice primitive vectors became ${\bf b_1} = (2\pi/a,0)$, and ${\bf b_2} = (0, 2\pi/a)$. \\	
+	The oscillators displacements are treated in the Fourier space with only ${\bf G}={\bf 0}$, in the Bloch form $w_j({\bf R}) =  W_{{\bf j}}e^{-i {\bf k} \cdot{\bf R}}$. The periodic expansion with the Bloch condition above mentioned to $w({\bf r})$ also imposes the condition:
+	
+	\begin{equation}\label{eq:7}
+	w({\bf r}+{\bf R}) = w({\bf r})e^{-i{\bf k}\cdot{\bf R}},
+	\end{equation}
+
+which in particular gives: $w({\bf R})= e^{-i{\bf k }\cdot {\bf R}}\sum_{\bf G} W_{\bf G}$. Hence, by employing the above conditions and the Fourier expansion to the delta function\footnote{$\sum_{{\bf R}}\delta({\bf r}-{\bf R})=\sum_{{\bf G}}\frac{1}{S}e^{-i{\bf G}\cdot{\bf r}}$, in which $S$ is the area of the unit cell associated with the periodic lattice: $S = \left| {\bf a_{1} \times \bf a_{2}}\right|$}, the sum of forces on the plate, seen in the Eq(\ref{eq:1}), can be rewritten as:
+	
+	\begin{eqnarray}
+	\sum_{{R}}\sum_{j=1}^{N_o}f_{j}({\bf R})\delta({\bf r}-{\bf R}) &=& \sum_{j=1}^{N_o}k_j (\sum_{\bf G} W_{\bf G} - W_{\bf j})e^{-i{\bf k} \cdot {\bf r}}\sum_{R}\delta({\bf r}-{\bf R})\nonumber\\
+	&=&
+\sum_{j=1}^{N_o}k_j (\sum_{\bf G} W_{\bf G} - W_{\bf j})\frac{1}{S}\sum_{{\bf G}}e^{-i\left({\bf k} + {\bf G} \right)\cdot{\bf r}}\label{eq:8}
+	\end{eqnarray}
+	
+	Finally, substituting Eqs. (\ref{eq:3}),(\ref{eq:4}),(\ref{eq:5}), (\ref{eq:7}) and (\ref{eq:8}) into Eq. (\ref{eq:1}) gives to each Fourier component of displacement responses the following set of linear equations in therms of each vector $G$ used in the Fourier expansion and to each ${\bf k}$ wave vector considered in the reciprocal space:
+	
+	\begin{eqnarray}
+	%em psi_x
+	\rho I_p \omega^2\Psi_{x,{\bf G}}&=&  \frac{D}{2}\left\{(1-\nu)[(k_x+G_x)^2 + (k_y+G_y)^2] \Psi_{x,{\bf G}} + (1+\nu)[(k_x+G_x)(k_y+G_y) \Psi_{y,{\bf G}}+(k_x+G_x)^2\Psi_{x,{\bf G}}]\right\}
+	\nonumber \\
+	&&+\kappa_{1}^{2}Gh\left[ i(k_x + G_x)W_{{\bf G}}+\Psi_{x,{\bf G}} \right]\label{eq:9}\\ 
+	%em psi_y
+	\rho I_p\omega^2\Psi_{y,{\bf G}}&=& \frac{D}{2}\left\{ (1-\nu)[(k_x+G_x)^2+(k_y+G_y)^2]\Psi_{y,{\bf G}} + (1+\nu)[(k_x+G_x)(k_y+G_y) \Psi_{x,{\bf G}} + (k_y+G_y)^2\Psi_{y,{\bf G}}]\right\}\nonumber\\
+	&&+\kappa_{1}^{2}Gh\left[i(k_y+G_y) W_{{\bf G}}+\Psi_{y,{\bf G}} \right]
+	\label{eq:10}\\
+	%em w
+	\rho h\omega^2W_{{\bf G}}&=&Gh\kappa_{1}^{2}\left\{[(k_x + G_x)^2+(k_y + G_y)^2]W_{{\bf G}} - i[(k_x + G_x)\Psi_{x,{\bf G}} + (k_y + G_y)\Psi_{y,{\bf G}}] \right\}\nonumber \\
+	&&- \sum_{j=1}^{N_o}\frac{k_j}{S} \sum_{{ {\bf G}}} {W_{\bf G}} + \sum_{j=1}^{N_o}\frac{k_j}{S}{ W_{{\bf j}}}\label{eq:11}\\
+    -\omega^2 m_j { W}_{\bf j} &=& k_j\sum_{{{\bf G}}} {W_{\bf G}} - k_j{W_{{\bf j}}}
+	\end{eqnarray}
+	
+	these equations can be expressed in the matrix form: 
+	
+	\begin{eqnarray}
+	\left (
+	\begin{array}{l l l l}
+	{[{\bf S}]_{11} }_{N\times N}&
+	{[{\bf S}]_{12} }_{N\times N} &
+	{[{\bf S}]_{13} }_{N\times N} &
+	[{\bf 0}]_{N \times N_o} \\
+	{[{\bf S}]_{21} }_{N\times N} &
+	{[{\bf S}]_{22} }_{N\times N} &
+	{[{\bf S}]_{23} }_{N\times N} &
+	[{\bf 0}]_{N \times N_o} \\
+	{[{\bf S}]_{31} }_{N\times N} &
+	{[{\bf S}]_{32} }_{N\times N} & 
+      {[{\bf S}]_{33} }_{N\times N} + S^{-1}[{\bf K_r}]_{N\times N} &
+	S^{-1}{[{\bf K_r}']}_{N\times N_o}\\
+	\ [{\bf 0}]_{N_o \times N} &
+	\ [{\bf 0}]_{N_o \times N} &
+	-[{{\bf K_r}'}^T]_{N_o\times N} &
+	[{\bf k_d}]_{N_o\times N_o}
+	\end{array}
+	\right ) \cdot
+	\left(
+	\begin{array}{c}
+	\Psi_{x,{\bf G}}\\
+	\Psi_{y,{\bf G}}\\
+	W_{{\bf G}}\\
+	W_{{\bf j}}
+	\end{array}
+	\right) \nonumber\\
+	= \omega^2 \left(
+	\begin{array}{r r r r}
+	\rho I_p [{\bf I}]_{N\times N}&
+	\ [{\bf 0}]_{N \times N}& 
+	\ [{\bf 0}]_{N \times N}&
+	\ [{\bf 0}]_{N \times N_o}\\
+	\ [{\bf 0}]_{N \times N}& 
+ 	\rho I_p [{\bf I}]_{N\times N} & 
+	\ [{\bf 0}]_{N \times N}&
+	\ [{\bf 0}]_{N \times N_o}\\
+	\ [{\bf 0}]_{N \times N} &  
+	\ [{\bf 0}]_{N \times N} &
+ 	\rho h[{\bf I}]_{N\times N}& 
+	\ [{\bf 0}]_{N \times N_o}\\
+	\ [{\bf 0}]_{N_o \times N}&
+	\ [{\bf 0}]_{N_o \times N}&
+	\ [{\bf 0}]_{N_o \times N}&
+	[{\bf m_d}]_{N_o \times N_o}
+	\end{array}
+	\right ) \cdot
+	\left(
+	\begin{array}{c}
+	\Psi_{x,{\bf G}}\\
+	\Psi_{y,{\bf G}}\\
+	W_{{\bf G}}\\
+	W_{{\bf j}}
+	\end{array}
+	\right)\label{eq:12}
+	\end{eqnarray}
+	
+	Where $[{\bf I}]$ are identity matrices, and we define the ${N_o \times N_o}$ diagonal matrices $[{\bf k_d}]_{ij} =  \delta_{ij} k_j$, and $[{\bf m_d}]_{ij} = \delta_{ij}m_j$. The suitable outer products:
+    
+\begin{eqnarray}
+ [{\bf K_r}]_{N\times N} &=& \sum_{j=1}^{N_o}k_j[{\bf PP}^T],\label{Kr}\\
+\ [{\bf K_r'}]_{N \times N_o} &=& [{\bf P}{\bf k}^T].
+\end{eqnarray}
+
+are defined in terms of these column vectors: ${\bf P}^T =\left (\begin{array}{c c c c c}1& 1& 1& ... &1\end{array}\right )_{1 \times N}$ and ${\bf k }^T =\left (\begin{array}{c c c c c c}k_1 & k_2 & k_3&...&k_{N_o}\end{array}\right )_{1\times N_o}$,
+
+The $N \times N$ Stiffness matrix blocks\footnote{The obtained Stiffness block matrices are diagonal with respect to the G vectors, $S_{ij}(G',G)=S_{ij}(G,G)\delta_{G,G'}$.}, $S_{ij}(G,G)$, related only to the plate distortions are given by the diagonal blocks writen to each G vector used in the Fourier expansion:
+
+	\begin{eqnarray}
+	S_{11}(G,G) &=&  \frac{D}{2}(1-\nu)[(k_x+G_x)^2 + (k_y+G_y)^2]+\frac{D}{2}(1-\nu^2)(k_x + G_x)^2+ \kappa_{1}^{2}Gh\nonumber\\
+	S_{22}(G,G) &=&  \frac{D}{2}(1-\nu)[(k_x+G_x)^2 + (k_y+G_y)^2]+\frac{D}{2}(1-\nu^2)(k_y + G_y)^2+ \kappa_{1}^{2}Gh\nonumber\\
+	S_{33}(G,G) &=& \kappa_{1}^{2}Gh[(k_x + G_x)^2+(k_y + G_y)^2]\nonumber 
+	\end{eqnarray}
+
+and, finally, the off-diagonal terms which couples the torsional and vertical displacement responses are given by the following equation also to each G vector:
+\begin{eqnarray}
+    S_{12}(G,G) &=& \frac{D}{2}(1-\nu^2)(k_x+G_x)(k_y+G_y) \nonumber \\
+	S_{21}(G,G) &=&  \frac{D}{2}(1-\nu^2)(k_x+G_x)(k_y+G_y) \nonumber\\ 
+	S_{13}(G,G) &=& i\kappa_{1}^{2}Gh(k_y + G_y)\nonumber\\ 
+	S_{31}(G,G) &=&  - i\kappa_{1}^{2}Gh(k_x + G_x)\nonumber \\
+	S_{23}(G,G) &=& i\kappa_{1}^{2}Gh(k_x + G_x)\nonumber\\ 
+	S_{32}(G,G) &=& - i\kappa_{1}^{2}Gh(k_y + G_y)\nonumber 
+	\end{eqnarray}
+   
+	The Eq (\ref{eq:12}) represents a usual eigenvalue problem for $\omega^2$ after a left multiplication of the inverse of inertial matrix, seen at the right hand side of the equation. It can be solved to each Bloch vector ${\bf k}$ in the irreducible region of the first Brillouin Zone, resulting in  $3N + N_o$ eigenvalues, $\omega^2$, wich are used to represent the dispersion relation related to the band structure (BS), $\omega(k)$. The absence of a range of eigenvalues, $\omega(k)$, to the swept range of ${\bf k}$ wave-vectors of propagating waves, are seen as band gaps in the BS.
+	 
+	\subsection{Modeling the Sound Transmission Loss - STL}
+
+To model the sound transmission of a plate submitted to an incident oblique plane sound wave we start from defining the pressure field of incident longitudinal wave, $p_{i}$, which varies harmonically in time upon the plate with elevation angle $\theta$ and azimuth angle $\varphi$ as presented in the Figure \ref{incid}.
+	%
+	\begin{figure}
+		\begin{minipage} {.50\linewidth}
+		\centering 
+		\includegraphics[width=0.9\linewidth]{fig_2_1draw.eps}
+		{(\textit{a})}%\label{figura12}
+		\end{minipage}\hfill
+	\begin{minipage}{.50\linewidth}
+		\centering
+		\includegraphics[width=1.0\linewidth]{fig_2_2draw.eps}
+		{(\textit{b})} %\label{figura13}
+	\end{minipage}\hfill
+		\caption{Acoustic metamaterial thick plate scheme: (\textit{a}) 3D air borne sound incident wave pressure with the wave vector $ \mathbf{k}_{0} $; (\textit{b}) Metamaterial unit cell with parameters involved.}
+		\label{incid}
+	\end{figure}
+	%
+	The amplitude of the incident wave is $P_0$, and the associated sound wave number vector ${\bf k}_0$ can be decomposed in its  components $k_{x}$, $k_{y}$ and $k_{z}$ are expressed by its spherical decomposition in terms of inclination and azimuth angles, as depicted in the Figure \ref{incid} (a):    
+	\begin{eqnarray}
+	k_{x} &=& k_{0}\sin(\theta)\cos(\varphi)\nonumber \\
+	k_{y} &=& k_{0}\sin(\theta)\sin(\varphi) \nonumber\\ 
+	k_{z} &=& k_{0}\cos(\theta) \nonumber
+	\end{eqnarray}	
+	%
+	where $k_{0} = \omega/c_{0}$ is the intensity of incident wave vector with a given frequency $\omega$ and phase-velocity $c_{0}$ (the sound speed in air). Then, the incident sound pressure can be represented by: 
+	\begin{equation}\label{eq:13}
+	p_{i}(x,y,z,t) =p_{i}(x,y,z)e^{i\omega t}= P_{0}e^{-i(k_{x}x + k_{y}y + k_{z}z)}e^{i\omega t}\label{pi} .
+	\end{equation}
+    
+	The plate vibrating harmonically creates different types of reflected and transmitted sound waves in opposite sides, as sketched in Figure \ref{fig:3}: 
+	\begin{figure}
+		\begin{minipage} {.50\linewidth}
+		\centering 
+		\includegraphics[width=1.0\linewidth]{fig_3_2draw.eps}
+		{(\textit{a})}%\label{figura12}
+		\end{minipage}\hfill
+		\begin{minipage}{.50\linewidth}
+		\centering
+		\includegraphics[width=1.0\linewidth]{fig_3_1draw.eps}
+		{(\textit{b})} %\label{figura13}
+		\end{minipage}\hfill
+		\caption{Infinite thick plate undergoing (\textit{a}) bending waves and (\textit{b}) shear waves motion at high frequency.}
+		\label{fig:3}
+	\end{figure}
+    
+The plate vibration upon different frequencies present two distinct structural regimes, going from a dominant bending deformation regime to lower driven frequencies to a dominant shear deformation regime to higher driven frequencies \cite{Hambric}. Therefore, since the Mindlin formulation describes the internal torsion dynamics, even the formulation to a thin plate are expected to retain in first order this different dynamic regimes of distortions (bending-dominant versus shear-dominant deformations). Thus, the acoustic responses of the plate in the Mindlin description are expected to differ from those obtained by Kirchoff's model which incorporates only the transverse field of displacement, $w({\bf r})$.
+Therefore, the previous governing equations for the plate vibration, Eq. (\ref{eq:1}), based in  Mindlin's formulation were modified to insert the coupling with sound pressure waves. We insert this by modifying only the equation to the field $w({\bf r})$ related to the transverse movement of the plate, as shown in Eq.(\ref{w+p}), in the same way implemented by Xiao {\it et al.} to Kirchoff's model \cite{Xiao2012s}. 
+	
+	\begin{eqnarray}
+	Gh\kappa_{1}^{2}\left [\nabla^2 w_1({\bf r}) - \partial_x\psi_x({\bf r}) -\partial_y\psi_y({\bf r}) \right ]-\omega^2\rho h  w({\bf r}) &=&\nonumber\\ 
+    =p_{i}({\bf r},z,t)+ p_{r}({\bf r},z,t)-p_{t}({\bf r},z,t) - \sum_{{\bf R}}\sum_{j=1}^{N_o}f_{j}({\bf R})\delta({ \bf r}-{ \bf R}) \label{w+p}
+	\end{eqnarray}
+	
+	The reflected and transmitted propagating sound pressures can be expressed by its Fourier series with the Bloch form in terms of ${\bf k}$-space vectors and the ${ \bf G}$ vectors in the reciprocal space:
+	
+	\begin{eqnarray}
+	%\label{eq:}
+	p_{r}({\bf r},z) &=& \sum_{{\bf G}}P_{r,{\bf G}}e^{-i\left( {\bf k}+{\bf G}\right)\cdot{\bf r}}e^{+ik_{z,{\bf G}}z}\label{pr}\\
+%	
+	p_{t}({\bf r},z) &=& \sum_{{\bf G}}P_{t,{\bf G}}e^{-i\left( {\bf k}+{\bf G}\right)\cdot{\bf r}}e^{-ik_{z,{\bf G}}z} \label{pt}
+	\end{eqnarray}
+	
+	where:	
+	
+	\begin{equation}
+	%\label{eq:}
+	k_{z,{\bf G}} =
+	\left\lbrace
+	\begin{array}{c l}
+	\sqrt{k_{0}^2-\left|{\bf k}+{\bf G}\right|^{2}};&  k_{0}^2\ge\left|{\bf k}+{\bf G}\right|^{2} \\
+	-i\sqrt{\left|{\bf k}+{\bf G}\right|^{2}-k_{0}^2};& k_{0}^2 < \left|{\bf k}+{\bf G}\right|^{2}
+	\end{array}
+	\right .
+	\end{equation}
+	
+	An additional change in the previous governing equations of motion of $w({\bf r})$ were adopted. The  harmonic vibration of the resonators and the effective coupling with the plate is suitably changed to describe the force intensity $f_j({\bf R})$ between the plate and oscillators in terms only of the plate displacement at {\bf R}, $w({\bf R})$, and also incorporates a damping factor to the oscillator vibration and its forced response by the action of a external driven force with the frequency $\omega$ of the incident wave: 
+	
+	\begin{equation}\label{fj_new}
+	f_{j}({\bf R}) = D_{j}w({\bf R}),
+	\end{equation}
+	
+	where $D_j$ the dynamic stiffness of the $j$th resonator, and $ \omega_{j} = \sqrt{\frac{k_{j}}{m_{j}}} = 2\pi f_{j} $ represents the resonance frequency of the resonator, as presented in the Eq. (\ref{Dj_new}). 
+	
+	\begin{equation}\label{Dj_new}
+	D_{j} = \displaystyle \frac{\omega^2} {\omega^2-1}(1+i\eta_{j})m_j\omega^2_j
+	\end{equation}
+	
+	The pressure terms in Eq. (\ref{w+p}) is set into the PWE perspective employing the coupling conditions in the air-plate interfaces by continuity conditions of plate transverse acceleration related to the $w({\bf r})$ and the gradient of the pressure expressed by:
+	
+	% Condicoes de continuidade
+	\begin{equation}
+    \left \{
+	\begin{array}{r c l}
+	\frac{\partial}{\partial z}\left[ p_{i}({\bf r},z)+ p_{r}({\bf r},z)\right]\Bigg|_{z=0} &=& \rho_{0}\omega^{2}w({\bf r})\\
+%
+\frac{\partial}{\partial z}p_{t}({\bf r},z) \Bigg|_{z=0} &=& \rho_{0}\omega^{2}w({\bf r})
+	\end{array}
+    \right .
+	\end{equation}
+    
+Therefore, substituting the definitions of Eqs.(\ref{pi}), (\ref{pr}) and (\ref{pt}), the Fourier expansion to $w({\bf r})$ and the orthogonality conditions to all Fourier components, the continuity relations implies in the following coupling conditions with the plate displacement coefficients and sound pressures\footnote{Where $\delta_{\bf{G},\bf{0}} = 
+	\left\lbrace
+	\begin{array}{c l}
+	1,\quad  {\bf G = 0}    &\\
+	0,\quad  {\bf G \neq 0} &
+	\end{array}
+	\right .
+	$ denotes the absence of fluid loading in the x-y direction to oblique incident sound pressures}:
+
+	\begin{equation}\label{coupwithp}
+    \left \{
+	\begin{array}{rcl}
+    P_{r,{\bf G}} &=& P_{0}\delta_{{\bf G},{\bf 0}}-\frac{i\rho_{0}\omega^{2}}{k_{z,{\bf G}}}W_{{\bf G}}\label{f_Pr}\\
+	P_{t,{\bf G}} &=&{\frac{i\rho_{0}\omega^{2}}{k_{z,{\bf G}}}W_{{\bf G}}}\label{f_Pt}
+    \end{array}
+    \right .
+	\end{equation}
+	
+	Inserting Eqs.(\ref{f_Pr}), (\ref{fj_new}) into Eq(\ref{w+p}), the equation to the Fourier components of the plate displacement became:
+	
+	\begin{eqnarray}
+	\label{stl_w}
+	Gh\kappa_{1}^{2}\left\{[(k_x + G_x)^2+(k_y + G_y)^2]W_{G} - i[(k_x + G_x)\Psi_{x,G} + (k_y + G_y)\Psi_{y,G}] \right\}-\rho h\omega^2W_{G}
+    \nonumber \\
+ +i\omega \frac{2\rho_0\omega}{k_{z,{\bf G}}}W_{G} + \sum_{j=1}^{N_o}\frac{D_j}{S} \sum_{{ G}} {W_G}  = 2P_0 \delta_{{\bf G},{\bf 0}} 
+	\end{eqnarray}
+
+This equation together with the previously obtained Eqs.(\ref{eq:9}) and (\ref{eq:10}), placed in its homogeneous formulation, defines a linear $3N\times 3N$ system of equations which can be expressed the matrix form:
+	
+    \begin{eqnarray}
+	\left [
+    \left (
+	\begin{array}{l l l l}
+	{[{\bf S}]_{11} }_{N\times N}&
+	{[{\bf S}]_{12} }_{N\times N} &
+	{[{\bf S}]_{13} }_{N\times N}\\
+	{[{\bf S}]_{21} }_{N\times N} &
+	{[{\bf S}]_{22} }_{N\times N} &
+	{[{\bf S}]_{23} }_{N\times N} \\	
+    {[{\bf S}]_{31} }_{N\times N} &
+	{[{\bf S}]_{32} }_{N\times N} & 
+    {[{\bf S}]_{33} }_{N\times N} 
+      + S^{-1}[{\bf D}]_{N\times N} 
+      + i\omega[{\bf C}_f]_{N\times N}	
+    \end{array}
+	\right )\right .\nonumber\\
+	\left .
+	- \omega^2 \left(
+	\begin{array}{r r r r}
+	\rho I_p [{\bf I}]_{N\times N}&
+	\ [{\bf 0}]_{N \times N}& 
+	\ [{\bf 0}]_{N \times N}\\
+	\ [{\bf 0}]_{N \times N}& 
+ 	\rho I_p [{\bf I}]_{N\times N} & 
+	\ [{\bf 0}]_{N \times N}\\
+	\ [{\bf 0}]_{N \times N} &  
+	\ [{\bf 0}]_{N \times N} &
+ 	\rho h[{\bf I}]_{N\times N}
+	\end{array}
+	\right )
+	\right ] \cdot
+%
+    \left(
+	\begin{array}{c}
+	\Psi_{x,G}\\
+	\Psi_{y,G}\\
+	W_{G}\\
+	\end{array}
+	\right)
+    = 2P_0 \left(
+	\begin{array}{c}
+	{\bf 0}\\
+	{\bf 0}\\
+	 \delta_{\bf G,0}\\
+	\end{array}
+	\right)\label{matr_stl}
+	\end{eqnarray}
+
+where $[{\bf C}_f]= (2\rho_0\omega k_{z,{\bf G}}^{-1}) {\bf I}_{N\times N}$, is the fluid loading matrix which came from the plate-sound pressure coupling introduced  by the continuity relation dependent on $W_{\bf G}$ in Eq. (\ref{coupwithp}). $[{\bf D}]$ is dynamic stiffness matrix of the resonators defined as $[{\bf K}_r]$ in the equation (\ref{Kr}), but now summing the formula to dynamic stiffness of resonators, $D_j$, shown in the Eq. (\ref{Dj_new}). A further compact formulation the previous matrix equation, closely similar to  \cite{Xiao2012s} however with a different plate stiffness matrix as shown, can be stated as: 
+
+	\begin{equation}
+	\label{m_stl_w}
+	([{\bf S}]_{3N \times 3N}- \omega^2[{\bf M}]_{3N \times 3N}
+    +i\omega[{\bf C}_f]_{3N \times 3N}+[{\bf D}]_{3N \times 3N})\cdot[ (\Psi; W)_G]_{3N \times 1} 
+    =2P_0 [\delta(W_{\bf G,0})]_{3N \times 1} 
+	\end{equation}
+    	
+in which $[{\bf S}]$ and $[{\bf M}]$ are plate stiffness and inertial matrices previously defined, and the $[{\bf C}_f]$ and $[{\bf D}]$ are redefined to have $3N \times 3N$ components with only non-zero terms at the correspondent index to the block ${\bf S}_{33}$ terms on the stiffness matrix which acts upon $W_{\bf G}$ terms. It should be noticed that differently from the previous Eq.(\ref{eq:1}) the plate-resonator coupling Eq.(\ref{fj_new}) here assumed removes the resonator displacements coefficients, $W_{\bf j}$, from the governing equation, which are effectively inserted on the $[{\bf D}]$ acting upon the $W_{\bf G}$ components.
+
+    \vspace{0.5cm}    
+    The Eq.(\ref{matr_stl}), or equivalently Eq.(\ref{m_stl_w}), provides the calculation of Fourier coefficients of plate displacement fields for the plate movement coupled to the resonator array after a straightforward computational inversion of the total matrix on the left hand side, and its multiplication to the line vector given by the delta vector, $[\delta(W_{\bf G,0})]$, on the right hand side  times the scalar factor $2P_0$. It should be pointed out that differently from the BS calculation presented in the previous section here the frequency $\omega$ and the wave vectors {\bf k} are determined {\it a priori} by the assumption on the incident wave (frequency, and incident angles) defined firstly in this section.
+    
+    \vspace{0.5cm}
+Only those components of transmitted pressure with real wavenumber in the $z$ direction can radiate energy, and therefore the total transmitted sound power can be obtained by the sum over the power transmitted on each of such components \cite{Xiao2012s}. Thus, the oblique sound power transmission coefficient at a given elevation and azimuth angles to the incident wave is defined by:
+	
+	\begin{equation}
+	%\label{eq:26}
+	\tau_{p}(\theta,\varphi) = \frac{\sum_{{\bf G}} \left|P_{t,{\bf G}}\right|^2 {\bf Re}(k_{z,{\bf G}})}{\left|P_{0} \right|^2 k_{z} }
+	\end{equation}
+
+where $P_{t,{\bf G}}$ is the second continuity condition given in the Eq. (\ref{coupwithp}) which therefore is obtained directly from the $W_{\bf G}$ Fourier components of obtained solution of the Eq. (\ref{matr_stl}). Then the oblique,  Sound Transmission Loss - STL - are defined in any case by the Eq. (\ref{stl_def}) to the given $\tau$ coefficient \cite{Xiao2012s}.
+	
+	\begin{equation}
+	\label{stl_def}
+	STL = 10\log_{10}\left(\frac{1}{\tau}\right)
+	\end{equation}
+    	
+	\section{Results and Discussion}
+%\subsection{Structure Band}
+
+In this section, it is presented some simulated examples of wave band gaps and oblique STL performance calculated with metamaterial thick plate (Reissner-Mindlin theory). Results are also compared with the ones obtained by a bare plate (a plate without resonators but with the same mass density) and a metamaterial thin plate (Kirchhoff-Love theory). The plate example used to verify the proposed approach is the same presented by Xiao, \textit{at al.} \cite{Xiao2012s} except for the fact that for this simulation, a thickness of the plate is $h = 0.01$ m. In this example it was consider: only a single array of resonators ($ N=1 $ and $ \mathbf{r}_1=0 $) attached in a square unit-cell with a lattice constant ($ a= $0.035 m), much smaller than the flexural wave length of the host plate; the natural frequency of the resonator is tuned to the mass-law region; and the geometric parameters and material properties of metamaterial plates are listed in Table \ref{tab1}: 
+\begin{table}
+	\centering
+	\caption{Metamaterial plate geometric parameters and material properties.}
+	\begin{tabular}{llr}
+		\hline
+		Parameters\hspace{50 mm}   	 				& Values  			 \\
+		\hline
+		Mass density ($\rho$)     					& $2700$ kg/m$^3$      \\
+		Young's modulus ($E$)        				& $70$ GPa      	 \\
+		Structural loss factor ($\eta_p$)     		& $0.005$            \\
+		Poisson's ratio ($\nu$)       				& $0.33$          	 \\
+		Plate thickness ($h$) 						& $0.01$ m          \\
+		Lattice parameter ($a$) 					& $0.035$ m          \\
+		Resonator to plate mass ratio ($ \gamma $) 	& $0.2$            	 \\
+		Resonator loss factor ($ \eta_r $)  		& $0.005$            \\
+		Resonator natural frequency ($ f_r $) 		& $300$ Hz           \\
+		\hline
+	\end{tabular}
+	\label{tab1}
+\end{table}
+ \\
+%
+Air properties are $ \rho = $ 1.2 kg/m$^3$ and $ c_0 = $ 340 m/s. The Figure \ref{disp1} shows the dispersion diagrams comparison of bare plate and metamaterial plate calculated by PWE with Kirchhoff-Love (K-L) theory \cite{Xiao2012f} and the corresponding bare plate and metamaterial plate calculated by PWE with Reissner-Mindlin (R-M) theory Eq. (\ref{dir_latt}): As expected for both plates as the frequency range increases metamaterial thick and thin plates starts to diverge. It comes from the R-M's thick plate theory take into account shearing of cross sections and rotational inertia not included in K-L's theory. At high frequencies, the shear resistance terms become dominant, so that the flexural wave equation simplifies to the shear wave equation. Figure \ref{disp1} b) shows the local resonator band gap at the frequency $ f_r = $ 300 Hz.
+\begin{figure}
+	\begin{minipage} {.50\linewidth}
+		\centering 
+		\includegraphics[width=.9\linewidth]{fig1_disp_thick_z.eps}
+		{(\textit{a})}%\label{figura12}
+	\end{minipage}\hfill
+	\begin{minipage}{.50\linewidth}
+		\centering
+		\includegraphics[width=.9\linewidth]{fig1_disp_thick_fr_1_z.eps}
+		{(\textit{b})} %\label{figura13}
+	\end{minipage}\hfill
+	\caption{Dispersion diagram comparison of (a) bare plates and (b) metamaterial plates using PWE with Kirchhoff-Love (K-L) and Reissner-Mindlin (R-M) theories.}
+	\label{disp1}
+\end{figure}
+
+The Figure \ref{disp2} shows the oblique STL of a bare plate and metamaterial plate calculated by both methods PWE with K-L and M-R, for an incident acoustic pressure with $\phi = $0 and $ \theta = $0 (normal incidence). 
+\begin{figure}
+	\begin{minipage} {.50\linewidth}
+		\centering 
+		\includegraphics[width=.9\linewidth]{fig_stl_bare.eps}
+		{(\textit{a})}%\label{figura12}
+	\end{minipage}\hfill
+	\begin{minipage}{.50\linewidth}
+		\centering		\includegraphics[width=.9\linewidth]{fig_stl_fr_bare.eps}
+		{(\textit{b})} %\label{figura13}
+	\end{minipage}\hfill
+	\caption{Oblique STL for normal incidence ($\phi = 0, \theta = 0$) comparison of (a) bare plates and (b) metamaterial plates using PWE with Kirchhoff-Love (K-L) and Reissner-Mindlin (R-M) theories.}
+	\label{disp2}
+\end{figure}
+\\
+For both plates the results show a very good agreement between the methods. Apparently this sounds as an inconsistent results, since the STL were calculated using PWE with different plate theories (K-L and M-R). However, in PWE the waves are expanded as plane waves and at the normal incidence terms relate to stiffness tends to zero while terms related to mass becomes high in Eq.(\ref{stl_w}), the problem becomes mass dependent, then the differences in plate formulations (K-L and R-M) disappear and the results match each other.
+\newpage
+
+%\begin{figure}
+%	\begin{minipage} {.50\linewidth}
+%		\centering 
+%		\includegraphics[width=1.1\linewidth]{fig_stl_fr_300.eps}
+%		{(\textit{a})}%\label{figura12}
+%	\end{minipage}\hfill
+%	\begin{minipage}{.50\linewidth}
+%		\centering
+%		\includegraphics[width=1.1\linewidth]{fig_disp_fr_300.eps}
+%		{(\textit{b})} %\label{figura13}
+%	\end{minipage}\hfill
+%	\caption{Oblique STL for normal incidence ($\phi = 0, \theta = 0$) comparison of (a) bare plates and (b) metamaterial plates using PWE with Kirchhoff-Love (K-L) and Reissner-Mindlin (R-M) theories.}
+%	\label{disp2}
+%\end{figure}
+
+Figure \ref{disp3} shows the oblique STL of a bare plate and metamaterial plate calculated by both methods PWE with K-L and M-R, for an incident acoustic pressure with $\phi = $0 and $ \theta = \pi/18 $. For both plates the results show a very good agreement between the methods at low frequency, but as the frequency range increases the models starts to diverge. It can be seen that as the incidence angle becomes different of zero the terms relate to stiffness tends to be different of zero in Eq.(\ref{stl_w}), and the differences in plate formulations (K-L and R-M) start to appear and the results disagree each other as the frequency increases.
+\begin{figure}
+	\begin{minipage} {.50\linewidth}
+		\centering 
+		\includegraphics[width=.9\linewidth]{fig11_stl_bare.eps}
+		\includegraphics[width=.9\linewidth]{fig11_disp_bare.eps}
+		{(\textit{a})}%\label{figura12}
+	\end{minipage}\hfill
+	\begin{minipage}{.50\linewidth}
+		\centering
+		\includegraphics[width=.9\linewidth]{fig12_stl_fr_bare.eps}
+		\includegraphics[width=.9\linewidth]{fig12_disp_fr_bare.eps}
+		{(\textit{b})} %\label{figura13}
+	\end{minipage}\hfill
+	\caption{Oblique STL for normal incidence ($\phi = 0, \theta = \pi/18$) comparison of (a) bare plates and (b) metamaterial plates using PWE with Kirchhoff-Love (K-L) and Reissner-Mindlin (R-M) theories.}
+	\label{disp3}
+\end{figure}
+
+Figure \ref{disp4} shows the evolution of the oblique STL of the metamaterial plate with varying incident angle $ \theta $. The STL	always decreases as $ \theta $ increases, but the locations of peak and dip in the STL curves remain unchanged.
+%
+\begin{figure}
+		\begin{minipage} {.50\linewidth}
+		\centering 
+		\includegraphics[width=.9\linewidth]{fig1_stl_fr_1_theta_1.eps}
+		{(\textit{a})}	
+		\end{minipage}\hfill
+		\begin{minipage}{.50\linewidth}
+		\centering
+		\includegraphics[width=.9\linewidth]{fig1_stl_fr_1_theta_2.eps}
+		{(\textit{b})}
+		\end{minipage}\hfill
+		\begin{minipage}{.50\linewidth}
+		\centering
+		\includegraphics[width=.9\linewidth]{fig1_stl_fr_1_theta_3.eps}
+		{(\textit{c})}
+		\end{minipage}\hfill
+	\caption{Oblique STL for incidence $\phi =$ 0 and $\theta = (a)\pi/12, (b)\pi/6, $ and $(c)\pi/3 $ for metamaterial plates using PWE with Kirchhoff-Love (K-L) and Reissner-Mindlin (R-M) theories.}\label{disp4}
+\end{figure}
+\newpage
+\section{Final Remarks}
+In this work we derived the governing equations to wave number calculations and Sound Transmission Loss (STL) coefficient to a thick plate with periodically attached resonators using plane wave expandion (PWE) with Reissner-Mindlin theory. The simulated results are performed with a metamaterial model including one array of resonator, and compared with a bare plate and a metamaterial thin plate formulated by PWE with Kirchoff-Love theory. It is discussed their compatibility on both wave number and STL at low and high frequency bands, where for the wave number and SLT both models agrees at low frequency band and starts to diverge as the frequency increases. An important result is observed at a singular point in the STL calculation (normal incidence) where both methods present a very good agreement for all frequency band. Of course, this are preliminary results and more research needs to be done to confirm it. 
+
+	    
+	\section*{acknowledgements}
+	The authors would like acknowledge the Brazilian research funding agency CNPq for their financial support to this research.	
+    
+   
+	% For bibtex user
+	% you can use the provided bibliography style: icedyn.bst	
+	\begin{thebibliography}{99}
+		
+		\bibitem{Brillouin53} Brillouin, L., ``Wave Propagation in Periodic Structures'', Dover, New York, 2nd edition, 1953.
+		
+		\bibitem{Cremer} Cremer, L. and Heckl, M., ``Structure-borne sound: structural vibrations and sound radiation at audio frequencies'', Springer-Verlag, 1988.
+		
+		\bibitem{Hambric} Hambric, S., Sung, S., Nefske, D., ``Engineering Vibroacoustic Analysis (Methods and Applications), Wave-based Structural Modeling'', John Wiley \& Sons, 2016.
+		
+		\bibitem{Hou} Zhilin, H., Badreddine, A.,``Modeling of Lamb wave propagation in plate with two-dimensional phononic crystal layer coated on uniform substrate using plane-wave-expansion method'', Physics Letters A, v.372,n.12,2008, pp.2091 - 2097.
+		
+		\bibitem{Liu2000} Liu, Z., Zhang, X., Mao, Y., Zhu, Y.Y., Yang, Z. and Chan, C.T., ``Locally resonant sonic materials''. Science, Vol. 289, 2000, pp. 1734.
+		
+		\bibitem{Mead75} Mead, D.J., ``Wave propagation and natural modes in periodic systems: I mono-coupled systems”. Journal of Sound and Vibration, Vol. 40, 1975, pp. 1-18.
+		
+		\bibitem{Mindlin} Mindlin, R.,``Thickness Shear and Flexural Vibrations of Crystal Plates'',
+		Journal of Applied Physics, v.22,n.3,1951, pp.316-323
+		
+		\bibitem{Norris} Norris, A., ``Flexural waves on narrow plates'', The Journal of the Acoustical Society of America, v.113,n.5,2003, pp.2647-2658.
+		
+		\bibitem{Oudich2010} Oudich, M., Li, Y.,  Assouar, B.M. and Hou, Z., ``A sonic band gap based on the locally resonant phononic plates with stubs'', New Journal of Physics, 12, 083049, 2010.
+		
+		\bibitem{Oudich2014} Oudich, M., Zhou, X., Assouar, B.,	``General analytical approach for sound transmission loss analysis through a thick metamaterial plate'',	Journal of Applied Physics 116, 193509, 2014.
+		
+		\bibitem{Oudich2016} Oudich, M., Zhou, X., Assouar, B., ``Acoustic metamaterials for sound mitigation'', Comptes Rendus Physique ,v.17,n.5, pp.524-532, 2016. 
+		
+		\bibitem{Pennec2008} Pennec, Y., Djafari-Rouhani, B., Larabi, H., Vasseur, J.O.,  and Hladky-Hennion, A.C.  ``Low-frequency gaps in a phononic crystal constituted of cylindrical dots deposited on a thin homogeneous plate'', Phys. Rev. B, 78 (10), 104105, 2008.
+		
+		\bibitem{Sigalas92} Sigalas, M.M. and Economou, N.M., ``Elastic and acoustic wave band structure'', Journal of Sound and Vibration, 158(2), 1992, pp. 377-382.
+		
+		\bibitem{Sigalas94} Sigalas, M.M. and Economou, N.M., ``Elastic waves in plates with periodically placed inclusions'',J. Appl. Phys., 75 (6), 1994, pp. 2845-2850.
+		
+		\bibitem{Szilard} Szilard, R. ``Theories and applications of plate analysis: classical, numerical and engineering methods'', John Wiley \& Sons, New Jersey, 2004.
+		
+		\bibitem{Wu2006} Wu, T.T., Hsu, J.C.,``Efficient formulation for band-structure calculations of two-dimensional phononic-crystal plates'', Phys. Rev. B 74, 144303,2006, pp..
+		
+		\bibitem{Wu2010} Wu, T.T., Hsu, J.C.,
+		``Plate waves in locally resonant sonic materials'',
+		Japanese Journal of Applied Physics, Volume 49, Number 7S, 2010
+		
+		\bibitem{Xiao2012f} Xiao, Y., Wen, J., Wen, X.,	``Flexural wave band gaps in locally resonant thin plates with periodically attached spring–mass resonators'', Journal of Physics D: Applied Physics, v.45, no.19, 2012, pp.1-12.
+		
+		\bibitem{Xiao2012s} Xiao, Yong., Wen, Jihong., Wen, Xisen.,``Sound transmission loss of metamaterial-based thin plates with multiple subwavelength arrays of attached resonators'', Journal of Sound and Vibration, 331(25), 2012, pp. 5408-5423.
+					
+	\end{thebibliography}
+\end{document}

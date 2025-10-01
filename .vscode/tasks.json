@@ -1,0 +1,107 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build LaTeX",
+            "type": "shell",
+            "command": "pdflatex",
+            "args": [
+                "-interaction=nonstopmode",
+                "manuscript_mssp2_vf.tex"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Build LaTeX with BibTeX",
+            "type": "shell",
+            "command": "pdflatex",
+            "args": [
+                "-interaction=nonstopmode",
+                "manuscript_mssp2_vf.tex"
+            ],
+            "group": "build",
+            "dependsOrder": "sequence",
+            "dependsOn": ["BibTeX", "Build LaTeX Final"],
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "BibTeX",
+            "type": "shell",
+            "command": "bibtex",
+            "args": ["manuscript_mssp2_vf"],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Build LaTeX Final",
+            "type": "shell",
+            "command": "pdflatex",
+            "args": [
+                "-interaction=nonstopmode",
+                "manuscript_mssp2_vf.tex"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Clean LaTeX",
+            "type": "shell",
+            "command": "rm",
+            "args": [
+                "-f",
+                "*.aux",
+                "*.bbl",
+                "*.blg",
+                "*.log",
+                "*.out",
+                "*.toc",
+                "*.synctex.gz"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Open PDF",
+            "type": "shell",
+            "command": "explorer.exe",
+            "args": ["manuscript_mssp2_vf.pdf"],
+            "group": "test",
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared"
+            }
+        }
+    ]
+}

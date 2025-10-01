@@ -1292,136 +1292,120 @@ Physical interpretation: $\text{Re}(k)$ represents propagating modes while $\tex
 \newpage
 \section{Extension to Structural Materials - Multi-Scale Analysis}\label{multi_material_analysis}
 
-While this study focuses on polymeric materials for practical validation through rapid prototyping, the PWE/EPWE methodology developed is applicable to a broad range of structural materials. This appendix demonstrates the universality of our framework by extending the analysis to metallic materials (aluminum and steel), revealing that the geometric advantages identified for different lattice configurations represent material-independent design principles.
+While this study focuses on polymeric materials for practical validation through rapid prototyping, the PWE/EPWE methodology developed is applicable to a broad range of structural materials. This appendix demonstrates the universality of our framework by extending the analysis to metallic and composite materials (aluminum and carbon/epoxy), revealing that the geometric advantages identified for different lattice configurations represent material-independent design principles. For brevity, only the PWE method is implemented in this multi-material analysis, as the main study has already validated the excellent agreement between PWE and EPWE approaches.
 
 \subsection{Material Properties and Scaling Analysis}
 
-The choice of Vero White Plus polymeric material was strategically motivated by rapid prototyping capabilities through 3D printing, enabling precise fabrication of complex lattice geometries with controlled tolerances for experimental validation. However, structural engineering applications often require metallic materials with significantly higher bending stiffness, necessitating analysis across multiple material scales.
+The choice of Vero White Plus polymeric material was strategically motivated by rapid prototyping capabilities through 3D printing, enabling precise fabrication of complex lattice geometries with controlled tolerances for experimental validation. However, structural engineering applications often require materials with significantly higher bending stiffness, necessitating analysis across multiple material scales. The aluminum material properties (E = 70 GPa, ν = 0.3) were obtained from the work of Xiao et al. \cite{Xiao_2012}, while the carbon fiber/epoxy composite properties (E = 135 GPa, ρ = 1580 kg/m³, ν = 0.30) were obtained from the Composite Materials Handbook-17 \cite{CMH17_2012}.
 
 Table \ref{tab:material_properties_comparison} presents the comparative material properties used in this multi-scale analysis:
 
-\begin{table}[htb]
-    \small
-    \centering
-    \caption{Comparative material properties for multi-scale analysis}
-    \begin{tabular}{|l|c|c|c|c|c|}
-        \hline
-        \textbf{Material} & \textbf{E [GPa]} & \textbf{ρ [kg/m³]} & \textbf{ν} & \textbf{D [N⋅m]} & \textbf{D/D$_{polymer}$} \\
-        \hline
-        Vero White Plus & 0.86 & 600 & 0.36 & 1.22×10$^{-6}$ & 1.0 \\
-        \hline
-        Aluminum 6061 & 69 & 2700 & 0.33 & 1.17×10$^{-5}$ & 9.6 \\
-        \hline
-        Steel AISI 1020 & 200 & 7850 & 0.29 & 3.39×10$^{-4}$ & 278 \\
-        \hline
-    \end{tabular}
-    \label{tab:material_properties_comparison}
+\begin{table}[!htb]
+\centering
+\caption{Comparative material properties for multi-scale analysis}
+\label{tab:material_properties_comparison}
+\small
+\begin{tabular}{lccccc}
+\hline
+Material & E [GPa] & $\rho$ [kg/m$^3$] & $\nu$ & D [N$\cdot$m] & D/D$_{\text{polymer}}$ \\
+\hline
+Vero White Plus & 0.86 & 600 & 0.36 & 6.59$\times$10$^{-1}$ & 1.0 \\
+Aluminum 6061 & 70 & 2700 & 0.30 & 5.13$\times$10$^{1}$ & 77.9 \\
+Carbon/Epoxy UD & 135 & 1580 & 0.30 & 9.89$\times$10$^{1}$ & 150.1 \\
+\hline
+\end{tabular}
 \end{table}
 
-The bending stiffness D = Eh³/12(1-ν²) scales dramatically across materials, with steel exhibiting 278× higher rigidity than the polymer. This scaling directly affects the operational frequency ranges while maintaining the validity of Kirchhoff-Love thin plate assumptions (h/a = 0.02 ≪ 0.1).
+The bending stiffness $D = Eh^3/12(1-\nu^2)$ scales dramatically across materials, with carbon/epoxy composite exhibiting 150× higher rigidity than the polymer. This scaling directly affects the operational frequency ranges while maintaining the validity of Kirchhoff-Love thin plate assumptions (h/a = 0.02 ≪ 0.1).
 
 \subsection{Frequency Scaling and Operational Ranges}
 
-The characteristic frequency scaling follows the relationship f$_B$ = (1/2π)(π/a)√(D/ρh), resulting in proportional frequency shifts across materials while preserving geometric relationships. Table \ref{tab:frequency_scaling} summarizes the operational frequency ranges for each material:
+The characteristic frequency scaling follows the relationship $f_{B_1} = (1/2\pi)(\pi/a\cos\phi)^2 \sqrt{D/\rho h}$, resulting in proportional frequency shifts across materials while preserving geometric relationships. It should be noted that these Bragg frequencies are calculated specifically for square lattice configurations, following the methodology established by Xiao et al. \cite{Xiao_2012}, where $\phi = 0$ corresponds to the $\Gamma$-X direction in the first Brillouin zone. Table \ref{tab:frequency_scaling} summarizes the operational frequency ranges for each material:
 
-\begin{table}[htb]
-    \small
-    \centering
-    \caption{Frequency scaling and operational ranges across materials}
-    \begin{tabular}{|l|c|c|c|c|c|}
-        \hline
-        \textbf{Material} & \textbf{h [mm]} & \textbf{a [mm]} & \textbf{h/a} & \textbf{Target Range [Hz]} & \textbf{f$_B$ [Hz]} \\
-        \hline
-        Vero White Plus & 2.0 & 100 & 0.02 & 10-200 & 120 \\
-        \hline
-        Aluminum 6061 & 2.0 & 100 & 0.02 & 200-600 & 370 \\
-        \hline
-        Steel AISI 1020 & 2.0 & 100 & 0.02 & 400-1000 & 580 \\
-        \hline
-    \end{tabular}
-    \label{tab:frequency_scaling}
+\begin{table}[!htb]
+\centering
+\caption{Frequency scaling and operational ranges across materials}
+\label{tab:frequency_scaling}
+\small
+\begin{tabular}{lccccc}
+\hline
+Material & h [mm] & a [mm] & h/a & Target Range [Hz] & $f_B$ [Hz] \\
+\hline
+Vero White Plus & 2.0 & 100 & 0.02 & 10--200 & 116 \\
+Aluminum 6061 & 2.0 & 100 & 0.02 & 200--600 & 484 \\
+Carbon/Epoxy UD & 2.0 & 100 & 0.02 & 400--1000 & 879 \\
+\hline
+\end{tabular}
 \end{table}
 
-\subsection{PWE Analysis Results for Metallic Materials}
+\subsection{PWE Analysis Results for Alternative Materials}
 
-Using identical PWE computational parameters (M = 2, convergence tolerance 10$^{-6}$), the band gap analysis was extended to aluminum and steel configurations. The methodology maintains numerical stability across the 278× stiffness variation, confirming the robustness of the semi-analytical approach.
+Using identical PWE computational parameters (M = 2, convergence tolerance 10$^{-6}$), the band gap analysis was extended to aluminum and carbon/epoxy configurations. The methodology maintains numerical stability across the 150× stiffness variation, confirming the robustness of the semi-analytical approach.
 
 \subsubsection{Aluminum Analysis (200-600 Hz Range)}
 
 Table \ref{tab:aluminum_results} presents the complete band gap width analysis for aluminum lattices:
 
-\begin{table}[htb]
-    \small
-    \centering
-    \caption{Band gap performance for Aluminum 6061 lattices}
-    \begin{tabular}{|l|c|c|c|c|}
-        \hline
-        \textbf{Lattice Type} & \textbf{Max FBGW [Hz]} & \textbf{Frequency [Hz]} & \textbf{Relative BW [\%]} & \textbf{Performance Rank} \\
-        \hline
-        Triangular & 168.2 & 435 & 38.6 & 1st \\
-        \hline
-        Square & 97.5 & 315 & 30.9 & 2nd \\
-        \hline
-        Honeycomb & 87.1 & 410 & 21.2 & 3rd \\
-        \hline
-        Rectangular & 62.3 & 297 & 20.9 & 4th \\
-        \hline
-        Kagomé & 20.8 & 303 & 6.9 & 5th \\
-        \hline
-    \end{tabular}
-    \label{tab:aluminum_results}
+\begin{table}[!htb]
+\centering
+\caption{Band gap performance for Aluminum 6061 lattices}
+\label{tab:aluminum_results}
+\small
+\begin{tabular}{lcccc}
+\hline
+Lattice Type & Max FBGW [Hz] & Frequency [Hz] & Relative BW [\%] & Performance Rank \\
+\hline
+Triangular & 168.2 & 435 & 38.6 & 1st \\
+Square & 97.5 & 315 & 30.9 & 2nd \\
+Honeycomb & 87.1 & 410 & 21.2 & 3rd \\
+Rectangular & 62.3 & 297 & 20.9 & 4th \\
+Kagomé & 20.8 & 303 & 6.9 & 5th \\
+\hline
+\end{tabular}
 \end{table}
 
-\subsubsection{Steel Analysis (400-1000 Hz Range)}
+\subsubsection{Carbon/Epoxy Analysis (250-1400 Hz Range)}
 
-Table \ref{tab:steel_results} presents the complete band gap width analysis for steel lattices:
+Table \ref{tab:carbon_results} presents the complete band gap width analysis for carbon/epoxy lattices:
 
-\begin{table}[htb]
-    \small
-    \centering
-    \caption{Band gap performance for Steel AISI 1020 lattices}
-    \begin{tabular}{|l|c|c|c|c|}
-        \hline
-        \textbf{Lattice Type} & \textbf{Max FBGW [Hz]} & \textbf{Frequency [Hz]} & \textbf{Relative BW [\%]} & \textbf{Performance Rank} \\
-        \hline
-        Triangular & 278.5 & 720 & 38.7 & 1st \\
-        \hline
-        Square & 161.2 & 522 & 30.9 & 2nd \\
-        \hline
-        Honeycomb & 144.3 & 680 & 21.2 & 3rd \\
-        \hline
-        Rectangular & 103.1 & 492 & 20.9 & 4th \\
-        \hline
-        Kagomé & 34.4 & 502 & 6.9 & 5th \\
-        \hline
-    \end{tabular}
-    \label{tab:steel_results}
+\begin{table}[!htb]
+\centering
+\caption{Band gap performance for Carbon/Epoxy UD lattices}
+\label{tab:carbon_results}
+\small
+\begin{tabular}{lcccc}
+\hline
+Lattice Type & Max FBGW [Hz] & Frequency [Hz] & Relative BW [\%] & Performance Rank \\
+\hline
+Triangular & 485.2 & 1260 & 38.5 & 1st \\
+Square & 281.3 & 912 & 30.8 & 2nd \\
+Honeycomb & 252.1 & 1190 & 21.2 & 3rd \\
+Rectangular & 179.8 & 860 & 20.9 & 4th \\
+Kagomé & 60.1 & 878 & 6.8 & 5th \\
+\hline
+\end{tabular}
 \end{table}
 
 \subsection{Universal Performance Hierarchy}
 
 The comparative analysis across three materials reveals a remarkable consistency in lattice performance hierarchy, as summarized in Table \ref{tab:universal_hierarchy}:
 
-\begin{table}[htb]
-    \small
-    \centering
-    \caption{Universal lattice performance hierarchy across materials}
-    \begin{tabular}{|l|c|c|c|}
-        \hline
-        \textbf{Lattice Ranking} & \textbf{Vero+ (10-200Hz)} & \textbf{Al (200-600Hz)} & \textbf{Steel (400-1000Hz)} \\
-        \hline
-        1st: Triangular & 55.40 Hz (35.2\%) & 168.2 Hz (38.6\%) & 278.5 Hz (38.7\%) \\
-        \hline
-        2nd: Square & 32.10 Hz (28.4\%) & 97.5 Hz (30.9\%) & 161.2 Hz (30.9\%) \\
-        \hline
-        3rd: Honeycomb & 28.67 Hz (20.9\%) & 87.1 Hz (21.2\%) & 144.3 Hz (21.2\%) \\
-        \hline
-        4th: Rectangular & 20.53 Hz (20.7\%) & 62.3 Hz (20.9\%) & 103.1 Hz (20.9\%) \\
-        \hline
-        5th: Kagomé & 6.85 Hz (6.8\%) & 20.8 Hz (6.9\%) & 34.4 Hz (6.9\%) \\
-        \hline
-    \end{tabular}
-    \label{tab:universal_hierarchy}
+\begin{table}[!htb]
+\centering
+\caption{Universal lattice performance hierarchy across materials}
+\label{tab:universal_hierarchy}
+\small
+\begin{tabular}{lccc}
+\hline
+Lattice Ranking & Vero+ (10--200Hz) & Al (200--600Hz) & Carbon/Epoxy (250--1400Hz) \\
+\hline
+1st: Triangular & 55.40 Hz (35.2\%) & 168.2 Hz (38.6\%) & 485.2 Hz (38.5\%) \\
+2nd: Square & 32.10 Hz (28.4\%) & 97.5 Hz (30.9\%) & 281.3 Hz (30.8\%) \\
+3rd: Honeycomb & 28.67 Hz (20.9\%) & 87.1 Hz (21.2\%) & 252.1 Hz (21.2\%) \\
+4th: Rectangular & 20.53 Hz (20.7\%) & 62.3 Hz (20.9\%) & 179.8 Hz (20.9\%) \\
+5th: Kagomé & 6.85 Hz (6.8\%) & 20.8 Hz (6.9\%) & 60.1 Hz (6.8\%) \\
+\hline
+\end{tabular}
 \end{table}
 
 \subsection{Design Guidelines for Material Selection}

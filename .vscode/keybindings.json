@@ -1,0 +1,28 @@
+[
+    // Atalhos específicos para LaTeX Workshop
+    {
+        "key": "ctrl+alt+v",
+        "command": "latex-workshop.view",
+        "when": "editorTextFocus && editorLangId == latex"
+    },
+    {
+        "key": "ctrl+alt+b",
+        "command": "latex-workshop.build",
+        "when": "editorTextFocus && editorLangId == latex"
+    },
+    {
+        "key": "ctrl+alt+c",
+        "command": "latex-workshop.clean",
+        "when": "editorTextFocus && editorLangId == latex"
+    },
+    {
+        "key": "ctrl+alt+k",
+        "command": "latex-workshop.kill",
+        "when": "editorTextFocus && editorLangId == latex"
+    },
+    {
+        "key": "ctrl+alt+j",
+        "command": "latex-workshop.synctex",
+        "when": "editorTextFocus && editorLangId == latex"
+    }
+]

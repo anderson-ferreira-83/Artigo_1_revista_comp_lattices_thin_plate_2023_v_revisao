@@ -1,0 +1,19 @@
+# Arquivos PDF do journal
+YMSSP-S-25-05538.pdf
+manuscript_mssp2_vf.pdf
+
+# Instalações LaTeX locais
+.TinyTeX/
+*.tar.gz
+
+# Arquivos temporários LaTeX
+*.synctex.gz
+*.dvi
+*.spl
+
+# Arquivos de backup
+*_backup.*
+*backup*
+
+# Arquivos EPS convertidos automaticamente
+*-eps-converted-to.pdf
