@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"name": "Artigo_1_revista_comp_lattices_thin_plate_2023_mod",
+			"path": "."
+		},
+		{
+			"name": "doc_files",
+			"path": "D:/doc_files"
+		}
+	],
+	"settings": {
+		"latex-workshop.view.pdf.viewer": "tab",
+		"latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
+		"latex-workshop.view.pdf.internal.port": 0,
+		"latex-workshop.view.pdf.zoom": "page-width",
+		"latex-workshop.view.pdf.scrollMode": 1,
+		"latex-workshop.view.pdf.spreadMode": 0,
+		"latex-workshop.synctex.afterBuild.enabled": true,
+		"latex-workshop.message.error.show": true,
+		"latex-workshop.message.warning.show": false,
+		"latex-workshop.message.badbox.show": false,
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "Artigo_1_revista_comp_lattices_thin_plate_2023_mod"
+	}
+}
