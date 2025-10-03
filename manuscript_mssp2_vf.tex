@@ -868,6 +868,8 @@ While the dispersion curves $k(\boldsymbol{\omega})$ and $\omega(\boldsymbol{k})
 \end{equation}
 This equation will be applied to a finite-sized plate with local resonators to assess vibration attenuation at their resonance frequencies. A similar methodology was employed by \cite{MIRANDA2019480} to evaluate the performance of locally resonant acoustic metamaterials in engineering applications. For this analysis, five LRSC-type plates, each comprising 10 × 8 unit cells, will be considered. All plates will have free boundary conditions on three sides, as illustrated in Figure \ref{bound_frf_modal}.
 
+\newpage
+
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=0.6\textwidth]{ilustr_bound_force_frf_modal.pdf}
@@ -879,6 +881,7 @@ Also according to the Figure \ref{bound_frf_modal}, the plate will be excited by
 
 To evaluate the structural response of receptance, the out-of-plane harmonic displacement $\mathbf{u_z}$ is calculated at the location shown in Figure \ref{bound_frf_modal}. This structure was modeled using FEM approach. The analysis of all FRFs was conducted in a frequency range from 1 [Hz] to 200 [Hz]. 
 Based on the structural parameters of the finite panel adjusted for the five specified lattices in Table \ref{panel_param_latt}:
+
 \begin{table}[htb]
 	\centering
 	\caption{Size mesh discretization in FEM and their respective processing times for simulation in the five studied lattices\protect\footnotemark.}
@@ -910,7 +913,7 @@ Peak attenuation effectiveness correlates directly with unit cell area ($A_{cell
 %---------------------------------------------------------
 \subsubsection{Square lattice LRSC plate}\label{panel_lat_s}
 
-The square lattice represents the fundamental periodic configuration with unit cell area $A_{cell} = a^2$ and single resonator per cell ($N_j = 1$). This geometry exhibits 4-fold rotational symmetry, creating a single primary band gap FBGW 1 between propagating modes $f_1$ and $f_2$.
+The square lattice represents the fundamental periodic configuration with unit cell area $A_{cell} = a^2$ and single resonator per cell ($N_j = 1$). This geometry exhibits 4-fold rotational symmetry, creating a single primary band gap FBGW 1 between propagating modes $f_1$ and $f_2$. 
 
 Figure \ref{lat_s_pwe_epwe_tr_frf} presents the band structure analysis for local resonator frequency $f_j = 40$ [Hz]. The real part dispersion curves (Figure \ref{lat_s_pwe_epwe_tr_frf}a) show clear band gap formation, while the imaginary component (Figure \ref{lat_s_pwe_epwe_tr_frf}b) reveals maximum attenuation occurring within the FBGW 1 region.
 \newpage
@@ -1370,6 +1373,7 @@ $f_j$ [Hz] & Square & Rectangular & Triangular & Honeycomb & Kagomé \\
 
 \textcolor{red}{Table \ref{tab:carbon_results} presents the complete band gap width analysis for carbon/epoxy lattices across selected resonator frequencies, including the Bragg frequency (879 Hz):}
 
+\newpage
 \textcolor{red}{\begin{table}[!htb]
 \centering
 \caption{Full band gap width [Hz] evolution for Carbon/Epoxy UD lattices}
@@ -1403,6 +1407,8 @@ $f_j$ [Hz] & Square & Rectangular & Triangular & Honeycomb & Kagomé \\
 \textcolor{red}{The comparative analysis across three materials reveals a remarkable consistency in lattice performance hierarchy. Tables \ref{tab:aluminum_results} and \ref{tab:carbon_results} provide complete transparency of all simulation results, confirming the universal ranking: Triangular $>$ Square $>$ Rectangular/Honeycomb $>$ Kagomé.} 
 
 \textcolor{red}{The detailed tabulated data demonstrates material-independent geometric advantages, with triangular lattices consistently achieving 40-42\% relative bandwidths across all materials, while kagomé lattices consistently underperform with 6-16\% relative bandwidths. The frequency scaling preserves this hierarchy while shifting operational ranges proportionally to material stiffness:}
+
+\newpage
 
 \begin{table}[!htb]
 \centering
