@@ -3,7 +3,6 @@
 \usepackage[T1]{fontenc}
 \usepackage[margin=2.5cm]{geometry}
 \usepackage{xcolor}
-\usepackage{tcolorbox}
 \usepackage{enumitem}
 \usepackage{amsmath}
 \usepackage{graphicx}
@@ -18,47 +17,26 @@
 \definecolor{changescolor}{RGB}{230, 126, 34}
 \definecolor{redtext}{RGB}{220, 53, 69}
 
-% Custom boxes with proper text wrapping
-\newtcolorbox{reviewerbox}{
-    colback=reviewercolor!5,
-    colframe=reviewercolor,
-    fonttitle=\bfseries,
-    title=Reviewer Comment,
-    left=8pt,
-    right=8pt,
-    top=8pt,
-    bottom=8pt,
-    width=\linewidth,
-    before skip=10pt,
-    after skip=10pt
+% Simple box environments
+\newenvironment{reviewerbox}{%
+    \par\medskip\noindent{\color{reviewercolor}\rule{\linewidth}{2pt}}\par
+    \noindent{\color{reviewercolor}\bfseries Reviewer Comment}\par\smallskip
+}{%
+    \par\noindent{\color{reviewercolor}\rule{\linewidth}{0.5pt}}\medskip
 }
 
-\newtcolorbox{responsebox}{
-    colback=responsecolor!5,
-    colframe=responsecolor,
-    fonttitle=\bfseries,
-    title=Response,
-    left=8pt,
-    right=8pt,
-    top=8pt,
-    bottom=8pt,
-    width=\linewidth,
-    before skip=10pt,
-    after skip=10pt
+\newenvironment{responsebox}{%
+    \par\medskip\noindent{\color{responsecolor}\rule{\linewidth}{2pt}}\par
+    \noindent{\color{responsecolor}\bfseries Response}\par\smallskip
+}{%
+    \par\noindent{\color{responsecolor}\rule{\linewidth}{0.5pt}}\medskip
 }
 
-\newtcolorbox{changesbox}{
-    colback=changescolor!5,
-    colframe=changescolor,
-    fonttitle=\bfseries,
-    title=Manuscript Changes,
-    left=8pt,
-    right=8pt,
-    top=8pt,
-    bottom=8pt,
-    width=\linewidth,
-    before skip=10pt,
-    after skip=10pt
+\newenvironment{changesbox}{%
+    \par\medskip\noindent{\color{changescolor}\rule{\linewidth}{2pt}}\par
+    \noindent{\color{changescolor}\bfseries Manuscript Changes}\par\smallskip
+}{%
+    \par\noindent{\color{changescolor}\rule{\linewidth}{0.5pt}}\medskip
 }
 
 % Header and footer
@@ -410,7 +388,7 @@ Provides systematic framework for material selection based on target frequency r
 
 \textit{Updated to mention Appendix C:}
 \begin{quote}
-\textcolor{redtext}{``\ref{multi\_material\_analysis} extends the analysis to metallic and composite materials (aluminum and carbon/epoxy), demonstrating the universality of geometric performance principles across materials with 150$\times$ stiffness variation.''}
+\textcolor{redtext}{``Appendix C extends the analysis to metallic and composite materials (aluminum and carbon/epoxy), demonstrating the universality of geometric performance principles across materials with 150$\times$ stiffness variation.''}
 \end{quote}
 \end{changesbox}
 
