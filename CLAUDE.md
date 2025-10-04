@@ -120,6 +120,82 @@ O manuscrito representa uma contribuição significativa e original ao campo de 
 
 ## Histórico de Alterações
 
+### 2025-10-04 - Reorganização da Seção 3.3 para Fluxo Lógico de Análise Comparativa
+**Reestruturação completa para responder ao Comentário 1 dos revisores de forma pedagogicamente efetiva**
+
+#### Objetivo
+Reorganizar a Seção 3.3 (Comparative analysis of band gaps bandwidths) para apresentar um fluxo narrativo lógico que justifique naturalmente a necessidade de análise de relative bandwidth, respondendo à crítica do revisor sobre comparação injusta de absolute bandwidth.
+
+#### Problema Identificado
+**Estrutura anterior confusa:**
+- Definia relative bandwidth logo no início (linha 778)
+- Apresentava extensa análise de absolute bandwidth (linhas 787-819)
+- Só então retornava para apresentar análise de relative bandwidth (linha 821+)
+- Quebrava lógica narrativa: leitor via definição, esquecia durante análise absolute, voltava depois
+
+#### Solução Implementada - Nova Estrutura Lógica
+
+**1. Introdução Dual-Metric (Linha 778 - novo parágrafo)**
+- Apresenta framework com duas métricas complementares
+- Brief mention: absolute (FBGW) e relative (η_rel)
+- Explica que análise começará com absolute bandwidth
+- Justificativa: orienta leitor sobre estrutura da seção
+
+**2. Análise de Absolute Bandwidth (Linhas 779-791 - mantido)**
+- Figura 0_disp_comp_lattices.pdf mostrando FBGW vs frequency
+- Análise detalhada: triangular (55.40 Hz @ 145 Hz), square (32.10 Hz @ 105 Hz)
+- Multi-resonator systems (honeycomb, kagomé)
+- Efficiency analysis (Hz/resonator)
+
+**3. Tabela Performance Summary (Linhas 793-810 - movida)**
+- Anteriormente estava após definição de relative bandwidth
+- Agora posicionada corretamente após análise absolute
+- Sumariza FBGW, f_j, efficiency, mechanisms para todas as lattices
+
+**4. Subseção "Relative Bandwidth Analysis..." (Linha 812 - novo subtítulo)**
+- Cria separação visual clara entre absolute e relative analysis
+- Prepara leitor para mudança de perspectiva metodológica
+
+**5. Transição Crítica (Linhas 814-815 - expandida)**
+- Explica limitação de absolute bandwidth de forma pedagógica
+- Exemplo concreto: triangular @ 145 Hz vs square @ 105 Hz (38% difference)
+- Motivação clara: "potentially biases conclusions toward higher frequencies"
+- Justifica necessidade de normalization
+
+**6. Definição de Relative Bandwidth (Linhas 816-821 - movida)**
+- Equação η_rel = (f₂-f₁)/f_c × 100% apresentada AGORA (not antes)
+- Just-in-time definition: explicada quando será usada
+- Justificativa física: "removes frequency-dependent scaling effects"
+- "Isolating purely geometric contributions"
+
+**7. Análise Relative Bandwidth (Linhas 823-858 - mantida)**
+- Tabela 14 completa com η_rel para 15 frequencies × 5 lattices
+- Análise: triangular 42.51% vs square 31.40% (35% improvement)
+- Validação: "geometric optimization maintains advantage across spectrum"
+
+**8. Síntese Dual-Metric (Linha 860 - mantida)**
+- Framework complementar claramente explicado
+- Absolute: "which lattice for my target frequency?" (engineering question)
+- Relative: "which geometry is intrinsically superior?" (scientific question)
+
+**9. Conclusão Final (Linhas 862-864 - mantida)**
+- Comprehensive analysis summary
+- Single vs multi-resonator distinctions
+- Performance hierarchies established
+- PWE/EPWE efficiency (1800-5700×)
+
+#### Vantagens da Reorganização
+
+1. **Fluxo narrativo lógico**: Absolute → Motivação → Relative → Síntese
+2. **Pedagogicamente efetivo**: Leitor entende POR QUE precisa de relative bandwidth
+3. **Definição just-in-time**: η_rel apresentado quando será usado (não antes)
+4. **Transição motivada**: Limitações de absolute claramente explicadas
+5. **Comparação facilitada**: Métricas separadas mas logicamente conectadas
+6. **Responde ao revisor naturalmente**: Sem parecer resposta defensiva
+
+#### Resultado
+Seção 3.3 agora apresenta argumentação fluida e lógica que naturalmente conduz o leitor da análise absolute (familiar, prática) para relative (normalizada, científica), respondendo ao Comentário 1 do revisor de forma pedagogicamente superior e cientificamente rigorosa.
+
 ### 2025-10-04 - Reforço das Principais Contribuições em Múltiplas Seções
 **Modificações abrangentes destacando análise comparativa, dual band gaps e bandwidth evolution**
 
