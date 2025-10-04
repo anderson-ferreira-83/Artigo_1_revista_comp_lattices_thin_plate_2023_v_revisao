@@ -54,7 +54,8 @@
       "WebFetch(domain:www.hexcel.com)",
       "Bash(/dev/null)",
       "Bash(pdfinfo:*)",
-      "Bash(awk:*)"
+      "Bash(awk:*)",
+      "Bash(/mnt/c/Program Files/MiKTeX/miktex/bin/x64/pdflatex.exe -interaction=nonstopmode manuscript_mssp2_vf.tex)"
     ],
     "deny": []
   }
