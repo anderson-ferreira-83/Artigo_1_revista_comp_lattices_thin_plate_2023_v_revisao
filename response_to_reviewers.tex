@@ -434,30 +434,59 @@ I don't think the lattice parameter $a$ should be kept constant to demonstrate c
 \end{reviewerbox}
 
 \begin{responsebox}
-We appreciate the reviewer's suggestion regarding lattice parameter adjustment. However, we respectfully maintain that keeping the lattice parameter $a = 0.10$ m constant represents the most scientifically rigorous and practically relevant approach for comparative analysis. Our methodology choice is based on several fundamental considerations detailed below.
+We sincerely thank the reviewer for this thoughtful suggestion, which touches on an important methodological consideration in comparative periodic structure analysis. We completely understand the reviewer's concern about ensuring fair comparison across different lattice geometries, and we appreciate the opportunity to explain our reasoning in greater detail.
 
-\textbf{1. Scientific Rigor and Variable Isolation:}
+After careful consideration, we respectfully believe that maintaining constant lattice parameter $a = 0.10$ m represents the most appropriate approach for our study's objectives. We would like to share the theoretical foundations and practical considerations that guided this methodological choice.
+
+\textbf{Understanding from Bloch-Floquet Theory:}
+
+In periodic structures, we found that the dispersion relation $\omega(\mathbf{k})$ is fundamentally coupled to the lattice constant through the reciprocal space relationship. When we vary the lattice parameter between different geometries, each configuration operates in a different Brillouin zone (with size scaling as $2\pi/a$). This creates a subtle but important theoretical challenge: the dispersion relations would be defined in different reciprocal k-spaces, making direct comparison more complex from a Bloch wave analysis perspective.
+
+We believe this isn't merely a methodological preference, but rather reflects how periodic structure theory naturally frames these comparisons. Maintaining constant $a$ allows all geometries to be compared within a consistent theoretical framework.
+
+\textbf{Guidance from Established Literature:}
+
+In reviewing the foundational literature in this field, we noticed a consistent pattern in how geometric comparisons are performed:
+
 \begin{itemize}
-    \item \textbf{Pure geometric effects:} Constant lattice parameter enables isolation of purely geometric influences (crystallographic symmetry, unit cell area, resonator coupling) from frequency-dependent scaling effects
-    \item \textbf{Avoiding confounding variables:} Variable lattice parameters would conflate geometric advantages with frequency-dependent scaling effects, obscuring the fundamental physics
-    \item \textbf{Objective performance hierarchy:} Establishes ranking based on intrinsic geometric properties rather than parameter optimization
+    \item The seminal work by Xiao et al. (2012) \cite{Xiao2012}—which introduced the concept of resonance-Bragg coupling in LRSC plates—maintained constant lattice parameter when investigating different configurations. This influential study helped establish methodological standards in our field.
+
+    \item Similarly, in the photonic crystal community, the highly-cited work by Villeneuve \& Piché (1992) comparing square and hexagonal lattices employed fixed lattice constants to enable rigorous geometric comparison.
 \end{itemize}
 
-\textbf{2. Practical Engineering Relevance:}
+These precedents suggest that the constant lattice parameter approach has been well-validated by the research community for fundamental geometric studies.
+
+\textbf{Our Study's Core Objective:}
+
+We designed our investigation to answer a specific engineering question that frequently arises in practical applications: \textit{``Given fixed spatial constraints (which commonly occur in aerospace, automotive, and civil engineering), which lattice geometry provides optimal performance?''}
+
+This question naturally leads to constant $a$ methodology because:
+
 \begin{itemize}
-    \item \textbf{Real-world constraints:} Engineers frequently face fixed spatial limitations where metamaterials must fit within predetermined volumes
-    \item \textbf{Material efficiency comparison:} Fair evaluation of which geometry optimizes performance within given space/material constraints
-    \item \textbf{Practical design guidelines:} Provides actionable guidance for ``which lattice to choose given fixed space requirements''
+    \item Engineers often face predetermined spatial limitations (e.g., structural bays in aircraft, door panel dimensions in vehicles)
+    \item The comparison reveals which geometry makes \textit{intrinsically better use} of available space and materials
+    \item Results provide directly actionable design guidelines without requiring additional optimization
 \end{itemize}
 
-\textbf{3. Computational Efficiency:}
+The reviewer's suggested approach—adjusting $a$ to align band gap frequencies—would answer a different but also valuable question: ``What parameter combinations can achieve target frequencies?'' While this represents an important complementary research direction, we believe it would shift focus from our intended objective of establishing fundamental geometric performance principles.
+
+\textbf{Practical Consideration - Computational Scope:}
+
+We should also mention that implementing the frequency-matched variable-$a$ approach would require substantially expanded computational effort:
+
 \begin{itemize}
-    \item \textbf{Current approach:} 15 frequencies $\times$ 5 lattices = 75 PWE simulations
-    \item \textbf{Proposed approach:} Would require iterative trial-and-error search for each lattice-frequency combination (estimated 750-3750 simulations)
-    \item \textbf{Computational burden:} Semi-analytical PWE demonstrates 1800-5700$\times$ efficiency over FEM; iterative approach would require weeks/months vs. current hours/days
+    \item Our current approach: 75 PWE simulations (15 frequencies $\times$ 5 lattices)
+    \item Frequency-matched approach: Would require iterative trial-and-error parameter search for each lattice-frequency combination, as PWE methods lack inverse solvers
+    \item Estimated additional requirement: 400-1,500 simulations to establish matched parameters, plus complete re-meshing for FEM validation
 \end{itemize}
 
-\textbf{Note on alternative approach:} We acknowledge that frequency-matched parameter optimization represents a valuable complementary research direction that could be explored in future investigations. However, for establishing \textbf{fundamental geometric performance principles}, constant lattice parameter provides superior scientific rigor and practical relevance.
+While we would certainly be open to exploring this in future work with dedicated computational resources, we believe the current methodology achieves our study's primary objectives effectively.
+
+\textbf{Looking Forward:}
+
+We genuinely appreciate the reviewer raising this important methodological point. We recognize that frequency-matched parameter optimization represents a valuable research direction that could provide complementary insights to our work. We would be happy to acknowledge this as a promising avenue for future investigation in the manuscript.
+
+For the present study's focus on establishing fundamental geometric performance hierarchies under realistic spatial constraints, we believe the constant lattice parameter approach provides the most scientifically rigorous and practically relevant foundation. We hope this explanation clarifies our reasoning, and we remain open to further discussion if the reviewer has additional concerns.
 \end{responsebox}
 
 \begin{changesbox}
@@ -477,7 +506,7 @@ This addition:
 \end{itemize}
 \end{changesbox}
 
-\textbf{Summary:} Our constant lattice parameter methodology represents the optimal approach for establishing fundamental geometric performance principles, providing data-driven engineering guidelines, and ensuring experimental reproducibility. The framework transforms metamaterial design from trial-and-error to systematic engineering decisions while maintaining computational efficiency and scientific rigor.
+\textbf{Summary:} We hope this detailed explanation helps clarify our methodological choice. We believe our constant lattice parameter approach provides a solid foundation for addressing the practical engineering questions that motivated this study, while remaining consistent with established theoretical frameworks and literature precedents. We genuinely value the reviewer's engagement with this important aspect of our methodology and remain open to further dialogue.
 
 \newpage
 

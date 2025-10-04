@@ -53,7 +53,8 @@
       "Bash(git push:*)",
       "WebFetch(domain:www.hexcel.com)",
       "Bash(/dev/null)",
-      "Bash(pdfinfo:*)"
+      "Bash(pdfinfo:*)",
+      "Bash(awk:*)"
     ],
     "deny": []
   }

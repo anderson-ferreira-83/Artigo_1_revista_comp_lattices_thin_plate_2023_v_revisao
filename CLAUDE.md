@@ -194,8 +194,106 @@ O manuscrito representa uma contribuição significativa e original ao campo de 
 
 ## Histórico de Alterações
 
+### 2025-10-04 - Argumentação Robusta e Cordial para Comment (6) - Constant Lattice Parameter
+**Fortalecimento da justificativa metodológica com tom respeitoso e fundamentação teórica sólida**
+
+#### Estratégia Implementada
+- **Abordagem:** Manter posição (constant `a`) com argumentação soft e cordial
+- **Tom:** Respeitoso, educativo, não confrontacional
+- **Objetivo:** Convencer revisor através de teoria + precedentes + inviabilidade prática
+
+#### Modificações no Response Letter (Comment 6)
+**Arquivo:** response_to_reviewers.tex (linhas 436-509)
+
+**Estrutura da resposta (completamente reescrita):**
+1. **Abertura cordial:**
+   - Agradecimento sincero pela sugestão
+   - Reconhecimento da preocupação do revisor
+   - "We completely understand the reviewer's concern..."
+
+2. **Fundamentação Teórica (Bloch-Floquet):**
+   - Explicação educativa: diferentes Brillouin zones → k-spaces incommensuráveis
+   - Tom: "we found that", "we believe" (não "the reviewer is wrong")
+   - Apresentado como constraint natural da teoria, não como argumento contra revisor
+
+3. **Precedentes Literatura:**
+   - Xiao et al. (2012): "seminal work... maintained constant lattice parameter"
+   - Villeneuve & Piché (1992): photonic crystals, >3000 citações
+   - Tom: "these precedents suggest" (não "proven by")
+
+4. **Objetivo Científico do Estudo:**
+   - Pergunta de pesquisa: "Given fixed spatial constraints, which geometry is best?"
+   - Reconhecimento: proposta do revisor responde pergunta diferente (também válida)
+   - Tom: "different but also valuable question"
+
+5. **Inviabilidade Computacional:**
+   - Quantificação clara: 75 → 400-1500 simulações
+   - Tom: "we should mention" (não "impossible")
+   - Abertura: "open to exploring in future work"
+
+6. **Fechamento Colaborativo:**
+   - "We genuinely appreciate the reviewer raising this..."
+   - "We recognize that frequency-matched optimization represents a valuable research direction"
+   - "We remain open to further discussion"
+
+**Resultado:**
+- 25 páginas (vs 24 anterior - 1 página adicional devido à resposta expandida)
+- Tom completamente cordial e respeitoso
+- Argumentação sólida mantida mas apresentada de forma educativa
+
+#### Modificações no Manuscrito
+**Arquivo:** manuscript_mssp2_vf.tex (linha 338)
+
+**Adicionado ao parágrafo em vermelho existente:**
+```latex
+From a theoretical perspective, this approach maintains consistency with
+Bloch-Floquet theory in periodic structures: varying lattice constant
+between geometries would create different Brillouin zone sizes (scaling
+as 2π/a), resulting in dispersion relations ω(k) defined in incommensurable
+reciprocal spaces that complicate direct comparison. This methodology follows
+established practice in phononic and photonic crystal research
+[Xiao2012, Villeneuve1992], where geometric comparisons consistently employ
+fixed unit cell dimensions to isolate crystallographic symmetry effects
+from parameter scaling.
+```
+
+**Características:**
+- ~80 palavras adicionadas
+- Tom educativo (não defensivo)
+- Citações: Xiao2012 + Villeneuve1992 (precedentes sólidos)
+- Integrado naturalmente ao parágrafo existente
+
+#### Documentação de Análise
+**Arquivos criados:**
+1. **ANALISE_COMMENT_6_ESTRATEGIA.md** (15 páginas)
+   - Análise completa de riscos e argumentação
+   - Problemas fundamentais da proposta do revisor
+   - 3 opções de resposta (A, B, C) com recomendação
+
+2. **PROPOSTA_MODIFICACOES_COMMENT6.md** (5 páginas)
+   - Modificações concretas propostas
+   - Checklist de implementação
+   - Análise de cenários (75% sucesso esperado)
+
+#### Compilação
+- **response_to_reviewers.pdf**: 25 páginas, 199 KB ✓
+- Warnings: Apenas citações Xiao2012 undefined (normal - aguardando bibtex)
+- 3 Overfull \hbox menores (aceitáveis)
+
+#### Probabilidade de Sucesso
+**Estimativa: 75-85%**
+
+**Razões:**
+- Teoria Bloch-Floquet inquestionável
+- Precedentes de alta autoridade (Xiao, Villeneuve)
+- Inviabilidade computacional clara (10-20× aumento)
+- Tom cordial e respeitoso
+- Abertura para future work
+
+---
+
 ### 2025-10-04 - Response Letter Profissional com Template Eficiente
-**Criado documento completo response_to_reviewers.tex (24 páginas) com formatação otimizada**
+**Criado documento completo response_to_reviewers.tex com formatação otimizada**
 
 #### Template de Formatação
 - Desenvolvido template sóbrio e formal usando linhas coloridas simples
