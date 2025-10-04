@@ -794,9 +794,9 @@ The triangular lattice emerges as the superior single-resonator architecture, ac
 
 Multi-resonator systems introduce dual bandgap capability. The honeycomb lattice demonstrates optimal dual-resonator engineering with FBGW 2 achieving remarkable performance ($\Delta f_{34} = 28.67$ [Hz] at $f_j = 137$ [Hz]) that nearly doubles its FBGW 1. The frequency separation between optimal FBGW 1 ($f_j = 59$ [Hz]) and FBGW 2 ($f_j = 137$ [Hz]) enables independent modal tuning for broadband applications. The kagomé lattice exhibits narrow band gaps (FBGW 1: $\Delta f_{34} = 6.54$ [Hz] at $f_j = 35$ [Hz]; FBGW 2: $\Delta f_{45} = 6.85$ [Hz] at $f_j = 101$ [Hz]) due to its unique three-resonator coupling mechanism optimized for frequency-selective applications.
 
-Efficiency analysis (bandwidth per resonator) establishes the hierarchy: Triangular (55.40 [Hz]/res) > Square (32.10 [Hz]/res) > Rectangular (20.53 [Hz]/res) > Honeycomb (14.34 [Hz]/res) > Kagomé (2.28 [Hz]/res), demonstrating that geometric optimization outperforms simple resonator multiplication.
+Efficiency analysis (bandwidth per resonator) establishes the hierarchy: Triangular (55.40 [Hz]/res) > Square (32.10 [Hz]/res) > Rectangular (20.53 [Hz]/res) > Honeycomb (14.34 [Hz]/res) > Kagomé (2.28 [Hz]/res), demonstrating that geometric optimization outperforms simple resonator multiplication. Table \ref{tab:performance_summary} summarizes the key performance metrics for all lattice configurations, including maximum FBGW, optimal resonator frequency, and the primary physical mechanisms governing each architecture.
 
-\textcolor{red}{The absolute bandwidth analysis (FBGW in Hz) presented above provides critical insights for engineering applications with specific frequency targets, enabling designers to select lattice configurations based on the actual bandwidth required at predetermined frequencies. For instance, if an application requires maximum attenuation at 145 Hz, the triangular lattice with 55.40 Hz absolute bandwidth is the optimal choice. However, this comparison alone does not account for the fact that different lattices achieve their maximum performance at different frequency ranges (triangular at 145 Hz vs square at 105 Hz), potentially biasing conclusions toward configurations operating at higher frequencies where absolute bandwidth naturally increases.}
+\textcolor{red}{The absolute bandwidth analysis (FBGW in [Hz]) presented above provides critical insights for engineering applications with specific frequency targets, enabling designers to select lattice configurations based on the actual bandwidth required at predetermined frequencies. For instance, if an application requires maximum attenuation at 145 [Hz], the triangular lattice with 55.40 Hz absolute bandwidth is the optimal choice. However, this comparison alone does not account for the fact that different lattices achieve their maximum performance at different frequency ranges (triangular at 145 Hz vs square at 105 Hz), potentially biasing conclusions toward configurations operating at higher frequencies where absolute bandwidth naturally increases.}
 
 \begin{table}[htb]
 \small
@@ -847,14 +847,14 @@ $f_j$ [Hz] & Square & Rectangular & Triangular & Honeycomb & Kagomé \\
 150 & 12.94 & 0.00 & 41.53 & 16.25 & 3.35 \\
 \hline
 \multicolumn{6}{l}{\footnotesize \textbf{Peak Performance:}} \\
-\multicolumn{6}{l}{\footnotesize Square: 31.40\% @ 100 Hz, Rectangular: 20.41\% @ 70 Hz} \\
-\multicolumn{6}{l}{\footnotesize Triangular: 42.51\% @ 140 Hz, Honeycomb: 23.37\% @ 50 Hz, Kagomé: 20.07\% @ 10 Hz} \\
+\multicolumn{6}{l}{\footnotesize Square: 31.40\% at 100 Hz; Rectangular: 20.41\% at 70 Hz} \\
+\multicolumn{6}{l}{\footnotesize Triangular: 42.51\% at 140 Hz; Honeycomb: 23.37\% at 50 Hz; Kagomé: 20.07\% at 10 Hz} \\
 \hline
 \end{tabular}
 }
 \end{table}
 
-\textcolor{red}{The dual-metric comparative framework (absolute + relative bandwidth) provides comprehensive design guidelines: (1) \textbf{Absolute bandwidth (FBGW)} guides frequency-specific applications where target operational range is predetermined (e.g., machinery vibration at 100-150 Hz requires triangular lattice with 55.40 Hz bandwidth at 145 Hz); (2) \textbf{Relative bandwidth ($\eta_{rel}$)} reveals intrinsic geometric efficiency, enabling material-independent and frequency-independent performance ranking (triangular 42.51\% consistently superior across all frequencies). Together, these complementary metrics address both the practical engineering question "which lattice for my target frequency?" and the fundamental scientific question "which geometry is intrinsically superior?", as appropriately highlighted by the reviewers' comments.}
+\textcolor{red}{The dual-metric comparative framework (absolute + relative bandwidth) provides comprehensive design guidelines: (1) \textbf{Absolute bandwidth (FBGW)} guides frequency-specific applications where target operational range is predetermined (e.g., machinery vibration at 100-150 Hz requires triangular lattice with 55.40 Hz bandwidth at 145 Hz); (2) \textbf{Relative bandwidth ($\eta_{rel}$)} reveals intrinsic geometric efficiency, enabling material-independent and frequency-independent performance ranking (triangular 42.51\% consistently superior across all frequencies). Together, these complementary metrics address both the practical engineering question "which lattice for my target frequency?" and the fundamental scientific question "which geometry is intrinsically superior?".}
 
 This comparative analysis establishes clear design guidelines for metamaterial architecture selection based on application requirements: triangular lattices for maximum bandwidth, honeycomb for broadband dual-mode operation, and kagomé for frequency-selective attenuation. The performance hierarchy validates the theoretical framework and demonstrates that geometric optimization outperforms simple resonator multiplication strategies.
 
@@ -1346,38 +1346,38 @@ Using identical PWE computational parameters (M = 2, convergence tolerance 10$^{
 
 \textcolor{red}{\begin{table}[!htb]
 \centering
-\caption{Full band gap width [Hz] evolution for Aluminum 6061 lattices}
+\caption{Full band gap width evolution for Aluminum 6061 lattices with FBGW 1 and FBGW 2 for multi-resonator configurations\protect\footnotemark[1]}
 \label{tab:aluminum_results}
-\scriptsize
-\begin{tabular}{c|ccc|cc|cc}
+\small
+\begin{tabular}{cccccccc}
 \hline
-$f_j$ [Hz] & Square & Rect. & Triang. & Hon.$_1$ & Hon.$_2$ & Kag.$_1$ & Kag.$_2$ \\
+$f_j$ & Square & Rectangular & Triangular & Honeycomb & Honeycomb & Kagom\'{e} & Kagom\'{e} \\
+(Hz) & FBGW & FBGW & FBGW & FBGW 1 & FBGW 2 & FBGW 1 & FBGW 2 \\
 \hline
-150 & 36.1 & 33.7 & 36.4 & 35.8 & 0.0 & \textbf{26.3} & 0.0 \\
-175 & 43.2 & 39.2 & 43.8 & 42.5 & 0.0 & 16.9 & 10.7 \\
+150 & 36.1 & 33.7 & 36.4 & 35.8 & -- & \textbf{26.3} & -- \\
+175 & 43.2 & 39.2 & 43.8 & 42.5 & -- & 16.9 & 10.7 \\
 200 & 50.4 & 44.9 & 51.2 & 49.2 & 20.8 & 13.3 & 18.8 \\
 225 & 57.9 & 50.7 & 59.0 & 55.7 & 45.0 & 12.3 & 20.0 \\
 250 & 66.4 & 56.0 & 68.1 & \textbf{57.7} & 66.5 & 12.5 & 19.9 \\
 275 & 75.8 & 61.1 & 78.3 & 43.3 & 66.7 & 13.4 & 19.5 \\
 300 & 84.2 & 66.9 & 87.4 & 26.8 & 68.0 & 14.7 & 19.6 \\
 325 & 91.4 & 69.0 & 96.0 & 11.5 & 70.3 & 16.3 & 20.5 \\
-350 & 97.3 & 58.6 & 103.7 & 0.0 & 73.5 & 18.4 & 22.1 \\
-375 & 113.4 & 81.4 & 120.9 & 0.0 & 77.4 & 11.7 & 24.2 \\
-400 & 107.0 & 30.4 & 127.5 & 0.0 & 81.9 & 3.8 & 26.9 \\
-425 & \textbf{131.1} & 74.7 & 145.8 & 0.0 & 87.0 & 0.0 & 26.6 \\
-450 & 111.0 & 5.4 & 161.7 & 0.0 & 92.7 & 0.0 & 23.1 \\
-475 & 111.0 & 30.7 & 172.1 & 0.0 & 98.9 & 0.0 & 20.0 \\
-484$^*$ & 107.0 & 22.9 & 176.9 & 0.0 & \textbf{101.2} & 0.0 & 19.1 \\
-500 & 89.9 & 0.0 & 198.4 & 0.0 & 105.3 & 0.0 & 17.8 \\
-525 & 89.9 & 0.0 & 198.4 & 0.0 & 111.1 & 0.0 & 16.5 \\
-575 & 71.7 & 0.0 & \textbf{222.0} & 0.0 & 113.7 & 0.0 & 16.4 \\
-625 & 56.2 & 0.0 & 219.4 & 0.0 & 93.6 & 0.0 & 17.5 \\
-725 & 31.5 & 0.0 & 196.1 & 0.0 & 62.9 & 0.0 & 17.4 \\
+350 & 97.3 & 58.6 & 103.7 & -- & 73.5 & 18.4 & 22.1 \\
+375 & 113.4 & 81.4 & 120.9 & -- & 77.4 & 11.7 & 24.2 \\
+400 & 107.0 & 30.4 & 127.5 & -- & 81.9 & 3.8 & 26.9 \\
+425 & \textbf{131.1} & 74.7 & 145.8 & -- & 87.0 & -- & 26.6 \\
+450 & 111.0 & 5.4 & 161.7 & -- & 92.7 & -- & 23.1 \\
+475 & 111.0 & 30.7 & 172.1 & -- & 98.9 & -- & 20.0 \\
+484\protect\footnotemark[2] & 107.0 & 22.9 & 176.9 & -- & \textbf{101.2} & -- & 19.1 \\
+500 & 89.9 & -- & 198.4 & -- & 105.3 & -- & 17.8 \\
+525 & 89.9 & -- & 198.4 & -- & 111.1 & -- & 16.5 \\
+575 & 71.7 & -- & \textbf{222.0} & -- & 113.7 & -- & 16.4 \\
+625 & 56.2 & -- & 219.4 & -- & 93.6 & -- & 17.5 \\
+725 & 31.5 & -- & 196.1 & -- & 62.9 & -- & 17.4 \\
 \hline
-\multicolumn{8}{l}{\footnotesize $^*$Bragg frequency. Bold: maximum FBGW per lattice. Hon.=Honeycomb, Kag.=Kagomé, Rect.=Rectangular, Triang.=Triangular} \\
-\multicolumn{8}{l}{\footnotesize Subscripts: $_1$=FBGW 1, $_2$=FBGW 2. Performance ranking (max FBGW): Triang. (222.0) $>$ Square (131.1) $>$ Hon.$_2$ (101.2)} \\
-\multicolumn{8}{l}{\footnotesize $>$ Rect. (84.2) $>$ Hon.$_1$ (57.7) $>$ Kag.$_1$ (26.3) $>$ Kag.$_2$ (26.9)} \\
 \end{tabular}
+\footnotetext[1]{Material properties from Xiao et al. \cite{Xiao_2012}. All FBGW values in Hz. Bold: maximum FBGW. --: no bandgap.}
+\footnotetext[2]{Bragg frequency for square lattice ($f_B = 484$ Hz).}
 \end{table}}
 
 \subsubsection{Carbon/Epoxy Analysis (250-1400 Hz Range)}
@@ -1387,38 +1387,38 @@ $f_j$ [Hz] & Square & Rect. & Triang. & Hon.$_1$ & Hon.$_2$ & Kag.$_1$ & Kag.$_2
 \newpage
 \textcolor{red}{\begin{table}[!htb]
 \centering
-\caption{Full band gap width [Hz] evolution for Carbon/Epoxy UD lattices}
+\caption{Full band gap width evolution for Carbon/Epoxy UD lattices with FBGW 1 and FBGW 2 for multi-resonator configurations\protect\footnotemark[1]}
 \label{tab:carbon_results}
-\scriptsize
-\begin{tabular}{c|ccc|cc|cc}
+\small
+\begin{tabular}{cccccccc}
 \hline
-$f_j$ [Hz] & Square & Rect. & Triang. & Hon.$_1$ & Hon.$_2$ & Kag.$_1$ & Kag.$_2$ \\
+$f_j$ & Square & Rectangular & Triangular & Honeycomb & Honeycomb & Kagom\'{e} & Kagom\'{e} \\
+(Hz) & FBGW & FBGW & FBGW & FBGW 1 & FBGW 2 & FBGW 1 & FBGW 2 \\
 \hline
-300 & 73.1 & 67.4 & 73.9 & 72.3 & 0.0 & \textbf{35.9} & 10.4 \\
+300 & 73.1 & 67.4 & 73.9 & 72.3 & -- & \textbf{35.9} & 10.4 \\
 350 & 87.1 & 78.5 & 88.3 & 85.9 & 25.6 & 25.4 & 32.4 \\
 400 & 102.9 & 89.8 & 104.9 & 99.0 & 73.3 & 22.5 & 36.2 \\
 450 & 119.3 & 103.2 & 124.2 & \textbf{105.2} & 120.7 & 22.7 & 36.1 \\
 500 & 136.6 & 111.9 & 140.9 & 78.1 & 121.1 & 24.3 & 35.4 \\
 550 & 154.7 & 118.0 & 158.3 & 45.2 & 123.9 & 26.9 & 35.7 \\
 600 & 174.0 & 133.0 & 182.3 & 14.9 & 128.8 & 30.4 & 37.7 \\
-650 & 191.4 & 136.7 & 201.5 & 0.0 & 135.5 & 30.3 & 41.2 \\
-700 & 207.8 & 126.3 & 220.3 & 0.0 & 143.8 & 15.3 & 45.9 \\
-750 & \textbf{231.8} & \textbf{151.7} & 253.7 & 0.0 & 153.5 & 0.0 & 51.5 \\
-800 & 231.5 & 110.2 & 279.5 & 0.0 & 164.4 & 0.0 & 44.2 \\
-850 & 207.3 & 66.4 & 305.9 & 0.0 & 176.4 & 0.0 & 37.7 \\
-879$^*$ & 194.1 & 41.2 & 321.2 & 0.0 & \textbf{183.8} & 0.0 & 34.7 \\
-900 & 164.4 & 0.0 & 334.0 & 0.0 & 189.2 & 0.0 & 32.9 \\
-950 & 164.4 & 0.0 & 358.6 & 0.0 & 201.1 & 0.0 & 30.1 \\
-1000 & 134.2 & 0.0 & 381.8 & 0.0 & 210.8 & 0.0 & 29.3 \\
-1050 & 108.4 & 0.0 & 402.0 & 0.0 & 203.8 & 0.0 & 29.9 \\
-1100 & 112.2 & 0.0 & \textbf{408.1} & 0.0 & 183.1 & 0.0 & 31.0 \\
-1150 & 88.7 & 0.0 & 398.4 & 0.0 & 164.3 & 0.0 & 32.0 \\
-1200 & 84.2 & 0.0 & 389.8 & 0.0 & 147.4 & 0.0 & 32.5 \\
+650 & 191.4 & 136.7 & 201.5 & -- & 135.5 & 30.3 & 41.2 \\
+700 & 207.8 & 126.3 & 220.3 & -- & 143.8 & 15.3 & 45.9 \\
+750 & \textbf{231.8} & \textbf{151.7} & 253.7 & -- & 153.5 & -- & 51.5 \\
+800 & 231.5 & 110.2 & 279.5 & -- & 164.4 & -- & 44.2 \\
+850 & 207.3 & 66.4 & 305.9 & -- & 176.4 & -- & 37.7 \\
+879\protect\footnotemark[2] & 194.1 & 41.2 & 321.2 & -- & \textbf{183.8} & -- & 34.7 \\
+900 & 164.4 & -- & 334.0 & -- & 189.2 & -- & 32.9 \\
+950 & 164.4 & -- & 358.6 & -- & 201.1 & -- & 30.1 \\
+1000 & 134.2 & -- & 381.8 & -- & 210.8 & -- & 29.3 \\
+1050 & 108.4 & -- & 402.0 & -- & 203.8 & -- & 29.9 \\
+1100 & 112.2 & -- & \textbf{408.1} & -- & 183.1 & -- & 31.0 \\
+1150 & 88.7 & -- & 398.4 & -- & 164.3 & -- & 32.0 \\
+1200 & 84.2 & -- & 389.8 & -- & 147.4 & -- & 32.5 \\
 \hline
-\multicolumn{8}{l}{\footnotesize $^*$Bragg frequency. Bold: maximum FBGW per lattice. Hon.=Honeycomb, Kag.=Kagomé, Rect.=Rectangular, Triang.=Triangular} \\
-\multicolumn{8}{l}{\footnotesize Subscripts: $_1$=FBGW 1, $_2$=FBGW 2. Performance ranking (max FBGW): Triang. (408.1) $>$ Square (231.8) $>$ Hon.$_2$ (183.8)} \\
-\multicolumn{8}{l}{\footnotesize $>$ Rect. (151.7) $>$ Hon.$_1$ (105.2) $>$ Kag.$_2$ (51.5) $>$ Kag.$_1$ (35.9)} \\
 \end{tabular}
+\footnotetext[1]{Material properties from CMH-17 \cite{CMH17_2012}. All FBGW values in Hz. Bold: maximum FBGW. --: no bandgap.}
+\footnotetext[2]{Bragg frequency for square lattice ($f_B = 879$ Hz).}
 \end{table}}
 
 \subsection{Universal Performance Hierarchy}
