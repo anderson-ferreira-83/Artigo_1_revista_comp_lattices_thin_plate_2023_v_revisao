@@ -120,6 +120,128 @@ O manuscrito representa uma contribuição significativa e original ao campo de 
 
 ## Histórico de Alterações
 
+### 2025-10-04 - Reforço das Principais Contribuições em Múltiplas Seções
+**Modificações abrangentes destacando análise comparativa, dual band gaps e bandwidth evolution**
+
+#### Objetivo
+Reforçar em múltiplas seções (highlights, abstract, final da seção 3, conclusões) as principais contribuições do trabalho:
+1. Análise comparativa sistemática das cinco configurações de lattice
+2. Observação de duas bandas proibidas completas em sistemas multi-ressonadores (honeycomb, kagomé)
+3. Análise gráfica abrangente do comportamento de larguras de banda através de 15 frequências de ressonadores
+
+#### Modificações Implementadas (4 adições em vermelho)
+
+**1. Linha 30 - highlights.tex (Highlight 3)**
+- Expandido para incluir comportamento dual band gap e análise bandwidth evolution
+- Adicionado: "multi-resonator systems (honeycomb, kagomé) exhibit dual band gap behavior"
+- Adicionado: "comprehensive bandwidth evolution analysis across five lattice geometries"
+- Mantém concisão enquanto captura contribuições principais
+
+**2. Linha 82 - Abstract**
+- Adicionado parágrafo completo sobre dual band gaps e bandwidth evolution
+- Pontos principais:
+  - Observação crítica de duas bandas completas em honeycomb/kagomé vs. single band gap em square/rectangular/triangular
+  - Origem física: in-phase e anti-phase resonator coupling modes
+  - Comprehensive bandwidth evolution analysis estabelece frequency-dependent performance maps
+- Leitura fluente integrada ao abstract existente
+
+**3. Linha 862 - Final da Seção 3**
+- Substituído resumo simples por análise abrangente detalhada
+- Distinções fundamentais: single-resonator vs multi-resonator systems
+- Dual complete band gaps em honeycomb (2 ressonadores) e kagomé (3 ressonadores)
+- Systematic bandwidth evolution across 15 frequencies (10-150 Hz)
+- Performance hierarchies quantitativas para todas as cinco geometrias
+- Eficiência computacional PWE/EPWE (1800-5700×) enabling extensive parametric investigation
+- "First complete comparative framework" statement
+
+**4. Linha 1135 - Conclusões**
+- Expandida significativamente a descrição da investigação comparativa
+- Arquiteturas de sistema: single-resonator (single band gap) vs multi-resonator (dual band gaps)
+- Dual complete band gaps arising from in-phase/anti-phase coupling modes
+- Comprehensive bandwidth evolution analysis across 15 frequencies para todas as geometries
+- Frequency-dependent performance maps estabelecidas
+- Performance específica: kagomé (15 dB low-freq), honeycomb (dual-mode), triangular (35% superior), square (mid-range), rectangular (directional)
+
+#### Justificativa
+Essas modificações asseguram que as três principais contribuições científicas (comparative analysis, dual band gaps, bandwidth evolution) sejam claramente comunicadas em todos os pontos-chave do manuscrito onde readers esperam encontrar summary das contribuições principais.
+
+### 2025-10-04 - Justificativa para Parâmetro de Lattice Constante
+**Modificação em resposta ao Comentário 6 dos revisores**
+
+#### Objetivo
+Adicionar justificativa clara e fluente para a escolha metodológica de manter o parâmetro de lattice 'a' constante, explicando que esta abordagem isola efeitos geométricos puros e reflete restrições práticas de engenharia.
+
+#### Modificação Implementada
+
+**Linha 338 - Seção 3 (Material Parameters)**
+- Adicionado parágrafo em vermelho explicando a metodologia de parâmetro constante
+- Pontos principais incluídos:
+  - Isolamento de influências geométricas (simetria cristalográfica, área da célula unitária, acoplamento de ressonadores) de efeitos de escala
+  - Hierarquia de desempenho objetiva baseada em propriedades geométricas intrínsecas
+  - Reflete restrições práticas de engenharia (limitações espaciais predeterminadas)
+  - Avaliação justa de geometria que otimiza desempenho dentro de restrições de espaço/material
+  - Consideração crítica para aplicações aeroespaciais, automotivas e de engenharia civil
+- Justificativa: Responde ao Comentário 6 sobre por que 'a' não foi ajustado para criar bandgaps na mesma frequência inicial
+- Leitura natural para o leitor geral, não como resposta direta ao revisor
+
+### 2025-10-04 - Reforço de Citações ao Xiao et al. [46] e Comentário sobre Modelo Infinito
+**Modificações adicionais em resposta ao Comentário 2 dos revisores**
+
+#### Objetivo
+Reforçar o reconhecimento ao trabalho foundational de Xiao et al. [46] ao longo do manuscrito, estabelecendo conexões claras com os princípios de acoplamento resonance-Bragg e frequency tuning sempre que pertinente. Adicionalmente, clarificar no abstract que a análise de largura de banda está relacionada ao modelo infinito da célula unitária.
+
+#### Modificações Implementadas (8 adições em vermelho)
+
+1. **Linha 82 - Abstract**
+   - Adicionado: "Bandwidth analysis employs infinite unit cell model predictions obtained through PWE/EPWE formulations."
+   - Justificativa: Clarifica que a análise quantitativa de largura de banda está relacionada ao modelo infinito, conforme solicitado
+
+2. **Linha 450 - Seção 3.1 (Análise Paramétrica Square Lattice)**
+   - Conexão com Xiao et al. sobre resonator frequency tuning e bandwidth dependency
+   - Reforça que systematic variation de $f_j$ enables controlled bandgap engineering
+   - Confirma dependency of bandwidth on resonant frequency estabelecida por Xiao
+
+3. **Linha 460 - Seção 3.1 (Universal Design Rule)**
+   - Conexão explícita: universal design rule $f_{j,opt} \approx 0.89 f_B$ aligns with coupling mechanism de Xiao
+   - Reforça: widest bandgap from near-coupling between resonance and Bragg band gaps
+   - Confirma: fundamental importance of resonator frequency tuning
+
+4. **Linha 555 - Seção 3.1 (Triangular Lattice Performance)**
+   - Estabelece que tuning capability across full frequency spectrum extends foundational work de Xiao
+   - Demonstra: geometric symmetry fundamentally alters bandwidth-frequency relationship
+   - Conecta: resonator frequency optimization principles com geometric variations
+
+5. **Linha 588 - Síntese Single-Resonator Lattices**
+   - Universal relationship $f_{j,opt} \approx 0.89 f_B$ consistent with resonance-Bragg coupling principle de Xiao
+   - Reforça: optimal bandwidth from strategic positioning of resonator frequencies
+   - Estabelece conexão: geometric dispersion limits + resonator tuning
+
+6. **Linha 624 - Seção 3.2 (Multi-Resonator Systems)**
+   - Extends resonator frequency optimization principles de Xiao from single to multi-resonator
+   - Revela: coupled oscillators introduce new degrees of freedom
+   - Demonstra: beyond what is achievable through frequency tuning alone
+
+7. **Linha 793 - Seção 3.3 (Comparative Analysis)**
+   - Extends findings de Xiao on square lattice to multiple geometric configurations
+   - Demonstra: resonance-Bragg coupling universally applicable
+   - Estabelece: lattice symmetry governs achievable bandwidth limits
+
+8. **Linha 1134 - Conclusões**
+   - Building upon resonance-Bragg coupling principles established by Xiao
+   - Demonstra: optimal bandgap requires simultaneous optimization of resonator frequency + lattice geometry
+   - Estabelece paradigm shift: geometry-only → combined geometry-frequency design
+
+#### Estratégia de Citação
+- **Contextual e Não-Gratuita**: Todas as citações conectam diretamente com conceitos específicos (coupling, tuning, bandwidth optimization)
+- **Progressiva**: Inicia com fundamentos (tuning), avança para aplicações (multi-lattices), culmina em extensões (multi-resonators)
+- **Respeitosa ao Trabalho Foundational**: Reconhece contribuições específicas sem over-claiming originalidade
+
+#### Verificação de Consistência
+- Todas as 8 adições estão em vermelho (\textcolor{red}{...})
+- Citações sempre seguem padrão: Xiao et al.~\cite{Xiao_2012}
+- Conexões estabelecem: foundational work → presente study extensions
+- Linguagem: acknowledges, extends, builds upon, confirms
+
 ### 2025-09-28 - Revisão para Reviewers MSSP
 **Processamento completo de 8 comentários dos revisores com modificações em vermelho**
 
