@@ -1,8 +1,8 @@
 Preciso que você analise as seguintes sugestões de modificações, com base no que já modificamos conforme sugerido pelos revisores:
 
-A partir dos comentários 1 e 5 com relação a frequência relativa. Essa modificação foi feita logo no inicio da seção 3. Porém o que acha de colocar essa modificação do primeiro paragrafo na seção 3.3 que trata da análise comparativa?
+A partir dos comentários 1 e 5 dos revisores visto em reviewer_response_template.html  com relação a frequência relativa. Essa modificação foi feita logo no inicio da seção 3. Porém o que acha de colocar essa modificação do primeiro paragrafo na seção 3.3 que trata das análise comparativas?
 
-Ainda na seção 3.3 com relação a análise comparativa, seria importante detalhar bem os resultados das duas comparações feitas e de alguma forma justificar no texto a importância do resultado que tinha e o que foi inserido agora com a nova equação da frequência relativa. O que vc acha?
+Ainda na seção 3.3 com relação a análise comparativa, seria importante detalhar bem os resultados das duas comparações feitas e de alguma forma justificar no texto a importância do resultado que já tinha anteriormente e o que foi inserido agora com a nova equação da frequência relativa e também reforçar sua importância uma vez os revisores sugeriram isso. O que vc acha?
 
 Na conclusão (Seção 5), talvez seja melhor comentar também que em trabalhos futuros, seria interessante fazer uso e implementar analises experimentais com materiais de aplicação em engenharias, como os propostos nos apêndices C.
 
@@ -11,6 +11,10 @@ Já no Apêndice C, com relação as tabelas C.22 e C.23 que possuem os resultad
 doc_files_data_materials_al_carb
 
 observa-se que existem apenas a primeira coluna com relação a primeira lagura de banda proibida das redes de kagome e honeycomb(hexagonal), porem essas duas tabelas devem conter valore das segunda banda proibida dessas respectivas redes
+
+Implemente isso por etapas
+
+lembre-se que o arquivo é o que está em revisão e o arquivo manuscript_mssp2_sub.tex foi submetido para os revisores
 
 - Depois de fazer essas correções acima, passar para as figuras da seção 3, como otimiliza-las para submissão e posteriormente serem publicados (Sábado e Domingo)
 
