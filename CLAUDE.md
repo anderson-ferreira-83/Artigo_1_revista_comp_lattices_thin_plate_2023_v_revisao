@@ -194,6 +194,156 @@ O manuscrito representa uma contribuição significativa e original ao campo de 
 
 ## Histórico de Alterações
 
+### 2025-10-04 (16h30) - Reorganização dos Highlights - Destaque para Contribuições Principais
+**Reestruturação dos 5 highlights para evidenciar contribuições técnicas mais impactantes**
+
+#### Problema Identificado
+- Highlight 3 muito longo (87 palavras) misturando 4 conceitos diferentes
+- Contribuições principais sub-representadas:
+  - Bandwidth evolution mapping (15 frequências): mencionado vagamente ao final
+  - Dual bandgaps: "exhibit behavior" sem explicar mecanismo físico
+- Não mencionava 15 frequências mapeadas nem performance maps
+
+#### Análise Técnica Realizada
+**Arquivo criado:** `ANALISE_CONTRIBUICOES_HIGHLIGHTS.md` (11 páginas)
+
+**Contribuições identificadas como alto impacto:**
+1. ✅ Systematic bandwidth evolution mapping (15 freq × 5 lattices = 75 analyses)
+2. ✅ Dual bandgap characterization (honeycomb/kagomé coupling modes)
+3. ✅ Performance hierarchy (triangular 35% superior)
+4. ✅ Computational efficiency (1800-5700× speedup)
+5. ✅ Material efficiency (triangular = 25% kagomé mass)
+
+#### Modificações Implementadas
+**Arquivo:** `highlights.tex`
+
+**Estrutura anterior (problemática):**
+- H1: Comparative analysis (OK)
+- H2: Computational efficiency (OK)
+- H3: ⚠️ Performance + dual bandgaps + bandwidth evolution (87 palavras!)
+- H4: Material efficiency (OK mas curto)
+- H5: Engineering framework (OK)
+
+**Estrutura nova (otimizada):**
+
+**Highlight 1** (mantido - 21 palavras):
+```
+First systematic comparative analysis of five lattice geometries (square, rectangular,
+triangular, honeycomb, kagomé) for locally resonant metamaterial plates using validated
+PWE/EPWE framework.
+```
+
+**Highlight 2** ⭐ **NOVO - Bandwidth evolution mapping (21 palavras):**
+```
+Systematic bandwidth evolution mapping across 15 resonator frequencies (10-150 Hz)
+reveals geometry-dependent optimal operational ranges and establishes frequency-dependent
+performance maps.
+```
+- **Destaca:** 15 frequências mapeadas, performance maps, operational ranges
+- **Impacto futuro:** Benchmark para novas geometrias, citações para geometry selection
+
+**Highlight 3** ⭐ **NOVO - Dual bandgap characterization (20 palavras):**
+```
+Dual bandgap characterization in multi-resonator systems: Honeycomb/kagomé achieve
+broadband multi-frequency attenuation through in-phase and anti-phase resonator
+coupling modes.
+```
+- **Destaca:** Mecanismo físico (coupling modes), multi-frequency capability
+- **Impacto futuro:** Multi-resonator design, multi-frequency applications
+
+**Highlight 4** (reorganizado - 25 palavras):
+```
+Triangular lattices achieve 35% superior relative bandwidth (42.51% vs 31.40%) using
+only 25% of kagomé material; computational efficiency: 1800-5700× speedup over FEM.
+```
+- **Combina:** Performance hierarchy + material efficiency + computational efficiency
+
+**Highlight 5** (ajustado - 18 palavras):
+```
+Engineering design framework with frequency-dependent lattice selection guidelines
+for aerospace, automotive, and civil vibration control applications.
+```
+
+**Total:** 105 palavras (5 highlights concisos)
+
+#### Melhorias Alcançadas
+
+**Antes:**
+- ❌ Bandwidth evolution: afterthought no final de H3
+- ❌ Dual bandgaps: "exhibit behavior" (vago)
+- ❌ 15 frequências: não mencionadas
+- ❌ Performance maps: não mencionados
+- ❌ Coupling modes: não explicados
+- ❌ H3 com 87 palavras (excessivo)
+
+**Depois:**
+- ✅ Bandwidth evolution: Highlight 2 dedicado
+- ✅ Dual bandgaps: Highlight 3 com mecanismo físico
+- ✅ 15 frequências: explícito (H2)
+- ✅ Performance maps: explícito (H2)
+- ✅ Coupling modes: in-phase/anti-phase (H3)
+- ✅ Todos highlights ≤25 palavras
+
+#### Justificativa Técnica
+
+**Bandwidth Evolution Mapping (H2):**
+- Do manuscrito (Conclusões): "establishes frequency-dependent performance maps"
+- Permite: geometry selection baseada em target frequency
+- Citações esperadas: "For f=100Hz, use triangular (Ref.)"
+
+**Dual Bandgap Characterization (H3):**
+- Do manuscrito: "dual band gaps arising from in-phase and anti-phase coupling modes"
+- Honeycomb: FBGW 2 ≈ 2× FBGW 1 (28.67 Hz vs ~14 Hz)
+- Citações esperadas: "Multi-resonator systems enable dual bandgaps (Ref.)"
+
+**Compilação:** 1 página, 33 KB (sucesso - apenas 1 overfull box menor 8.6pt, aceitável)
+
+#### Impacto
+- ✅ Destaca contribuições com maior impacto futuro
+- ✅ Facilita citação por outros trabalhos
+- ✅ Concisão (≤25 palavras/highlight)
+- ✅ Clareza sobre "porquê" cada contribuição importa
+
+---
+
+### 2025-10-04 (16h14) - Atualização Response Letter Comment (10) com Dados Reais da Etapa 1
+**Substituição da resposta estimada por dados concretos da redução implementada**
+
+#### Problema Identificado
+- Response letter continha dados **estimados** (~15-25% redução)
+- Mencionava "paradoxo" de redução vs adições
+- Não refletia a implementação real (Etapa 1 conservadora)
+
+#### Modificações Implementadas
+**Arquivo:** response_to_reviewers.tex (linhas 685-767)
+
+**Nova resposta com dados reais:**
+1. **Redução quantificada:** 14% confirmado (~80 linhas)
+2. **4 ações específicas documentadas:**
+   - Action 1.1: Tables condensadas (15→5 linhas square/rect/tri; 15→7 Table 14)
+   - Action 1.2: Parágrafo constant-a (180→80 palavras, linha 338)
+   - Action 1.3: Dual-metric framework (5 parágrafos condensados, linhas 767-839)
+   - Action 1.4: Table 2 justifications simplificadas (linhas 317-333)
+
+3. **Changesbox atualizado:**
+   - Localização exata de cada modificação
+   - Redução word-by-word documentada
+   - Resultado: "14% reduction, 100% scientific content preserved"
+
+4. **Menção à Etapa 2:**
+   - "If reviewer deems additional condensation necessary, we have prepared a second phase (Etapa 2) that can achieve up to 31% total reduction"
+   - Demonstra preparação e flexibilidade
+
+**Compilação:** 26 páginas, 218 KB (sucesso)
+
+#### Impacto
+- ✅ Resposta agora precisa e verificável
+- ✅ Demonstra implementação concreta (não promessa)
+- ✅ Mostra esforço conservador mas efetivo
+- ✅ Preparado para pedido adicional (Etapa 2 planejada)
+
+---
+
 ### 2025-10-04 - Argumentação Robusta e Cordial para Comment (6) - Constant Lattice Parameter
 **Fortalecimento da justificativa metodológica com tom respeitoso e fundamentação teórica sólida**
 
