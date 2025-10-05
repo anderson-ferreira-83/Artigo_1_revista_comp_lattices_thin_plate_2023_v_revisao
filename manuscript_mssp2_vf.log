@@ -1,19 +1,15 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.28)  1 OCT 2025 14:01
-=======
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.27)  4 OCT 2025 16:04
->>>>>>> 58063affef4d88d2581225c6b0603fac32a52ef5
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.28)  5 OCT 2025 11:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **./manuscript_mssp2_vf.tex
 (manuscript_mssp2_vf.tex
 LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-07-19>
+L3 programming layer <2025-09-02>
 (elsarticle.cls
 Document Class: elsarticle 2020/11/20, 3.3: Elsevier Ltd
 (C:\Program Files\MiKTeX\tex/latex/l3kernel\expl3.sty
-Package: expl3 2025-07-19 L3 programming layer (loader) 
+Package: expl3 2025-09-02 L3 programming layer (loader) 
 
 (C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
@@ -711,17 +707,6 @@ Overfull \hbox (1.10327pt too wide) in paragraph at lines 138--139
 
 [8]
 
-<<<<<<< HEAD
-pdfTeX warning: pdflatex.exe (file ./ilustr_inf_panel_cell_unit-eps-converted-t
-o.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
-ed
-<ilustr_inf_panel_cell_unit-eps-converted-to.pdf, id=325, 469.77106pt x 311.413
-83pt>
-File: ilustr_inf_panel_cell_unit-eps-converted-to.pdf Graphic file (type pdf)
-<use ilustr_inf_panel_cell_unit-eps-converted-to.pdf>
-Package pdftex.def Info: ilustr_inf_panel_cell_unit-eps-converted-to.pdf  used 
-on input line 155.
-=======
 pdfTeX warning: pdflatex.exe (file ./ilustr_inf_panel_cell_unit.pdf): PDF inclu
 sion: found PDF version <1.7>, but at most version <1.5> allowed
 <ilustr_inf_panel_cell_unit.pdf, id=324, 469.77106pt x 311.41383pt>
@@ -729,7 +714,6 @@ File: ilustr_inf_panel_cell_unit.pdf Graphic file (type pdf)
 <use ilustr_inf_panel_cell_unit.pdf>
 Package pdftex.def Info: ilustr_inf_panel_cell_unit.pdf  used on input line 155
 .
->>>>>>> 58063affef4d88d2581225c6b0603fac32a52ef5
 (pdftex.def)             Requested size: 241.49895pt x 160.09242pt.
 
 
@@ -777,18 +761,6 @@ ra-tions are an-a-lyzed: square
 
 [12]
 
-<<<<<<< HEAD
-pdfTeX warning: pdflatex.exe (file ./ilustr_unit_cell_type_lattice-eps-converte
-d-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> al
-lowed
-<ilustr_unit_cell_type_lattice-eps-converted-to.pdf, id=380, 441.91098pt x 292.
-38234pt>
-File: ilustr_unit_cell_type_lattice-eps-converted-to.pdf Graphic file (type pdf
-)
-<use ilustr_unit_cell_type_lattice-eps-converted-to.pdf>
-Package pdftex.def Info: ilustr_unit_cell_type_lattice-eps-converted-to.pdf  us
-ed on input line 238.
-=======
 pdfTeX warning: pdflatex.exe (file ./ilustr_unit_cell_type_lattice.pdf): PDF in
 clusion: found PDF version <1.7>, but at most version <1.5> allowed
 <ilustr_unit_cell_type_lattice.pdf, id=380, 441.91098pt x 292.38234pt>
@@ -796,7 +768,6 @@ File: ilustr_unit_cell_type_lattice.pdf Graphic file (type pdf)
 <use ilustr_unit_cell_type_lattice.pdf>
 Package pdftex.def Info: ilustr_unit_cell_type_lattice.pdf  used on input line 
 238.
->>>>>>> 58063affef4d88d2581225c6b0603fac32a52ef5
 (pdftex.def)             Requested size: 241.49895pt x 159.78465pt.
 
 
@@ -844,11 +815,7 @@ r unit cell for lat-tice con-fig-u-ra-tion $\OML/cmm/m/it/10 i$\T1/cmr/m/n/10 ,
 
 pdfTeX warning: pdflatex.exe (file ./1_1_disp_frf_square.pdf): PDF inclusion: f
 ound PDF version <1.7>, but at most version <1.5> allowed
-<<<<<<< HEAD
-<1_1_disp_frf_square.pdf, id=444, 772.94742pt x 563.35107pt>
-=======
 <1_1_disp_frf_square.pdf, id=454, 772.94742pt x 563.35107pt>
->>>>>>> 58063affef4d88d2581225c6b0603fac32a52ef5
 File: 1_1_disp_frf_square.pdf Graphic file (type pdf)
 <use 1_1_disp_frf_square.pdf>
 Package pdftex.def Info: 1_1_disp_frf_square.pdf  used on input line 432.
@@ -861,33 +828,14 @@ Package pdftex.def Info: 1_1_disp_frf_square.pdf  used on input line 432.
 
 pdfTeX warning: pdflatex.exe (file ./2_1_disp_frf_square.pdf): PDF inclusion: f
 ound PDF version <1.7>, but at most version <1.5> allowed
-<<<<<<< HEAD
-<2_1_disp_frf_square.pdf, id=507, 815.44652pt x 932.8164pt>
-=======
 <2_1_disp_frf_square.pdf, id=516, 815.44652pt x 932.8164pt>
->>>>>>> 58063affef4d88d2581225c6b0603fac32a52ef5
 File: 2_1_disp_frf_square.pdf Graphic file (type pdf)
 <use 2_1_disp_frf_square.pdf>
 Package pdftex.def Info: 2_1_disp_frf_square.pdf  used on input line 446.
 (pdftex.def)             Requested size: 310.4979pt x 355.1856pt.
 
 
-<<<<<<< HEAD
-[22 <./2_1_disp_frf_square.pdf>]
-
-[23]
-
-pdfTeX warning: pdflatex.exe (file ./1_2_disp_frf_rect.pdf): PDF inclusion: fou
-nd PDF version <1.7>, but at most version <1.5> allowed
-<1_2_disp_frf_rect.pdf, id=538, 774.49721pt x 556.96712pt>
-File: 1_2_disp_frf_rect.pdf Graphic file (type pdf)
-<use 1_2_disp_frf_rect.pdf>
-Package pdftex.def Info: 1_2_disp_frf_rect.pdf  used on input line 499.
-(pdftex.def)             Requested size: 276.00105pt x 198.48534pt.
-
-=======
 [23 <./2_1_disp_frf_square.pdf>]
->>>>>>> 58063affef4d88d2581225c6b0603fac32a52ef5
 
 [24]
 
@@ -906,26 +854,13 @@ Package pdftex.def Info: 1_2_disp_frf_rect.pdf  used on input line 488.
 
 pdfTeX warning: pdflatex.exe (file ./2_2_disp_frf_rect.pdf): PDF inclusion: fou
 nd PDF version <1.7>, but at most version <1.5> allowed
-<<<<<<< HEAD
-<2_2_disp_frf_rect.pdf, id=544, 809.27907pt x 921.67738pt>
-=======
 <2_2_disp_frf_rect.pdf, id=607, 809.27907pt x 921.67738pt>
->>>>>>> 58063affef4d88d2581225c6b0603fac32a52ef5
 File: 2_2_disp_frf_rect.pdf Graphic file (type pdf)
 <use 2_2_disp_frf_rect.pdf>
 Package pdftex.def Info: 2_2_disp_frf_rect.pdf  used on input line 497.
 (pdftex.def)             Requested size: 310.4979pt x 353.63039pt.
 
 
-<<<<<<< HEAD
-[25 <./1_2_disp_frf_rect.pdf>]
-
-[26]
-
-pdfTeX warning: pdflatex.exe (file ./1_3_disp_frf_trian.pdf): PDF inclusion: fo
-und PDF version <1.7>, but at most version <1.5> allowed
-<1_3_disp_frf_trian.pdf, id=609, 776.27075pt x 571.86702pt>
-=======
 [27 <./2_2_disp_frf_rect.pdf>]
 
 [28]
@@ -935,96 +870,31 @@ und PDF version <1.7>, but at most version <1.5> allowed
 pdfTeX warning: pdflatex.exe (file ./1_3_disp_frf_trian.pdf): PDF inclusion: fo
 und PDF version <1.7>, but at most version <1.5> allowed
 <1_3_disp_frf_trian.pdf, id=651, 776.27075pt x 571.86702pt>
->>>>>>> 58063affef4d88d2581225c6b0603fac32a52ef5
 File: 1_3_disp_frf_trian.pdf Graphic file (type pdf)
 <use 1_3_disp_frf_trian.pdf>
 Package pdftex.def Info: 1_3_disp_frf_trian.pdf  used on input line 533.
 (pdftex.def)             Requested size: 276.00105pt x 203.32397pt.
 
 
-<<<<<<< HEAD
-[27]
-
-pdfTeX warning: pdflatex.exe (file ./2_3_disp_frf_trian.pdf): PDF inclusion: fo
-und PDF version <1.7>, but at most version <1.5> allowed
-<2_3_disp_frf_trian.pdf, id=619, 811.1151pt x 921.26392pt>
-=======
 [30 <./1_3_disp_frf_trian.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./2_3_disp_frf_trian.pdf): PDF inclusion: fo
 und PDF version <1.7>, but at most version <1.5> allowed
 <2_3_disp_frf_trian.pdf, id=701, 811.1151pt x 921.26392pt>
->>>>>>> 58063affef4d88d2581225c6b0603fac32a52ef5
 File: 2_3_disp_frf_trian.pdf Graphic file (type pdf)
 <use 2_3_disp_frf_trian.pdf>
 Package pdftex.def Info: 2_3_disp_frf_trian.pdf  used on input line 545.
 (pdftex.def)             Requested size: 310.4979pt x 352.67047pt.
 
-<<<<<<< HEAD
-Overfull \hbox (0.85999pt too wide) in paragraph at lines 574--575
-=======
 
 [31 <./2_3_disp_frf_trian.pdf>]
 Overfull \hbox (0.85999pt too wide) in paragraph at lines 556--557
->>>>>>> 58063affef4d88d2581225c6b0603fac32a52ef5
 \T1/cmr/m/n/10 than the square lat-tice, the su-pe-rior sym-me-try prop-er-ties
  en-able area-normalized
  []
 
 
 
-<<<<<<< HEAD
-[28]
-
-[29]
-Overfull \hbox (8.8247pt too wide) in paragraph at lines 618--619
-[]\T1/cmr/m/n/10 Figure []9[] demon-strates the rev-o-lu-tion-ary ad-vance achi
-eved through multi-resonator
- []
-
-
-
-pdfTeX warning: pdflatex.exe (file ./1_4_disp_frf_hex.pdf): PDF inclusion: foun
-d PDF version <1.7>, but at most version <1.5> allowed
-<1_4_disp_frf_hex.pdf, id=633, 780.76575pt x 572.05933pt>
-File: 1_4_disp_frf_hex.pdf Graphic file (type pdf)
-<use 1_4_disp_frf_hex.pdf>
-Package pdftex.def Info: 1_4_disp_frf_hex.pdf  used on input line 622.
-(pdftex.def)             Requested size: 345.0pt x 252.78053pt.
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 629.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 629.
-
-Missing character: There is no ° in font cmr10!
-
-
-[30]
-
-[31]
-
-pdfTeX warning: pdflatex.exe (file ./2_4_disp_frf_hex.pdf): PDF inclusion: foun
-d PDF version <1.7>, but at most version <1.5> allowed
-<2_4_disp_frf_hex.pdf, id=646, 812.63622pt x 905.67068pt>
-File: 2_4_disp_frf_hex.pdf Graphic file (type pdf)
-<use 2_4_disp_frf_hex.pdf>
-Package pdftex.def Info: 2_4_disp_frf_hex.pdf  used on input line 642.
-(pdftex.def)             Requested size: 293.2521pt x 326.81508pt.
-
-
-[32]
-
-[33]
-
-pdfTeX warning: pdflatex.exe (file ./1_5_disp_frf_kag.pdf): PDF inclusion: foun
-d PDF version <1.7>, but at most version <1.5> allowed
-<1_5_disp_frf_kag.pdf, id=667, 759.39061pt x 545.70433pt>
-File: 1_5_disp_frf_kag.pdf Graphic file (type pdf)
-<use 1_5_disp_frf_kag.pdf>
-Package pdftex.def Info: 1_5_disp_frf_kag.pdf  used on input line 716.
-(pdftex.def)             Requested size: 345.0pt x 247.92114pt.
-=======
 [32]
 
 [33]
@@ -1033,64 +903,12 @@ Overfull \hbox (8.8247pt too wide) in paragraph at lines 595--596
 eved through multi-resonator
  []
 
->>>>>>> 58063affef4d88d2581225c6b0603fac32a52ef5
 
 
 [34]
 
 pdfTeX warning: pdflatex.exe (file ./1_4_disp_frf_hex.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
-<<<<<<< HEAD
-<2_5_disp_frf_kag.pdf, id=677, 817.45378pt x 886.07587pt>
-File: 2_5_disp_frf_kag.pdf Graphic file (type pdf)
-<use 2_5_disp_frf_kag.pdf>
-Package pdftex.def Info: 2_5_disp_frf_kag.pdf  used on input line 731.
-(pdftex.def)             Requested size: 310.4979pt x 336.5636pt.
-
-Overfull \hbox (7.24731pt too wide) in paragraph at lines 738--739
-[]\T1/cmr/m/n/10 Figure []12[]f) con-firms the narrow-band penalty of ge-o-met-
-ric frus-tra-tion^^Vmaximum
- []
-
-
-
-[35]
-
-[36]
-
-pdfTeX warning: pdflatex.exe (file ./0_disp_comp_lattices.pdf): PDF inclusion: 
-found PDF version <1.7>, but at most version <1.5> allowed
-<0_disp_comp_lattices.pdf, id=692, 794.97pt x 614.295pt>
-File: 0_disp_comp_lattices.pdf Graphic file (type pdf)
-<use 0_disp_comp_lattices.pdf>
-Package pdftex.def Info: 0_disp_comp_lattices.pdf  used on input line 797.
-(pdftex.def)             Requested size: 345.0pt x 266.59752pt.
-
-
-[37]
-
-[38]
-
-pdfTeX warning: pdflatex.exe (file ./ilustr_bound_force_frf_modal.pdf): PDF inc
-lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<ilustr_bound_force_frf_modal.pdf, id=715, 343.78459pt x 296.3572pt>
-File: ilustr_bound_force_frf_modal.pdf Graphic file (type pdf)
-<use ilustr_bound_force_frf_modal.pdf>
-Package pdftex.def Info: ilustr_bound_force_frf_modal.pdf  used on input line 8
-81.
-(pdftex.def)             Requested size: 207.0021pt x 178.44424pt.
-
-
-[39]
-
-[40]
-Overfull \hbox (6.38641pt too wide) in paragraph at lines 914--915
-[]\T1/cmr/m/n/10 Individual lat-tice anal-y-sis re-veals dis-tinct ad-van-tages
-: (1) Kagomé lat-tice achieves
- []
-
-
-=======
 <1_4_disp_frf_hex.pdf, id=743, 780.76575pt x 572.05933pt>
 File: 1_4_disp_frf_hex.pdf Graphic file (type pdf)
 <use 1_4_disp_frf_hex.pdf>
@@ -1134,7 +952,6 @@ Package pdftex.def Info: 1_5_disp_frf_kag.pdf  used on input line 693.
 
 
 [40 <./1_5_disp_frf_kag.pdf>]
->>>>>>> 58063affef4d88d2581225c6b0603fac32a52ef5
 
 [41]
 
@@ -1146,73 +963,6 @@ File: 2_5_disp_frf_kag.pdf Graphic file (type pdf)
 Package pdftex.def Info: 2_5_disp_frf_kag.pdf  used on input line 708.
 (pdftex.def)             Requested size: 310.4979pt x 336.5636pt.
 
-<<<<<<< HEAD
-pdfTeX warning: pdflatex.exe (file ./1_1_disp_frf_square_pwe_epwe_recep1.pdf): 
-PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<1_1_disp_frf_square_pwe_epwe_recep1.pdf, id=749, 1089.58447pt x 886.18486pt>
-File: 1_1_disp_frf_square_pwe_epwe_recep1.pdf Graphic file (type pdf)
-<use 1_1_disp_frf_square_pwe_epwe_recep1.pdf>
-Package pdftex.def Info: 1_1_disp_frf_square_pwe_epwe_recep1.pdf  used on input
- line 927.
-(pdftex.def)             Requested size: 276.00105pt x 224.47995pt.
-
-
-[43]
-
-pdfTeX warning: pdflatex.exe (file ./2_1_disp_frf_square_3_receps.pdf): PDF inc
-lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<2_1_disp_frf_square_3_receps.pdf, id=759, 998.84189pt x 578.12888pt>
-File: 2_1_disp_frf_square_3_receps.pdf Graphic file (type pdf)
-<use 2_1_disp_frf_square_3_receps.pdf>
-Package pdftex.def Info: 2_1_disp_frf_square_3_receps.pdf  used on input line 9
-38.
-(pdftex.def)             Requested size: 345.0pt x 199.68404pt.
-
-
-pdfTeX warning: pdflatex.exe (file ./1_2_disp_frf_rect_pwe_epwe_recep1.pdf): PD
-F inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<1_2_disp_frf_rect_pwe_epwe_recep1.pdf, id=763, 1077.87703pt x 903.55156pt>
-File: 1_2_disp_frf_rect_pwe_epwe_recep1.pdf Graphic file (type pdf)
-<use 1_2_disp_frf_rect_pwe_epwe_recep1.pdf>
-Package pdftex.def Info: 1_2_disp_frf_rect_pwe_epwe_recep1.pdf  used on input l
-ine 955.
-(pdftex.def)             Requested size: 276.00105pt x 231.3608pt.
-
-
-[44]
-
-pdfTeX warning: pdflatex.exe (file ./2_2_disp_frf_rect_3_receps.pdf): PDF inclu
-sion: found PDF version <1.7>, but at most version <1.5> allowed
-<2_2_disp_frf_rect_3_receps.pdf, id=772, 986.78041pt x 572.85938pt>
-File: 2_2_disp_frf_rect_3_receps.pdf Graphic file (type pdf)
-<use 2_2_disp_frf_rect_3_receps.pdf>
-Package pdftex.def Info: 2_2_disp_frf_rect_3_receps.pdf  used on input line 966
-.
-(pdftex.def)             Requested size: 345.0pt x 200.28525pt.
-
-
-pdfTeX warning: pdflatex.exe (file ./1_3_disp_frf_trian_pwe_epwe_recep1.pdf): P
-DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<1_3_disp_frf_trian_pwe_epwe_recep1.pdf, id=776, 1075.21793pt x 891.27106pt>
-File: 1_3_disp_frf_trian_pwe_epwe_recep1.pdf Graphic file (type pdf)
-<use 1_3_disp_frf_trian_pwe_epwe_recep1.pdf>
-Package pdftex.def Info: 1_3_disp_frf_trian_pwe_epwe_recep1.pdf  used on input 
-line 983.
-(pdftex.def)             Requested size: 276.00105pt x 228.78748pt.
-
-
-[45]
-
-pdfTeX warning: pdflatex.exe (file ./2_3_disp_frf_trian_3_receps.pdf): PDF incl
-usion: found PDF version <1.7>, but at most version <1.5> allowed
-<2_3_disp_frf_trian_3_receps.pdf, id=785, 986.69029pt x 569.11111pt>
-File: 2_3_disp_frf_trian_3_receps.pdf Graphic file (type pdf)
-<use 2_3_disp_frf_trian_3_receps.pdf>
-Package pdftex.def Info: 2_3_disp_frf_trian_3_receps.pdf  used on input line 99
-4.
-(pdftex.def)             Requested size: 345.0pt x 198.98344pt.
-
-=======
 Overfull \hbox (7.24731pt too wide) in paragraph at lines 715--716
 []\T1/cmr/m/n/10 Figure []12[]f) con-firms the narrow-band penalty of ge-o-met-
 ric frus-tra-tion^^Vmaximum
@@ -1243,81 +993,11 @@ Package pdftex.def Info: 0_disp_comp_lattices.pdf  used on input line 772.
 
 
 [45 <./0_disp_comp_lattices.pdf>]
->>>>>>> 58063affef4d88d2581225c6b0603fac32a52ef5
 
 [46]
 
 [47]
 
-<<<<<<< HEAD
-pdfTeX warning: pdflatex.exe (file ./1_4_disp_frf_hex_pwe_epwe_recep1.pdf): PDF
- inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<1_4_disp_frf_hex_pwe_epwe_recep1.pdf, id=800, 1055.67482pt x 904.6863pt>
-File: 1_4_disp_frf_hex_pwe_epwe_recep1.pdf Graphic file (type pdf)
-<use 1_4_disp_frf_hex_pwe_epwe_recep1.pdf>
-Package pdftex.def Info: 1_4_disp_frf_hex_pwe_epwe_recep1.pdf  used on input li
-ne 1011.
-(pdftex.def)             Requested size: 276.00105pt x 236.5243pt.
-
-Overfull \hbox (6.16484pt too wide) in paragraph at lines 1016--1017
-\T1/cmr/m/n/10 at $\OML/cmm/m/it/10 f[] \OT1/cmr/m/n/10 = 30$ \T1/cmr/m/n/10 [H
-z], demon-strat-ing su-pe-rior per-for-mance com-pared to single-resonator
- []
-
-
-
-[48]
-
-pdfTeX warning: pdflatex.exe (file ./2_4_disp_frf_hex_3_receps.pdf): PDF inclus
-ion: found PDF version <1.7>, but at most version <1.5> allowed
-<2_4_disp_frf_hex_3_receps.pdf, id=808, 1000.3496pt x 566.8368pt>
-File: 2_4_disp_frf_hex_3_receps.pdf Graphic file (type pdf)
-<use 2_4_disp_frf_hex_3_receps.pdf>
-Package pdftex.def Info: 2_4_disp_frf_hex_3_receps.pdf  used on input line 1022
-.
-(pdftex.def)             Requested size: 345.0pt x 195.48972pt.
-
-Overfull \hbox (8.90692pt too wide) in paragraph at lines 1029--1030
-\T1/cmr/m/n/10 dual-resonator cou-pling cre-ates: (i) 46.14 [dB] ad-van-tage ov
-er best single-resonator
- []
-
-
-
-pdfTeX warning: pdflatex.exe (file ./1_5_disp_frf_kag_pwe_epwe_recep1.pdf): PDF
- inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<1_5_disp_frf_kag_pwe_epwe_recep1.pdf, id=813, 1076.3039pt x 908.56438pt>
-File: 1_5_disp_frf_kag_pwe_epwe_recep1.pdf Graphic file (type pdf)
-<use 1_5_disp_frf_kag_pwe_epwe_recep1.pdf>
-Package pdftex.def Info: 1_5_disp_frf_kag_pwe_epwe_recep1.pdf  used on input li
-ne 1039.
-(pdftex.def)             Requested size: 276.00105pt x 232.99095pt.
-
-
-[49]
-
-pdfTeX warning: pdflatex.exe (file ./2_5_disp_frf_kag_3_receps.pdf): PDF inclus
-ion: found PDF version <1.7>, but at most version <1.5> allowed
-<2_5_disp_frf_kag_3_receps.pdf, id=822, 970.1245pt x 579.63493pt>
-File: 2_5_disp_frf_kag_3_receps.pdf Graphic file (type pdf)
-<use 2_5_disp_frf_kag_3_receps.pdf>
-Package pdftex.def Info: 2_5_disp_frf_kag_3_receps.pdf  used on input line 1050
-.
-(pdftex.def)             Requested size: 345.0pt x 206.13004pt.
-
-
-[50]
-
-[51]
-
-pdfTeX warning: pdflatex.exe (file ./all_comp_frf_stat_lat.pdf): PDF inclusion:
- found PDF version <1.7>, but at most version <1.5> allowed
-<all_comp_frf_stat_lat.pdf, id=835, 1011.96912pt x 604.80956pt>
-File: all_comp_frf_stat_lat.pdf Graphic file (type pdf)
-<use all_comp_frf_stat_lat.pdf>
-Package pdftex.def Info: all_comp_frf_stat_lat.pdf  used on input line 1070.
-(pdftex.def)             Requested size: 345.0pt x 206.19547pt.
-=======
 [48]
 
 pdfTeX warning: pdflatex.exe (file ./ilustr_bound_force_frf_modal.pdf): PDF inc
@@ -1350,7 +1030,6 @@ File: 1_1_disp_frf_square_pwe_epwe_recep1.pdf Graphic file (type pdf)
 Package pdftex.def Info: 1_1_disp_frf_square_pwe_epwe_recep1.pdf  used on input
  line 902.
 (pdftex.def)             Requested size: 276.00105pt x 224.47995pt.
->>>>>>> 58063affef4d88d2581225c6b0603fac32a52ef5
 
 
 [52 <./1_1_disp_frf_square_pwe_epwe_recep1.pdf>]
@@ -1564,20 +1243,14 @@ m/n/10 2\OML/cmm/m/it/10 ^^Y\OT1/cmr/m/n/10 )(\OML/cmm/m/it/10 ^^Y=a [] ^^^\OT1
  []
 
 
-<<<<<<< HEAD
-=======
 Overfull \hbox (58.09637pt too wide) in paragraph at lines 1358--1358
  [][] 
  []
 
 
->>>>>>> 58063affef4d88d2581225c6b0603fac32a52ef5
 
 [79]
 
-<<<<<<< HEAD
-[66]
-=======
 [80]
 Overfull \hbox (58.3547pt too wide) in paragraph at lines 1399--1399
  [][] 
@@ -1586,7 +1259,6 @@ Overfull \hbox (58.3547pt too wide) in paragraph at lines 1399--1399
 
 
 [81]
->>>>>>> 58063affef4d88d2581225c6b0603fac32a52ef5
 
 [82]
 
@@ -1604,13 +1276,8 @@ Overfull \hbox (6.16315pt too wide) in paragraph at lines 1464--1465
 
 
 
-<<<<<<< HEAD
-[69]
-Overfull \hbox (41.87845pt too wide) in paragraph at lines 1483--1511
-=======
 [84]
 Overfull \hbox (41.87845pt too wide) in paragraph at lines 1478--1506
->>>>>>> 58063affef4d88d2581225c6b0603fac32a52ef5
  [][] 
  []
 
@@ -1653,23 +1320,16 @@ Package natbib Warning: There were undefined citations.
 [94] (manuscript_mssp2_vf.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-07-19>
+L3 programming layer <2025-09-02>
  ***********
 Package rerunfilecheck Info: File `manuscript_mssp2_vf.out' has not changed.
 (rerunfilecheck)             Checksum: F8F025FF0676AD002A975D45EC476D10;9591.
  ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
  19709 strings out of 468130
- 372673 string characters out of 5440691
- 839921 words of memory out of 5000000
- 47777 multiletter control sequences out of 15000+600000
-=======
- 19709 strings out of 468149
- 372405 string characters out of 5441140
- 805276 words of memory out of 5000000
- 47759 multiletter control sequences out of 15000+600000
->>>>>>> 58063affef4d88d2581225c6b0603fac32a52ef5
+ 372450 string characters out of 5440691
+ 805621 words of memory out of 5000000
+ 47778 multiletter control sequences out of 15000+600000
  649345 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  78i,14n,81p,2070b,1394s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1715,16 +1375,9 @@ Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX
 public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.p
 fb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-<<<<<<< HEAD
-Output written on manuscript_mssp2_vf.pdf (97 pages, 76170902 bytes).
-PDF statistics:
- 2430 PDF objects out of 2487 (max. 8388607)
- 285 named destinations out of 1000 (max. 500000)
-=======
 Output written on manuscript_mssp2_vf.pdf (94 pages, 76192259 bytes).
 PDF statistics:
  2473 PDF objects out of 2487 (max. 8388607)
  284 named destinations out of 1000 (max. 500000)
->>>>>>> 58063affef4d88d2581225c6b0603fac32a52ef5
  16278 words of extra memory for PDF output out of 17280 (max. 10000000)
 

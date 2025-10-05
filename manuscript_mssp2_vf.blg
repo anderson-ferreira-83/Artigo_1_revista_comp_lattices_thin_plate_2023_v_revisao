@@ -1,11 +1,14 @@
-This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
+This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: manuscript_mssp2_vf.aux
+Reallocating 'name_of_file' (item size: 1) to 15 items.
 The style file: elsarticle-num.bst
+Reallocating 'name_of_file' (item size: 1) to 10 items.
 Database file #1: mybibfile.bib
+Warning--I didn't find a database entry for "Xiao2012"
 You've used 64 entries,
             2952 wiz_defined-function locations,
-            1173 strings with 17661 characters,
+            1175 strings with 17677 characters,
 and the built_in function-call counts, 20799 in all, are:
 = -- 2059
 > -- 722
@@ -44,3 +47,4 @@ warning$ -- 0
 while$ -- 155
 width$ -- 66
 write$ -- 632
+(There was 1 warning)
