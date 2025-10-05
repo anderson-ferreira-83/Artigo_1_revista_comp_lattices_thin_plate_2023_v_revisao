@@ -1,0 +1,49 @@
+=====================================================
+Ref: MSSP25-4032
+Title: Bandgap optimization in locally resonant metamaterial plates: A comparative study of five lattice geometries for low-frequency wave attenuation
+Authors: Anderson Henrique Ferreira; José Maria Campos Dos Aantos; Edson de Miranda Jansen Pedrosa; Adriano Mitsuo Goto
+
+Dear Ms. Ferreira,
+
+Thank you for submitting your paper to Mechanical Systems and Signal Processing
+
+I have considered the comments of the reviewers (appended below) and decided that the paper should be revised to take into account these comments.
+
+When revising your manuscript please include a point-by-point response to all the reviewers' comments and ensure that all modified text is printed in red. If the response to the reviewers' comments is not complete and descriptive, I will be unable to make a prompt decision on the paper.
+
+Please also consult both the journal's Guide for Authors, and the information on electronic artwork preparation at the following website: https://www.editorialmanager.com/ymssp/.
+
+I would appreciate if you could submit your revised paper by 15 Oct 2025.
+
+To submit a revision, go to https://www.editorialmanager.com/ymssp/ and log in as an Author. You will see a menu item called "Submission Needing Revision". You will find your submission record there.
+
+For guidelines on how to submit your revised manuscript please go the following address: http://help.elsevier.com/app/answers/detail/p/7923/a_id/91
+
+Your username is: anderson.ferreira.fem.unicamp@gmail.com
+If you need to retrieve password details, please go to: click here to reset your password.
+
+When submitting your revised manuscript, please ensure that you upload the source files (e.g. Word). Uploading only a PDF file at this stage will create delays should your manuscript be finally accepted for publication. If your revised submission does not include the source files, we will contact you to request them.
+
+Research Elements (optional)
+This journal encourages you to share research objects - including your raw data, methods, protocols, software, hardware and more – which support your original research article in a Research Elements journal. Research Elements are open access, multidisciplinary, peer-reviewed journals which make the objects associated with your research more discoverable, trustworthy and promote replicability and reproducibility. As open access journals, there may be an Article Publishing Charge if your paper is accepted for publication. Find out more about the Research Elements journals at https://www.elsevier.com/authors/tools-and-resources/research-elements-journals?dgcid=ec_em_research_elements_email.
+
+Yours sincerely,
+Mechanical Systems and Signal Processing
+
+********************************************************
+
+
+
+
+
+Reviewer #1: This work presents a comparative analysis of band gaps and vibration attenuation of locally resonant metamaterial plate across five distinct periodic configurations. This is an interesting topic worth studying. Before I can recommend the publication of the manuscript in MSSP, I suggest the authors address the following comments:
+(1) It is claimed that "triangular lattices achieve 40% wider band gaps compared to square configurations and demonstrate superior broadband characteristics". However, I do not think their band gap width are fairly compared. In this work, the widest band gap for the case of triangular lattice opens in a much higher frequency range (⁓145 Hz) than that for the case of square lattice (⁓105 Hz), but their band gap width are quantified by absolute bandwidth given by(f2-f1). Such a comparison of absolute bandgap width cannot be accepted in this field. For a fair comparison, the authors should use the relative bandgap width (f2-f1)/fc, where fc=(f2+f1)/2. Or alternatively, they should choose a larger lattice constant for the case of square lattice, so that a widest band gap can be created in a similar frequency range as the case of triangular lattices. For example, the beginning frequency of the widest bandgap can be carefully designed to be the same as the case of triangular lattice.
+(2) It should be noted that similar study of the influence of tuning local resonance frequency on the bandgap width has been reported in Ref.[46] for the case of square lattice. It has been revealed in [46] that the widest bandgap occurs when the directional resonance band gap and Bragg band gap are nearly coupled, and an approximate initial design formula has been provided in [46]. The authors should acknowledge existing findings and provide appropriate discussions.
+(3) In the introduction, it is mentioned "Bragg's condition a = nλ/2 necessitates large unit cells to attenuate low-frequency waves [30], challenging compact device design, particularly for flexural [31] or elastic waves in complex media [32]." However, in this study, the widest band gap always occurs in a frequency range where Bragg scattering effect plays an important effect, and the operating half flexural wavelength (λ/2) is comparable to the lattice constant.
+(4) The attention of this work is place on the low-frequency flexural waves (10−200)[Hz]. However, only one example of very soft thin plate made by soft material (3D printable polymer material) is considered. What will happen for the case of hard metallic material plate, or a thinker plate with much higher bending stiffness?
+(5) The band gap width used for comparison should be defined by the relative bandgap width (f2-f1)/fc.
+(6) I don't think the lattice parameter a should be kept constant to demonstrate comparison. I think the lattice parameter can be carefully adjusted so that the resulting widest band gap is created at the same beginning frequency for different cases of periodic lattice.
+(7) What is the definition of mass ratio in Table 2. What is the meaning of the mass ratio normalized to kagome in Table 3. Please provide mathematical formulations.
+(8) The highlights should be revised to be more concise and focused on the new contributions of this work.
+(9) Many figures are not clear. The fonts in many of the figures are too small.
+(10) The paper is not concise enough. Section 3 can be shortened.
