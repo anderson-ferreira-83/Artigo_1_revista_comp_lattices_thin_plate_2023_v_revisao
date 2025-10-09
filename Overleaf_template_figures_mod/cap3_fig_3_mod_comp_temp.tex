@@ -1,0 +1,73 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tikz}
+
+\begin{document}
+
+\begin{figure}[h]
+\centering
+
+\includegraphics[width=0.85\textwidth]{figura_lattices_SEM_LEGENDA.png}
+
+\vspace{0.3cm}
+
+% Legenda EXTRA BOLD
+\centering
+\footnotesize
+\begin{tabular}{@{}c@{\hspace{0.2em}}l@{\hspace{0.8em}}c@{\hspace{0.2em}}l@{\hspace{0.8em}}c@{\hspace{0.2em}}l@{}}
+% Linha 1
+\tikz{%
+    \draw[line width=5pt, magenta!90!red] (0,0.18) -- (0.8,0.18);
+    \fill[magenta!90!red] (0.4,0.18) circle (4.5pt);
+} & 
+\parbox[t]{3.2cm}{\footnotesize Square - FBGW 1\\$\Delta f_{12} = 32.10$ Hz} &
+
+\tikz{%
+    \draw[line width=5pt, blue!80!black] (0,0.18) -- (0.8,0.18);
+    \fill[blue!80!black] (0.4,0.18) circle (4.5pt);
+} & 
+\parbox[t]{3.2cm}{\footnotesize Rectangular - FBGW 1\\$\Delta f_{12} = 20.53$ Hz} &
+
+\tikz{%
+    \draw[line width=5pt, cyan!90!blue] (0,0.18) -- (0.8,0.18);
+    \fill[cyan!90!blue] (0.4,0.18) circle (4.5pt);
+} & 
+\parbox[t]{3.2cm}{\footnotesize Triangular - FBGW 1\\$\Delta f_{12} = 55.40$ Hz} \\[0.7em]
+
+% Linha 2
+\tikz{%
+    \draw[line width=5pt, red!70!black] (0,0.18) -- (0.8,0.18);
+    \fill[red!70!black] (0.4,0.18) circle (4.5pt);
+} & 
+\parbox[t]{3.2cm}{\footnotesize Honeycomb - FBGW 1\\$\Delta f_{23} = 14.28$ Hz} &
+
+\tikz{%
+    \draw[line width=4pt, red!70!black, dashed] (0,0.18) -- (0.8,0.18);
+    \fill[red!70!black] (0.27,0.0) rectangle (0.42,0.36);
+} & 
+\parbox[t]{3.2cm}{\footnotesize Honeycomb - FBGW 2\\$\Delta f_{34} = 28.67$ Hz} &
+
+\tikz{%
+    \draw[line width=5pt, green!70!black] (0,0.18) -- (0.8,0.18);
+    \fill[green!70!black] (0.4,0.18) circle (4.5pt);
+} & 
+\parbox[t]{3.2cm}{\footnotesize Kagome - FBGW 1\\$\Delta f_{34} = 6.54$ Hz} \\[0.7em]
+
+% Linha 3
+& &
+\tikz{%
+    \draw[line width=4pt, green!70!black, dashed] (0,0.18) -- (0.8,0.18);
+    \fill[green!70!black] (0.27,0.0) rectangle (0.42,0.36);
+} & 
+\parbox[t]{3.2cm}{\footnotesize Kagome - FBGW 2\\$\Delta f_{45} = 6.85$ Hz} & & \\
+
+\end{tabular}
+
+\caption{Comparison of the full bandgap widths among the five lattices as functions of local resonance frequency $f_j$. 
+The triangular lattice achieves the largest FBGW 1 ($\Delta f_{12} = 55.40$ [Hz] at $f_j = 145$ [Hz]), followed by the square lattice ($\Delta f_{12} = 32.10$ [Hz] at $f_j = 105$ [Hz]), and the honeycomb lattice ($\Delta f_{34} = 28.67$ [Hz] at $f_j = 137$ [Hz]). 
+Individual results for each lattice are presented in Figures \ref{pwe_disp_square_all_res}f)--\ref{pwe_disp_hex_all_res12}f).}
+\label{comp_all_latices_FBGW 1}
+\end{figure}
+
+\end{document}

@@ -1,0 +1,118 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{xcolor}
+\usepackage{tikz}
+
+\begin{document}
+
+\begin{figure*}[t]
+\centering
+
+% Linha superior - Subfiguras a), b), c)
+\begin{subfigure}[b]{0.31\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figura_a_SEM_LEGENDA.png}
+    \caption{$f_r = 10$ Hz}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.31\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figura_b_SEM_LEGENDA.png}
+    \caption{$f_r = 60$ Hz}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.31\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figura_c_SEM_LEGENDA.png}
+    \caption{$f_r = 150$ Hz}
+\end{subfigure}
+
+\vspace{0.2cm}
+
+% Legenda para a), b), c) - Linhas mais grossas
+\centering
+\small
+\begin{tabular}{@{}c@{\hspace{0.3em}}l@{\hspace{1.0em}}c@{\hspace{0.3em}}l@{\hspace{1.0em}}c@{\hspace{0.3em}}l@{}}
+\tikz{\filldraw[magenta!90!red] (0,0) rectangle (0.6,0.3);} & FBGW 1 &
+\tikz{\filldraw[orange!90!red] (0,0) rectangle (0.6,0.3);} & FBGW 2 &
+\tikz{\draw[line width=3.5pt, cyan!80!white] (0,0.15) -- (0.6,0.15);} & K-L: Mode 2 - PWE \\[0.3em]
+\tikz{\draw[line width=3.5pt, red!40!orange!60] (0,0.15) -- (0.6,0.15);} & K-L: Mode 3 - PWE &
+\tikz{\draw[line width=3.5pt, blue!30!red!20] (0,0.15) -- (0.6,0.15);} & K-L: Mode 4 - PWE &
+\tikz{\draw[line width=3pt, black] (0,0.15) -- (0.6,0.15);} & K-L: Bare Plate - PWE \\[0.3em]
+\tikz{\draw[line width=2.5pt, blue!80!cyan, dashed] (0,0.15) -- (0.6,0.15);} & LRSC & & & & \\
+\end{tabular}
+
+\vspace{0.4cm}
+
+% Linha inferior - Subfiguras d), e), f)
+\begin{subfigure}[b]{0.31\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figura_d_SEM_LEGENDA.png}
+    \caption{Lower edge frequency}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.31\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figura_e_SEM_LEGENDA.png}
+    \caption{Upper edge frequency}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.31\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figura_f_SEM_LEGENDA.png}
+    \caption{Full band gap width}
+\end{subfigure}
+
+\vspace{0.2cm}
+
+% Legenda PRECISA para d), e), f) - Marcadores e linhas maiores
+\centering
+\scriptsize
+\begin{tabular}{@{}l@{\hspace{0.5em}}c@{\hspace{0.2em}}l@{\hspace{1.5em}}c@{\hspace{0.2em}}l@{}}
+\textbf{(d)} & 
+\tikz{%
+    \draw[line width=3.5pt, magenta!90!red] (0,0.15) -- (0.7,0.15);
+    \fill[magenta!90!red] (0.2,0.15) circle (3.5pt);
+    \fill[magenta!90!red] (0.5,0.15) circle (3.5pt);
+} & FBGW 1 - Mode 2 &
+\tikz{%
+    \draw[line width=3pt, orange!90!red, dashed] (0,0.15) -- (0.7,0.15);
+    \fill[orange!90!red] (0.15,0.05) rectangle (0.25,0.25);
+    \fill[orange!90!red] (0.45,0.05) rectangle (0.55,0.25);
+} & FBGW 2 - Mode 3 \\[0.4em]
+
+\textbf{(e)} & 
+\tikz{%
+    \draw[line width=3.5pt, magenta!90!red] (0,0.15) -- (0.7,0.15);
+    \fill[magenta!90!red] (0.2,0.15) circle (3.5pt);
+    \fill[magenta!90!red] (0.5,0.15) circle (3.5pt);
+} & FBGW 1 - Mode 3 &
+\tikz{%
+    \draw[line width=3.5pt, red!80!orange] (0,0.15) -- (0.7,0.15);
+    \fill[red!80!orange] (0.15,0.05) rectangle (0.25,0.25);
+    \fill[red!80!orange] (0.45,0.05) rectangle (0.55,0.25);
+} & FBGW 2 - Mode 4 \\[0.4em]
+
+\textbf{(f)} & 
+\tikz{%
+    \draw[line width=3.5pt, red!80!black] (0,0.15) -- (0.7,0.15);
+    \fill[red!80!black] (0.2,0.15) circle (3.5pt);
+    \fill[red!80!black] (0.5,0.15) circle (3.5pt);
+} & FBGW 1 &
+\tikz{%
+    \draw[line width=3pt, red!80!black, dashed] (0,0.15) -- (0.7,0.15);
+    \fill[red!80!black] (0.15,0.05) rectangle (0.25,0.25);
+    \fill[red!80!black] (0.45,0.05) rectangle (0.55,0.25);
+} & FBGW 2 \\
+\end{tabular}
+
+\caption{Parametric analysis of band structure with two resonators as a function of resonator frequency. 
+(\textit{a--c}) Dispersion diagrams for resonator frequencies of 10 Hz, 60 Hz, and 150 Hz, computed with PWE method, showing two full band gaps (FBGW 1 and FBGW 2). 
+(\textit{d}) Lower edge frequencies: FBGW 1 (Mode 2) and FBGW 2 (Mode 3). 
+(\textit{e}) Upper edge frequencies: FBGW 1 (Mode 3) and FBGW 2 (Mode 4). 
+(\textit{f}) Full band gap widths: FBGW 1 maximum $\Delta f_g = 14.28$ Hz at $f_r = 59$ Hz; FBGW 2 maximum $\Delta f_g = 28.87$ Hz at $f_r = 137$ Hz.}
+\label{fig:parametric_two_resonators}
+\end{figure*}
+
+\end{document}

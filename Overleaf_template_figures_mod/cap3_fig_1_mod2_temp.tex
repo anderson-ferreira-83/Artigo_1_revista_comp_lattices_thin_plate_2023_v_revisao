@@ -1,0 +1,50 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{xcolor}
+\usepackage{tikz}
+
+\begin{document}
+
+\begin{figure*}[t]
+\centering
+
+% Subfigura a) - Aumentada
+\begin{subfigure}[b]{0.58\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figura_a_hex_SEM_LEGENDA.png}
+    \caption{Dispersion diagram}
+    \label{fig:dispersion_hex}
+\end{subfigure}
+\hfill
+% Subfigura b) - Aumentada
+\begin{subfigure}[b]{0.38\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figura_b_hex.png}
+    \caption{Wave modes}
+    \label{fig:wavemodes_hex}
+\end{subfigure}
+
+\vspace{0.3cm}
+
+% Legenda em formato de tabela
+\centering
+\small
+\begin{tabular}{@{}c@{\hspace{0.3em}}l@{\hspace{1.0em}}c@{\hspace{0.3em}}l@{\hspace{1.0em}}c@{\hspace{0.3em}}l@{}}
+\tikz{\filldraw[magenta!90!red] (0,0) rectangle (0.6,0.3);} & FBGW 1 &
+\tikz{\filldraw[blue!80!cyan] (0,0) rectangle (0.6,0.3);} & PBGW 3 - $\Gamma \rightarrow$ X &
+\tikz{\filldraw[orange!90!red] (0,0) rectangle (0.6,0.3);} & FBGW 2 \\[0.3em]
+\tikz{\draw[line width=3.5pt, cyan!80!white] (0,0.15) -- (0.6,0.15);} & K-L: Mode 2 - PWE &
+\tikz{\draw[line width=3.5pt, red!40!orange!60] (0,0.15) -- (0.6,0.15);} & K-L: Mode 3 - PWE &
+\tikz{\draw[line width=3.5pt, blue!30!red!20] (0,0.15) -- (0.6,0.15);} & K-L: Mode 4 - PWE \\[0.3em]
+\tikz{\draw[line width=3pt, black, dashed] (0,0.15) -- (0.6,0.15);} & K-L: Modes 1 to 3 - FEM &
+\tikz{\draw[line width=2.5pt, blue!80!cyan, dashed] (0,0.15) -- (0.6,0.15);} & LRSC: 80 [Hz] & & \\
+\end{tabular}
+
+\caption{Band structure and wave mode shapes for a hexagonal lattice unit cell with single resonator ($f_r = 80$ Hz) in a thin plate. 
+(\textit{a}) Dispersion diagram computed with PWE and FEM methods along M'--$\Gamma$--X--M--X'--M'. Two complete band gaps are observed: FBGW 1 (37.13--67.24 Hz, $\Delta f = 30.11$ Hz) and FBGW 2 (69.84--93.5 Hz, $\Delta f = 23.66$ Hz), along with a partial band gap PBGW 3 (69.84--120 Hz, $\Delta f = 50.16$ Hz) in the $\Gamma \rightarrow$ X direction. 
+(\textit{b}) Wave mode shapes at points $A_h$, $B_h$, and $C_h$ showing displacement field patterns computed by FEM.}
+\label{fig:pwe_fem_disp_modal_hex}
+\end{figure*}
+
+\end{document}

@@ -1,0 +1,91 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{xcolor}
+\usepackage{tikz}
+
+\begin{document}
+
+\begin{figure*}[t]
+\centering
+
+% Linha superior - Subfiguras a), b), c)
+\begin{subfigure}[b]{0.31\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figura_a_disp_hex_SEM_LEGENDA.png}
+    \caption{Dispersion diagram}
+    \label{fig:disp_epwe_hex}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.31\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figura_b_impedance_hex_SEM_LEGENDA.png}
+    \caption{Impedance}
+    \label{fig:impedance_hex}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.31\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figura_c_frf_hex_SEM_LEGENDA.png}
+    \caption{Receptance FRF}
+    \label{fig:frf_hex}
+\end{subfigure}
+
+\vspace{0.2cm}
+
+% Legenda unificada para a), b), c) - COM DUAS BANDAS
+\centering
+\small
+\begin{tabular}{@{}c@{\hspace{0.3em}}l@{\hspace{1.0em}}c@{\hspace{0.3em}}l@{\hspace{1.0em}}c@{\hspace{0.3em}}l@{}}
+% Linha 1 - Bandas proibidas e primeiros modos
+\tikz{\filldraw[magenta!90!red] (0,0) rectangle (0.6,0.3);} & FBGW 1 &
+\tikz{\filldraw[orange!90!red] (0,0) rectangle (0.6,0.3);} & FBGW 2 &
+\tikz{\draw[line width=3.5pt, orange!90!yellow] (0,0.15) -- (0.6,0.15);} & K-L: Mode 1 - PWE \\[0.3em]
+
+% Linha 2 - Modos 2, 3, 4
+\tikz{\draw[line width=3.5pt, cyan!80!white] (0,0.15) -- (0.6,0.15);} & K-L: Mode 2 - PWE &
+\tikz{\draw[line width=3.5pt, red!40!orange!60] (0,0.15) -- (0.6,0.15);} & K-L: Mode 3 - PWE &
+\tikz{\draw[line width=3.5pt, blue!30!red!20] (0,0.15) -- (0.6,0.15);} & K-L: Mode 4 - PWE \\[0.3em]
+
+% Linha 3 - EPWE, FRF e Lrsc
+\tikz{\draw[line width=3pt, blue!70!black, dashed] (0,0.15) -- (0.6,0.15);} & K-L: Mode 1 - EPWE ($\Re$) &
+\tikz{\draw[line width=3.5pt, orange!90!yellow] (0,0.15) -- (0.6,0.15);} & K-L: Mode 4 - EPWE ($\Im$) &
+\tikz{\draw[line width=3.5pt, green!60!black] (0,0.15) -- (0.6,0.15);} & K-L: FRF - FEM \\[0.3em]
+
+% Linha 4 - Lrsc
+\tikz{\draw[line width=2.5pt, black, dash pattern=on 4pt off 2pt on 1pt off 2pt] (0,0.15) -- (0.6,0.15);} & Lrsc: 30 [Hz] & & & & \\
+\end{tabular}
+
+\vspace{0.4cm}
+
+% Linha inferior - Subfiguras d), e), f)
+\begin{subfigure}[b]{0.31\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figura_d_mode_ah.png}
+    \caption{$A_h$ at 18.40 Hz}
+    \label{fig:mode_ah}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.31\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figura_e_mode_bh.png}
+    \caption{$B_h$ at 29.21 Hz}
+    \label{fig:mode_bh}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.31\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figura_f_mode_ch.png}
+    \caption{$C_h$ at 38.37 Hz}
+    \label{fig:mode_ch}
+\end{subfigure}
+
+\caption{Band structure, frequency response, and wave propagation modes for a hexagonal lattice phononic crystal with local resonators ($f_r = 30$ Hz). 
+(\textit{a}) Dispersion diagram along $\Gamma$--X computed with PWE and enriched PWE (EPWE) methods showing FBGW 1 and FBGW 2. 
+(\textit{b}) Imaginary part of the impedance from EPWE (Mode 4) showing resonance behavior. 
+(\textit{c}) Receptance (point FRF) computed with FEM showing attenuation within the band gaps. Points $A_h$, $B_h$, and $C_h$ indicate selected frequencies for modal analysis. 
+(\textit{d--f}) Displacement field patterns at frequencies corresponding to points $A_h$, $B_h$, and $C_h$, computed by FEM.}
+\label{fig:epwe_frf_modes_hex}
+\end{figure*}
+
+\end{document}

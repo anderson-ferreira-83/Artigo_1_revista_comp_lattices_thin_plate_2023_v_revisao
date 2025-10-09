@@ -383,7 +383,6 @@ The discretization parameters ($n$ for mesh density, $M$ for plane wave truncati
 
 Systematic comparison between PWE and FEM predictions validates the semi-analytical framework accuracy. Table \ref{pwe_fem_validation} presents quantitative validation metrics for characteristic frequencies across all lattice configurations.
 
-\newpage
 \begin{table}[htb]
 \small
 \centering
@@ -426,10 +425,10 @@ Kagomé & $\Gamma$ & 21.37 & 21.52 & 0.70 & \multirow{3}{*}{1.67} \\
 \subsection{Band structures for square, rectangular and triangular SR-SDOF lattices}
 \label{srt_disp_pwe}
 \textcolor{red}{This subsection analyzes single-resonator lattices with distinct symmetry classes: square (4-fold), rectangular (anisotropic), and triangular (6-fold). Starting with square lattice analysis, Figure \ref{pwe_fem_disp_modal_square} establishes the square lattice as the baseline configuration for single-resonator metamaterials, demonstrating excellent PWE-FEM agreement across the entire frequency spectrum. Resonator stiffness values are calibrated to achieve $f_j = 80$ Hz for direct geometric comparison.}
-
+\newpage
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=.8\textwidth]{1_1_disp_frf_square.pdf}
+	\includegraphics[width=1.1\textwidth]{1_1_disp_frf_square.pdf}
 	\caption{(\textit{a}) Band structure computed with PWE and FEM for a square lattice unit cell with a single resonator with $f_r = 80$ [Hz] in a thin plate. FBGW 1 - $f_1 = 70.72$ [Hz], $f_2 = 93.88$ [Hz], $\Delta f_{12} = 23.16 $ [Hz], PBGW 1 - $f_1 = 61.54$ [Hz], $f_2 = 93.88$ [Hz], $\Delta f_{12} = 32.33 $ [Hz], PBGW 2 - $f_1 = 117.91$ [Hz], $f_2 = 149$ [Hz], $\Delta f_{12} = 31.09 $ [Hz]. (\textit{b}) Waves mode shapes for a square lattice unit cell with a single resonator in a different points of edges in a real band structure computed by FEM.}
 	\label{pwe_fem_disp_modal_square}
 \end{figure}
@@ -443,7 +442,7 @@ Next, Figures \ref{pwe_disp_square_all_res}a), b), and c) present only 3 out of 
 \newpage
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=.9\textwidth]{2_1_disp_frf_square.pdf}
+	\includegraphics[width=.8\textwidth]{2_1_disp_frf_square.pdf}
 	\caption{Results using in PWE for square lattice (\textit{a}) LRSC in $f_j=10$ [Hz], (\textit{b}) LRSC in $f_j=105$ [Hz] and (\textit{c}) LRSC in $f_j=150$ [Hz]. (\textit{d}) $f_1$ - Lower edge frequencies of the first band mode as a function of local resonance. (\textit{e}) $f_2$ - Upper edge frequencies of the second band mode as a function of local resonance. (\textit{f}) FBGW 1 as function of resonator frequency.}
 	\label{pwe_disp_square_all_res}
 \end{figure}
@@ -494,7 +493,7 @@ Next, rectangular lattice analysis, the transition from square to rectangular ge
 \newpage
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=.9\textwidth]{2_2_disp_frf_rect.pdf}
+	\includegraphics[width=.8\textwidth]{2_2_disp_frf_rect.pdf}
 	\caption{Results in PWE for rectangular lattice (\textit{a}) LRSC in $f_j=10$ [Hz], (\textit{b}) LRSC in $f_j=99$ [Hz] and (\textit{c}) LRSC in $f_j=150$ [Hz] .(\textit{d}) $f_1$ -  Lower edge frequencies of the first band mode as a function of local resonance. (\textit{e}) $f_2$ -  Upper edge frequencies of the second band mode as a function of local resonance. (\textit{f}) FBGW 1 as function of resonator frequency.}
 	\label{pwe_disp_rect_all_res}
 \end{figure}
@@ -542,7 +541,7 @@ Figure \ref{pwe_disp_trian_all_res}c) ($f_j = 150$ [Hz]) demonstrates the except
 \newpage
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=.9\textwidth]{2_3_disp_frf_trian.pdf}
+	\includegraphics[width=.8\textwidth]{2_3_disp_frf_trian.pdf}
 	\caption{Results in PWE for triangular lattice (\textit{a}) LRSC in $f_j=10$ [Hz], (\textit{b}) LRSC in $f_j=99$ [Hz] and (\textit{c}) LRSC in $f_j=150$ [Hz] .(\textit{d}) $f_1$ - Lower edge frequencies of the first band mode as a function of local resonance. (\textit{e}) $f_2$ -  Upper edge frequencies of the second band mode as a function of local resonance. (\textit{f}) FBGW 1 as function of resonator frequency.}
 	\label{pwe_disp_trian_all_res}
 \end{figure}
@@ -616,7 +615,7 @@ This modal selectivity enables a single metamaterial geometry to be optimized fo
 \newpage
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=.85\textwidth]{2_4_disp_frf_hex.pdf}
+	\includegraphics[width=.8\textwidth]{2_4_disp_frf_hex.pdf}
 	\caption{Results in PWE for honeycomb lattice (\textit{a}) LRSC in $f_j=10$ [Hz], (\textit{b}) LRSC in $f_j=60$ [Hz] and (\textit{c}) LRSC in $f_j=150$ [Hz] .(\textit{d}) $f_2$, $f_3$ - Lower edge frequencies of the second and third band mode as a function of local resonance. (\textit{e}) $f_3$, $f_4$ - Upper edge frequencies of the third and fourth band mode as a function of local resonance. (\textit{f}) FBGW 1 and FBGW 2 as function of resonator frequency. }
 	\label{pwe_disp_hex_all_res12}
 \end{figure}
@@ -705,7 +704,7 @@ A more detailed analysis of FBGW 1 and FBGW 2 is presented in Figure \ref{pwe_di
 \newpage
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=.9\textwidth]{2_5_disp_frf_kag.pdf}
+	\includegraphics[width=.8\textwidth]{2_5_disp_frf_kag.pdf}
 	\caption{Results in PWE for kagomé lattice (\textit{a}) LRSC in $f_j=10$ [Hz], (\textit{b}) LRSC in $f_j=50$ [Hz] and (\textit{c}) LRSC in $f_j=150$ [Hz] .(\textit{d}) $f_3$, $f_4$ Lower edge frequencies of the third and fourth band mode as a function of local resonance. (\textit{e}) $f_4$, $f_5$ Upper edge frequencies of the fourth and fifth band mode as a function of local resonance. (\textit{f}) FBGW 1 and FBGW 2 as function of resonator frequency. }
 	\label{pwe_disp_hex_all_res}
 \end{figure}
