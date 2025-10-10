@@ -240,15 +240,24 @@ We have revised the manuscript to \textbf{explicitly acknowledge these foundatio
 
 \textit{Confirming frequency tuning dependency:}
 \begin{quote}
-\textcolor{redtext}{``This resonator frequency tuning behavior confirms the dependency of bandwidth on resonant frequency of local resonators established by Xiao et al.~\cite{Xiao2012}, demonstrating that systematic variation of $f_j$ enables controlled bandgap engineering.''}
+\textcolor{redtext}{``This resonator frequency tuning behavior confirms the dependency of bandwidth on resonant frequency of local resonators established by Xiao et al.~[46], demonstrating that systematic variation of $f_j$ enables controlled bandgap engineering.''}
 \end{quote}
 
-\textbf{Location 4: Section 3.1 - Universal Design Rule (Line 460)}
+\textbf{Location 4: Section 3.1 - Universal Design Rule and Bragg Frequency Equation (Lines 460, 493)}
 
 \textit{Connecting optimal frequency positioning:}
 \begin{quote}
-\textcolor{redtext}{``The peak position at $f_j = 105$ [Hz] $\approx 0.89 f_B$ reveals a universal design rule for locally resonant metamaterials: optimal performance occurs when the resonator frequency is positioned slightly below the Bragg frequency, maximizing the interaction between local and geometric scattering mechanisms. This finding aligns with the coupling mechanism identified by Xiao et al.~\cite{Xiao2012}, where the widest bandgap emerges from near-coupling between directional resonance and Bragg band gaps, confirming the fundamental importance of resonator frequency tuning for achieving optimal bandgap performance.''}
+\textcolor{redtext}{``The peak position at $f_j = 105$ [Hz] $\approx 0.89 f_B$ reveals a universal design rule for locally resonant metamaterials: optimal performance occurs when the resonator frequency is positioned slightly below the Bragg frequency, maximizing the interaction between local and geometric scattering mechanisms. This finding aligns with the coupling mechanism identified by Xiao et al.~[46], where the widest bandgap emerges from near-coupling between directional resonance and Bragg band gaps, confirming the fundamental importance of resonator frequency tuning for achieving optimal bandgap performance.''}
 \end{quote}
+
+\textit{Critical methodological note - Bragg frequency calculation (Line 493):}
+
+We have also added explicit acknowledgment that the Bragg frequency formula used throughout our analysis was originally derived by Xiao et al.~[46] for square lattice configurations:
+\begin{quote}
+\textcolor{redtext}{``This Bragg frequency is calculated using the analytical formula derived by Xiao et al.~[46] for square lattice configurations: $f_B = (1/2\pi)(\pi/a)^2\sqrt{D/\rho h}$, where the $\Gamma$-X direction ($\phi = 0$) provides the limiting frequency for the second mode.''}
+\end{quote}
+
+This addition establishes that the foundational Bragg frequency equation used as reference throughout our multi-lattice comparative analysis originates from Xiao et al.'s seminal square lattice study, maintaining proper attribution of this critical analytical tool.
 
 \textbf{Location 5: Section 3.1 - Triangular Lattice Performance (Line 555)}
 
@@ -261,21 +270,21 @@ We have revised the manuscript to \textbf{explicitly acknowledge these foundatio
 
 \textit{Universal relationship validation:}
 \begin{quote}
-\textcolor{redtext}{``The universal relationship $f_{j,opt} \approx 0.89 f_B$ across different lattice geometries is consistent with the resonance-Bragg coupling principle of Xiao et al.~\cite{Xiao2012}, demonstrating that optimal bandwidth emerges from strategic positioning of resonator frequencies relative to geometric dispersion limits.''}
+\textcolor{redtext}{``The universal relationship $f_{j,opt} \approx 0.89 f_B$ across different lattice geometries is consistent with the resonance-Bragg coupling principle of Xiao et al.~[46], demonstrating that optimal bandwidth emerges from strategic positioning of resonator frequencies relative to geometric dispersion limits.''}
 \end{quote}
 
 \textbf{Location 7: Section 3.2 - Multi-Resonator Systems (Line 624)}
 
 \textit{Extension to coupled oscillators:}
 \begin{quote}
-\textcolor{redtext}{``The demonstrated tuning capability extends the resonator frequency optimization principles of Xiao et al.~\cite{Xiao2012} from single-resonator to multi-resonator systems, revealing that coupled oscillators introduce new degrees of freedom for bandgap engineering beyond what is achievable through frequency tuning alone.''}
+\textcolor{redtext}{``The demonstrated tuning capability extends the resonator frequency optimization principles of Xiao et al.~[46] from single-resonator to multi-resonator systems, revealing that coupled oscillators introduce new degrees of freedom for bandgap engineering beyond what is achievable through frequency tuning alone.''}
 \end{quote}
 
 \textbf{Location 8: Conclusions (Line 1135)}
 
 \textit{Paradigm shift acknowledgment:}
 \begin{quote}
-\textcolor{redtext}{``Building upon the resonance-Bragg coupling principles established by Xiao et al.~\cite{Xiao2012}, this work demonstrates that optimal bandgap formation requires simultaneous optimization of both resonator frequency tuning and lattice geometry selection. This establishes a paradigm shift from geometry-only to combined geometry-frequency design approaches, with optimal lattice selection dependent on target frequency ranges and application requirements.''}
+\textcolor{redtext}{``Building upon the resonance-Bragg coupling principles established by Xiao et al.~[46], this work demonstrates that optimal bandgap formation requires simultaneous optimization of both resonator frequency tuning and lattice geometry selection. This establishes a paradigm shift from geometry-only to combined geometry-frequency design approaches, with optimal lattice selection dependent on target frequency ranges and application requirements.''}
 \end{quote}
 \end{changesbox}
 
@@ -348,7 +357,7 @@ We thank the reviewer for this important observation regarding material limitati
 
 \textbf{Section C.1: Material Properties and Scaling Analysis}
 
-\textit{Table: Comparative material properties (Table \ref{tab:material_properties_comparison})}
+\textit{Table C.13: Comparative material properties for multi-scale analysis}
 \begin{itemize}
     \item \textbf{Vero White Plus:} $E = 0.86$ GPa, $\rho = 600$ kg/m$^3$ (baseline, rapid prototyping)
     \item \textbf{Aluminum 6061:} $E = 70$ GPa, $\rho = 2700$ kg/m$^3$ (from Xiao et al.~2012)
@@ -360,7 +369,7 @@ Key insight: This material span encompasses the full range of practical engineer
 
 \textbf{Section C.2: Frequency Scaling and Operational Ranges}
 
-\textit{Table: Frequency scaling and operational ranges (Table \ref{tab:frequency_scaling})}
+\textit{Table C.14: Frequency scaling and operational ranges across materials}
 \begin{itemize}
     \item \textbf{Vero White Plus:} 10-200 Hz range, $f_B = 116$ Hz (low-frequency applications)
     \item \textbf{Aluminum 6061:} 200-600 Hz range, $f_B = 484$ Hz (mid-frequency applications)
@@ -372,7 +381,7 @@ Key insight: Frequency scaling follows predictable material-dependent relationsh
 
 \textbf{Section C.3: PWE Analysis Results for Alternative Materials}
 
-\textit{Subsection C.3.1: Aluminum 6061 Analysis (Table \ref{tab:aluminum_results})}
+\textit{Subsection C.3.1: Aluminum 6061 Analysis (Table C.15)}
 
 Complete PWE analysis with 12 resonator frequencies (200-1200 Hz) demonstrating:
 \begin{itemize}
@@ -382,7 +391,7 @@ Complete PWE analysis with 12 resonator frequencies (200-1200 Hz) demonstrating:
     \item \textbf{Hierarchy preserved:} Triangular $>$ Square $>$ Rectangular $>$ Honeycomb $>$ Kagomé
 \end{itemize}
 
-\textit{Subsection C.3.2: Carbon/Epoxy Composite Analysis (Table \ref{tab:carbon_results})}
+\textit{Subsection C.3.2: Carbon/Epoxy Composite Analysis (Table C.16)}
 
 Complete PWE analysis with 12 resonator frequencies (400-1400 Hz) demonstrating:
 \begin{itemize}
@@ -472,7 +481,7 @@ We believe this isn't merely a methodological preference, but rather reflects ho
 In reviewing the foundational literature in this field, we noticed a consistent pattern in how geometric comparisons are performed:
 
 \begin{itemize}
-    \item The seminal work by Xiao et al. (2012) \cite{Xiao2012}—which introduced the concept of resonance-Bragg coupling in LRSC plates—maintained constant lattice parameter when investigating different configurations. This influential study helped establish methodological standards in our field.
+    \item The seminal work by Xiao et al. (2012) [46]—which introduced the concept of resonance-Bragg coupling in LRSC plates—maintained constant lattice parameter when investigating different configurations. This influential study helped establish methodological standards in our field.
 
     \item Similarly, in the photonic crystal community, the highly-cited work by Villeneuve \& Piché (1992) comparing square and hexagonal lattices employed fixed lattice constants to enable rigorous geometric comparison.
 \end{itemize}
