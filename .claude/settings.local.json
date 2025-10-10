@@ -61,7 +61,8 @@
       "Bash(head:*)",
       "Bash(git fetch:*)",
       "Bash(\"/mnt/c/Program Files/MiKTeX/miktex/bin/x64/pdflatex.exe\" -interaction=nonstopmode response_to_reviewers.tex)",
-      "Bash(\"/mnt/c/Program Files/MiKTeX/miktex/bin/x64/pdflatex.exe\" -interaction=nonstopmode highlights.tex)"
+      "Bash(\"/mnt/c/Program Files/MiKTeX/miktex/bin/x64/pdflatex.exe\" -interaction=nonstopmode highlights.tex)",
+      "Read(///**)"
     ],
     "deny": []
   }
