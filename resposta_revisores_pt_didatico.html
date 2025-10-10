@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resposta aos Revisores - MSSP-25-4032 (Versão Didática em Português)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #34495e;
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .header .manuscript-id {
+            font-size: 18px;
+            color: #7f8c8d;
+            margin: 10px 0;
+        }
+
+        .header .title {
+            font-style: italic;
+            font-size: 16px;
+            color: #34495e;
+            margin: 10px 0;
+        }
+
+        .nav-menu {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+
+        .nav-menu h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .nav-menu ul {
+            list-style-type: none;
+        }
+
+        .nav-menu li {
+            margin: 5px 0;
+        }
+
+        .nav-menu a {
+            color: #3498db;
+            text-decoration: none;
+            padding: 5px 10px;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+
+        .nav-menu a:hover {
+            background-color: #3498db;
+            color: white;
+            border-radius: 3px;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .comment-block {
+            margin-bottom: 40px;
+            page-break-inside: avoid;
+        }
+
+        .comment-header {
+            font-size: 20px;
+            color: #e74c3c;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .reviewer-comment {
+            background-color: #ecf0f1;
+            border-left: 4px solid #34495e;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .reviewer-comment-header {
+            font-weight: bold;
+            color: #34495e;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .response-box {
+            background-color: #d5f4e6;
+            border-left: 4px solid #27ae60;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .response-header {
+            font-weight: bold;
+            color: #27ae60;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .changes-box {
+            background-color: #ffeaa7;
+            border-left: 4px solid #e67e22;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .changes-header {
+            font-weight: bold;
+            color: #e67e22;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .didactic-box {
+            background-color: #e8f4f8;
+            border: 2px solid #3498db;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .didactic-header {
+            font-weight: bold;
+            color: #2980b9;
+            margin-bottom: 15px;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+        }
+
+        .didactic-header::before {
+            content: "💡";
+            margin-right: 10px;
+            font-size: 24px;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+
+        .emphasis {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        ul, ol {
+            margin-left: 30px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        .equation {
+            background-color: #f8f9fa;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            text-align: center;
+            font-family: 'Courier New', monospace;
+            font-size: 16px;
+        }
+
+        .key-point {
+            background-color: #fff5f5;
+            border-left: 4px solid #e74c3c;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .comparison-table th {
+            background-color: #34495e;
+            color: white;
+        }
+
+        .comparison-table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        .footer {
+            border-top: 2px solid #34495e;
+            padding-top: 20px;
+            margin-top: 40px;
+            text-align: center;
+            color: #7f8c8d;
+        }
+
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
+            .nav-menu {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>Resposta Ponto-a-Ponto aos Comentários dos Revisores</h1>
+            <p class="manuscript-id"><strong>Manuscrito ID:</strong> MSSP-25-4032</p>
+            <p class="title">
+                <em>Otimização de bandgaps em placas de metamateriais com ressonadores locais:<br>
+                Estudo comparativo de cinco geometrias de lattice para<br>
+                atenuação de ondas em baixas frequências</em>
+            </p>
+            <p><strong>Autores:</strong> Anderson Henrique Ferreira, José Maria Campos Dos Santos,<br>
+            Edson de Miranda Jansen Pedrosa, Adriano Mitsuo Goto</p>
+        </div>
+
+        <!-- Navigation Menu -->
+        <div class="nav-menu">
+            <h3>📋 Índice de Comentários (Clique para navegar)</h3>
+            <ul>
+                <li><a href="#comment1">✨ Comentário 1 - Comparação Justa usando Largura de Banda Relativa (DIDÁTICO)</a></li>
+                <li><a href="#comment2">Comentário 2 - Reconhecimento do Trabalho de Xiao et al.</a></li>
+                <li><a href="#comment3">💡 Comentário 3 - Esclarecimento sobre Espalhamento de Bragg vs. LRSC (DIDÁTICO)</a></li>
+                <li><a href="#comment4">Comentário 4 - Extensão para Materiais Estruturais</a></li>
+                <li><a href="#comment5">Comentário 5 - Mesmo que Comentário 1</a></li>
+                <li><a href="#comment6">🔍 Comentário 6 - Justificativa para Parâmetro de Lattice Constante (DIDÁTICO)</a></li>
+                <li><a href="#comment7">Comentário 7 - Definição Matemática da Razão de Massa</a></li>
+                <li><a href="#comment8">Comentário 8 - Revisão dos Destaques</a></li>
+                <li><a href="#comment9">Comentário 9 - Tamanho das Fontes nas Figuras</a></li>
+                <li><a href="#comment10">Comentário 10 - Condensação da Seção 3</a></li>
+            </ul>
+        </div>
+
+        <!-- Comment 1 - WITH DIDACTIC EXPANSION -->
+        <div class="section" id="comment1">
+            <h2 class="section-title">✨ Comentário 1 - Comparação Justa de Largura de Banda</h2>
+
+            <div class="comment-block">
+                <h3 class="comment-header">Comentário do Revisor:</h3>
+
+                <div class="reviewer-comment">
+                    <p class="reviewer-comment-header">💬 Revisor #1:</p>
+                    <p>É afirmado que "lattices triangulares atingem 40% mais largura de bandgap comparado às configurações quadradas e demonstram características broadband superiores". No entanto, não acho que as larguras de bandgap estejam sendo comparadas de forma justa. Neste trabalho, o bandgap mais amplo para o caso de lattice triangular abre em uma faixa de frequência muito maior (~145 Hz) do que para o caso de lattice quadrado (~105 Hz), mas suas larguras de bandgap são quantificadas pela largura de banda absoluta dada por (f₂-f₁). Tal comparação de largura de bandgap absoluta não pode ser aceita neste campo. Para uma comparação justa, os autores devem usar a largura de bandgap relativa (f₂-f₁)/f_c, onde f_c=(f₂+f₁)/2.</p>
+                </div>
+
+                <div class="didactic-box">
+                    <div class="didactic-header">Entendendo o Problema (Explicação Didática)</div>
+
+                    <h4 style="color: #2980b9; margin-top: 20px;">🎯 Por que a comparação absoluta é inadequada?</h4>
+                    <p><strong>Imagine a seguinte analogia:</strong></p>
+                    <p>É como comparar o "tamanho do pulo" de dois atletas sem levar em conta a altura deles:</p>
+                    <ul>
+                        <li><strong>Atleta A (baixo):</strong> Pula 50 cm do chão partindo de 1 metro de altura</li>
+                        <li><strong>Atleta B (alto):</strong> Pula 70 cm do chão partindo de 2 metros de altura</li>
+                    </ul>
+                    <p>Pergunta: Quem pulou proporcionalmente mais alto? Se compararmos apenas os valores absolutos (50 cm vs 70 cm), o Atleta B parece melhor. Mas se normalizarmos pela altura de partida:</p>
+                    <ul>
+                        <li><strong>Atleta A:</strong> 50 cm / 1 m = <span class="emphasis">50% de sua altura</span></li>
+                        <li><strong>Atleta B:</strong> 70 cm / 2 m = <span class="emphasis">35% de sua altura</span></li>
+                    </ul>
+                    <p><strong>Conclusão:</strong> O Atleta A tem desempenho relativo superior!</p>
+
+                    <h4 style="color: #2980b9; margin-top: 25px;">🔬 Aplicando ao nosso problema de bandgaps:</h4>
+
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Lattice</th>
+                                <th>Frequência Central (f_c)</th>
+                                <th>Largura Absoluta (Hz)</th>
+                                <th>Largura Relativa (%)</th>
+                                <th>Interpretação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Quadrado</strong></td>
+                                <td>~100 Hz</td>
+                                <td>32.10 Hz</td>
+                                <td><span class="emphasis">31.40%</span></td>
+                                <td>Opera em faixa mais baixa</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Triangular</strong></td>
+                                <td>~140 Hz</td>
+                                <td>55.40 Hz</td>
+                                <td><span class="emphasis">42.51%</span></td>
+                                <td>Opera em faixa mais alta</td>
+                            </tr>
+                            <tr style="background-color: #e8f4f8;">
+                                <td colspan="5"><strong>Comparação justa:</strong> Triangular tem <span class="emphasis">35% mais eficiência</span> relativa [(42.51-31.40)/31.40 = 35%]</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="key-point">
+                        <p><strong>⚠️ PROBLEMA FUNDAMENTAL:</strong></p>
+                        <p>Comparar 55.40 Hz (triangular @ 145 Hz) com 32.10 Hz (quadrado @ 105 Hz) é como comparar velocidades sem levar em conta a marcha do carro! A comparação absoluta ignora que:</p>
+                        <ul>
+                            <li>Bandgaps em frequências mais altas <em>naturalmente</em> tendem a ser maiores em Hz absolutos</li>
+                            <li>O desempenho intrínseco da geometria fica mascarado pela frequência de operação</li>
+                            <li>Não responde à pergunta científica: "Qual geometria é fundamentalmente melhor?"</li>
+                        </ul>
+                    </div>
+
+                    <h4 style="color: #2980b9; margin-top: 25px;">📐 A Solução: Framework Dual-Métrico</h4>
+
+                    <div class="equation">
+                        <strong>Largura de Banda Relativa (Normalizada):</strong><br><br>
+                        η_rel = [(f₂ - f₁) / f_c] × 100%<br>
+                        onde f_c = (f₁ + f₂) / 2
+                    </div>
+
+                    <p><strong>Por que isso funciona?</strong></p>
+                    <ol>
+                        <li><strong>Remove dependência de frequência:</strong> Divide pela frequência central</li>
+                        <li><strong>Cria medida universal:</strong> Resultado em % (adimensional)</li>
+                        <li><strong>Permite comparação justa:</strong> Geometrias diferentes em frequências diferentes</li>
+                        <li><strong>Responde à pergunta científica:</strong> "Qual geometria é intrinsecamente superior?"</li>
+                    </ol>
+
+                    <h4 style="color: #2980b9; margin-top: 25px;">🎯 Por que mantemos AMBAS as métricas?</h4>
+
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Métrica</th>
+                                <th>Responde à pergunta</th>
+                                <th>Aplicação prática</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Absoluta (Hz)</strong></td>
+                                <td>"Qual lattice para minha frequência alvo de 100 Hz?"</td>
+                                <td>Engenheiro projetando painel automotivo</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Relativa (%)</strong></td>
+                                <td>"Qual geometria é fundamentalmente superior?"</td>
+                                <td>Cientista estabelecendo princípios de design</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p style="margin-top: 20px;"><strong>🎓 Conclusão Didática:</strong> Não é uma questão de "trocar" uma métrica por outra, mas sim de usar <span class="emphasis">AMBAS de forma complementar</span> para fornecer insights completos tanto para engenheiros (absoluta) quanto para cientistas (relativa).</p>
+                </div>
+
+                <div class="response-box">
+                    <p class="response-header">✅ Nossa Resposta:</p>
+                    <p>Agradecemos sinceramente ao revisor por esta observação crítica e construtiva. O revisor está absolutamente correto que comparar larguras de bandgap absolutas (f₂-f₁) em diferentes faixas de frequência é inadequado para avaliação justa de desempenho.</p>
+
+                    <p><strong>Questões-chave abordadas:</strong></p>
+                    <ul>
+                        <li>Discrepância de faixa de frequência: Triangular (~145 Hz) vs. Quadrado (~105 Hz)</li>
+                        <li>Comparação absoluta inadequada: (f₂-f₁) em Hz sem normalização</li>
+                        <li>Falta de normalização pela frequência central: f_c = (f₁+f₂)/2</li>
+                    </ul>
+
+                    <p><strong>Solução implementada:</strong> Adotamos o <span class="emphasis">framework dual-métrico</span> recomendado:</p>
+                    <ol>
+                        <li><strong>Largura absoluta (FBGW):</strong> Fornece insights práticos de engenharia para aplicações com alvos de frequência específicos</li>
+                        <li><strong>Largura relativa (η_rel):</strong> Permite comparação de desempenho geométrico independente de frequência através da normalização</li>
+                    </ol>
+
+                    <p>Esta abordagem responde tanto à questão prática de engenharia ("qual lattice para minha frequência alvo?") quanto à questão científica fundamental ("qual geometria é intrinsecamente superior?").</p>
+                </div>
+
+                <div class="changes-box">
+                    <p class="changes-header">📝 Modificações Implementadas:</p>
+
+                    <h4>Localização 1: Seção 3.3 - Introdução (Linha 778)</h4>
+                    <p><em>Novo parágrafo introdutório em vermelho:</em></p>
+                    <blockquote style="background-color: #fff5f5; padding: 15px; border-left: 3px solid #e74c3c;">
+                        "As análises individuais abrangentes apresentadas nas subseções anteriores permitem comparação quantitativa de desempenho em todas as cinco configurações de lattice usando duas métricas complementares que abordam considerações de design distintas. Este framework dual-métrico emprega: (1) <strong>largura de banda absoluta</strong> (FBGW em [Hz]) fornecendo insights diretos de engenharia para aplicações com alvos de frequência específicos, e (2) <strong>largura de banda relativa</strong> (η_rel em [%]) permitindo comparação de desempenho geométrico independente de frequência através de normalização."
+                    </blockquote>
+
+                    <h4>Localização 2: Nova Equação e Definição (Linhas 812-821)</h4>
+                    <div class="equation">
+                        η_rel = [(f₂ - f₁) / f_c] × 100%<br>
+                        onde f_c = (f₁ + f₂) / 2
+                    </div>
+                    <p><em>Definição completa:</em> "Esta métrica adimensional remove efeitos de escala dependentes de frequência, permitindo comparação direta de desempenho geométrico intrínseco em diferentes faixas operacionais."</p>
+
+                    <h4>Localização 3: Nova Tabela 14 - Comparação Completa (Linhas 825-858)</h4>
+                    <p><strong>Análise abrangente:</strong> 15 frequências de ressonador (10-150 Hz) × 5 lattices = <span class="emphasis">75 pontos de dados normalizados</span></p>
+                    <p><strong>Resultado:</strong></p>
+                    <ul>
+                        <li>Triangular: Pico de eficiência 42.51% @ 140 Hz</li>
+                        <li>Quadrado: Pico de eficiência 31.40% @ 100 Hz</li>
+                        <li>Vantagem de desempenho: <span class="emphasis">35% de melhoria</span> [(42.51-31.40)/31.40 = 35.4%]</li>
+                    </ul>
+
+                    <h4>Localizações 4-6: Correções em Abstract, Conclusões e Highlights</h4>
+                    <p>Todas as afirmações de desempenho foram corrigidas para refletir a métrica normalizada de 35% de superioridade.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Comment 3 - WITH DIDACTIC EXPANSION -->
+        <div class="section" id="comment3">
+            <h2 class="section-title">💡 Comentário 3 - Bragg vs. LRSC (Esclarecimento Didático)</h2>
+
+            <div class="comment-block">
+                <h3 class="comment-header">Comentário do Revisor:</h3>
+
+                <div class="reviewer-comment">
+                    <p class="reviewer-comment-header">💬 Revisor #1:</p>
+                    <p>Na introdução, é mencionado "A condição de Bragg a = nλ/2 necessita de células unitárias grandes para atenuar ondas de baixa frequência, desafiando o design compacto de dispositivos". No entanto, neste estudo, o bandgap mais amplo sempre ocorre em uma faixa de frequência onde o efeito de espalhamento de Bragg tem um papel importante, e o comprimento de onda flexural operacional (λ/2) é comparável à constante de lattice.</p>
+                </div>
+
+                <div class="didactic-box">
+                    <div class="didactic-header">Compreendendo Bragg vs. LRSC (Explicação Detalhada)</div>
+
+                    <h4 style="color: #2980b9; margin-top: 20px;">🎯 Os Dois Mecanismos Fundamentais</h4>
+
+                    <p><strong>Vamos primeiro entender OS DOIS mecanismos diferentes de formação de bandgaps:</strong></p>
+
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 30%;">Aspecto</th>
+                                <th>Cristais Fonônicos Tradicionais (PC)</th>
+                                <th>Cristais Sônicos com Ressonadores Locais (LRSC)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Mecanismo Primário</strong></td>
+                                <td><span class="emphasis">Espalhamento de Bragg</span><br>(periodicidade geométrica)</td>
+                                <td><span class="emphasis">Ressonância Local</span><br>(osciladores internos)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Condição Necessária</strong></td>
+                                <td>a ≈ λ/2<br>(célula = meio comprimento de onda)</td>
+                                <td>a ≪ λ/2<br>(sub-comprimento de onda possível)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Frequência Alvo</strong></td>
+                                <td>Determinada pelo tamanho 'a'</td>
+                                <td>Determinada por k_j e m_r (parâmetros do ressonador)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Flexibilidade</strong></td>
+                                <td>Baixa: mudança de frequência = redesign geométrico</td>
+                                <td>Alta: ajuste fino via mudança de massa/rigidez</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tamanho para 100 Hz</strong></td>
+                                <td>a ≈ 0.5-1 m (GRANDE)</td>
+                                <td>a = 0.1 m (COMPACTO)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h4 style="color: #2980b9; margin-top: 25px;">🤔 A Confusão do Revisor - Explicada</h4>
+
+                    <div class="key-point">
+                        <p><strong>O revisor observou corretamente:</strong></p>
+                        <p>"Nos resultados, λ/2 ≈ a em algumas frequências, então Bragg está presente!"</p>
+                        <p style="margin-top: 15px;"><strong>Nossa resposta (a sutileza crucial):</strong></p>
+                        <p>"Sim, Bragg pode CONTRIBUIR, mas o MECANISMO PRIMÁRIO é ressonância local!"</p>
+                    </div>
+
+                    <h4 style="color: #2980b9; margin-top: 25px;">🔬 A Diferença Crucial: Mecanismo PRIMÁRIO vs. SECUNDÁRIO</h4>
+
+                    <p><strong>Imagine uma orquestra:</strong></p>
+                    <ul>
+                        <li><strong>PC Tradicional:</strong> Apenas os tambores tocam (Bragg) - som limitado à percussão</li>
+                        <li><strong>LRSC:</strong> Violinos lideram (ressonância), tambores podem acompanhar (Bragg), mas a melodia vem dos violinos!</li>
+                    </ul>
+
+                    <h4 style="color: #2980b9; margin-top: 25px;">📊 Evidências no Nosso Estudo</h4>
+
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Observação</th>
+                                <th>Interpretação Mecanística</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>1. Bandgaps aparecem em f_j = 10 Hz</strong></td>
+                                <td>λ/2 ≫ a (fortemente sub-comprimento de onda)<br>→ <span class="emphasis">Impossível por Bragg puro!</span><br>→ Ressonância local domina</td>
+                            </tr>
+                            <tr>
+                                <td><strong>2. Bandgaps ajustáveis por k_j</strong></td>
+                                <td>Mudamos k_j mantendo 'a' constante<br>→ Bragg não muda (depende de 'a')<br>→ <span class="emphasis">Ressonância controla!</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>3. Acoplamento em f_j ≈ 0.89 f_B</strong></td>
+                                <td>Aqui Bragg CONTRIBUI via acoplamento<br>→ Efeito híbrido (Xiao et al. 2012)<br>→ <span class="emphasis">Mas ressonância ainda lidera!</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>4. Multi-ressonadores (honeycomb/kagomé)</strong></td>
+                                <td>Dual bandgaps por acoplamento in-phase/anti-phase<br>→ <span class="emphasis">Puramente ressonante!</span><br>→ Bragg não explica isso</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h4 style="color: #2980b9; margin-top: 25px;">🎯 O Que Estamos Realmente Dizendo?</h4>
+
+                    <div style="background-color: #e8f4f8; padding: 20px; border-radius: 8px; margin: 20px 0;">
+                        <p><strong>AFIRMAÇÃO ORIGINAL (confusa):</strong></p>
+                        <p style="font-style: italic;">"Bragg necessita a ≈ λ/2, desafiando design compacto"</p>
+
+                        <p style="margin-top: 20px;"><strong>O QUE QUERÍAMOS DIZER (clarificado):</strong></p>
+                        <p style="font-style: italic;">"Se você <span class="emphasis">depende EXCLUSIVAMENTE</span> de Bragg (como PCs tradicionais), precisa de a ≈ λ/2. Mas nós usamos LRSC, onde ressonância permite a ≪ λ/2, embora Bragg possa <span class="emphasis">contribuir secundariamente</span> em algumas faixas."</p>
+
+                        <p style="margin-top: 20px;"><strong>NOVA CLARIFICAÇÃO ADICIONADA:</strong></p>
+                        <p style="background-color: #fff5f5; padding: 15px; border-left: 3px solid #e74c3c;">"No entanto, cristais sônicos com ressonadores locais (LRSCs) superam esta limitação utilizando ressonâncias internas ao invés de espalhamento de Bragg puro, permitindo operação sub-comprimento de onda onde bandgaps induzidos por ressonadores podem ocorrer mesmo quando a ≪ λ/2. <span class="emphasis">Embora efeitos de Bragg possam contribuir para os bandgaps observados neste estudo</span>, o mecanismo primário é acoplamento por ressonância local, distinguindo nossa abordagem de cristais fonônicos tradicionais que dependem exclusivamente de periodicidade geométrica."</p>
+                    </div>
+
+                    <p><strong>🎓 Lição Fundamental:</strong> Não é questão de Bragg estar "presente" ou "ausente", mas sim de qual mecanismo <span class="emphasis">CONTROLA E DOMINA</span> a formação do bandgap. Nossa resposta reconhece que Bragg pode contribuir (especialmente via acoplamento em ~0.89 f_B), mas enfatiza que ressonância local é o mecanismo primário que permite design compacto e ajuste fino.</p>
+                </div>
+
+                <div class="response-box">
+                    <p class="response-header">✅ Nossa Resposta:</p>
+                    <p>Agradecemos ao revisor por esta observação perspicaz que destaca uma importante clarificação necessária sobre os efeitos de espalhamento de Bragg em nosso estudo.</p>
+
+                    <p><strong>Distinção fundamental:</strong> A diferença crucial está no <span class="emphasis">mecanismo primário</span> de formação do bandgap:</p>
+                    <ul>
+                        <li><strong>Cristais fonônicos tradicionais (PCs):</strong> Dependem <em>exclusivamente</em> de espalhamento de Bragg da periodicidade geométrica, exigindo a ≈ λ/2</li>
+                        <li><strong>Cristais sônicos com ressonadores locais (LRSCs):</strong> Utilizam <em>ressonâncias internas</em> como mecanismo primário, permitindo operação sub-comprimento de onda onde a ≪ λ/2</li>
+                    </ul>
+
+                    <p>Embora efeitos de Bragg possam <em>contribuir</em> para os bandgaps observados (particularmente para lattices quadrados em torno de 120 Hz onde ocorre acoplamento ressonância-Bragg conforme identificado por Xiao et al.), o <span class="emphasis">mecanismo primário é acoplamento por ressonância local</span>.</p>
+
+                    <p><strong>Observação crítica:</strong> Nosso estudo prioriza <span class="emphasis">bandgaps completos (FBGW)</span> que fornecem bloqueio omnidirecional de ondas, o que é mais valioso para isolamento prático de vibrações do que gaps direcionais/parciais tipicamente produzidos por acoplamento Bragg-ressonância.</p>
+                </div>
+
+                <div class="changes-box">
+                    <p class="changes-header">📝 Modificações Implementadas:</p>
+
+                    <h4>Localização: Introdução (Linha 110)</h4>
+                    <p><em>Novo parágrafo clarificador adicionado em vermelho:</em></p>
+                    <blockquote style="background-color: #fff5f5; padding: 15px; border-left: 3px solid #e74c3c;">
+                        "No entanto, cristais sônicos com ressonadores locais (LRSCs) superam esta limitação utilizando ressonâncias internas ao invés de espalhamento de Bragg puro, permitindo operação sub-comprimento de onda onde bandgaps induzidos por ressonadores podem ocorrer mesmo quando a ≪ λ/2. Embora efeitos de Bragg possam contribuir para os bandgaps observados neste estudo, o mecanismo primário é acoplamento por ressonância local, distinguindo nossa abordagem de cristais fonônicos tradicionais que dependem exclusivamente de periodicidade geométrica."
+                    </blockquote>
+
+                    <p><strong>Esta adição:</strong></p>
+                    <ul>
+                        <li>Distingue mecanismo LRSC (ressonância interna) de PC tradicional (Bragg puro)</li>
+                        <li>Reconhece que efeitos de Bragg podem contribuir aos resultados</li>
+                        <li>Enfatiza acoplamento por ressonância local como mecanismo dominante</li>
+                        <li>Mantém precisão científica enquanto clarifica a abordagem</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Comment 6 - WITH DIDACTIC EXPANSION -->
+        <div class="section" id="comment6">
+            <h2 class="section-title">🔍 Comentário 6 - Parâmetro de Lattice Constante (Análise Profunda)</h2>
+
+            <div class="comment-block">
+                <h3 class="comment-header">Comentário do Revisor:</h3>
+
+                <div class="reviewer-comment">
+                    <p class="reviewer-comment-header">💬 Revisor #1:</p>
+                    <p>Não acho que o parâmetro de lattice 'a' deva ser mantido constante para demonstrar comparação. Penso que o parâmetro de lattice pode ser cuidadosamente ajustado para que o bandgap mais amplo resultante seja criado na mesma frequência inicial para diferentes casos de lattice periódico.</p>
+                </div>
+
+                <div class="didactic-box">
+                    <div class="didactic-header">Análise Profunda: Por Que Manter 'a' Constante? (Explicação Completa)</div>
+
+                    <h4 style="color: #2980b9; margin-top: 20px;">🎯 As Duas Abordagens Possíveis</h4>
+
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 30%;">Aspecto</th>
+                                <th>Nossa Abordagem (a constante)</th>
+                                <th>Sugestão do Revisor (a variável)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Metodologia</strong></td>
+                                <td>a = 0.10 m para todas geometrias</td>
+                                <td>Ajustar 'a' para alinhar frequências de bandgap</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Pergunta Respondida</strong></td>
+                                <td><span class="emphasis">"Dado espaço fixo, qual geometria é melhor?"</span></td>
+                                <td>"Que combinações de parâmetros atingem frequências alvo?"</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Aplicação Prática</strong></td>
+                                <td>Restrições espaciais predeterminadas (aeroespacial, automotivo)</td>
+                                <td>Otimização de parâmetros sem restrições espaciais</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Custo Computacional</strong></td>
+                                <td>75 simulações PWE (15 freq × 5 lattices)</td>
+                                <td>400-1500 simulações (busca iterativa trial-and-error)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Base Teórica</strong></td>
+                                <td>Zona de Brillouin consistente (2π/a)</td>
+                                <td>Zonas de Brillouin diferentes para cada geometria</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h4 style="color: #2980b9; margin-top: 25px;">🔬 Fundamento Teórico: Teoria de Bloch-Floquet</h4>
+
+                    <div class="key-point">
+                        <p><strong>💡 Conceito Fundamental:</strong></p>
+                        <p>Em estruturas periódicas, a relação de dispersão ω(k) está fundamentalmente acoplada à constante de lattice através da relação do espaço recíproco:</p>
+                        <div class="equation">
+                            Tamanho da Zona de Brillouin ∝ 2π/a
+                        </div>
+                        <p style="margin-top: 15px;"><strong>Implicação:</strong></p>
+                        <ul>
+                            <li>Variar 'a' entre geometrias → cada configuração opera em Zona de Brillouin diferente</li>
+                            <li>Relações de dispersão definidas em espaços k recíprocos <span class="emphasis">incommensuráveis</span></li>
+                            <li>Comparação direta torna-se mais complexa na análise de ondas de Bloch</li>
+                        </ul>
+                        <p style="margin-top: 15px;"><strong>🎓 Conclusão Teórica:</strong> Manter 'a' constante permite comparar todas geometrias dentro de um <span class="emphasis">framework teórico consistente</span>.</p>
+                    </div>
+
+                    <h4 style="color: #2980b9; margin-top: 25px;">📚 Precedentes da Literatura Estabelecida</h4>
+
+                    <p><strong>Trabalhos seminais que usaram 'a' constante:</strong></p>
+                    <ol>
+                        <li>
+                            <strong>Xiao et al. (2012) - Acoplamento Ressonância-Bragg em Placas LRSC</strong>
+                            <ul>
+                                <li>Manteve parâmetro de lattice constante ao investigar diferentes configurações</li>
+                                <li>Estabeleceu padrões metodológicos no campo</li>
+                                <li><span class="emphasis">Influência: >450 citações</span></li>
+                            </ul>
+                        </li>
+                        <li style="margin-top: 15px;">
+                            <strong>Villeneuve & Piché (1992) - Comparação Square vs Hexagonal em Cristais Fotônicos</strong>
+                            <ul>
+                                <li>Empregou constantes de lattice fixas para comparação geométrica rigorosa</li>
+                                <li>Metodologia validada pela comunidade de cristais fotônicos</li>
+                                <li><span class="emphasis">Influência: >3000 citações</span></li>
+                            </ul>
+                        </li>
+                    </ol>
+
+                    <p style="background-color: #e8f4f8; padding: 15px; border-radius: 5px; margin-top: 20px;">
+                        <strong>💡 Insight:</strong> Estes precedentes sugerem que a abordagem de parâmetro de lattice constante foi <span class="emphasis">bem validada pela comunidade de pesquisa</span> para estudos geométricos fundamentais.
+                    </p>
+
+                    <h4 style="color: #2980b9; margin-top: 25px;">🏗️ Objetivo Central do Nosso Estudo</h4>
+
+                    <div style="background-color: #fff5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
+                        <p><strong>Pergunta de Pesquisa que Motivou Nosso Estudo:</strong></p>
+                        <p style="font-size: 18px; font-style: italic; color: #e74c3c; margin: 20px 0;">
+                            "Dadas restrições espaciais fixas (que ocorrem frequentemente em engenharia aeroespacial, automotiva e civil), qual geometria de lattice fornece desempenho ótimo?"
+                        </p>
+
+                        <p><strong>Por que esta pergunta importa?</strong></p>
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Setor</th>
+                                    <th>Restrição Real</th>
+                                    <th>Implicação</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Aeroespacial</strong></td>
+                                    <td>Painéis de fuselagem: 0.5m × 0.5m</td>
+                                    <td>Espaço fixo → 'a' predeterminado</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Automotivo</strong></td>
+                                    <td>Painel de porta: 0.3m × 0.4m</td>
+                                    <td>Dimensão fixa → qual lattice cabe melhor?</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Civil</strong></td>
+                                    <td>Viga estrutural: seções fixas</td>
+                                    <td>Bay estrutural → 'a' determinado por arquitetura</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <p style="margin-top: 20px;"><strong>🎯 Com 'a' constante, respondemos:</strong></p>
+                        <ul>
+                            <li>"Qual geometria faz <span class="emphasis">melhor uso intrínseco</span> do espaço disponível?"</li>
+                            <li>"Qual lattice otimiza desempenho dentro das restrições de material dado?"</li>
+                            <li>Fornece <span class="emphasis">guidelines diretamente acionáveis</span> sem otimização adicional</li>
+                        </ul>
+                    </div>
+
+                    <h4 style="color: #2980b9; margin-top: 25px;">⚖️ Comparação das Abordagens: Vantagens e Desvantagens</h4>
+
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Critério</th>
+                                <th>Nossa Abordagem (a = 0.10 m)</th>
+                                <th>Abordagem do Revisor (a variável)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>✅ Vantagens</strong></td>
+                                <td>
+                                    • Framework teórico consistente (mesma BZ)<br>
+                                    • Responde questão prática de engenharia<br>
+                                    • Precedente na literatura (Xiao, Villeneuve)<br>
+                                    • Computacionalmente eficiente (75 sims)<br>
+                                    • Guidelines diretos para design
+                                </td>
+                                <td>
+                                    • Comparação em mesma faixa de frequência<br>
+                                    • Responde "qual combinação para freq alvo?"<br>
+                                    • Potencialmente interessante para otimização<br>
+                                    • Complementar ao nosso estudo
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>❌ Desvantagens</strong></td>
+                                <td>
+                                    • Geometrias operam em frequências diferentes<br>
+                                    • Pode parecer "injusto" à primeira vista<br>
+                                    • Requer métrica normalizada (η_rel) para comparação justa
+                                </td>
+                                <td>
+                                    • Zonas de Brillouin diferentes (complicação teórica)<br>
+                                    • Custo computacional: 400-1500 simulações<br>
+                                    • Busca iterativa trial-and-error (PWE sem solver inverso)<br>
+                                    • Não responde à questão de restrições espaciais<br>
+                                    • Menos relevante para aplicações práticas
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h4 style="color: #2980b9; margin-top: 25px;">💻 Consideração Computacional Prática</h4>
+
+                    <div class="key-point">
+                        <p><strong>⚠️ Desafio da Abordagem de 'a' Variável:</strong></p>
+                        <p><strong>Situação atual (a constante):</strong></p>
+                        <ul>
+                            <li>15 frequências de ressonador × 5 geometrias = <span class="emphasis">75 simulações PWE</span></li>
+                            <li>Cada simulação: ~2-5 minutos</li>
+                            <li>Total: ~6-8 horas de computação</li>
+                        </ul>
+
+                        <p style="margin-top: 15px;"><strong>Abordagem de frequência-matched (a variável):</strong></p>
+                        <ul>
+                            <li>Para cada lattice, encontrar 'a' que produz bandgap em frequência alvo</li>
+                            <li>PWE não tem solver inverso → busca iterativa trial-and-error</li>
+                            <li>Estimativa: 8-20 iterações por combinação lattice-frequência</li>
+                            <li>15 frequências × 5 lattices × 8-20 iterações = <span class="emphasis">600-1500 simulações</span></li>
+                            <li>Plus: re-malha completa para validação FEM em cada 'a'</li>
+                            <li>Total estimado: <span class="emphasis">50-100 horas de computação</span></li>
+                        </ul>
+
+                        <p style="margin-top: 15px; background-color: #fff5f5; padding: 15px; border-radius: 5px;">
+                            <strong>💡 Conclusão:</strong> Embora certamente aberto a explorar isso em trabalho futuro com recursos computacionais dedicados, acreditamos que a metodologia atual atinge os objetivos primários do estudo de forma efetiva.
+                        </p>
+                    </div>
+
+                    <h4 style="color: #2980b9; margin-top: 25px;">🔮 Olhando para o Futuro</h4>
+
+                    <p><strong>Reconhecemos que a otimização de parâmetros frequency-matched representa uma direção de pesquisa valiosa que poderia fornecer insights complementares ao nosso trabalho.</strong></p>
+
+                    <p style="margin-top: 15px;"><strong>Possíveis estudos futuros:</strong></p>
+                    <ol>
+                        <li>Otimização multi-paramétrica (a, k_j, m_r) para alvos de frequência específicos</li>
+                        <li>Análise de sensibilidade: como variações em 'a' afetam hierarquias de desempenho?</li>
+                        <li>Trade-offs: desempenho vs. tamanho de dispositivo para frequências específicas</li>
+                        <li>Desenvolvimento de solver inverso PWE para otimização eficiente</li>
+                    </ol>
+
+                    <p style="background-color: #e8f4f8; padding: 20px; border-radius: 8px; margin-top: 20px;">
+                        <strong>🎓 Síntese Final:</strong> Para o foco do presente estudo em <span class="emphasis">estabelecer hierarquias fundamentais de desempenho geométrico sob restrições espaciais realísticas</span>, acreditamos que a abordagem de parâmetro de lattice constante fornece a base cientificamente mais rigorosa e praticamente relevante. Esperamos que esta explicação clarifi nosso raciocínio, e permanecemos abertos a discussão adicional se o revisor tiver preocupações adicionais.
+                    </p>
+                </div>
+
+                <div class="response-box">
+                    <p class="response-header">✅ Nossa Resposta:</p>
+                    <p>Agradecemos sinceramente ao revisor por esta sugestão cuidadosa, que toca em uma importante consideração metodológica em análise comparativa de estruturas periódicas. Compreendemos completamente a preocupação do revisor sobre garantir comparação justa entre diferentes geometrias de lattice.</p>
+
+                    <p>Após consideração cuidadosa, respeitosamente acreditamos que manter o parâmetro de lattice constante a = 0.10 m representa a abordagem mais apropriada para os objetivos do nosso estudo. Gostaríamos de compartilhar os fundamentos teóricos e considerações práticas que guiaram esta escolha metodológica.</p>
+
+                    <p><strong>Compreensão da Teoria de Bloch-Floquet:</strong></p>
+                    <p>Em estruturas periódicas, descobrimos que a relação de dispersão ω(k) está fundamentalmente acoplada à constante de lattice através da relação do espaço recíproco. Quando variamos o parâmetro de lattice entre diferentes geometrias, cada configuração opera em uma Zona de Brillouin diferente (com tamanho escalando como 2π/a). Isto cria um desafio teórico sutil mas importante: as relações de dispersão seriam definidas em diferentes espaços k recíprocos, tornando a comparação direta mais complexa de uma perspectiva de análise de ondas de Bloch.</p>
+
+                    <p><strong>Orientação da Literatura Estabelecida:</strong></p>
+                    <p>Ao revisar a literatura fundamental neste campo, notamos um padrão consistente em como comparações geométricas são realizadas:</p>
+                    <ul>
+                        <li>O trabalho seminal de Xiao et al. (2012)—que introduziu o conceito de acoplamento ressonância-Bragg em placas LRSC—manteve parâmetro de lattice constante ao investigar diferentes configurações. Este estudo influente ajudou a estabelecer padrões metodológicos em nosso campo.</li>
+                        <li>Similarmente, na comunidade de cristais fotônicos, o trabalho altamente citado de Villeneuve & Piché (1992) comparando lattices quadradas e hexagonais empregou constantes de lattice fixas para permitir comparação geométrica rigorosa.</li>
+                    </ul>
+
+                    <p><strong>Objetivo Central do Nosso Estudo:</strong></p>
+                    <p>Projetamos nossa investigação para responder a uma questão específica de engenharia que surge frequentemente em aplicações práticas: <em>"Dadas restrições espaciais fixas (que ocorrem comumente em engenharia aeroespacial, automotiva e civil), qual geometria de lattice fornece desempenho ótimo?"</em></p>
+
+                    <p>Esta questão naturalmente leva à metodologia de 'a' constante porque:</p>
+                    <ul>
+                        <li>Engenheiros frequentemente enfrentam limitações espaciais predeterminadas (e.g., bays estruturais em aeronaves, dimensões de painéis de porta em veículos)</li>
+                        <li>A comparação revela qual geometria faz <em>uso intrinsecamente melhor</em> do espaço e materiais disponíveis</li>
+                        <li>Resultados fornecem guidelines de design diretamente acionáveis sem requerer otimização adicional</li>
+                    </ul>
+
+                    <p>A abordagem sugerida pelo revisor—ajustar 'a' para alinhar frequências de bandgap—responderia a uma questão diferente mas também valiosa: "Que combinações de parâmetros podem atingir frequências alvo?" Embora isto represente uma direção de pesquisa complementar importante, acreditamos que deslocaria o foco de nosso objetivo pretendido de estabelecer princípios fundamentais de desempenho geométrico.</p>
+
+                    <p><strong>Consideração Prática - Escopo Computacional:</strong></p>
+                    <p>Devemos também mencionar que implementar a abordagem de 'a' variável frequency-matched requereria esforço computacional substancialmente expandido:</p>
+                    <ul>
+                        <li>Nossa abordagem atual: 75 simulações PWE (15 frequências × 5 lattices)</li>
+                        <li>Abordagem frequency-matched: Requereria busca iterativa trial-and-error de parâmetros para cada combinação lattice-frequência, já que métodos PWE carecem de solvers inversos</li>
+                        <li>Requisito adicional estimado: 400-1,500 simulações para estabelecer parâmetros matched, plus re-malha completa para validação FEM</li>
+                    </ul>
+
+                    <p>Embora certamente abertos a explorar isso em trabalho futuro com recursos computacionais dedicados, acreditamos que a metodologia atual atinge os objetivos primários do nosso estudo de forma efetiva.</p>
+
+                    <p><strong>Olhando para o Futuro:</strong></p>
+                    <p>Genuinamente apreciamos o revisor levantar este importante ponto metodológico. Reconhecemos que otimização de parâmetros frequency-matched representa uma valiosa direção de pesquisa que poderia fornecer insights complementares ao nosso trabalho. Ficaríamos felizes em reconhecer isto como uma avenida promissora para investigação futura no manuscrito.</p>
+
+                    <p>Para o foco do presente estudo em estabelecer hierarquias fundamentais de desempenho geométrico sob restrições espaciais realísticas, acreditamos que a abordagem de parâmetro de lattice constante fornece a base cientificamente mais rigorosa e praticamente relevante. Esperamos que esta explicação clarifique nosso raciocínio, e permanecemos abertos a discussão adicional se o revisor tiver preocupações adicionais.</p>
+                </div>
+
+                <div class="changes-box">
+                    <p class="changes-header">📝 Modificações Implementadas:</p>
+
+                    <h4>Localização: Seção 3, Parâmetros Materiais (Linha 338)</h4>
+                    <p><em>Novo parágrafo de justificação adicionado em vermelho:</em></p>
+                    <blockquote style="background-color: #fff5f5; padding: 15px; border-left: 3px solid #e74c3c;">
+                        "Esta abordagem de parâmetro constante isola influências puramente geométricas (simetria cristalográfica, área de célula unitária, acoplamento de ressonadores) de efeitos de escala dependentes de frequência, fornecendo hierarquia de desempenho objetiva baseada em propriedades geométricas intrínsecas ao invés de otimização de parâmetros. Esta metodologia reflete restrições práticas de engenharia onde dispositivos de metamaterial devem caber dentro de limitações espaciais predeterminadas, permitindo avaliação justa de qual geometria otimiza desempenho dentro de restrições dadas de espaço e material—uma consideração crítica para aplicações em engenharia aeroespacial, automotiva e civil onde a pegada do dispositivo é frequentemente fixada por requisitos de design."
+                    </blockquote>
+
+                    <p><strong>Esta adição:</strong></p>
+                    <ul>
+                        <li>Explica raciocínio científico para parâmetro constante</li>
+                        <li>Conecta a restrições práticas de engenharia</li>
+                        <li>Justifica metodologia como mais apropriada para comparação fundamental</li>
+                        <li>Aborda relevância para engenharia aeroespacial/automotiva/civil</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Remaining comments in abbreviated format -->
+        <div class="section" id="comment2">
+            <h2 class="section-title">Comentário 2 - Reconhecimento do Trabalho de Xiao et al.</h2>
+            <div class="comment-block">
+                <div class="reviewer-comment">
+                    <p class="reviewer-comment-header">💬 Revisor #1:</p>
+                    <p>Deve-se notar que estudo similar da influência do ajuste de frequência de ressonância local sobre a largura de bandgap foi reportado na Ref.[46] para o caso de lattice quadrado. Foi revelado em [46] que o bandgap mais amplo ocorre quando o gap de ressonância direcional e gap de Bragg estão quase acoplados, e uma fórmula aproximada de design inicial foi fornecida em [46]. Os autores devem reconhecer descobertas existentes e fornecer discussões apropriadas.</p>
+                </div>
+
+                <div class="response-box">
+                    <p class="response-header">✅ Nossa Resposta:</p>
+                    <p>Concordamos completamente com o revisor que o trabalho foundational de Xiao et al. [46] deve ser apropriadamente reconhecido por suas descobertas críticas sobre mecanismos de acoplamento ressonância-Bragg.</p>
+                    <p><strong>Revisamos o manuscrito adicionando 8 citações estratégicas a Xiao et al. [46]</strong> que estabelecem como nosso estudo comparativo multi-lattice constrói sobre e estende estes princípios através de cinco configurações geométricas diferentes.</p>
+                </div>
+
+                <div class="changes-box">
+                    <p class="changes-header">📝 Modificações:</p>
+                    <p><strong>8 localizações estratégicas adicionadas:</strong></p>
+                    <ul>
+                        <li>Linhas 122-123: Reconhecimento expandido do mecanismo de acoplamento</li>
+                        <li>Linha 132: Estabelecimento do papel foundational</li>
+                        <li>Linha 450: Confirmação de dependency de tuning de frequência</li>
+                        <li>Linha 460: Regra de design universal (0.89 f_B)</li>
+                        <li>Linha 555: Extensão para variações geométricas</li>
+                        <li>Linha 588: Validação de relacionamento universal</li>
+                        <li>Linha 624: Extensão para sistemas multi-ressonadores</li>
+                        <li>Linha 1135: Reconhecimento de mudança de paradigma</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p><strong>Documento gerado em:</strong> <?php echo date('d/m/Y H:i:s'); ?></p>
+            <p><strong>Versão:</strong> Didática em Português - Aprofundamento em Comentários 1, 3 e 6</p>
+            <p><em>Para uso interno de compreensão e análise das respostas aos revisores</em></p>
+        </div>
+    </div>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

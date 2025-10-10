@@ -340,7 +340,7 @@ Resonator stiffness $k_j^*$ & Complex & $k_j^* = (4\gamma\rho Sh\pi^2 f_j^2)/(1+
 \end{tabular}
 \end{table}
 
-Using these material parameters, the geometric and physical properties for each lattice configuration are calculated as shown in Table~\ref{unit_cell_five_lat_params}, where the lattice parameter $a$ is kept constant to enable direct performance comparison. \textcolor{red}{This constant-parameter approach isolates geometric influences from frequency-scaling effects, providing objective performance hierarchy based on intrinsic properties—essential for engineering applications where devices must fit predetermined spatial constraints (aerospace, automotive). Theoretically, this maintains Bloch-Floquet consistency: varying lattice constant creates different Brillouin zones ($\propto 2\pi/a$), complicating direct comparison of dispersion relations. This follows established practice in phononic/photonic research \cite{Xiao2012,Villeneuve1992}.} 
+Using these material parameters, the geometric and physical properties for each lattice configuration are calculated as shown in Table~\ref{unit_cell_five_lat_params}, where the lattice parameter $a$ is kept constant to enable direct performance comparison. \textcolor{red}{This constant-parameter approach isolates geometric influences from frequency-scaling effects, providing objective performance hierarchy based on intrinsic properties---essential for engineering applications where devices must fit predetermined spatial constraints (aerospace, automotive). Theoretically, this maintains Bloch-Floquet consistency: varying lattice constant creates different Brillouin zones ($\propto 2\pi/a$), complicating direct comparison of dispersion relations. This follows established practice in phononic/photonic research \cite{Xiao_2012,Villeneuve1992}.} 
 
 \begin{table}[htb]
 	\centering
@@ -490,7 +490,7 @@ Parametric analysis (Figure \ref{pwe_disp_square_all_res}) investigates 15 reson
 
 \textcolor{red}{Parametric analysis reveals three regimes: mass-loading ($f_j = 10$ Hz, $\Delta f_{12} = 2.26$ Hz), optimal coupling ($f_j = 105$ Hz, $\Delta f_{12} = 32.10$ Hz), and stiffness-dominated ($f_j = 150$ Hz, $\Delta f_{12} = 14.33$ Hz). This resonator frequency tuning behavior confirms the dependency of bandwidth on resonant frequency of local resonators established by Xiao et al.~\cite{Xiao_2012}, demonstrating that systematic variation of $f_j$ enables controlled bandgap engineering.}
 
-\textcolor{red}{Edge frequency evolution reveals asymmetric band gap formation: $f_1$ increases linearly with $f_j$ (direct resonator control), while $f_2$ saturates at Bragg limit $f_B = 117.91$ Hz—an intrinsic geometric ceiling independent of resonator tuning. Maximum bandwidth $\Delta f_{12} = 32.10$ Hz at $f_j = 105$ Hz represents optimal balance between local resonance (controlling $f_1$) and geometric dispersion (limiting $f_2$), with subsequent decay reflecting saturation as $f_2$ approaches $f_B$.}
+\textcolor{red}{Edge frequency evolution reveals asymmetric band gap formation: $f_1$ increases linearly with $f_j$ (direct resonator control), while $f_2$ saturates at Bragg limit $f_B = 117.91$ Hz---an intrinsic geometric ceiling independent of resonator tuning. Maximum bandwidth $\Delta f_{12} = 32.10$ Hz at $f_j = 105$ Hz represents optimal balance between local resonance (controlling $f_1$) and geometric dispersion (limiting $f_2$), with subsequent decay reflecting saturation as $f_2$ approaches $f_B$.}
 
 \textcolor{red}{The peak position at $f_j = 105$ [Hz] $\approx$ $0.89 f_B$ reveals a universal design rule for locally resonant metamaterials: optimal performance occurs when the resonator frequency is positioned slightly below the Bragg frequency, maximizing the interaction between local and geometric scattering mechanisms. This finding aligns with the coupling mechanism identified by Xiao et al.~\cite{Xiao_2012}, where the widest bandgap emerges from near-coupling between directional resonance and Bragg band gaps, confirming the fundamental importance of resonator frequency tuning for achieving optimal bandgap performance.} 
 
@@ -548,7 +548,7 @@ Next, rectangular lattice analysis, the transition from square to rectangular ge
 \caption{Parametric analysis of band structure for rectangular lattice as function of resonator frequency. (\textit{a--c}) Dispersion diagrams computed with PWE for $f_j=10$ Hz, $f_j=99$ Hz, and $f_j=150$ Hz. (\textit{d}) Lower edge frequency $f_1$ of FBGW 1 (Mode 1) versus resonator frequency. (\textit{e}) Upper edge frequency $f_2$ of FBGW 1 (Mode 2) versus resonator frequency. (\textit{f}) FBGW 1 bandwidth showing maximum $\Delta f_{12} = 20.53$ Hz at $f_j = 99$ Hz.}
 \label{pwe_disp_rect_all_res}
 \end{figure*}
-\textcolor{red}{Parametric analysis (Figure \ref{pwe_disp_rect_all_res}) reveals geometric constraints: premature bandwidth maximum at $f_j = 99$ Hz (36% penalty vs. square), complete band gap disappearance at $f_j = 150$ Hz (fundamental frequency cutoff), and compressed operational range with rapid decay beyond $f_j = 120$ Hz. Aspect ratio creates anisotropic resonator-plate coupling—reduced $a_2$ direction area weakens flexural mode interaction, producing directionality-dependent scattering and establishing geometric aspect ratio as a critical design parameter.}
+\textcolor{red}{Parametric analysis (Figure \ref{pwe_disp_rect_all_res}) reveals geometric constraints: premature bandwidth maximum at $f_j = 99$ Hz (36\% penalty vs. square), complete band gap disappearance at $f_j = 150$ Hz (fundamental frequency cutoff), and compressed operational range with rapid decay beyond $f_j = 120$ Hz. Aspect ratio creates anisotropic resonator-plate coupling---reduced $a_2$ direction area weakens flexural mode interaction, producing directionality-dependent scattering and establishing geometric aspect ratio as a critical design parameter.}
 
 
 \textcolor{red}{Triangular lattice provides six-fold symmetry despite 13\% smaller unit cell area, achieving superior performance through multiple equivalent wave scattering pathways.} Figure \ref{pwe_fem_disp_modal_trian} demonstrates the geometric advantage of triangular packing:
@@ -608,7 +608,7 @@ Figure \ref{pwe_disp_trian_all_res}c) ($f_j = 150$ [Hz]) demonstrates the except
 
 \textcolor{red}{Figure \ref{pwe_disp_trian_all_res}b) documents a breakthrough in metamaterial performance with maximum bandwidth $\Delta f_{12} = 55.40$ [Hz] at $f_j = 145$ [Hz] – representing a $73\%$ improvement over the square lattice baseline and a $170\%$ improvement over the rectangular configuration. This exceptional performance occurs at a significantly higher optimal frequency ($f_j = 145$ [Hz] vs. $105$ [Hz] for square), indicating that the triangular geometry extends the operational frequency range while simultaneously enhancing peak performance. The demonstrated tuning capability across the full frequency spectrum extends the foundational work of Xiao et al.~\cite{Xiao_2012} on resonator frequency optimization, revealing that geometric symmetry fundamentally alters the achievable bandwidth-frequency relationship.}
 
-\textcolor{red}{Exceptional bandwidth stability (Figure \ref{pwe_disp_trian_all_res}f): unlike square/rectangular lattices with rapid decay, triangular maintains bandwidth >20 Hz across extended frequency ranges through six-fold rotational symmetry providing multiple equivalent scattering pathways. This creates robust wave-resonator coupling less sensitive to frequency detuning, demonstrating that lattice symmetry dominates over unit cell area—despite smaller area than square, superior symmetry enables area-normalized efficiency exceeding simple area scaling.}
+\textcolor{red}{Exceptional bandwidth stability (Figure \ref{pwe_disp_trian_all_res}f): unlike square/rectangular lattices with rapid decay, triangular maintains bandwidth >20 Hz across extended frequency ranges through six-fold rotational symmetry providing multiple equivalent scattering pathways. This creates robust wave-resonator coupling less sensitive to frequency detuning, demonstrating that lattice symmetry dominates over unit cell area---despite smaller area than square, superior symmetry enables area-normalized efficiency exceeding simple area scaling.}
 
 
 Single-resonator lattice synthesis: The comprehensive analysis of SR-SDOF lattices reveals fundamental design principles governing metamaterial optimization:
@@ -659,7 +659,7 @@ Figure~\ref{pwe_fem_disp_modal_hex} demonstrates the revolutionary advance achie
 \label{pwe_fem_disp_modal_hex}
 \end{figure*}
 
-\textcolor{red}{Breakthrough capability (Figure \ref{pwe_fem_disp_modal_hex}a): simultaneous two distinct full band gaps (FBGW 1: $\Delta f_{23} = 2.30$ Hz, FBGW 2: $\Delta f_{34} = 17.23$ Hz)—qualitative leap beyond single-resonator systems with only one primary band gap. Anti-phase coupling mode (point $B_h$, Figure \ref{pwe_fem_disp_modal_hex}b) creates FBGW 1 through destructive interference where resonators oscillate $180°$ out-of-phase, trapping energy and preventing propagation. In-phase coupling mode generates stronger, broader FBGW 2 through collective resonance with coherent resonator motion maximizing energy extraction. Dual-resonator systems access different regimes via frequency adjustment: low-frequency ($f_j < 50$ Hz, anti-phase dominant), intermediate ($50 < f_j < 100$ Hz, dual band gap coexistence), high-frequency ($f_j > 100$ Hz, in-phase dominant), enabling single geometry optimization for different frequency ranges.} \textcolor{red}{The demonstrated tuning capability extends the resonator frequency optimization principles of Xiao et al.~\cite{Xiao_2012} from single-resonator to multi-resonator systems, revealing that coupled oscillators introduce new degrees of freedom for bandgap engineering beyond what is achievable through frequency tuning alone.}
+\textcolor{red}{Breakthrough capability (Figure \ref{pwe_fem_disp_modal_hex}a): simultaneous two distinct full band gaps (FBGW 1: $\Delta f_{23} = 2.30$ Hz, FBGW 2: $\Delta f_{34} = 17.23$ Hz)---qualitative leap beyond single-resonator systems with only one primary band gap. Anti-phase coupling mode (point $B_h$, Figure \ref{pwe_fem_disp_modal_hex}b) creates FBGW 1 through destructive interference where resonators oscillate $180^\circ$ out-of-phase, trapping energy and preventing propagation. In-phase coupling mode generates stronger, broader FBGW 2 through collective resonance with coherent resonator motion maximizing energy extraction. Dual-resonator systems access different regimes via frequency adjustment: low-frequency ($f_j < 50$ Hz, anti-phase dominant), intermediate ($50 < f_j < 100$ Hz, dual band gap coexistence), high-frequency ($f_j > 100$ Hz, in-phase dominant), enabling single geometry optimization for different frequency ranges.} \textcolor{red}{The demonstrated tuning capability extends the resonator frequency optimization principles of Xiao et al.~\cite{Xiao_2012} from single-resonator to multi-resonator systems, revealing that coupled oscillators introduce new degrees of freedom for bandgap engineering beyond what is achievable through frequency tuning alone.}
 
 \newpage
 \begin{figure*}[t]
@@ -683,10 +683,10 @@ Figure~\ref{pwe_fem_disp_modal_hex} demonstrates the revolutionary advance achie
 \label{pwe_disp_hex_all_res12}
 \end{figure*}
 
-\textcolor{red}{Parametric analysis (Figure \ref{pwe_disp_hex_all_res12}) reveals three modal regimes: (a) $f_j = 10$ Hz—anti-phase dominant producing only FBGW 1; (b) $f_j = 60$ Hz—optimal dual-mode where FBGW 1 peaks ($\Delta f_{23} = 14.17$ Hz) through constructive anti-phase/in-phase interference, creating broadband blocking impossible in single-resonator systems; (c) $f_j = 150$ Hz—in-phase dominant with powerful FBGW 2 ($\Delta f_{34} = 23.63$ Hz) while FBGW 1 vanishes. Edge evolution (d-e) shows lower edges ($f_2$, $f_3$) with direct resonator control (linear) and upper edges ($f_3$, $f_4$) with saturation at geometric limits. Maximum FBGW 2 of $\Delta f_{34} = 27.73$ Hz at $f_j = 140$ Hz represents 46\% improvement over best single-resonator (square: 30.90 Hz), establishing collective resonance superiority. FBGW 1 maximum coinciding with FBGW 2 emergence reveals constructive modal interaction—synergistic coupling where second mode enhances rather than competes.}
+\textcolor{red}{Parametric analysis (Figure \ref{pwe_disp_hex_all_res12}) reveals three modal regimes: (a) $f_j = 10$ Hz---anti-phase dominant producing only FBGW 1; (b) $f_j = 60$ Hz---optimal dual-mode where FBGW 1 peaks ($\Delta f_{23} = 14.17$ Hz) through constructive anti-phase/in-phase interference, creating broadband blocking impossible in single-resonator systems; (c) $f_j = 150$ Hz---in-phase dominant with powerful FBGW 2 ($\Delta f_{34} = 23.63$ Hz) while FBGW 1 vanishes. Edge evolution (d-e) shows lower edges ($f_2$, $f_3$) with direct resonator control (linear) and upper edges ($f_3$, $f_4$) with saturation at geometric limits. Maximum FBGW 2 of $\Delta f_{34} = 27.73$ Hz at $f_j = 140$ Hz represents 46\% improvement over best single-resonator (square: 30.90 Hz), establishing collective resonance superiority. FBGW 1 maximum coinciding with FBGW 2 emergence reveals constructive modal interaction---synergistic coupling where second mode enhances rather than competes.}
 
 
-\textcolor{red}{Kagomé triple-resonator architecture positions three resonators at \( \mathbf{r_1} = a(-1/2, -\sqrt{3}/6) \), \( \mathbf{r_2} = a(-1/2, -\sqrt{3}/6) \), and \( \mathbf{r_3} = a(\sqrt{3}/3, 0) \) with 120° triangular symmetry creating intricate phase relationships fundamentally different from honeycomb. Three-fold rotational symmetry produces narrow but well-defined band gaps through unique interference patterns, effective for precise frequency-selective attenuation. FIBZ coordinates \( \Gamma = (0,0) \), \( X = \pi/a(1/\sqrt{3},0) \), \( M = \pi/a(1/2\sqrt{3}/1/2) \), \( X' = \pi/a(1/2\sqrt{3},1/2) \), \( M' = \pi/a(0,2/3) \) with three identical resonators (\( k_j = 246.16 \) N/m) following path \( M' \longrightarrow \Gamma \longrightarrow X \longrightarrow M \longrightarrow X' \longrightarrow M' \); adjusted frequency \( f_j = 80 \) Hz enables direct honeycomb comparison.}
+\textcolor{red}{Kagomé triple-resonator architecture positions three resonators at \( \mathbf{r_1} = a(-1/2, -\sqrt{3}/6) \), \( \mathbf{r_2} = a(-1/2, -\sqrt{3}/6) \), and \( \mathbf{r_3} = a(\sqrt{3}/3, 0) \) with $120^\circ$ triangular symmetry creating intricate phase relationships fundamentally different from honeycomb. Three-fold rotational symmetry produces narrow but well-defined band gaps through unique interference patterns, effective for precise frequency-selective attenuation. FIBZ coordinates \( \Gamma = (0,0) \), \( X = \pi/a(1/\sqrt{3},0) \), \( M = \pi/a(1/2\sqrt{3},1/2) \), \( X' = \pi/a(1/2\sqrt{3},1/2) \), \( M' = \pi/a(0,2/3) \) with three identical resonators (\( k_j = 246.16 \) N/m) following path \( M' \longrightarrow \Gamma \longrightarrow X \longrightarrow M \longrightarrow X' \longrightarrow M' \); adjusted frequency \( f_j = 80 \) Hz enables direct honeycomb comparison.}
 
 \newpage
 \begin{figure*}[t]
@@ -721,7 +721,7 @@ Figure~\ref{pwe_fem_disp_modal_hex} demonstrates the revolutionary advance achie
 \label{pwe_fem_disp_modal_kag}
 \end{figure*}
 
-\textcolor{red}{Fundamental limitation (Figure \ref{pwe_fem_disp_modal_kag}a): despite 50\% more resonators than honeycomb, only two complete band gaps emerge—FBGW 1 (\( f_3 \)-\( f_4 \), \( \Delta f_{34} \)) and FBGW 2 (\( f_4 \)-\( f_5 \), \( \Delta f_{45} \))—plus partial PBGW 1 (30–40 Hz) from three-resonator coupling creating hybrid states with selective directional attenuation, contrasting honeycomb's broader band gaps. At \( f_j = 80 \) Hz, both FBGW 1/FBGW 2 coexist (honeycomb-like) but with characteristic narrow widths (particularly FBGW 2), demonstrating three-resonator configuration creates highly frequency-selective attenuation suitable for precise frequency targeting rather than broadband applications.}
+\textcolor{red}{Fundamental limitation (Figure \ref{pwe_fem_disp_modal_kag}a): despite 50\% more resonators than honeycomb, only two complete band gaps emerge---FBGW 1 (\( f_3 \)-\( f_4 \), \( \Delta f_{34} \)) and FBGW 2 (\( f_4 \)-\( f_5 \), \( \Delta f_{45} \))---plus partial PBGW 1 (30--40 Hz) from three-resonator coupling creating hybrid states with selective directional attenuation, contrasting honeycomb's broader band gaps. At \( f_j = 80 \) Hz, both FBGW 1/FBGW 2 coexist (honeycomb-like) but with characteristic narrow widths (particularly FBGW 2), demonstrating three-resonator configuration creates highly frequency-selective attenuation suitable for precise frequency targeting rather than broadband applications.}
 
 A more detailed analysis of FBGW 1 and FBGW 2 is presented in Figure \ref{pwe_disp_kag_all_res}.
 \newpage
@@ -854,7 +854,7 @@ Kagomé & 6.85 & 101 & 2.28 & Triple-coupling \\
 \end{equation}
 where $f_c = (f_1 + f_2)/2$ is the bandgap center frequency. This dimensionless metric removes frequency-dependent scaling, isolating purely geometric contributions to metamaterial efficiency.}
 
-\textcolor{red}{Table \ref{tab:relative_bandwidth_comparison} applies this normalized metric across the complete frequency range (10-150 Hz) for all five lattices. The analysis reveals triangular lattices achieve consistently superior performance: peak 42.51\% vs 31.40\% for square lattices—a 35\% improvement demonstrating that geometric optimization maintains advantage across the entire frequency spectrum.}
+\textcolor{red}{Table \ref{tab:relative_bandwidth_comparison} applies this normalized metric across the complete frequency range (10-150 Hz) for all five lattices. The analysis reveals triangular lattices achieve consistently superior performance: peak 42.51\% vs 31.40\% for square lattices---a 35\% improvement demonstrating that geometric optimization maintains advantage across the entire frequency spectrum.}
 
 \begin{table}[htb]
 \centering
@@ -991,7 +991,7 @@ Figure \ref{lat_r_tr_frf_f1_f2_f3} reveals distinctive behavior compared to symm
 
 The rectangular lattice operates through constrained single-resonator coupling with directional preferences imposed by geometric anisotropy. The reduced unit cell area limits resonator-plate interaction cross-section, but creates unique finite-plate effects where boundary interactions compensate for theoretical limitations, making it suitable for space-constrained applications.
 
-Direct comparison with the square lattice reveals the penalty of symmetry reduction: rectangular achieves -129.93 dB versus square's -173.09 [dB] ($25\%$ performance degradation). However, the geometric anisotropy creates unique advantages in finite plates, demonstrating persistent attenuation (-80 [dB] at 177 [Hz]) beyond theoretical band gaps—a phenomenon not observed in the symmetric square configuration. This establishes that while symmetry enhances peak performance, anisotropy can provide resilience in practical applications.
+Direct comparison with the square lattice reveals the penalty of symmetry reduction: rectangular achieves -129.93 dB versus square's -173.09 [dB] ($25\%$ performance degradation). However, the geometric anisotropy creates unique advantages in finite plates, demonstrating persistent attenuation (-80 [dB] at 177 [Hz]) beyond theoretical band gaps---a phenomenon not observed in the symmetric square configuration. This establishes that while symmetry enhances peak performance, anisotropy can provide resilience in practical applications.
 
 \subsubsection{Triangular lattice LRSC plate}\label{panel_lat_t}
 
@@ -1051,7 +1051,7 @@ The honeycomb lattice (-220.33 [dB]) establishes the first significant performan
 
 \subsubsection{Kagomé lattice LRSC plate}\label{panel_lat_k}
 
-The kagomé lattice exhibits the largest unit cell area $A_{cell} = 2a^2\sqrt{3}$ with triple resonators per cell ($N_j = 3$). The three resonators positioned at 120° intervals create complex multi-resonator coupling mechanisms, generating two potential band gaps: FBGW 1 between modes $f_3$ and $f_4$, and FBGW 2 between modes $f_5$ and $f_6$.
+The kagomé lattice exhibits the largest unit cell area $A_{cell} = 2a^2\sqrt{3}$ with triple resonators per cell ($N_j = 3$). The three resonators positioned at $120^\circ$ intervals create complex multi-resonator coupling mechanisms, generating two potential band gaps: FBGW 1 between modes $f_3$ and $f_4$, and FBGW 2 between modes $f_5$ and $f_6$.
 
 Figure \ref{lat_k_pwe_epwe_tr_frf} demonstrates the exceptional triple-resonator dynamics for $f_j = 20$ [Hz]. The real part dispersion (Figure \ref{lat_k_pwe_epwe_tr_frf}a) reveals narrow but well-defined band gaps, while the imaginary component (Figure \ref{lat_k_pwe_epwe_tr_frf}b) shows maximum attenuation peaks corresponding to synchronized triple-resonator oscillations, creating the highest attenuation among all configurations.
 
@@ -1073,7 +1073,7 @@ Figure \ref{lat_k_tr_frf_f1_f2_f3} illustrates the comprehensive attenuation beh
 	\label{lat_k_tr_frf_f1_f2_f3}
 \end{figure}
 
-The kagomé lattice operates through synchronized triple-resonator coupling where three resonators at 120° intervals create complex phase relationships optimized for triangular symmetry. This multi-resonator arrangement generates localized energy concentration through constructive interference patterns, where each resonator contributes to collective impedance mismatch that far exceeds individual contributions. The configuration provides extraordinary frequency-selective energy dissipation, making it ideal for applications requiring maximum attenuation at specific target frequencies.
+The kagomé lattice operates through synchronized triple-resonator coupling where three resonators at $120^\circ$ intervals create complex phase relationships optimized for triangular symmetry. This multi-resonator arrangement generates localized energy concentration through constructive interference patterns, where each resonator contributes to collective impedance mismatch that far exceeds individual contributions. The configuration provides extraordinary frequency-selective energy dissipation, making it ideal for applications requiring maximum attenuation at specific target frequencies.
 
 The kagomé lattice (-292.65 [dB]) represents the performance apex, demonstrating $33\%$ improvement over honeycomb and $68\%$ over triangular configurations. Progressive performance escalation confirms design principles: rectangular (-129.93 [dB]) < square (-173.09 [dB]) < triangular (-174.19 [dB]) < honeycomb (-220.33 [dB]) < kagomé (-292.65 [dB]). The 162.72 [dB] span between worst (rectangular) and best (kagomé) validates both geometric optimization and resonator multiplication strategies, establishing clear design guidelines for target-specific applications.
 
@@ -1450,72 +1450,42 @@ $f_j$ & Square & Rectangular & Triangular & Honeycomb & Honeycomb & Kagom\'{e} &
 \newpage
 \section{Framework for Lattice Selection in Engineering Applications}\label{selection_framework_appendix}
 
-The individual analyses presented in Section \ref{indi_panel_lats} reveal distinct performance characteristics that enable systematic lattice selection based on application requirements. This appendix synthesizes the comparative findings into practical engineering guidelines through performance metrics, design trade-offs, and a quantitative decision framework.
-
-\subsection{Performance-Based Design Categories}
-
-The five lattice geometries exhibit distinct optimization characteristics that define three fundamental design categories:
-
-\textbf{Peak Performance Category (Kagomé):} Maximizes absolute attenuation through multi-resonator coupling, achieving -292.65 [dB] with highest material utilization ($m_{ratio} = 1.00$). Optimal for applications requiring maximum vibration suppression at specific target frequencies with material efficiency as secondary consideration.
-
-\textbf{Balanced Performance Category (Honeycomb, Square):} Provides moderate-to-high attenuation with predictable frequency response. Honeycomb (-220.33 [dB]) offers dual-mode capability for frequency-selective applications, while square (-173.09 [dB]) delivers consistent single-mode performance for standard vibration control requirements.
-
-\textbf{Broadband Category (Triangular):} Optimizes bandwidth-to-performance ratio with exceptional area efficiency. Despite minimal material usage ($m_{ratio} = 0.25$), achieves near-peak performance (-174.19 [dB]) with superior FBGW characteristics ($\approx$ 150 [Hz]), ideal for applications requiring robust performance across wide frequency ranges.
-
-\textbf{Specialized Applications (Rectangular):} Limited performance (-129.93 [dB]) compensated by geometric anisotropy enabling directional wave control and space-constrained implementations where unit cell aspect ratio is predetermined by structural constraints.
-
-\subsection{Quantitative Selection Framework}
-
-Based on the comparative analysis, Table \ref{tab_selection_framework_app} presents a quantitative decision matrix correlating application requirements with optimal lattice configurations:
+Table \ref{tab_selection_framework_app} provides a quantitative framework for lattice selection based on the comparative analysis presented in Sections \ref{num_ex_disc} and \ref{indi_panel_lats}.
 
 \begin{table}[htb]
-    \small
     \centering
-    \caption{Quantitative framework for lattice selection in engineering applications. Performance Score (*): Weighted average (peak attenuation 40\%, bandwidth 30\%, material efficiency 20\%, manufacturing feasibility 10\%). Abbreviations: Att. = Attenuation; Mat. Eff. = Material Efficiency; Perf. = Performance; Manuf. = Manufacturing; App. = Applications; Opt. = Optimal; Freq. = Frequency.}
+    \caption{Lattice selection framework for engineering applications.}
+    \small
+    \resizebox{\textwidth}{!}{%
     \begin{tabular}{|l|c|c|c|c|c|}
         \hline
-        \textbf{Criterion} & \textbf{Kagomé} & \textbf{Honeycomb} & \textbf{Triangular} & \textbf{Square} & \textbf{Rectangular} \\
+        \textbf{Metric} & \textbf{Kagomé} & \textbf{Honeycomb} & \textbf{Triangular} & \textbf{Square} & \textbf{Rectangular} \\
         \hline
-        \multicolumn{6}{|c|}{\textit{Performance Metrics}} \\
+        Peak Atten. [dB] & -292.65 & -220.33 & -174.19 & -173.09 & -129.93 \\
         \hline
-        Peak Att. [dB] & -292.65 & -220.33 & -174.19 & -173.09 & -129.93 \\
+        Material Eff. ($m_{ratio}$) & 1.00 (ref.) & 0.58 & 0.25 & 0.29 & 0.14 \\
         \hline
-        Mat. Eff. Rank & 1st & 2nd & 5th & 3rd & 4th \\
+        Optimal Application & Max. vibration & Dual-freq. & Broadband & Standard & Directional \\
+        & suppression & control & control & control & control \\
         \hline
-        Bandwidth Perf. & Narrow & Dual-mode & Excellent & Moderate & Limited \\
-        \hline
-        Freq. Selectivity & High & Medium & Low & Medium & Medium \\
-        \hline
-        \multicolumn{6}{|c|}{\textit{Application Characteristics}} \\
-        \hline
-        Manuf. Complex. & High & Medium & Low & Low & Low \\
-        \hline
-        Target App. & Max supp. & Dual flex. & Broadband & Standard & Direction. \\
-        \hline
-        Opt. Freq. [Hz] & 10-30 & 10-50 & 30-150 & 30-100 & 30-80 \\
-        \hline
-        \multicolumn{6}{|c|}{\textit{Overall Assessment}} \\
-        \hline
-        Perf. Score* & 10.0 & 8.5 & 9.2 & 7.8 & 5.9 \\
-        \hline
-    \end{tabular}
+    \end{tabular}%
+    }
     \label{tab_selection_framework_app}
 \end{table}
 
+\subsection{Application-Specific Guidelines}
 
-\subsection{Application-Specific Design Guidelines}
+Recommended lattice configurations for specific engineering scenarios:
 
-The framework establishes four primary application scenarios with corresponding optimal lattice selection:
+\begin{itemize}
+    \item \textbf{Critical vibration isolation} (precision instrumentation, sensitive equipment): Kagomé (maximum attenuation -292.65 dB) or honeycomb (manufacturing advantages).
 
-\textbf{Scenario 1 - Critical Vibration Isolation:} Applications requiring maximum attenuation at specific frequencies (precision instrumentation, sensitive equipment mounting). \textit{Recommended:} Kagomé lattice for peak performance, honeycomb as secondary option with manufacturing advantages.
+    \item \textbf{Broadband noise control} (automotive panels, aerospace structures): Triangular (superior bandwidth, 25\% material efficiency) or square (standard performance).
 
-\textbf{Scenario 2 - Broadband Noise Control:} Systems operating across wide frequency ranges (automotive panels, building facades, aerospace structures). \textit{Recommended:} Triangular lattice for optimal bandwidth-performance balance, square lattice for standard requirements.
+    \item \textbf{Multi-frequency applications} (industrial machinery, HVAC systems): Honeycomb (dual band gaps) or kagomé (multi-resonator capability).
 
-\textbf{Scenario 3 - Multi-Frequency Applications:} Environments with distinct frequency components requiring selective attenuation (industrial machinery, HVAC systems). \textit{Recommended:} Honeycomb lattice for dual-mode capability, kagomé for primary frequency with secondary suppression.
-
-\textbf{Scenario 4 - Constrained Design Space:} Applications with predetermined geometric constraints or directional requirements (architectural integration, retrofit applications). \textit{Recommended:} Rectangular lattice for anisotropic control, square lattice for space-efficient implementation.
-
-This framework transforms lattice selection from empirical approaches to systematic engineering decision-making, enabling optimal configuration choice based on quantifiable performance metrics and application-specific requirements. The decision table provides engineers with concrete guidelines derived from the comprehensive comparative analysis presented in Sections \ref{num_ex_disc} and \ref{indi_panel_lats}, establishing a bridge between theoretical insights and practical metamaterial design.
+    \item \textbf{Constrained design space} (architectural integration, retrofit): Rectangular (directional control) or square (space-efficient).
+\end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%
 \newpage
