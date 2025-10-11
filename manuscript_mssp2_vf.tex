@@ -431,62 +431,24 @@ Kagomé & $\Gamma$ & 21.37 & 21.52 & 0.70 & \multirow{3}{*}{1.67} \\
 \label{srt_disp_pwe}
 \textcolor{red}{This subsection analyzes single-resonator lattices with distinct symmetry classes: square (4-fold), rectangular (anisotropic), and triangular (6-fold). Starting with square lattice analysis, Figure \ref{pwe_fem_disp_modal_square} establishes the square lattice as the baseline configuration for single-resonator metamaterials, demonstrating excellent PWE-FEM agreement across the entire frequency spectrum. Resonator stiffness values are calibrated to achieve $f_j = 80$ Hz for direct geometric comparison.}
 \newpage
-\begin{figure*}[t]
-\centering
-\includegraphics[width=.8\textwidth]{1_1_disp_frf_square.pdf}
-
-\vspace{0.3cm}
-
-% Legenda externa compacta em formato tabular
-\centering
-\small
-\begin{tabular}{@{}c@{\hspace{0.3em}}l@{\hspace{1.0em}}c@{\hspace{0.3em}}l@{\hspace{1.0em}}c@{\hspace{0.3em}}l@{}}
-% Linha 1 - Band gaps (retângulos)
-\tikz{\filldraw[cyan!70!blue] (0,0) rectangle (0.6,0.3);} & PBGW 1 - $\Gamma \rightarrow$ X &
-\tikz{\filldraw[magenta!90!red] (0,0) rectangle (0.6,0.3);} & FBGW 1 &
-\tikz{\filldraw[blue!80!cyan] (0,0) rectangle (0.6,0.3);} & PBGW 2 - $\Gamma \rightarrow$ X \\[0.3em]
-
-% Linha 2 - Modos PWE
-\tikz{\draw[line width=3.5pt, orange!90!yellow] (0,0.15) -- (0.6,0.15);} & K-L: Mode 1 - PWE &
-\tikz{\draw[line width=3.5pt, cyan!80!white] (0,0.15) -- (0.6,0.15);} & K-L: Mode 2 - PWE &
-\tikz{\draw[line width=3.5pt, red!60!black] (0,0.15) -- (0.6,0.15);} & K-L: Mode 3 - PWE \\[0.3em]
-
-% Linha 3 - FEM e LRSC
-\tikz{\draw[line width=3pt, black, dashed] (0,0.15) -- (0.6,0.15);} & K-L: Modes 1-3 - FEM &
-\tikz{\draw[line width=2.5pt, blue!80!cyan, dashed] (0,0.15) -- (0.6,0.15);} & LRSC: 80 [Hz] & & \\
-\end{tabular}
-
-\caption{Band structure and wave mode shapes for a square lattice unit cell with single resonator ($f_r = 80$ Hz) in a thin plate. (\textit{a}) Dispersion diagram computed with PWE and FEM methods along M--$\Gamma$--X--M showing FBGW 1 ($f_1 = 70.72$ Hz, $f_2 = 93.88$ Hz, $\Delta f_{12} = 23.16$ Hz), PBGW 1 ($\Gamma \rightarrow$ X: $f_1 = 61.54$ Hz, $f_2 = 93.88$ Hz, $\Delta f_{12} = 32.33$ Hz), and PBGW 2 ($\Gamma \rightarrow$ X: $f_1 = 117.91$ Hz, $f_2 = 149$ Hz, $\Delta f_{12} = 31.09$ Hz). (\textit{b}) Wave mode shapes at points $A_s$, $B_s$, and $C_s$ computed by FEM.}
-\label{pwe_fem_disp_modal_square}
-\end{figure*}
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=.8\textwidth]{1_1_disp_frf_square.pdf}
+	\caption{(\textit{a}) Band structure computed with PWE and FEM for a square lattice unit cell with a single resonator with $f_r = 80$ [Hz] in a thin plate. FBGW 1 - $f_1 = 70.72$ [Hz], $f_2 = 93.88$ [Hz], $\Delta f_{12} = 23.16 $ [Hz], PBGW 1 - $f_1 = 61.54$ [Hz], $f_2 = 93.88$ [Hz], $\Delta f_{12} = 32.33 $ [Hz], PBGW 2 - $f_1 = 117.91$ [Hz], $f_2 = 149$ [Hz], $\Delta f_{12} = 31.09 $ [Hz]. (\textit{b}) Waves mode shapes for a square lattice unit cell with a single resonator in a different points of edges in a real band structure computed by FEM.}
+	\label{pwe_fem_disp_modal_square}
+\end{figure}
 \textcolor{red}{Dispersion analysis reveals local resonance creating FBGW 1 ($\Delta f_{12} = 23.16$ [Hz], $f_1 = 70.72$ Hz, $f_2 = 93.88$ Hz) with resonator frequency $f_j = 80$ Hz strategically positioned between mode edges for optimal energy extraction. Mode shapes (Figure \ref{pwe_fem_disp_modal_square}b) show anti-resonance at point $B_s$, where the resonator creates destructive interference trapping wave energy and preventing propagation.} 
 
 \textcolor{red}{Square lattice analysis reveals FBGW 1 ($\Delta f_{12} = 23.16$ Hz) and directional PBGWs, demonstrating resonator-plate hybridization through avoided crossings. Bragg scattering contributes additional wave interference at specific crystallographic points.}
 
 Parametric analysis (Figure \ref{pwe_disp_square_all_res}) investigates 15 resonator frequencies: panels (a-c) show representative cases ($f_j = 10, 105, 150$ Hz), panels (d-e) track edge frequency evolution ($f_1$, $f_2$), and panel (f) reveals FBGW 1 bandwidth optimization:
 
-\newpage
-\begin{figure*}[t]
-\centering
-\includegraphics[width=.6\textwidth]{2_1_disp_frf_square.pdf}
-
-\vspace{0.3cm}
-
-% Legenda externa compacta em formato tabular
-\centering
-\small
-\begin{tabular}{@{}c@{\hspace{0.3em}}l@{\hspace{1.2em}}c@{\hspace{0.3em}}l@{\hspace{1.2em}}c@{\hspace{0.3em}}l@{}}
-\tikz{\filldraw[magenta!90!red] (0,0) rectangle (0.5,0.25);} & FBGW 1 &
-\tikz{\draw[line width=2.5pt, orange!90!yellow] (0,0.125) -- (0.5,0.125);} & K-L: Mode 1 - PWE &
-\tikz{\draw[line width=2.5pt, cyan!80!white] (0,0.125) -- (0.5,0.125);} & K-L: Mode 2 - PWE \\[0.3em]
-\tikz{\draw[line width=2.5pt, red!70!orange] (0,0.125) -- (0.5,0.125);} & K-L: Mode 3 - PWE &
-\tikz{\draw[line width=2.5pt, black] (0,0.125) -- (0.5,0.125);} & K-L: Bare Plate - PWE &
-\tikz{\draw[line width=2pt, blue!80!cyan, dashed] (0,0.125) -- (0.5,0.125);} & LRSC \\
-\end{tabular}
-
-\caption{Parametric analysis of band structure for square lattice as function of resonator frequency. (\textit{a--c}) Dispersion diagrams computed with PWE for $f_j=10$ Hz, $f_j=105$ Hz, and $f_j=150$ Hz. (\textit{d}) Lower edge frequency $f_1$ of FBGW 1 (Mode 1) versus resonator frequency. (\textit{e}) Upper edge frequency $f_2$ of FBGW 1 (Mode 2) versus resonator frequency. (\textit{f}) FBGW 1 bandwidth showing maximum $\Delta f_{12} = 32.10$ Hz at $f_j = 105$ Hz.}
-\label{pwe_disp_square_all_res}
-\end{figure*}
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=.8\textwidth]{2_1_disp_frf_square.pdf}
+	\caption{Results using in PWE for square lattice (\textit{a}) LRSC in $f_j=10$ [Hz], (\textit{b}) LRSC in $f_j=105$ [Hz] and (\textit{c}) LRSC in $f_j=150$ [Hz]. (\textit{d}) $f_1$ - Lower edge frequencies of the first band mode as a function of local resonance. (\textit{e}) $f_2$ - Upper edge frequencies of the second band mode as a function of local resonance. (\textit{f}) FBGW 1 as function of resonator frequency.}
+	\label{pwe_disp_square_all_res}
+\end{figure}
 
 \textcolor{red}{Parametric analysis reveals three regimes: mass-loading ($f_j = 10$ Hz, $\Delta f_{12} = 2.26$ Hz), optimal coupling ($f_j = 105$ Hz, $\Delta f_{12} = 32.10$ Hz), and stiffness-dominated ($f_j = 150$ Hz, $\Delta f_{12} = 14.33$ Hz). This resonator frequency tuning behavior confirms the dependency of bandwidth on resonant frequency of local resonators established by Xiao et al.~\cite{Xiao_2012}, demonstrating that systematic variation of $f_j$ enables controlled bandgap engineering.}
 
@@ -497,114 +459,44 @@ Parametric analysis (Figure \ref{pwe_disp_square_all_res}) investigates 15 reson
 
 Next, rectangular lattice analysis, the transition from square to rectangular geometry introduces geometric anisotropy that fundamentally alters metamaterial behavior through two primary mechanisms: reduced unit cell area ($0.50 \times 10^{-2}$ $m^2$ vs. $1.00 \times 10^{-2}$ $m^2$ for square) and directional wave propagation asymmetry. Figure \ref{pwe_fem_disp_modal_rect} quantifies these geometric effects on band gap formation:
 \newpage
-\begin{figure*}[t]
-\centering
-\includegraphics[width=.8\textwidth]{1_2_disp_frf_rect.pdf}
-
-\vspace{0.3cm}
-
-% Legenda externa compacta em formato tabular
-\centering
-\small
-\begin{tabular}{@{}c@{\hspace{0.3em}}l@{\hspace{1.0em}}c@{\hspace{0.3em}}l@{\hspace{1.0em}}c@{\hspace{0.3em}}l@{}}
-% Linha 1 - Band gaps (retângulos)
-\tikz{\filldraw[cyan!70!blue] (0,0) rectangle (0.6,0.3);} & PBGW 1 - $\Gamma \rightarrow$ X &
-\tikz{\filldraw[magenta!90!red] (0,0) rectangle (0.6,0.3);} & FBGW 1 &
-\tikz{\filldraw[blue!80!cyan] (0,0) rectangle (0.6,0.3);} & PBGW 2 - $\Gamma \rightarrow$ X \\[0.3em]
-
-% Linha 2 - Modos PWE
-\tikz{\draw[line width=3.5pt, orange!90!yellow] (0,0.15) -- (0.6,0.15);} & K-L: Mode 1 - PWE &
-\tikz{\draw[line width=3.5pt, cyan!80!white] (0,0.15) -- (0.6,0.15);} & K-L: Mode 2 - PWE &
-\tikz{\draw[line width=3.5pt, red!60!black] (0,0.15) -- (0.6,0.15);} & K-L: Mode 3 - PWE \\[0.3em]
-
-% Linha 3 - FEM e LRSC
-\tikz{\draw[line width=3pt, black, dashed] (0,0.15) -- (0.6,0.15);} & K-L: Modes 1-3 - FEM &
-\tikz{\draw[line width=2.5pt, blue!80!cyan, dashed] (0,0.15) -- (0.6,0.15);} & LRSC: 80 [Hz] & & \\
-\end{tabular}
-
-\caption{Band structure and wave mode shapes for a rectangular lattice unit cell with single resonator ($f_r = 80$ Hz) in a thin plate. (\textit{a}) Dispersion diagram computed with PWE and FEM methods showing FBGW 1 ($f_1 = 78.23$ Hz, $f_2 = 95.97$ Hz, $\Delta f_{12} = 17.74$ Hz), PBGW 1 ($\Gamma \rightarrow$ X: $f_1 = 62.27$ Hz, $f_2 = 95.97$ Hz, $\Delta f_{12} = 33.70$ Hz), and PBGW 2 ($\Gamma \rightarrow$ X: $f_1 = 117.91$ Hz, $f_2 = 150.66$ Hz, $\Delta f_{12} = 32.64$ Hz). (\textit{b}) Wave mode shapes computed by FEM.}
-\label{pwe_fem_disp_modal_rect}
-\end{figure*}
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=.8\textwidth]{1_2_disp_frf_rect.pdf}
+	\caption{(\textit{a}) Band structure computed with PWE and FEM for a rectangular lattice unit cell with a single resonator with $f_r = 80$ [Hz] in a thin plate. FBGW 1 - $f_1 = 78.23$ [Hz], $f_2 = 95.97$ [Hz], $\Delta f_{12} = 17.74 $ [Hz], PBGW 1 - $f_1 = 62.27$ [Hz], $f_2 = 95.97$ [Hz], $\Delta f_{12} = 33.70 $ [Hz], PBGW 2 - $f_1 = 117.91$ [Hz], $f_2 = 150.66$ [Hz], $\Delta f_{12} = 32.64 $ [Hz]. (\textit{b}) Wave mode shapes for a rectangular lattice unit cell with a single resonator in a different points of edges in a real band structure computed by FEM.}
+	\label{pwe_fem_disp_modal_rect}
+\end{figure}
 
 \textcolor{red}{Rectangular lattice shows reduced FBGW 1 ($\Delta f_{12} = 17.74$ Hz) due to 50\% smaller unit cell area, with optimal frequency shifted to $f_j = 99$ Hz. Maximum bandwidth $\Delta f_{12} = 20.53$ Hz represents 36\% penalty versus square lattice, confirming unit cell area governs resonator effectiveness.}
 \newpage
-\begin{figure*}[t]
-\centering
-\includegraphics[width=.6\textwidth]{2_2_disp_frf_rect.pdf}
-\vspace{0.3cm}
-
-% Legenda externa compacta em formato tabular
-\centering
-\small
-\begin{tabular}{@{}c@{\hspace{0.3em}}l@{\hspace{1.2em}}c@{\hspace{0.3em}}l@{\hspace{1.2em}}c@{\hspace{0.3em}}l@{}}
-\tikz{\filldraw[magenta!90!red] (0,0) rectangle (0.5,0.25);} & FBGW 1 &
-\tikz{\draw[line width=2.5pt, orange!90!yellow] (0,0.125) -- (0.5,0.125);} & K-L: Mode 1 - PWE &
-\tikz{\draw[line width=2.5pt, cyan!80!white] (0,0.125) -- (0.5,0.125);} & K-L: Mode 2 - PWE \\[0.3em]
-\tikz{\draw[line width=2.5pt, red!70!orange] (0,0.125) -- (0.5,0.125);} & K-L: Mode 3 - PWE &
-\tikz{\draw[line width=2.5pt, black] (0,0.125) -- (0.5,0.125);} & K-L: Bare Plate - PWE &
-\tikz{\draw[line width=2pt, blue!80!cyan, dashed] (0,0.125) -- (0.5,0.125);} & LRSC \\
-\end{tabular}
-
-\caption{Parametric analysis of band structure for rectangular lattice as function of resonator frequency. (\textit{a--c}) Dispersion diagrams computed with PWE for $f_j=10$ Hz, $f_j=99$ Hz, and $f_j=150$ Hz. (\textit{d}) Lower edge frequency $f_1$ of FBGW 1 (Mode 1) versus resonator frequency. (\textit{e}) Upper edge frequency $f_2$ of FBGW 1 (Mode 2) versus resonator frequency. (\textit{f}) FBGW 1 bandwidth showing maximum $\Delta f_{12} = 20.53$ Hz at $f_j = 99$ Hz.}
-\label{pwe_disp_rect_all_res}
-\end{figure*}
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=.8\textwidth]{2_2_disp_frf_rect.pdf}
+	\caption{Results in PWE for rectangular lattice (\textit{a}) LRSC in $f_j=10$ [Hz], (\textit{b}) LRSC in $f_j=99$ [Hz] and (\textit{c}) LRSC in $f_j=150$ [Hz] .(\textit{d}) $f_1$ -  Lower edge frequencies of the first band mode as a function of local resonance. (\textit{e}) $f_2$ -  Upper edge frequencies of the second band mode as a function of local resonance. (\textit{f}) FBGW 1 as function of resonator frequency.}
+	\label{pwe_disp_rect_all_res}
+\end{figure}
 \textcolor{red}{Parametric analysis (Figure \ref{pwe_disp_rect_all_res}) reveals geometric constraints: premature bandwidth maximum at $f_j = 99$ Hz (36\% penalty vs. square), complete band gap disappearance at $f_j = 150$ Hz (fundamental frequency cutoff), and compressed operational range with rapid decay beyond $f_j = 120$ Hz. Aspect ratio creates anisotropic resonator-plate coupling---reduced $a_2$ direction area weakens flexural mode interaction, producing directionality-dependent scattering and establishing geometric aspect ratio as a critical design parameter.}
 
 
 \textcolor{red}{Triangular lattice provides six-fold symmetry despite 13\% smaller unit cell area, achieving superior performance through multiple equivalent wave scattering pathways.} Figure \ref{pwe_fem_disp_modal_trian} demonstrates the geometric advantage of triangular packing:
 
-\newpage
-\begin{figure*}[t]
-\centering
-\includegraphics[width=.8\textwidth]{1_3_disp_frf_trian.pdf}
-
-\vspace{0.3cm}
-
-% Legenda externa compacta em formato tabular
-\centering
-\small
-\begin{tabular}{@{}c@{\hspace{0.3em}}l@{\hspace{1.0em}}c@{\hspace{0.3em}}l@{\hspace{1.0em}}c@{\hspace{0.3em}}l@{}}
-% Linha 1 - Band gap e modos
-\tikz{\filldraw[magenta!90!red] (0,0) rectangle (0.6,0.3);} & FBGW 1 &
-\tikz{\draw[line width=3.5pt, orange!90!yellow] (0,0.15) -- (0.6,0.15);} & K-L: Mode 1 - PWE &
-\tikz{\draw[line width=3.5pt, cyan!80!white] (0,0.15) -- (0.6,0.15);} & K-L: Mode 2 - PWE \\[0.3em]
-
-% Linha 2 - Modos PWE e FEM
-\tikz{\draw[line width=3.5pt, red!60!black] (0,0.15) -- (0.6,0.15);} & K-L: Mode 3 - PWE &
-\tikz{\draw[line width=3pt, black, dashed] (0,0.15) -- (0.6,0.15);} & K-L: Modes 1-3 - FEM &
-\tikz{\draw[line width=2.5pt, blue!80!cyan, dashed] (0,0.15) -- (0.6,0.15);} & LRSC: 80 [Hz] \\
-\end{tabular}
-
-\caption{Band structure and wave mode shapes for a triangular lattice unit cell with single resonator ($f_r = 80$ Hz) in a thin plate. (\textit{a}) Dispersion diagram computed with PWE and FEM methods showing FBGW 1 ($f_1 = 70.84$ Hz, $f_2 = 95.08$ Hz, $\Delta f_{12} = 24.24$ Hz). (\textit{b}) Wave mode shapes computed by FEM.}
-\label{pwe_fem_disp_modal_trian}
-\end{figure*}
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=.8\textwidth]{1_3_disp_frf_trian.pdf}
+	\caption{(\textit{a}) Band structure computed with PWE and FEM for a triangular lattice unit cell with a single resonator with $f_r = 80$ [Hz] in a thin plate. FBGW 1 - $f_1 = 70.84$ [Hz], $f_2 = 95.08$ [Hz], $\Delta f_{12} = 24.24 $ [Hz]. (\textit{b}) Wave mode shapes for a triangular lattice unit cell with a single resonator in a different points of edges in a real band structure computed by FEM.}
+	\label{pwe_fem_disp_modal_trian}
+\end{figure}
 
 \textcolor{red}{Triangular lattice achieves FBGW 1 ($\Delta f_{12} = 24.24$ Hz) without partial band gaps, demonstrating isotropic wave blocking. Maximum bandwidth $\Delta f_{12} = 55.40$ Hz at $f_j = 145$ Hz represents 73\% improvement over square lattice, confirming geometric superiority.} The triangular lattice parametric analysis reveals breakthrough performance that establishes this geometry as the optimal single-resonator metamaterial architecture. Figure \ref{pwe_disp_trian_all_res}a) ($f_j = 10$ [Hz]) shows typical low-frequency behavior, while Figure \ref{pwe_disp_trian_all_res}b) ($f_j = 145$ [Hz]) captures the remarkable peak performance where the triangular lattice achieves its maximum bandwidth.
 
 \newpage
 Figure \ref{pwe_disp_trian_all_res}c) ($f_j = 150$ [Hz]) demonstrates the exceptional bandwidth stability that distinguishes the triangular lattice from square and rectangular configurations. The edge frequency evolution in Figures \ref{pwe_disp_trian_all_res}d-e) reveals the underlying mechanisms responsible for superior performance.
 
-\begin{figure*}[t]
-\centering
-\includegraphics[width=.6\textwidth]{2_3_disp_frf_trian.pdf}
-
-\vspace{0.3cm}
-
-% Legenda externa compacta em formato tabular
-\centering
-\small
-\begin{tabular}{@{}c@{\hspace{0.3em}}l@{\hspace{1.2em}}c@{\hspace{0.3em}}l@{\hspace{1.2em}}c@{\hspace{0.3em}}l@{}}
-\tikz{\filldraw[magenta!90!red] (0,0) rectangle (0.5,0.25);} & FBGW 1 &
-\tikz{\draw[line width=2.5pt, orange!90!yellow] (0,0.125) -- (0.5,0.125);} & K-L: Mode 1 - PWE &
-\tikz{\draw[line width=2.5pt, cyan!80!white] (0,0.125) -- (0.5,0.125);} & K-L: Mode 2 - PWE \\[0.3em]
-\tikz{\draw[line width=2.5pt, red!70!orange] (0,0.125) -- (0.5,0.125);} & K-L: Mode 3 - PWE &
-\tikz{\draw[line width=2.5pt, black] (0,0.125) -- (0.5,0.125);} & K-L: Bare Plate - PWE &
-\tikz{\draw[line width=2pt, blue!80!cyan, dashed] (0,0.125) -- (0.5,0.125);} & LRSC \\
-\end{tabular}
-
-\caption{Parametric analysis of band structure for triangular lattice as function of resonator frequency. (\textit{a--c}) Dispersion diagrams computed with PWE for $f_j=10$ Hz, $f_j=145$ Hz, and $f_j=150$ Hz. (\textit{d}) Lower edge frequency $f_1$ of FBGW 1 (Mode 1) versus resonator frequency. (\textit{e}) Upper edge frequency $f_2$ of FBGW 1 (Mode 2) versus resonator frequency. (\textit{f}) FBGW 1 bandwidth showing maximum $\Delta f_{12} = 55.40$ Hz at $f_j = 145$ Hz.}
-\label{pwe_disp_trian_all_res}
-\end{figure*}
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=.9\textwidth]{2_3_disp_frf_trian.pdf}
+	\caption{Results in PWE for triangular lattice (\textit{a}) LRSC in $f_j=10$ [Hz], (\textit{b}) LRSC in $f_j=99$ [Hz] and (\textit{c}) LRSC in $f_j=150$ [Hz] .(\textit{d}) $f_1$ - Lower edge frequencies of the first band mode as a function of local resonance. (\textit{e}) $f_2$ - Upper edge frequencies of the second band mode as a function of local resonance. (\textit{f}) FBGW 1 as function of resonator frequency.}
+	\label{pwe_disp_trian_all_res}
+\end{figure}
 
 \textcolor{red}{Figure \ref{pwe_disp_trian_all_res}b) documents a breakthrough in metamaterial performance with maximum bandwidth $\Delta f_{12} = 55.40$ [Hz] at $f_j = 145$ [Hz] – representing a $73\%$ improvement over the square lattice baseline and a $170\%$ improvement over the rectangular configuration. This exceptional performance occurs at a significantly higher optimal frequency ($f_j = 145$ [Hz] vs. $105$ [Hz] for square), indicating that the triangular geometry extends the operational frequency range while simultaneously enhancing peak performance. The demonstrated tuning capability across the full frequency spectrum extends the foundational work of Xiao et al.~\cite{Xiao_2012} on resonator frequency optimization, revealing that geometric symmetry fundamentally alters the achievable bandwidth-frequency relationship.}
 
@@ -627,61 +519,22 @@ This subsection explores multi-resonator metamaterial architectures that introdu
 
 Figure~\ref{pwe_fem_disp_modal_hex} demonstrates the revolutionary advance achieved through multi-resonator coupling:
 \newpage
-\begin{figure*}[t]
-\centering
-\includegraphics[width=.8\textwidth]{1_4_disp_frf_hex.pdf}
-
-\vspace{0.3cm}
-
-% Legenda externa compacta em formato tabular - Dual band gaps
-\centering
-\small
-\begin{tabular}{@{}c@{\hspace{0.3em}}l@{\hspace{1.0em}}c@{\hspace{0.3em}}l@{\hspace{1.0em}}c@{\hspace{0.3em}}l@{}}
-% Linha 1 - Band gaps (retângulos)
-\tikz{\filldraw[magenta!90!red] (0,0) rectangle (0.6,0.3);} & FBGW 1 &
-\tikz{\filldraw[orange!90!red] (0,0) rectangle (0.6,0.3);} & FBGW 2 &
-\tikz{\filldraw[blue!80!cyan] (0,0) rectangle (0.6,0.3);} & PBGW 3 - $\Gamma \rightarrow$ X \\[0.3em]
-
-% Linha 2 - Modos PWE
-\tikz{\draw[line width=3.5pt, cyan!80!white] (0,0.15) -- (0.6,0.15);} & K-L: Mode 2 - PWE &
-\tikz{\draw[line width=3.5pt, red!40!orange!60] (0,0.15) -- (0.6,0.15);} & K-L: Mode 3 - PWE &
-\tikz{\draw[line width=3.5pt, blue!30!red!20] (0,0.15) -- (0.6,0.15);} & K-L: Mode 4 - PWE \\[0.3em]
-
-% Linha 3 - Bare plate e FEM
-\tikz{\draw[line width=3.5pt, black] (0,0.15) -- (0.6,0.15);} & K-L: Bare Plate - PWE &
-\tikz{\draw[line width=3pt, black, dashed] (0,0.15) -- (0.6,0.15);} & K-L: Modes 1-4 - FEM & & \\[0.3em]
-
-% Linha 4 - LRSC
-\tikz{\draw[line width=2.5pt, blue!80!cyan, dashed] (0,0.15) -- (0.6,0.15);} & LRSC: 80 [Hz] & & & & \\
-\end{tabular}
-
-\caption{Band structure and wave mode shapes for a honeycomb lattice unit cell with two resonators ($f_r = 80$ Hz) in a thin plate. (\textit{a}) Dispersion diagram computed with PWE and FEM methods showing dual band gaps: FBGW 1 ($f_2 = 67.57$ Hz, $f_3 = 69.87$ Hz, $\Delta f_{23} = 2.30$ Hz), FBGW 2 ($f_3 = 89.38$ Hz, $f_4 = 106.61$ Hz, $\Delta f_{34} = 17.23$ Hz), and PBGW 3 ($\Gamma \rightarrow$ X: $f_3 = 89.38$ Hz, $f_4 = 110.57$ Hz, $\Delta f_{34} = 21.19$ Hz). (\textit{b}) Wave mode shapes computed by FEM.}
-\label{pwe_fem_disp_modal_hex}
-\end{figure*}
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=1\textwidth]{1_4_disp_frf_hex.pdf}
+	\caption{(\textit{a}) Band structure computed with PWE and FEM for a honeycomb lattice unit cell with two resonators with $f_r = 80$ [Hz] in a thin plate. FBGW 1 - $f_2 = 67.57$ [Hz], $f_3 = 69.87$ [Hz], $\Delta f_{23} = 2.30 $ [Hz], FBGW 2 - $f_3 = 89.38$ [Hz], $f_3 = 106.61$ [Hz], $\Delta f_{34} = 17.23 $ [Hz], PBGW 3 - $f_3 = 89.38$ [Hz], $f_4 = 110.57$ [Hz], $\Delta f_{34} = 21.19 $ [Hz]. (\textit{b}) Wave mode shapes for a honeycomb lattice unit cell with a two resonators in a different points of edges in a real band structure computed by FEM.}
+	\label{pwe_fem_disp_modal_hex}
+\end{figure}
 
 \textcolor{red}{Breakthrough capability (Figure \ref{pwe_fem_disp_modal_hex}a): simultaneous two distinct full band gaps (FBGW 1: $\Delta f_{23} = 2.30$ Hz, FBGW 2: $\Delta f_{34} = 17.23$ Hz)---qualitative leap beyond single-resonator systems with only one primary band gap. Anti-phase coupling mode (point $B_h$, Figure \ref{pwe_fem_disp_modal_hex}b) creates FBGW 1 through destructive interference where resonators oscillate $180^\circ$ out-of-phase, trapping energy and preventing propagation. In-phase coupling mode generates stronger, broader FBGW 2 through collective resonance with coherent resonator motion maximizing energy extraction. Dual-resonator systems access different regimes via frequency adjustment: low-frequency ($f_j < 50$ Hz, anti-phase dominant), intermediate ($50 < f_j < 100$ Hz, dual band gap coexistence), high-frequency ($f_j > 100$ Hz, in-phase dominant), enabling single geometry optimization for different frequency ranges.} \textcolor{red}{The demonstrated tuning capability extends the resonator frequency optimization principles of Xiao et al.~\cite{Xiao_2012} from single-resonator to multi-resonator systems, revealing that coupled oscillators introduce new degrees of freedom for bandgap engineering beyond what is achievable through frequency tuning alone.}
 
 \newpage
-\begin{figure*}[t]
-\centering
-\includegraphics[width=.5\textwidth]{2_4_disp_frf_hex.pdf}
-\vspace{0.3cm}
-% Legenda externa compacta em formato tabular - Dual band gaps
-\centering
-\small
-\begin{tabular}{@{}c@{\hspace{0.3em}}l@{\hspace{1.0em}}c@{\hspace{0.3em}}l@{\hspace{1.0em}}c@{\hspace{0.3em}}l@{}}
-\tikz{\filldraw[magenta!90!red] (0,0) rectangle (0.6,0.3);} & FBGW 1 &
-\tikz{\filldraw[orange!90!red] (0,0) rectangle (0.6,0.3);} & FBGW 2 &
-\tikz{\draw[line width=3.5pt, cyan!80!white] (0,0.15) -- (0.6,0.15);} & K-L: Mode 2 - PWE \\[0.3em]
-\tikz{\draw[line width=3.5pt, red!40!orange!60] (0,0.15) -- (0.6,0.15);} & K-L: Mode 3 - PWE &
-\tikz{\draw[line width=3.5pt, blue!30!red!20] (0,0.15) -- (0.6,0.15);} & K-L: Mode 4 - PWE &
-\tikz{\draw[line width=3.5pt, black] (0,0.15) -- (0.6,0.15);} & K-L: Bare Plate - PWE \\[0.3em]
-\tikz{\draw[line width=2.5pt, blue!80!cyan, dashed] (0,0.15) -- (0.6,0.15);} & LRSC & & & & \\
-\end{tabular}
-
-\caption{Parametric analysis of band structure for honeycomb lattice (two resonators) as function of resonator frequency. (\textit{a--c}) Dispersion diagrams computed with PWE for $f_j=10$ Hz, $f_j=60$ Hz, and $f_j=150$ Hz showing dual band gaps. (\textit{d}) Lower edge frequencies $f_2$, $f_3$ of FBGW 1 and FBGW 2 versus resonator frequency. (\textit{e}) Upper edge frequencies $f_3$, $f_4$ of FBGW 1 and FBGW 2 versus resonator frequency. (\textit{f}) FBGW 1 and FBGW 2 bandwidths: FBGW 1 maximum $\Delta f_{23} = 14.28$ Hz at $f_j = 59$ Hz; FBGW 2 maximum $\Delta f_{34} = 28.67$ Hz at $f_j = 137$ Hz.}
-\label{pwe_disp_hex_all_res12}
-\end{figure*}
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=.8\textwidth]{2_4_disp_frf_hex.pdf}
+	\caption{Results in PWE for honeycomb lattice (\textit{a}) LRSC in $f_j=10$ [Hz], (\textit{b}) LRSC in $f_j=60$ [Hz] and (\textit{c}) LRSC in $f_j=150$ [Hz] .(\textit{d}) $f_2$, $f_3$ - Lower edge frequencies of the second and third band mode as a function of local resonance. (\textit{e}) $f_3$, $f_4$ - Upper edge frequencies of the third and fourth band mode as a function of local resonance. (\textit{f}) FBGW 1 and FBGW 2 as function of resonator frequency. }
+	\label{pwe_disp_hex_all_res12}
+\end{figure}
 
 \textcolor{red}{Parametric analysis (Figure \ref{pwe_disp_hex_all_res12}) reveals three modal regimes: (a) $f_j = 10$ Hz---anti-phase dominant producing only FBGW 1; (b) $f_j = 60$ Hz---optimal dual-mode where FBGW 1 peaks ($\Delta f_{23} = 14.17$ Hz) through constructive anti-phase/in-phase interference, creating broadband blocking impossible in single-resonator systems; (c) $f_j = 150$ Hz---in-phase dominant with powerful FBGW 2 ($\Delta f_{34} = 23.63$ Hz) while FBGW 1 vanishes. Edge evolution (d-e) shows lower edges ($f_2$, $f_3$) with direct resonator control (linear) and upper edges ($f_3$, $f_4$) with saturation at geometric limits. Maximum FBGW 2 of $\Delta f_{34} = 27.73$ Hz at $f_j = 140$ Hz represents 46\% improvement over best single-resonator (square: 30.90 Hz), establishing collective resonance superiority. FBGW 1 maximum coinciding with FBGW 2 emergence reveals constructive modal interaction---synergistic coupling where second mode enhances rather than competes.}
 
@@ -689,64 +542,23 @@ Figure~\ref{pwe_fem_disp_modal_hex} demonstrates the revolutionary advance achie
 \textcolor{red}{Kagomé triple-resonator architecture positions three resonators at \( \mathbf{r_1} = a(-1/2, -\sqrt{3}/6) \), \( \mathbf{r_2} = a(-1/2, -\sqrt{3}/6) \), and \( \mathbf{r_3} = a(\sqrt{3}/3, 0) \) with $120^\circ$ triangular symmetry creating intricate phase relationships fundamentally different from honeycomb. Three-fold rotational symmetry produces narrow but well-defined band gaps through unique interference patterns, effective for precise frequency-selective attenuation. FIBZ coordinates \( \Gamma = (0,0) \), \( X = \pi/a(1/\sqrt{3},0) \), \( M = \pi/a(1/2\sqrt{3},1/2) \), \( X' = \pi/a(1/2\sqrt{3},1/2) \), \( M' = \pi/a(0,2/3) \) with three identical resonators (\( k_j = 246.16 \) N/m) following path \( M' \longrightarrow \Gamma \longrightarrow X \longrightarrow M \longrightarrow X' \longrightarrow M' \); adjusted frequency \( f_j = 80 \) Hz enables direct honeycomb comparison.}
 
 \newpage
-\begin{figure*}[t]
-\centering
-\includegraphics[width=.7\textwidth]{1_5_disp_frf_kag.pdf}
-
-\vspace{0.3cm}
-
-% Legenda externa compacta em formato tabular - Dual band gaps
-\centering
-\small
-\begin{tabular}{@{}c@{\hspace{0.3em}}l@{\hspace{1.0em}}c@{\hspace{0.3em}}l@{\hspace{1.0em}}c@{\hspace{0.3em}}l@{}}
-% Linha 1 - Band gaps (retângulos)
-\tikz{\filldraw[cyan!70!blue] (0,0) rectangle (0.6,0.3);} & PBGW 1 &
-\tikz{\filldraw[magenta!90!red] (0,0) rectangle (0.6,0.3);} & FBGW 1 &
-\tikz{\filldraw[orange!90!red] (0,0) rectangle (0.6,0.3);} & FBGW 2 \\[0.3em]
-
-% Linha 2 - Modos PWE
-\tikz{\draw[line width=3.5pt, cyan!80!white] (0,0.15) -- (0.6,0.15);} & K-L: Mode 3 - PWE &
-\tikz{\draw[line width=3.5pt, red!40!orange!60] (0,0.15) -- (0.6,0.15);} & K-L: Mode 4 - PWE &
-\tikz{\draw[line width=3.5pt, blue!30!red!20] (0,0.15) -- (0.6,0.15);} & K-L: Mode 5 - PWE \\[0.3em]
-
-% Linha 3 - Bare plate e FEM
-\tikz{\draw[line width=3.5pt, black] (0,0.15) -- (0.6,0.15);} & K-L: Bare Plate - PWE &
-\tikz{\draw[line width=3pt, black, dashed] (0,0.15) -- (0.6,0.15);} & K-L: Modes 1-5 - FEM & & \\[0.3em]
-
-% Linha 4 - LRSC
-\tikz{\draw[line width=2.5pt, blue!80!cyan, dashed] (0,0.15) -- (0.6,0.15);} & LRSC: 80 [Hz] & & & & \\
-\end{tabular}
-
-\caption{Band structure and wave mode shapes for a kagomé lattice unit cell with three resonators ($f_r = 80$ Hz) in a thin plate. (\textit{a}) Dispersion diagram computed with PWE and FEM methods showing PBGW 1 ($f_1 = 34.65$ Hz, $f_2 = 39.37$ Hz, $\Delta f_{12} = 4.71$ Hz), FBGW 1 ($f_3 = 74.76$ Hz, $f_4 = 78.80$ Hz, $\Delta f_{34} = 4.04$ Hz), and FBGW 2 ($f_4 = 83.51$ Hz, $f_5 = 88.54$ Hz, $\Delta f_{45} = 5.03$ Hz). (\textit{b}) Wave mode shapes computed by FEM.}
-\label{pwe_fem_disp_modal_kag}
-\end{figure*}
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=1\textwidth]{1_5_disp_frf_kag.pdf}
+	\caption{(\textit{a}) Band structure computed with PWE and FEM for a kagomé lattice unit cell with two resonators with $f_r = 80$ [Hz] in a thin plate. PBGW 1 - $f_1 = 34.65$ [Hz], $f_2 = 39.37$ [Hz], $\Delta f_{12} = 4.71 $ [Hz], FBGW 1 - $f_3 = 74.76$ [Hz], $f_4 = 78.80$ [Hz], $\Delta f_{34} = 4.04 $ [Hz], FBGW 2 - $f_4 = 83.51$ [Hz], $f_5 = 88.54$ [Hz], $\Delta f_{45} = 5.03 $ [Hz]. (\textit{b}) Wave mode shapes for a kagomé lattice unit cell with a two resonators in a different points of edges in a real band structure computed by FEM.}
+	\label{pwe_fem_disp_modal_kag}
+\end{figure}
 
 \textcolor{red}{Fundamental limitation (Figure \ref{pwe_fem_disp_modal_kag}a): despite 50\% more resonators than honeycomb, only two complete band gaps emerge---FBGW 1 (\( f_3 \)-\( f_4 \), \( \Delta f_{34} \)) and FBGW 2 (\( f_4 \)-\( f_5 \), \( \Delta f_{45} \))---plus partial PBGW 1 (30--40 Hz) from three-resonator coupling creating hybrid states with selective directional attenuation, contrasting honeycomb's broader band gaps. At \( f_j = 80 \) Hz, both FBGW 1/FBGW 2 coexist (honeycomb-like) but with characteristic narrow widths (particularly FBGW 2), demonstrating three-resonator configuration creates highly frequency-selective attenuation suitable for precise frequency targeting rather than broadband applications.}
 
 A more detailed analysis of FBGW 1 and FBGW 2 is presented in Figure \ref{pwe_disp_kag_all_res}.
-\newpage
-\begin{figure*}[t]
-\centering
-\includegraphics[width=.5\textwidth]{2_5_disp_frf_kag.pdf}
 
-\vspace{0.3cm}
-
-% Legenda externa compacta em formato tabular - Dual band gaps
-\centering
-\small
-\begin{tabular}{@{}c@{\hspace{0.3em}}l@{\hspace{1.0em}}c@{\hspace{0.3em}}l@{\hspace{1.0em}}c@{\hspace{0.3em}}l@{}}
-\tikz{\filldraw[magenta!90!red] (0,0) rectangle (0.6,0.3);} & FBGW 1 &
-\tikz{\filldraw[orange!90!red] (0,0) rectangle (0.6,0.3);} & FBGW 2 &
-\tikz{\draw[line width=3.5pt, cyan!80!white] (0,0.15) -- (0.6,0.15);} & K-L: Mode 3 - PWE \\[0.3em]
-\tikz{\draw[line width=3.5pt, red!40!orange!60] (0,0.15) -- (0.6,0.15);} & K-L: Mode 4 - PWE &
-\tikz{\draw[line width=3.5pt, blue!30!red!20] (0,0.15) -- (0.6,0.15);} & K-L: Mode 5 - PWE &
-\tikz{\draw[line width=3.5pt, black] (0,0.15) -- (0.6,0.15);} & K-L: Bare Plate - PWE \\[0.3em]
-\tikz{\draw[line width=2.5pt, blue!80!cyan, dashed] (0,0.15) -- (0.6,0.15);} & LRSC & & & & \\
-\end{tabular}
-
-\caption{Parametric analysis of band structure for kagomé lattice (three resonators) as function of resonator frequency. (\textit{a--c}) Dispersion diagrams computed with PWE for $f_j=10$ Hz, $f_j=50$ Hz, and $f_j=150$ Hz showing dual band gaps. (\textit{d}) Lower edge frequencies $f_3$, $f_4$ of FBGW 1 and FBGW 2 versus resonator frequency. (\textit{e}) Upper edge frequencies $f_4$, $f_5$ of FBGW 1 and FBGW 2 versus resonator frequency. (\textit{f}) FBGW 1 and FBGW 2 bandwidths showing narrow but precise frequency-selective attenuation.}
-\label{pwe_disp_kag_all_res}
-\end{figure*}
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=.8\textwidth]{2_5_disp_frf_kag.pdf}
+	\caption{Results in PWE for kagomé lattice (\textit{a}) LRSC in $f_j=10$ [Hz], (\textit{b}) LRSC in $f_j=50$ [Hz] and (\textit{c}) LRSC in $f_j=150$ [Hz] .(\textit{d}) $f_3$, $f_4$ Lower edge frequencies of the third and fourth band mode as a function of local resonance. (\textit{e}) $f_4$, $f_5$ Upper edge frequencies of the fourth and fifth band mode as a function of local resonance. (\textit{f}) FBGW 1 and FBGW 2 as function of resonator frequency. }
+	\label{pwe_disp_kag_all_res}
+\end{figure}
 
 \textcolor{red}{Modal coupling evolution (Figure \ref{pwe_disp_kag_all_res}d-e): FBGW 1 emerges between modes \( f_3 \)-\( f_4 \), FBGW 2 spans \( f_4 \)-\( f_5 \), with shared mode \( f_4 \) indicating overlapping resonance regions contrasting with honeycomb's distinct frequency separation. Geometric frustration penalty (f): maximum FBGW 1 (\( \Delta f_{34} = 6.54 \) Hz at \( f_j = 35 \) Hz) and FBGW 2 (\( \Delta f_{45} = 6.85 \) Hz at \( f_j = 101 \) Hz) both achieve only ~7 Hz widths with optimal point separation (\( \Delta f_j = 66 \) Hz) smaller than honeycomb (77 Hz), indicating reduced modal separation. Performance ceiling: both band gaps converging to ~7 Hz represents three-fold symmetry constraint where triangular geometry forces competing phase relationships preventing maximum coupling efficiency, unlike dual-resonator systems with independent anti-phase/in-phase optimization.}
 
@@ -758,67 +570,12 @@ Having established the individual performance characteristics and underlying phy
 
 \textcolor{red}{The individual analyses enable quantitative comparison using two complementary metrics: (1) \textbf{absolute bandwidth} (FBGW in [Hz]) for applications with specific frequency targets, and (2) \textbf{relative bandwidth} ($\eta_{rel}$ in [\%]) for frequency-independent geometric comparison. These metrics address both practical engineering requirements and fundamental geometric efficiency.}
 \newpage
-\begin{figure*}[t]
-\centering
-\includegraphics[width=.7\textwidth]{0_disp_comp_lattices.pdf}
-
-\vspace{0.3cm}
-
-% Legenda externa compacta em formato tabular - Comparação todas lattices
-\centering
-\footnotesize
-\begin{tabular}{@{}c@{\hspace{0.2em}}l@{\hspace{0.8em}}c@{\hspace{0.2em}}l@{\hspace{0.8em}}c@{\hspace{0.2em}}l@{}}
-% Linha 1 - Single-resonator lattices
-\tikz{%
-    \draw[line width=5pt, magenta!90!red] (0,0.18) -- (0.8,0.18);
-    \fill[magenta!90!red] (0.4,0.18) circle (4.5pt);
-} &
-\parbox[t]{3.2cm}{\footnotesize Square - FBGW 1\\$\Delta f_{12} = 32.10$ Hz} &
-
-\tikz{%
-    \draw[line width=5pt, blue!80!black] (0,0.18) -- (0.8,0.18);
-    \fill[blue!80!black] (0.4,0.18) circle (4.5pt);
-} &
-\parbox[t]{3.2cm}{\footnotesize Rectangular - FBGW 1\\$\Delta f_{12} = 20.53$ Hz} &
-
-\tikz{%
-    \draw[line width=5pt, cyan!90!blue] (0,0.18) -- (0.8,0.18);
-    \fill[cyan!90!blue] (0.4,0.18) circle (4.5pt);
-} &
-\parbox[t]{3.2cm}{\footnotesize Triangular - FBGW 1\\$\Delta f_{12} = 55.40$ Hz} \\[0.7em]
-
-% Linha 2 - Multi-resonator lattices
-\tikz{%
-    \draw[line width=5pt, red!70!black] (0,0.18) -- (0.8,0.18);
-    \fill[red!70!black] (0.4,0.18) circle (4.5pt);
-} &
-\parbox[t]{3.2cm}{\footnotesize Honeycomb - FBGW 1\\$\Delta f_{23} = 14.28$ Hz} &
-
-\tikz{%
-    \draw[line width=4pt, red!70!black, dashed] (0,0.18) -- (0.8,0.18);
-    \fill[red!70!black] (0.27,0.0) rectangle (0.42,0.36);
-} &
-\parbox[t]{3.2cm}{\footnotesize Honeycomb - FBGW 2\\$\Delta f_{34} = 28.67$ Hz} &
-
-\tikz{%
-    \draw[line width=5pt, green!70!black] (0,0.18) -- (0.8,0.18);
-    \fill[green!70!black] (0.4,0.18) circle (4.5pt);
-} &
-\parbox[t]{3.2cm}{\footnotesize Kagomé - FBGW 1\\$\Delta f_{34} = 6.54$ Hz} \\[0.7em]
-
-% Linha 3 - Kagomé FBGW 2
-& &
-\tikz{%
-    \draw[line width=4pt, green!70!black, dashed] (0,0.18) -- (0.8,0.18);
-    \fill[green!70!black] (0.27,0.0) rectangle (0.42,0.36);
-} &
-\parbox[t]{3.2cm}{\footnotesize Kagomé - FBGW 2\\$\Delta f_{45} = 6.85$ Hz} & & \\
-
-\end{tabular}
-
-\caption{Comparison of the full bandgap widths among the five lattices as functions of local resonance frequency $f_j$. The triangular lattice achieves the largest FBGW 1 ($\Delta f_{12} = 55.40$ Hz at $f_j = 145$ Hz), followed by the square lattice ($\Delta f_{12} = 32.10$ Hz at $f_j = 105$ Hz), and the honeycomb lattice FBGW 2 ($\Delta f_{34} = 28.67$ Hz at $f_j = 137$ Hz). Multi-resonator systems (honeycomb, kagomé) exhibit dual band gaps. Individual results for each lattice are presented in Figures \ref{pwe_disp_square_all_res}f)--\ref{pwe_disp_hex_all_res12}f).}
-\label{comp_all_latices_FBGW 1}
-\end{figure*}  
+\begin{figure}[htb]  
+	\centering  
+	\includegraphics[width=1\textwidth]{0_disp_comp_lattices.pdf}
+	\caption{Comparison of the full bandgap widths among the five lattices as functions of local resonance frequency $f_j$. The triangular lattice achieves the largest FBGW 1 ($\Delta f_{12} = 55.40$ [Hz] at $f_j = 145$ [Hz]), followed by the square lattice ($\Delta f_{12} = 32.10$ [Hz] at $f_j = 105$ [Hz]), and the honeycomb lattice ($\Delta f_{34} = 28.67$ [Hz] at $f_j = 137$ [Hz]). Individual results for each lattice are presented in Figures \ref{pwe_disp_square_all_res}f)--\ref{pwe_disp_hex_all_res12}f).}  
+	\label{comp_all_latices_FBGW 1}  
+\end{figure}  
 
 \textcolor{red}{The triangular lattice emerges as the superior single-resonator architecture, achieving exceptional FBGW 1 performance ($\Delta f_{12} = 55.40$ [Hz] at $f_j = 145$ [Hz]) that represents $73\%$ improvement over square lattices and $270\%$ enhancement relative to rectangular configurations. This outstanding performance stems from six-fold crystallographic symmetry creating multiple equivalent wave scattering pathways. The square lattice provides balanced performance ($\Delta f_{12} = 32.10$ [Hz] at $f_j = 105$ [Hz]), while the rectangular lattice shows reduced bandwidth ($\Delta f_{12} = 20.53$ [Hz] at $f_j = 99$ [Hz]) due to geometric anisotropy. These results extend the findings of Xiao et al.~\cite{Xiao_2012} on square lattice optimization to multiple geometric configurations, demonstrating that the resonance-Bragg coupling mechanism is universally applicable but lattice symmetry governs achievable bandwidth limits.}
 
