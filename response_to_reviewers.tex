@@ -60,7 +60,7 @@
     low-frequency wave attenuation}}\\[0.5cm]
     \rule{\textwidth}{0.4pt}\\[0.3cm]
     {\large Authors:\\
-    Anderson Henrique Ferreira, José Maria Campos Dos Santos,\\
+    Anderson Henrique Ferreira, Jos\'{e} Maria Campos Dos Santos,\\
     Edson Jansen Pedrosa de Miranda Junior, Adriano Mitsuo Goto}\\[0.3cm]
     \rule{\textwidth}{0.4pt}\\[0.5cm]
     {\large Date: \today}
@@ -94,7 +94,7 @@ We have carefully addressed all comments and believe the revisions have substant
 \begin{itemize}[leftmargin=1.5cm]
     \item \textbf{Relative bandwidth analysis:} Implemented comprehensive normalized bandwidth comparison using $\eta_{rel} = (f_2-f_1)/f_c \times 100\%$ metric (Comment 1, 5)
     \item \textbf{Enhanced acknowledgment:} Added strategic citations to Xiao et al.~[46] establishing connections with foundational resonance-Bragg coupling work (Comment 2)
-    \item \textbf{Multi-material extension:} Created new Appendix C analyzing aluminum and carbon/epoxy composites, demonstrating universality across 150$\times$ stiffness variation (Comment 4) - condensed for conciseness
+    \item \textbf{Multi-material extension:} Created new Section analyzing aluminum and carbon/epoxy composites, demonstrating universality across 150$\times$ stiffness variation (Comment 4) - condensed for conciseness
     \item \textbf{Mathematical formulations:} Provided explicit equation for mass ratio definition (Comment 7)
     \item \textbf{Revised highlights:} Completely rewritten for conciseness and scientific focus, ensuring compliance with Elsevier character limits (Comment 8)
     \item \textbf{Condensed Section 3:} Removed $\sim$700-1200 words of redundant content (Comment 10)
@@ -146,18 +146,21 @@ This approach addresses both the practical engineering question (``which lattice
 
 \textit{New introductory paragraph:}
 \begin{quote}
-\textcolor{redtext}{``The comprehensive individual analyses presented in previous subsections enable quantitative performance comparison across all five lattice configurations using two complementary metrics that address distinct design considerations. This dual-metric framework employs: (1) \textbf{absolute bandwidth} (FBGW in [Hz]) providing direct engineering insights for applications with specific frequency targets, and (2) \textbf{relative bandwidth} ($\eta_{rel}$ in [\%]) enabling frequency-independent geometric performance comparison through normalization.''}
+\textcolor{redtext}{``The individual analyses enable quantitative comparison using two complementary metrics: (1) \textbf{absolute bandwidth} (FBGW in [Hz]) for applications with specific frequency targets, and (2) \textbf{relative bandwidth} ($\eta_{rel}$ in [\%]) for frequency-independent geometric comparison. These metrics address both practical engineering requirements and fundamental geometric efficiency.''}
 \end{quote}
 
 \textbf{Location 2: Section 3.3 - New Subheading and Equation (Lines 605-614)}
 
 \textit{New subheading:} ``\textbf{Relative Bandwidth Analysis for Fair Geometric Comparison}''
 
-\textit{New equation and definition:}
+\textit{New motivational text and equation:}
+\begin{quote}
+\textcolor{redtext}{``While absolute bandwidth (FBGW) provides engineering insights for specific frequency targets, it presents limitations for fair geometric comparison: different lattices peak at substantially different frequencies (triangular at 145 Hz vs square at 105 Hz), potentially biasing conclusions toward higher-frequency configurations. To enable objective geometric comparison independent of operational frequency, relative bandwidth analysis employs:
 \begin{equation}
-\textcolor{redtext}{\eta_{rel} = \frac{f_2 - f_1}{f_c} \times 100\%}
+\eta_{rel} = \frac{f_2 - f_1}{f_c} \times 100\%
 \end{equation}
-\textcolor{redtext}{where $f_c = (f_1 + f_2)/2$ is the center frequency of the bandgap, $f_1$ and $f_2$ are the lower and upper bandgap boundaries, and $\eta_{rel}$ represents the normalized bandwidth efficiency. This dimensionless metric removes frequency-dependent scaling effects, enabling direct comparison of intrinsic geometric performance across different operational ranges.}
+where $f_c = (f_1 + f_2)/2$ is the bandgap center frequency. This dimensionless metric removes frequency-dependent scaling, isolating purely geometric contributions to metamaterial efficiency.''}
+\end{quote}
 
 \textbf{Location 3: Section 3.3 - Comprehensive Relative Bandwidth Table (Lines 616-643)}
 
@@ -176,7 +179,7 @@ Complete frequency-sweep analysis with 15 resonator frequencies (10-150 Hz) $\ti
 Original: ``triangular lattices achieve 40\% wider band gaps''\\
 Revised: \textcolor{redtext}{``triangular lattices achieve 35\% superior relative bandwidth compared to square configurations (42.51\% vs 31.40\%)''}
 
-\textbf{Location 5: Conclusions (Line 1135)}
+\textbf{Location 5: Conclusions (Line 914)}
 
 \textit{Updated with normalized metrics:}\\
 \textcolor{redtext}{``triangular lattices achieve superior broadband performance with 35\% superior relative bandwidth compared to conventional square configurations (42.51\% vs 31.40\%)''}
@@ -212,7 +215,7 @@ This structure naturally motivates the need for normalized comparison, demonstra
 \begin{enumerate}
     \item \textbf{Practical engineering value:} Absolute bandwidth provides direct frequency-domain insights critical for applications with specific operational ranges (e.g., ``which lattice delivers maximum attenuation at 100 Hz?'')
     \item \textbf{Graphical analysis foundation:} The detailed parametric curves throughout Section 3 rely on absolute bandwidth to demonstrate frequency-dependent optimization behavior
-    \item \textbf{Complementary perspectives:} The two metrics address fundamentally different questions—absolute answers ``what performance at target frequency?'' while relative answers ``which geometry is intrinsically superior?''
+    \item \textbf{Complementary perspectives:} The two metrics address fundamentally different questions---absolute answers ``what performance at target frequency?'' while relative answers ``which geometry is intrinsically superior?''
 \end{enumerate}
 
 The \textbf{dual-metric framework} thus enriches the manuscript by providing both practical (absolute) and theoretical (normalized) performance assessment tools, rather than replacing one with the other.
@@ -244,32 +247,32 @@ We have revised the manuscript to \textbf{explicitly acknowledge these foundatio
 \begin{changesbox}
 \textbf{Eight strategic additions establishing connections with Xiao et al. [46]:}
 
-\textbf{Location 1: Introduction (Lines 122-123)}
+\textbf{Location 1: Introduction (Line 124)}
 
 \textit{Expanded acknowledgment of coupling mechanism:}
 \begin{quote}
 \textcolor{redtext}{``Critically, their work demonstrated that the widest bandgap occurs when the directional resonance band gap and Bragg band gap are nearly coupled, and they provided an approximate initial design formula for achieving such optimal coupling conditions. This coupling mechanism enables the formation of super-wide pseudo-directional gaps through the combination of resonance and Bragg effects, with the bandwidth being dramatically affected by the resonant frequency of local resonators.''}
 \end{quote}
 
-\textbf{Location 2: Introduction (Lines 132-133)}
+\textbf{Location 2: Section 3.1 - Square Lattice Parametric Analysis (Line 453)}
 
-\textit{Connecting foundational role:}
+\textit{Parametric analysis demonstrating controlled bandgap engineering:}
 \begin{quote}
-\textcolor{redtext}{``Building upon the foundational work of Xiao et al.~[46], who established the critical role of resonator frequency tuning in achieving optimal resonance-Bragg coupling conditions, these studies have revealed critical design parameters for attenuation performance.''}
+\textcolor{redtext}{``Parametric analysis reveals three regimes: mass-loading ($f_j = 10$ Hz, $\Delta f_{12} = 2.26$ Hz), optimal coupling ($f_j = 105$ Hz, $\Delta f_{12} = 32.10$ Hz), and stiffness-dominated ($f_j = 150$ Hz, $\Delta f_{12} = 14.33$ Hz). This resonator frequency tuning behavior demonstrates that systematic variation of $f_j$ enables controlled bandgap engineering.''}
 \end{quote}
 
-\textbf{Location 3: Section 3.1 - Square Lattice Parametric Analysis (Line 450)}
+\textbf{Location 3: Section 3.1 - Universal Design Rule (Line 457)}
 
-\textit{Confirming frequency tuning dependency:}
+\textit{Universal design rule for optimal performance:}
 \begin{quote}
-\textcolor{redtext}{``This resonator frequency tuning behavior confirms the dependency of bandwidth on resonant frequency of local resonators established by Xiao et al.~[46], demonstrating that systematic variation of $f_j$ enables controlled bandgap engineering.''}
+\textcolor{redtext}{``The peak position at $f_j = 105$ [Hz] $\approx$ $0.89 f_B$ reveals a universal design rule for locally resonant metamaterials: optimal performance occurs when the resonator frequency is positioned slightly below the Bragg frequency, maximizing the interaction between local and geometric scattering mechanisms. This confirms the fundamental importance of resonator frequency tuning for achieving optimal bandgap performance.''}
 \end{quote}
 
-\textbf{Location 4: Section 3.1 - Universal Design Rule and Bragg Frequency Equation (Lines 460, 493)}
+\textbf{Location 4: Section 3.1 - Triangular Lattice Performance (Line 501)}
 
-\textit{Connecting optimal frequency positioning:}
+\textit{Extending foundational work on resonator frequency optimization:}
 \begin{quote}
-\textcolor{redtext}{``The peak position at $f_j = 105$ [Hz] $\approx 0.89 f_B$ reveals a universal design rule for locally resonant metamaterials: optimal performance occurs when the resonator frequency is positioned slightly below the Bragg frequency, maximizing the interaction between local and geometric scattering mechanisms. This finding aligns with the coupling mechanism identified by Xiao et al.~[46], where the widest bandgap emerges from near-coupling between directional resonance and Bragg band gaps, confirming the fundamental importance of resonator frequency tuning for achieving optimal bandgap performance.''}
+\textcolor{redtext}{``The demonstrated tuning capability across the full frequency spectrum extends the foundational work of Xiao et al.~\cite{Xiao_2012} on resonator frequency optimization, revealing that geometric symmetry fundamentally alters the achievable bandwidth-frequency relationship.''}
 \end{quote}
 
 \textit{Critical methodological note - Bragg frequency calculation (Line 493):}
@@ -310,7 +313,7 @@ This addition establishes that the foundational Bragg frequency equation used as
 \end{quote}
 \end{changesbox}
 
-\textbf{How our work extends Xiao et al.~[46]:} While Xiao et al. focused on square lattice configurations, our study systematically extends these principles to \textbf{five different lattice geometries} (square, rectangular, triangular, honeycomb, and kagomé), investigating how geometric symmetry and multi-resonator coupling affect the resonance-Bragg interaction mechanisms. This comparative approach reveals that the optimal coupling conditions identified by Xiao et al. manifest differently across lattice types, with triangular lattices achieving 35\% superior relative bandwidth through enhanced geometric symmetry.
+\textbf{How our work extends Xiao et al.~[46]:} While Xiao et al. focused on square lattice configurations, our study systematically extends these principles to \textbf{five different lattice geometries} (square, rectangular, triangular, honeycomb, and kagom\'{e}), investigating how geometric symmetry and multi-resonator coupling affect the resonance-Bragg interaction mechanisms. This comparative approach reveals that the optimal coupling conditions identified by Xiao et al. manifest differently across lattice types, with triangular lattices achieving 35\% superior relative bandwidth through enhanced geometric symmetry.
 
 \newpage
 
@@ -369,17 +372,17 @@ We thank the reviewer for this important observation regarding material limitati
     \item \textbf{Target frequency range:} 10-200 Hz ideal for low-frequency applications
 \end{itemize}
 
-\textbf{Major extension implemented:} To address this important limitation, we have implemented \textbf{comprehensive PWE analysis for metallic and composite materials in the new Appendix C}, demonstrating the universality of our methodology across the full spectrum of engineering materials with \textbf{150$\times$ stiffness variation}.
+\textbf{Major extension implemented:} To address this important limitation, we have implemented \textbf{comprehensive PWE analysis for metallic and composite materials in the new Section}, demonstrating the universality of our methodology across the full spectrum of engineering materials with \textbf{150$\times$ stiffness variation}.
 \end{responsebox}
 
 \begin{changesbox}
-\textbf{Major addition: New Appendix C - ``Extension to Structural Materials - Multi-Material Analysis'' (Lines 1071-1248)}
+\textbf{Major addition: New Section - ``Extension to Structural Materials - Multi-Scale Analysis'' (Lines 1071-1248)}
 
-\textbf{Scope note:} To maintain conciseness while directly addressing the reviewer's concern about material generalizability, Appendix C has been condensed to focus on three essential core sections that demonstrate universality of geometric principles across vastly different material properties. Following review feedback, extensive supporting data and detailed derivations have been streamlined to prevent manuscript length concerns while preserving critical scientific content.
+\textbf{Scope note:} To maintain conciseness while directly addressing the reviewer's concern about material generalizability, this Section has been condensed to focus on three essential core sections that demonstrate universality of geometric principles across vastly different material properties. Following review feedback, extensive supporting data and detailed derivations have been streamlined to prevent manuscript length concerns while preserving critical scientific content.
 
-\textbf{Section C.1: Material Properties and Scaling Analysis}
+\textbf{Subsection 7.1: Material Properties and Scaling Analysis}
 
-\textit{Table C.13: Comparative material properties for Multi-Material Analysis}
+\textit{Table 7.1: Comparative material properties for Multi-Material Analysis}
 \begin{itemize}
     \item \textbf{Vero White Plus:} $E = 0.86$ GPa, $\rho = 600$ kg/m$^3$ (baseline, rapid prototyping)
     \item \textbf{Aluminum 6061:} $E = 70$ GPa, $\rho = 2700$ kg/m$^3$ (from Xiao et al.~2012)
@@ -405,17 +408,17 @@ Key insight: Frequency scaling follows predictable material-dependent relationsh
 
 \textit{Subsection C.3.1: Aluminum 6061 Analysis (Table C.15)}
 
-Complete PWE analysis with 12 resonator frequencies (200-1200 Hz) demonstrating:
+Complete PWE analysis with 20 resonator frequencies (150-725 Hz) demonstrating:
 \begin{itemize}
     \item \textbf{Triangular:} 222.0 Hz maximum FBGW (42.5\% relative bandwidth) - 1st rank
     \item \textbf{Square:} 131.1 Hz maximum FBGW (31.7\% relative bandwidth) - 2nd rank
     \item \textbf{Performance advantage:} Triangular maintains 69\% superiority over square
-    \item \textbf{Hierarchy preserved:} Triangular $>$ Square $>$ Rectangular $>$ Honeycomb $>$ Kagomé
+    \item \textbf{Hierarchy preserved:} Triangular $>$ Square $>$ Rectangular $>$ Honeycomb $>$ Kagom\'{e}
 \end{itemize}
 
 \textit{Subsection C.3.2: Carbon/Epoxy Composite Analysis (Table C.16)}
 
-Complete PWE analysis with 12 resonator frequencies (400-1400 Hz) demonstrating:
+Complete PWE analysis with 20 resonator frequencies (300-1200 Hz) demonstrating:
 \begin{itemize}
     \item \textbf{Triangular:} 408.1 Hz maximum FBGW (42.2\% relative bandwidth) - 1st rank
     \item \textbf{Square:} 231.8 Hz maximum FBGW (31.5\% relative bandwidth) - 2nd rank
@@ -423,7 +426,7 @@ Complete PWE analysis with 12 resonator frequencies (400-1400 Hz) demonstrating:
     \item \textbf{Same hierarchy maintained:} Geometric advantages persist across 150$\times$ stiffness variation
 \end{itemize}
 
-\textbf{Concluding synthesis paragraph (end of Appendix C):}
+\textbf{Concluding synthesis paragraph (end of Section 7):}
 
 A comprehensive synthesis demonstrates that triangular lattices achieve superior relative bandwidth (40-42\%) across all materials spanning 150$\times$ stiffness variation, validating that geometric advantages represent material-independent design principles. The frequency scaling preserves this hierarchy while shifting operational ranges proportionally to material stiffness ($\sqrt{D/\rho h}$), confirming PWE methodology robustness across the entire structural material spectrum studied.
 
@@ -435,18 +438,18 @@ A comprehensive synthesis demonstrates that triangular lattices achieve superior
 
 \textit{Forward reference to multi-material analysis:}
 \begin{quote}
-\textcolor{redtext}{``While this section focuses on polymeric material for experimental validation feasibility, Appendix C extends the analysis to structural materials (aluminum alloy and carbon/epoxy composite), demonstrating the universality of geometric performance principles across materials with 150$\times$ stiffness variation.''}
+\textcolor{redtext}{``While this section focuses on polymeric material for experimental validation feasibility, Section 7 extends the analysis to structural materials (aluminum alloy and carbon/epoxy composite), demonstrating the universality of geometric performance principles across materials with 150$\times$ stiffness variation.''}
 \end{quote}
 
 \textbf{Location 2: Paper Structure (Line 142)}
 
-\textit{Updated to mention Appendix C:}
+\textit{Updated to mention Section 7:}
 \begin{quote}
-\textcolor{redtext}{``Appendix C extends the analysis to metallic and composite materials (aluminum and carbon/epoxy), demonstrating the universality of geometric performance principles across materials with 150$\times$ stiffness variation.''}
+\textcolor{redtext}{``Section 7 extends the analysis to metallic and composite materials (aluminum and carbon/epoxy), demonstrating the universality of geometric performance principles across materials with 150$\times$ stiffness variation.''}
 \end{quote}
 \end{changesbox}
 
-\textbf{Demonstration of universal methodology:} The extended analysis in Appendix C demonstrates that:
+\textbf{Demonstration of universal methodology:} The extended analysis in Section 7 demonstrates that:
 \begin{enumerate}
     \item Geometric principles are material-independent
     \item Frequency scaling is predictable: $f \propto \sqrt{D/\rho h}$
@@ -503,9 +506,9 @@ We believe this isn't merely a methodological preference, but rather reflects ho
 In reviewing the foundational literature in this field, we noticed a consistent pattern in how geometric comparisons are performed:
 
 \begin{itemize}
-    \item The seminal work by Xiao et al. (2012) [46]—which introduced the concept of resonance-Bragg coupling in LRSC plates—maintained constant lattice parameter when investigating different configurations. This influential study helped establish methodological standards in our field.
+    \item The seminal work by Xiao et al. (2012) [46]---which introduced the concept of resonance-Bragg coupling in LRSC plates---maintained constant lattice parameter when investigating different configurations. This influential study helped establish methodological standards in our field.
 
-    \item Similarly, in the photonic crystal community, the highly-cited work by Villeneuve \& Piché (1992) [DOI: 10.1103/PhysRevB.46.4969] comparing square and hexagonal lattices employed fixed lattice constants to enable rigorous geometric comparison.
+    \item Similarly, in the photonic crystal community, the highly-cited work by Villeneuve \& Pich\'{e} (1992) [DOI: 10.1103/PhysRevB.46.4969] comparing square and hexagonal lattices employed fixed lattice constants to enable rigorous geometric comparison.
 \end{itemize}
 
 These precedents suggest that the constant lattice parameter approach has been well-validated by the research community for fundamental geometric studies.
@@ -522,7 +525,7 @@ This question naturally leads to constant $a$ methodology because:
     \item Results provide directly actionable design guidelines without requiring additional optimization
 \end{itemize}
 
-The reviewer's suggested approach—adjusting $a$ to align band gap frequencies—would answer a different but also valuable question: ``What parameter combinations can achieve target frequencies?'' While this represents an important complementary research direction, we believe it would shift focus from our intended objective of establishing fundamental geometric performance principles.
+The reviewer's suggested approach---adjusting $a$ to align band gap frequencies---would answer a different but also valuable question: ``What parameter combinations can achieve target frequencies?'' While this represents an important complementary research direction, we believe it would shift focus from our intended objective of establishing fundamental geometric performance principles.
 
 \textbf{Practical Consideration - Computational Scope:}
 
@@ -548,7 +551,7 @@ For the present study's focus on establishing fundamental geometric performance 
 
 \textit{New justification paragraph added:}
 \begin{quote}
-\textcolor{redtext}{``This constant-parameter approach isolates purely geometric influences (crystallographic symmetry, unit cell area, resonator coupling) from frequency-dependent scaling effects, providing objective performance hierarchy based on intrinsic geometric properties rather than parameter optimization. This methodology reflects practical engineering constraints where metamaterial devices must fit within predetermined spatial limitations, enabling fair evaluation of which geometry optimizes performance within given space and material constraints—a critical consideration for applications in aerospace, automotive, and civil engineering where device footprint is often fixed by design requirements.''}
+\textcolor{redtext}{``This constant-parameter approach isolates purely geometric influences (crystallographic symmetry, unit cell area, resonator coupling) from frequency-dependent scaling effects, providing objective performance hierarchy based on intrinsic geometric properties rather than parameter optimization. This methodology reflects practical engineering constraints where metamaterial devices must fit within predetermined spatial limitations, enabling fair evaluation of which geometry optimizes performance within given space and material constraints---a critical consideration for applications in aerospace, automotive, and civil engineering where device footprint is often fixed by design requirements.''}
 \end{quote}
 
 This addition:
@@ -567,7 +570,7 @@ This addition:
 \subsection*{Comment (7): Mathematical Definition of Mass Ratio}
 
 \begin{reviewerbox}
-What is the definition of mass ratio in Table 3. What is the meaning of the mass ratio normalized to kagomé in Table 3. Please provide mathematical formulations.
+What is the definition of mass ratio in Table 3. What is the meaning of the mass ratio normalized to kagom\'{e} in Table 3. Please provide mathematical formulations.
 \end{reviewerbox}
 
 \begin{responsebox}
@@ -581,18 +584,18 @@ We thank the reviewer for requesting clarification of the mass ratio definition.
 
 \textbf{Equation:}
 \begin{equation}
-\textcolor{redtext}{m_{\text{ratio}} = \frac{m_{p,i}}{m_{p,\text{kagomé}}} = \frac{m_{p,i}}{4.16 \times 10^{-2}}}
+\textcolor{redtext}{m_{\text{ratio}} = \frac{m_{p,i}}{m_{p,\text{kagom\'{e}}}} = \frac{m_{p,i}}{4.16 \times 10^{-2}}}
 \end{equation}
 
 \textbf{Variable definitions:}
 \begin{itemize}
     \item $m_{p,i}$: plate mass per unit cell for lattice configuration $i$
-    \item $m_{p,\text{kagomé}} = 4.16 \times 10^{-2}$ kg: reference mass (kagomé lattice with largest unit cell area)
+    \item $m_{p,\text{kagom\'{e}}} = 4.16 \times 10^{-2}$ kg: reference mass (kagom\'{e} lattice with largest unit cell area)
 \end{itemize}
 
 \textbf{Physical interpretation:}
 \begin{quote}
-\textcolor{redtext}{``This normalization enables direct material efficiency comparison across different lattice geometries. The mass ratio reveals significant material efficiency differences: triangular lattices achieve superior performance with only 25\% of kagomé's material usage, while rectangular lattices utilize merely 14\%, highlighting the geometry-dependent trade-offs between material efficiency and structural performance.''}
+\textcolor{redtext}{``This normalization enables direct material efficiency comparison across different lattice geometries. The mass ratio reveals significant material efficiency differences: triangular lattices achieve superior performance with only 25\% of kagom\'{e}'s material usage, while rectangular lattices utilize merely 14\%, highlighting the geometry-dependent trade-offs between material efficiency and structural performance.''}
 \end{quote}
 
 \textbf{Verification examples from Table 3:}
@@ -602,9 +605,9 @@ We thank the reviewer for requesting clarification of the mass ratio definition.
     \item Honeycomb: $3.12 \times 10^{-2} / 4.16 \times 10^{-2} = 0.75$ \checkmark
 \end{itemize}
 
-\textbf{Why kagomé as reference:}
+\textbf{Why kagom\'{e} as reference:}
 \begin{itemize}
-    \item Largest unit cell area: kagomé has maximum geometric footprint ($S = 3.46 \times 10^{-2}$ m$^2$)
+    \item Largest unit cell area: kagom\'{e} has maximum geometric footprint ($S = 3.46 \times 10^{-2}$ m$^2$)
     \item Maximum material usage: correspondingly highest plate mass per unit cell
     \item Normalization baseline: provides upper bound for material efficiency comparison
 \end{itemize}
@@ -662,7 +665,7 @@ We completely agree with the reviewer's assessment and have comprehensively revi
 
 \textbf{Highlight 4 (82 characters):}
 \begin{quote}
-\textcolor{redtext}{Triangular lattices: 35\% superior bandwidth, 25\% kagomé mass, 1800-5700$\times$ speedup}
+\textcolor{redtext}{Triangular lattices: 35\% superior bandwidth, 25\% kagom\'{e} mass, 1800-5700$\times$ speedup}
 \end{quote}
 
 \textbf{Highlight 5 (79 characters):}
@@ -745,7 +748,7 @@ We sincerely thank the reviewer for this constructive suggestion to improve manu
 \begin{itemize}
     \item Removed 7 detailed parametric tables from Sections 3.1 and 3.2
     \item Rationale: All tabulated data is visually presented in parametric analysis figures (Figures 2\_1 to 2\_5) and summarized in comprehensive Table 13 (performance summary)
-    \item Tables removed: Square FBGW (20 lines), Rectangular FBGW (18 lines), Triangular FBGW (18 lines), Honeycomb FBGW1/2 (46 lines), Kagomé FBGW1/2 (45 lines)
+    \item Tables removed: Square FBGW (20 lines), Rectangular FBGW (18 lines), Triangular FBGW (18 lines), Honeycomb FBGW1/2 (46 lines), Kagom\'{e} FBGW1/2 (45 lines)
     \item \textbf{Lines removed: 147 lines (8.5\% of manuscript)}
 \end{itemize}
 
@@ -764,12 +767,12 @@ We sincerely thank the reviewer for this constructive suggestion to improve manu
 
 \textbf{PHASE 3: Section 3.2 Text Condensation (Moderate Risk)}
 \begin{itemize}
-    \item Condensed detailed analyses of multi-resonator lattices (Honeycomb, Kagomé)
+    \item Condensed detailed analyses of multi-resonator lattices (Honeycomb, Kagom\'{e})
     \item Method: Same integration approach, maintaining all dual bandgap mechanisms and physical insights
     \item Areas condensed:
         \begin{itemize}
             \item Honeycomb: Dual-resonator introduction (8$\rightarrow$3 lines), dual bandgap mechanisms (12$\rightarrow$5 lines), parametric analysis (16$\rightarrow$7 lines)
-            \item Kagomé: Triple-resonator introduction (5$\rightarrow$2 lines), fundamental limitation (5$\rightarrow$2 lines), performance ceiling (5$\rightarrow$2 lines)
+            \item Kagom\'{e}: Triple-resonator introduction (5$\rightarrow$2 lines), fundamental limitation (5$\rightarrow$2 lines), performance ceiling (5$\rightarrow$2 lines)
         \end{itemize}
     \item \textbf{Lines removed: 37 lines (2.4\% of manuscript)}
 \end{itemize}
@@ -792,28 +795,28 @@ We sincerely thank the reviewer for this constructive suggestion to improve manu
 
 \textbf{PHASE 2 - Section 3.1 condensations (\textcolor{red}{red text}):}
 
-\textbf{1. Square lattice mode shape analysis (Line 462):}
+\textbf{1. Square lattice mode shape analysis (Line 469):}
 \begin{itemize}
     \item Original: 7 lines of detailed mode shape explanation
     \item Condensed: 2 lines preserving anti-resonance mechanism and energy trapping concepts
     \item \textcolor{red}{Marked in red in manuscript}
 \end{itemize}
 
-\textbf{2. Square lattice edge frequency evolution (Line 493):}
+\textbf{2. Square lattice edge frequency evolution (Line 501):}
 \begin{itemize}
     \item Original: 13 lines explaining asymmetric band gap formation with multiple paragraphs
     \item Condensed: 4 lines integrating linear $f_1$ evolution, Bragg ceiling, and saturation effects
     \item \textcolor{red}{Marked in red in manuscript}
 \end{itemize}
 
-\textbf{3. Rectangular lattice parametric analysis (Line 551):}
+\textbf{3. Rectangular lattice parametric analysis (Line 477):}
 \begin{itemize}
     \item Original: 14 lines on premature optimization and anisotropic coupling
     \item Condensed: 4 lines preserving geometric constraints and aspect ratio effects
     \item \textcolor{red}{Marked in red in manuscript}
 \end{itemize}
 
-\textbf{4. Triangular lattice bandwidth stability (Line 611):}
+\textbf{4. Triangular lattice bandwidth stability (Line 503):}
 \begin{itemize}
     \item Original: 12 lines on exceptional stability and six-fold symmetry
     \item Condensed: 4 lines maintaining symmetry advantages and area-normalized efficiency
@@ -822,14 +825,14 @@ We sincerely thank the reviewer for this constructive suggestion to improve manu
 
 \textbf{PHASE 3 - Section 3.2 condensations (\textcolor{red}{red text}):}
 
-\textbf{5. Honeycomb dual-resonator introduction (Line 626):}
+\textbf{5. Honeycomb dual-resonator introduction (Line 518):}
 \begin{itemize}
     \item Original: 8 lines explaining dual-resonator geometry and collective behavior
     \item Condensed: 3 lines preserving in-phase/anti-phase modes and eigenfrequency generation
     \item \textcolor{red}{Marked in red in manuscript}
 \end{itemize}
 
-\textbf{6. Honeycomb dual bandgap mechanisms (Line 662):}
+\textbf{6. Honeycomb dual bandgap mechanisms (Line 529):}
 \begin{itemize}
     \item Original: 12 lines detailing breakthrough capability and modal regimes
     \item Condensed: 5 lines maintaining anti-phase/in-phase coupling and frequency adjustment capabilities
@@ -843,21 +846,21 @@ We sincerely thank the reviewer for this constructive suggestion to improve manu
     \item \textcolor{red}{Marked in red in manuscript}
 \end{itemize}
 
-\textbf{8. Kagomé triple-resonator introduction (Line 689):}
+\textbf{8. Kagom\'{e} triple-resonator introduction (Line 689):}
 \begin{itemize}
     \item Original: 5 lines on triple-resonator architecture and FIBZ coordinates
     \item Condensed: 2 lines preserving three-fold symmetry and frequency-selective attenuation
     \item \textcolor{red}{Marked in red in manuscript}
 \end{itemize}
 
-\textbf{9. Kagomé fundamental limitation (Line 724):}
+\textbf{9. Kagom\'{e} fundamental limitation (Line 724):}
 \begin{itemize}
     \item Original: 5 lines explaining fundamental limitation despite more resonators
     \item Condensed: 2 lines maintaining dual bandgap emergence and hybrid states explanation
     \item \textcolor{red}{Marked in red in manuscript}
 \end{itemize}
 
-\textbf{10. Kagomé performance ceiling (Line 751):}
+\textbf{10. Kagom\'{e} performance ceiling (Line 751):}
 \begin{itemize}
     \item Original: 5 lines on modal coupling evolution and geometric frustration
     \item Condensed: 2 lines preserving three-fold symmetry constraint and competing phase relationships
@@ -888,13 +891,13 @@ We have comprehensively addressed all reviewer comments with substantial revisio
 \hline
 \textbf{Comment} & \textbf{Primary Locations} & \textbf{Key Modifications} \\
 \hline
-(1) \& (5) & Lines 568-644, 82, 1135, highlights & Relative bandwidth equation, Table 14 (75 data points), dual-metric framework, reorganized Section 3.3 \\
+(1) \& (5) & Lines 568-644, 82, 910, highlights & Relative bandwidth equation, Table 14 (75 data points), dual-metric framework, reorganized Section 3.3 \\
 \hline
-(2) & Lines 122, 132, 450, 460, 555, 588, 624, 1135 & 8 strategic citations to Xiao et al. establishing resonance-Bragg coupling connections \\
+(2) & Lines 124, 455, 501, 508, 529, 580 & Strategic citations to Xiao et al. establishing resonance-Bragg coupling connections \\
 \hline
 (3) & Line 110 & Clarification distinguishing LRSC mechanism from traditional PC \\
 \hline
-(4) & Lines 1293-1479, 304, 142 & New Appendix C: multi-material analysis (Al, Carbon/Epoxy), 150$\times$ stiffness variation \\
+(4) & Lines 1071-1248, 304, 142 & New Section: multi-material analysis (Al, Carbon/Epoxy), 150$\times$ stiffness variation \\
 \hline
 (6) & Line 338 & Detailed justification for constant lattice parameter methodology \\
 \hline
@@ -911,7 +914,7 @@ We have comprehensively addressed all reviewer comments with substantial revisio
 
 \textbf{Total modifications:} Over 2000 words of new scientific content added in red, distributed across:
 \begin{itemize}
-    \item 1 new appendix (Appendix C, 186 lines)
+    \item 1 new appendix (Section 7, 186 lines)
     \item 1 new table (relative bandwidth comparison)
     \item 2 new equations (relative bandwidth, mass ratio)
     \item 8 strategic citation additions
@@ -937,7 +940,7 @@ Based on review feedback during revision process, we have implemented the follow
 
 \textbf{Solution implemented:} Complete rewrite of all 5 highlights ensuring:
 \begin{itemize}
-    \item \textbf{Character limit compliance:} Each highlight ≤ 85 characters as per Elsevier guidelines
+    \item \textbf{Character limit compliance:} Each highlight $\leq$ 85 characters as per Elsevier guidelines
     \item \textbf{Scientific precision:} Removed promotional language, focused on quantified contributions
     \item \textbf{Conciseness:} Eliminated redundancy while preserving key technical achievements
     \item \textbf{Impact clarity:} Each highlight addresses specific scientific advancement
@@ -1003,11 +1006,11 @@ Based on review feedback during revision process, we have implemented the follow
 
 \textbf{Result:} All references are complete, accessible, and properly formatted according to journal standards.
 
-\subsection*{Appendix C Condensation}
+\subsection*{Section 7 Condensation}
 
 \textbf{Issue identified:} Concern about manuscript length increase due to multi-material extension.
 
-\textbf{Solution implemented:} Streamlined Appendix C structure:
+\textbf{Solution implemented:} Streamlined Section 7 structure:
 \begin{itemize}
     \item \textbf{Focused scope:} Limited to 3 essential sections addressing reviewer concerns
     \item \textbf{Eliminated redundancy:} Removed detailed derivations available in main text
