@@ -93,7 +93,7 @@ We have carefully addressed all comments and believe the revisions have substant
 \textbf{Summary of Major Revisions:}
 \begin{itemize}[leftmargin=1.5cm]
     \item \textbf{Relative bandwidth analysis:} Implemented comprehensive normalized bandwidth comparison using $\eta_{rel} = (f_2-f_1)/f_c \times 100\%$ metric (Comment 1, 5)
-    \item \textbf{Enhanced acknowledgment:} Added 8 strategic citations to Xiao et al.~[46] establishing connections with foundational resonance-Bragg coupling work (Comment 2)
+    \item \textbf{Enhanced acknowledgment:} Added strategic citations to Xiao et al.~[46] establishing connections with foundational resonance-Bragg coupling work (Comment 2)
     \item \textbf{Multi-material extension:} Created new Appendix C analyzing aluminum and carbon/epoxy composites, demonstrating universality across 150$\times$ stiffness variation (Comment 4) - condensed for conciseness
     \item \textbf{Mathematical formulations:} Provided explicit equation for mass ratio definition (Comment 7)
     \item \textbf{Revised highlights:} Completely rewritten for conciseness and scientific focus, ensuring compliance with Elsevier character limits (Comment 8)
@@ -142,14 +142,14 @@ This approach addresses both the practical engineering question (``which lattice
 \begin{changesbox}
 \textbf{Major modifications implemented:}
 
-\textbf{Location 1: Section 3.3 - Introduction (Lines 778)}
+\textbf{Location 1: Section 3.3 - Introduction (Line 568)}
 
 \textit{New introductory paragraph:}
 \begin{quote}
 \textcolor{redtext}{``The comprehensive individual analyses presented in previous subsections enable quantitative performance comparison across all five lattice configurations using two complementary metrics that address distinct design considerations. This dual-metric framework employs: (1) \textbf{absolute bandwidth} (FBGW in [Hz]) providing direct engineering insights for applications with specific frequency targets, and (2) \textbf{relative bandwidth} ($\eta_{rel}$ in [\%]) enabling frequency-independent geometric performance comparison through normalization.''}
 \end{quote}
 
-\textbf{Location 2: Section 3.3 - New Subheading and Equation (Lines 812-821)}
+\textbf{Location 2: Section 3.3 - New Subheading and Equation (Lines 605-614)}
 
 \textit{New subheading:} ``\textbf{Relative Bandwidth Analysis for Fair Geometric Comparison}''
 
@@ -159,9 +159,9 @@ This approach addresses both the practical engineering question (``which lattice
 \end{equation}
 \textcolor{redtext}{where $f_c = (f_1 + f_2)/2$ is the center frequency of the bandgap, $f_1$ and $f_2$ are the lower and upper bandgap boundaries, and $\eta_{rel}$ represents the normalized bandwidth efficiency. This dimensionless metric removes frequency-dependent scaling effects, enabling direct comparison of intrinsic geometric performance across different operational ranges.}
 
-\textbf{Location 3: Section 3.3 - Comprehensive Relative Bandwidth Table (Lines 825-858)}
+\textbf{Location 3: Section 3.3 - Comprehensive Relative Bandwidth Table (Lines 616-643)}
 
-\textit{New Table 14: ``Comprehensive relative bandgap width comparison ($\eta_{rel}$) across five lattice configurations''}
+\textit{New Table (Relative Bandwidth Comparison): ``Comprehensive relative bandgap width comparison ($\eta_{rel}$) across five lattice configurations''}
 
 Complete frequency-sweep analysis with 15 resonator frequencies (10-150 Hz) $\times$ 5 lattices = 75 normalized data points, revealing:
 \begin{itemize}
@@ -186,14 +186,14 @@ Revised: \textcolor{redtext}{``triangular lattices achieve 35\% superior relativ
 \textit{Corrected to reflect normalized comparison:}\\
 \textcolor{redtext}{``Triangular lattices achieve 35\% superior relative bandwidth (42.51\% vs 31.40\%)''}
 
-\textbf{Location 7: Section 3.3 - Reorganized Structure (Lines 778-864)}
+\textbf{Location 7: Section 3.3 - Reorganized Structure (Lines 568-644)}
 
 The section has been pedagogically reorganized with logical flow:
 \begin{enumerate}
     \item Absolute bandwidth analysis (practical engineering insights)
     \item Transition explaining limitations of absolute comparison
     \item Relative bandwidth definition and equation
-    \item Comprehensive normalized analysis (Table 14)
+    \item Comprehensive normalized analysis (relative bandwidth table)
     \item Dual-metric synthesis
 \end{enumerate}
 
@@ -373,7 +373,7 @@ We thank the reviewer for this important observation regarding material limitati
 \end{responsebox}
 
 \begin{changesbox}
-\textbf{Major addition: New Appendix C - ``Extension to Structural Materials - Multi-Material Analysis'' (Lines 1516-1650)}
+\textbf{Major addition: New Appendix C - ``Extension to Structural Materials - Multi-Material Analysis'' (Lines 1071-1248)}
 
 \textbf{Scope note:} To maintain conciseness while directly addressing the reviewer's concern about material generalizability, Appendix C has been condensed to focus on three essential core sections that demonstrate universality of geometric principles across vastly different material properties. Following review feedback, extensive supporting data and detailed derivations have been streamlined to prevent manuscript length concerns while preserving critical scientific content.
 
@@ -471,7 +471,7 @@ This comment raises the same fundamental methodological issue as \textbf{Comment
 
 \begin{itemize}
     \item Introduction of relative bandwidth equation: $\eta_{rel} = (f_2-f_1)/f_c \times 100\%$
-    \item Creation of Table 14 with 75 normalized data points (15 frequencies $\times$ 5 lattices)
+    \item Creation of relative bandwidth table with 75 normalized data points (15 frequencies $\times$ 5 lattices)
     \item Reorganization of Section 3.3 with dual-metric framework
     \item Corrections to abstract, conclusions, and highlights
 \end{itemize}
@@ -531,7 +531,7 @@ We should also mention that implementing the frequency-matched variable-$a$ appr
 \begin{itemize}
     \item Our current approach: 75 PWE simulations (15 frequencies $\times$ 5 lattices)
     \item Frequency-matched approach: Would require iterative trial-and-error parameter search for each lattice-frequency combination, as PWE methods lack inverse solvers
-    \item Estimated additional requirement: 400-1,500 simulations to establish matched parameters, plus complete re-meshing for FEM validation
+    \item Estimated additional requirement: 400-1500 simulations to establish matched parameters, plus complete re-meshing for FEM validation
 \end{itemize}
 
 While we would certainly be open to exploring this in future work with dedicated computational resources, we believe the current methodology achieves our study's primary objectives effectively.
@@ -888,7 +888,7 @@ We have comprehensively addressed all reviewer comments with substantial revisio
 \hline
 \textbf{Comment} & \textbf{Primary Locations} & \textbf{Key Modifications} \\
 \hline
-(1) \& (5) & Lines 778-864, 82, 1135, highlights & Relative bandwidth equation, Table 14 (75 data points), dual-metric framework, reorganized Section 3.3 \\
+(1) \& (5) & Lines 568-644, 82, 1135, highlights & Relative bandwidth equation, Table 14 (75 data points), dual-metric framework, reorganized Section 3.3 \\
 \hline
 (2) & Lines 122, 132, 450, 460, 555, 588, 624, 1135 & 8 strategic citations to Xiao et al. establishing resonance-Bragg coupling connections \\
 \hline
@@ -912,7 +912,7 @@ We have comprehensively addressed all reviewer comments with substantial revisio
 \textbf{Total modifications:} Over 2000 words of new scientific content added in red, distributed across:
 \begin{itemize}
     \item 1 new appendix (Appendix C, 186 lines)
-    \item 1 new table (Table 14, relative bandwidth)
+    \item 1 new table (relative bandwidth comparison)
     \item 2 new equations (relative bandwidth, mass ratio)
     \item 8 strategic citation additions
     \item 1 complete reorganization (Section 3.3)
