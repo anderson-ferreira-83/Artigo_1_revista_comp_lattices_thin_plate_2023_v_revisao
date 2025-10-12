@@ -1,0 +1,130 @@
+AÇÕES PENDENTES NO MANUSCRITO BASEADAS NOS COMENTÁRIOS DO COAUTOR
+====================================================================
+Arquivo base: manuscript_mssp2_vf_rev1.pdf (67 comentários)
+Arquivo de destino: manuscript_mssp2_vf.tex
+Data: 11/10/2025 21:17
+
+====================================================================
+CHECKLIST DE VERIFICAÇÕES NECESSÁRIAS
+====================================================================
+
+SEÇÃO 1: VERIFICAÇÃO DE CITAÇÕES XIAO ET AL.
+============================================
+
+📋 COMENTÁRIO 17: "Reduzir número de citações"
+📋 COMENTÁRIO 18: "Ficou estranho... tentativa não natural"  
+📋 COMENTÁRIO 24: "Não ficar com 8 citações ao trabalho do Xiao"
+
+AÇÃO NECESSÁRIA:
+   🔍 Revisar as 13 citações atuais do Xiao et al. no manuscrito
+   🔍 Avaliar se alguma citação parece forçada ou não natural
+   🔍 Considerar condensar citações repetitivas
+   🔍 Manter apenas citações que agregam valor científico
+
+LOCALIZAÇÃO: Grep "Xiao" manuscript_mssp2_vf.tex (13 ocorrências)
+
+SEÇÃO 2: LIMPEZA DAS CONCLUSÕES  
+==============================
+
+📋 COMENTÁRIO 33: "Remover. Evitar usar citações nas Conclusões"
+
+AÇÃO NECESSÁRIA:
+   🔍 Localizar seção de Conclusões (linha ~910)
+   🔍 Identificar citações desnecessárias
+   🔍 Remover citações que não são essenciais para as conclusões
+   🔍 Manter foco nos resultados e contribuições
+
+LOCALIZAÇÃO: manuscript_mssp2_vf.tex, seção "Conclusions"
+
+SEÇÃO 3: REVISÃO DE CONTEÚDO ESPECÍFICO
+======================================
+
+📋 COMENTÁRIO 16: "Eu removeria essa palavra"
+AÇÃO: 🔍 Localizar palavra específica (requer coordenadas do PDF)
+
+📋 COMENTÁRIO 21: "Remover... discutindo apenas trabalhos recentes"  
+AÇÃO: 🔍 Revisar parágrafo sobre trabalhos recentes na Introdução
+
+📋 COMENTÁRIO 37: "Remover? Acho que ficou estranho essa parte"
+AÇÃO: 🔍 Localizar trecho específico (página 9 do PDF)
+
+SEÇÃO 4: VERIFICAÇÃO DE REFERÊNCIAS
+===================================
+
+📋 COMENTÁRIO 41: "? Referência?"
+AÇÃO: 🔍 Verificar referência faltante ou incompleta
+
+📋 MÚLTIPLOS "Atualizar": Comentários 10-15, 19, 20, 28-32, 34, 36, 38, 45, 46, 51
+AÇÃO: 🔍 Verificar numeração de linhas, tabelas, e referências internas
+
+SEÇÃO 5: ESTRUTURA E ORGANIZAÇÃO
+================================
+
+📋 COMENTÁRIO 56: "Encurtar essa seção, conforme conversamos"
+AÇÃO: 🔍 Identificar seção específica para encurtamento (página 22 do PDF)
+
+📋 COMENTÁRIO 57: "Alterar localização das linhas e numeração das tabelas"
+AÇÃO: 🔍 Verificar numeração sequencial de tabelas
+        🔍 Verificar referências a números de linha
+
+====================================================================
+SCRIPT DE VERIFICAÇÃO RÁPIDA
+====================================================================
+
+Para executar verificações básicas no manuscrito:
+
+# 1. Contar citações Xiao
+grep -c "Xiao" manuscript_mssp2_vf.tex
+
+# 2. Localizar citações nas Conclusões  
+grep -n -A5 -B5 "cite.*" manuscript_mssp2_vf.tex | grep -A10 -B10 "section.*Conclusion"
+
+# 3. Verificar referências de tabelas
+grep -n "Table.*ref" manuscript_mssp2_vf.tex
+
+# 4. Verificar referências de linha
+grep -n "line.*[0-9]" manuscript_mssp2_vf.tex
+
+====================================================================
+PRIORIDADE DAS AÇÕES
+====================================================================
+
+🔴 ALTA PRIORIDADE:
+   - Revisar naturalidade das citações Xiao et al.
+   - Limpar citações desnecessárias nas Conclusões
+
+🟡 MÉDIA PRIORIDADE:  
+   - Verificar numeração de tabelas e referências
+   - Identificar seção para encurtamento
+   - Localizar trechos específicos para remoção
+
+🟢 BAIXA PRIORIDADE:
+   - Comentários "??" unclear
+   - Ajustes pontuais de redação
+   - Verificações administrativas
+
+====================================================================
+TEMPLATE PARA IMPLEMENTAÇÃO
+====================================================================
+
+Para cada comentário identificado:
+
+1. LOCALIZAR: Usar grep ou busca no editor
+2. AVALIAR: Verificar se modificação é necessária  
+3. IMPLEMENTAR: Fazer alteração no manuscript_mssp2_vf.tex
+4. VALIDAR: Verificar consistência e qualidade
+5. DOCUMENTAR: Registrar modificação feita
+
+====================================================================
+RESULTADOS ESPERADOS
+====================================================================
+
+Após implementar essas verificações, o manuscrito deverá ter:
+
+✅ Citações Xiao et al. naturais e bem integradas
+✅ Conclusões focadas em resultados (sem citações desnecessárias)  
+✅ Referências e numerações corretas e atualizadas
+✅ Estrutura otimizada sem redundâncias
+✅ Redação fluente e profissional
+
+OBJETIVO FINAL: Manuscrito polido e pronto para submissão sem pendências técnicas ou editoriais.

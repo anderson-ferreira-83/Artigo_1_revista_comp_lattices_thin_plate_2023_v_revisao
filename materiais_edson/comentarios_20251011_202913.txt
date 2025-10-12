@@ -1,0 +1,467 @@
+COMENTÁRIOS EXTRAÍDOS
+==============================
+
+COMENTÁRIO 1
+Página: 1
+Tipo: Highlight
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Edson Jansen Pedrosa de Miranda Junior
+----------------------------------------
+
+COMENTÁRIO 2
+Página: 1
+Tipo: Text
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Antes desses nossos primeiros agradecimentos, eu sugiro incluir os comentários do Editor: 
+
+"Thank you for submitting your paper to Mechanical Systems and Signal Processing.
+
+I have considered the comments of the reviewers (appended below) and decided that the paper should be revised to take into account these comments.
+
+When revising your manuscript please include a point-by-point response to all the reviewers' comments and ensure that all modified text is printed in red. If the response to the reviewers' comments is not complete and descriptive, I will be unable to make a prompt decision on the paper.
+
+Please also consult both the journal's Guide for Authors, and the information on electronic artwork preparation at the following website: https://www.editorialmanager.com/ymssp/.
+
+I would appreciate if you could submit your revised paper by 15 Oct 2025."
+----------------------------------------
+
+COMENTÁRIO 3
+Página: 1
+Tipo: Highlight
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+O que seria esse ",5"?
+----------------------------------------
+
+COMENTÁRIO 4
+Página: 1
+Tipo: Highlight
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Conforme conversamos, aqui parece haver um certo exagero. Talvez, 1 ou 2 já sejam suficientes.
+----------------------------------------
+
+COMENTÁRIO 5
+Página: 1
+Tipo: Highlight
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Conforme conversamos, esse Apêndice deve ser reduzido.
+----------------------------------------
+
+COMENTÁRIO 6
+Página: 1
+Tipo: Highlight
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Conforme conversamos, verificar o número máximo de caracteres da Elsevier. Eles continuam grandes e ultrapassam esse limite.
+----------------------------------------
+
+COMENTÁRIO 7
+Página: 1
+Tipo: Highlight
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Conforme conversamos, acho que você ficou de reduzir mais ainda essa seção.
+----------------------------------------
+
+COMENTÁRIO 8
+Página: 2
+Tipo: Text
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Antes desse nosso agradecimento, sugiro incluir esse comentário geral do Revisor #1:
+
+"This work presents a comparative analysis of band gaps and vibration attenuation of locally resonant metamaterial plate across five distinct periodic configurations. This is an interesting topic worth studying. Before I can recommend the publication of the manuscript in MSSP, I suggest the authors address the following comments:"
+----------------------------------------
+
+COMENTÁRIO 9
+Página: 2
+Tipo: Text
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Faltou incluir o restante do primeiro comentário do revisor:
+
+"For example, the beginning frequency of the widest bandgap can be carefully designed to be the same as the case of triangular lattice."
+----------------------------------------
+
+COMENTÁRIO 10
+Página: 3
+Tipo: Highlight
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Atualizar. Parece não corresponder corretamente.
+----------------------------------------
+
+COMENTÁRIO 11
+Página: 3
+Tipo: Highlight
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Atualizar. Parece não corresponder, nem a subseção, nem as linhas.
+----------------------------------------
+
+COMENTÁRIO 12
+Página: 3
+Tipo: Highlight
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Atualizar.
+----------------------------------------
+
+COMENTÁRIO 13
+Página: 3
+Tipo: Highlight
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Atualizar.
+----------------------------------------
+
+COMENTÁRIO 14
+Página: 3
+Tipo: Highlight
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Atualizar.
+----------------------------------------
+
+COMENTÁRIO 15
+Página: 4
+Tipo: Highlight
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Atualizar.
+----------------------------------------
+
+COMENTÁRIO 16
+Página: 4
+Tipo: Highlight
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Eu removeria essa palavra.
+----------------------------------------
+
+COMENTÁRIO 17
+Página: 5
+Tipo: Highlight
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Atualizar e lembrar de reduzir o número de citações.
+----------------------------------------
+
+COMENTÁRIO 18
+Página: 5
+Tipo: Highlight
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Acho que ficou estranho escrever dessa forma. Parece meio forçado e uma tentativa "não natural" de incluir os trabalhos do Xiao et al. [46].
+----------------------------------------
+
+COMENTÁRIO 19
+Página: 5
+Tipo: Highlight
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Atualizar.
+----------------------------------------
+
+COMENTÁRIO 20
+Página: 6
+Tipo: Highlight
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Atualizar.
+----------------------------------------
+
+COMENTÁRIO 21
+Página: 6
+Tipo: Text
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Pode remover talvez esse, pois, neste parágrafo da Introdução, você está discutindo apenas trabalhos recentes.
+----------------------------------------
+
+COMENTÁRIO 22
+Página: 6
+Tipo: Text
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+A seguir, pensar no que remover, para não ficar com as 8 citações ao trabalho do Xiao et al. [46].
+----------------------------------------
+
+COMENTÁRIO 23
+Página: 6
+Tipo: Text
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Remover?
+----------------------------------------
+
+COMENTÁRIO 24
+Página: 6
+Tipo: Text
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Remover?
+----------------------------------------
+
+COMENTÁRIO 25
+Página: 6
+Tipo: Highlight
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Atualizar.
+----------------------------------------
+
+COMENTÁRIO 26
+Página: 6
+Tipo: Highlight
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Atualizar.
+----------------------------------------
+
+COMENTÁRIO 27
+Página: 6
+Tipo: Highlight
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Atualizar.
+----------------------------------------
+
+COMENTÁRIO 28
+Página: 6
+Tipo: Highlight
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Atualizar.
+----------------------------------------
+
+COMENTÁRIO 29
+Página: 6
+Tipo: Highlight
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Atualizar.
+----------------------------------------
+
+COMENTÁRIO 30
+Página: 7
+Tipo: Text
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Remover. Evitar usar citações nas Conclusões.
+----------------------------------------
+
+COMENTÁRIO 31
+Página: 7
+Tipo: Highlight
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Atualizar.
+----------------------------------------
+
+COMENTÁRIO 32
+Página: 8
+Tipo: Text
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Acho que faltou mencionar que um dos nossos objetivos de termos escolhido um parâmetro de rede ("a") próximo de \lambda/2 é para investigar os casos que analisamos (i.e., ressonância local antes, próximo e depois da primeira frequência de Bragg), visando identificar a influência do tipo de rede quando a ressonância local se encontra antes do band gap de Bragg, no acoplamento de Bragg e depois do band gap de Bragg.
+----------------------------------------
+
+COMENTÁRIO 33
+Página: 8
+Tipo: Highlight
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Atualizar.
+----------------------------------------
+
+COMENTÁRIO 34
+Página: 9
+Tipo: Highlight
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Remover? Acho que ficou estranho essa parte.
+----------------------------------------
+
+COMENTÁRIO 35
+Página: 10
+Tipo: Highlight
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Atualizar.
+----------------------------------------
+
+COMENTÁRIO 36
+Página: 10
+Tipo: Text
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Lembrar de reduzir o Apêndice C. Estou com receio do artigo voltar, pois pode ter se alongado com a inclusão desse Apêndice.
+----------------------------------------
+
+COMENTÁRIO 37
+Página: 10
+Tipo: Highlight
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Análise de multi-escala acho que pode significar outra coisa no âmbito da Mecânica. Sugiro alterar a nomenclatura para evitar confusão.
+----------------------------------------
+
+COMENTÁRIO 38
+Página: 10
+Tipo: Highlight
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+? Referência?
+----------------------------------------
+
+COMENTÁRIO 39
+Página: 11
+Tipo: Text
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Para rede quadrada? Especificar.
+----------------------------------------
+
+COMENTÁRIO 40
+Página: 11
+Tipo: Highlight
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Essa conclusão se aplicando à diversos materiais parece ser algo que pode potencializar muito esse nosso artigo. Mencionar algo no Resumo e Conclusões? Ainda vou ler. Estou lendo só as alterações, por enquanto.
+----------------------------------------
+
+COMENTÁRIO 41
+Página: 11
+Tipo: Text
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Então há uma relação entre o tipo de rede e a escolha do material? Muito interessante. Isso poderia ser outro trabalho para uma revista de materiais, ainda mais se tivermos experimentos e outros materiais.
+----------------------------------------
+
+COMENTÁRIO 42
+Página: 11
+Tipo: Highlight
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Atualizar.
+----------------------------------------
+
+COMENTÁRIO 43
+Página: 11
+Tipo: Highlight
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Atualizar.
+----------------------------------------
+
+COMENTÁRIO 44
+Página: 14
+Tipo: Text
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Mencionar logo aqui que um dos motivos também para termos mantido o "a" constante foi termos incluído a análise da frequência normalizada.
+----------------------------------------
+
+COMENTÁRIO 45
+Página: 14
+Tipo: Highlight
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Onde está a referência? Incluir ela aqui. Pelo menos o DOI.
+----------------------------------------
+
+COMENTÁRIO 46
+Página: 15
+Tipo: Text
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Esse comentário do revisor pode ser uma ideia muito interessante para um futuro trabalho nosso com a inclusão de alguma estratégia de otimização.
+----------------------------------------
+
+COMENTÁRIO 47
+Página: 15
+Tipo: Highlight
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Atualizar.
+----------------------------------------
+
+COMENTÁRIO 48
+Página: 19
+Tipo: Highlight
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+??
+----------------------------------------
+
+COMENTÁRIO 49
+Página: 19
+Tipo: Highlight
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+??
+----------------------------------------
+
+COMENTÁRIO 50
+Página: 19
+Tipo: Text
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Conforme conversamos, reduzir o tamanho dos Highlights, segundo as normas da Elsevier.
+----------------------------------------
+
+COMENTÁRIO 51
+Página: 20
+Tipo: Highlight
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+??
+----------------------------------------
+
+COMENTÁRIO 52
+Página: 22
+Tipo: Text
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Encurtar essa seção, conforme conversamos na última reunião. Em seguida, atualizar os itens abaixo.
+----------------------------------------
+
+COMENTÁRIO 53
+Página: 23
+Tipo: Text
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Alterar a localização das linhas e a numeração das tabelas abaixo, conforme a versão do artigo que será submetida.
+----------------------------------------
+
+COMENTÁRIO 54
+Página: 24
+Tipo: Highlight
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+?
+----------------------------------------
+
+COMENTÁRIO 55
+Página: 25
+Tipo: Text
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Atualizar os itens em amarelo.
+----------------------------------------
+
+COMENTÁRIO 56
+Página: 25
+Tipo: Text
+Autor: edson.jansen@hotmail.com
+Conteúdo:
+Faltou agradecer o comentário do segundo revisor: 
+
+"Reviewer #2: This edition of manuscript can be accepted."
+----------------------------------------
+

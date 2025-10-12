@@ -450,11 +450,11 @@ Parametric analysis (Figure \ref{pwe_disp_square_all_res}) investigates 15 reson
 	\label{pwe_disp_square_all_res}
 \end{figure}
 
-\textcolor{red}{Parametric analysis reveals three regimes: mass-loading ($f_j = 10$ Hz, $\Delta f_{12} = 2.26$ Hz), optimal coupling ($f_j = 105$ Hz, $\Delta f_{12} = 32.10$ Hz), and stiffness-dominated ($f_j = 150$ Hz, $\Delta f_{12} = 14.33$ Hz). This resonator frequency tuning behavior confirms the dependency of bandwidth on resonant frequency of local resonators established by Xiao et al.~\cite{Xiao_2012}, demonstrating that systematic variation of $f_j$ enables controlled bandgap engineering.}
+\textcolor{red}{Parametric analysis reveals three regimes: mass-loading ($f_j = 10$ Hz, $\Delta f_{12} = 2.26$ Hz), optimal coupling ($f_j = 105$ Hz, $\Delta f_{12} = 32.10$ Hz), and stiffness-dominated ($f_j = 150$ Hz, $\Delta f_{12} = 14.33$ Hz). This resonator frequency tuning behavior demonstrates that systematic variation of $f_j$ enables controlled bandgap engineering.}
 
 \textcolor{red}{Edge frequency evolution reveals asymmetric band gap formation: $f_1$ increases linearly with $f_j$ (direct resonator control), while $f_2$ saturates at Bragg limit $f_B = 117.91$ Hz---an intrinsic geometric ceiling independent of resonator tuning. This Bragg frequency is calculated using the analytical formula derived by Xiao et al.~\cite{Xiao_2012} for square lattice configurations: $f_B = (1/2\pi)(\pi/a)^2\sqrt{D/\rho h}$, where the $\Gamma$-X direction ($\phi = 0$) provides the limiting frequency for the second mode. Maximum bandwidth $\Delta f_{12} = 32.10$ Hz at $f_j = 105$ Hz represents optimal balance between local resonance (controlling $f_1$) and geometric dispersion (limiting $f_2$), with subsequent decay reflecting saturation as $f_2$ approaches $f_B$.}
 
-\textcolor{red}{The peak position at $f_j = 105$ [Hz] $\approx$ $0.89 f_B$ reveals a universal design rule for locally resonant metamaterials: optimal performance occurs when the resonator frequency is positioned slightly below the Bragg frequency, maximizing the interaction between local and geometric scattering mechanisms. This finding aligns with the coupling mechanism identified by Xiao et al.~\cite{Xiao_2012}, where the widest bandgap emerges from near-coupling between directional resonance and Bragg band gaps, confirming the fundamental importance of resonator frequency tuning for achieving optimal bandgap performance.} 
+\textcolor{red}{The peak position at $f_j = 105$ [Hz] $\approx$ $0.89 f_B$ reveals a universal design rule for locally resonant metamaterials: optimal performance occurs when the resonator frequency is positioned slightly below the Bragg frequency, maximizing the interaction between local and geometric scattering mechanisms. This confirms the fundamental importance of resonator frequency tuning for achieving optimal bandgap performance.} 
 
 
 Next, rectangular lattice analysis, the transition from square to rectangular geometry introduces geometric anisotropy that fundamentally alters metamaterial behavior through two primary mechanisms: reduced unit cell area ($0.50 \times 10^{-2}$ $m^2$ vs. $1.00 \times 10^{-2}$ $m^2$ for square) and directional wave propagation asymmetry. Figure \ref{pwe_fem_disp_modal_rect} quantifies these geometric effects on band gap formation:
@@ -540,6 +540,7 @@ Figure~\ref{pwe_fem_disp_modal_hex} demonstrates the revolutionary advance achie
 
 
 \textcolor{red}{Kagomé triple-resonator architecture positions three resonators at \( \mathbf{r_1} = a(-1/2, -\sqrt{3}/6) \), \( \mathbf{r_2} = a(-1/2, -\sqrt{3}/6) \), and \( \mathbf{r_3} = a(\sqrt{3}/3, 0) \) with $120^\circ$ triangular symmetry creating intricate phase relationships fundamentally different from honeycomb. Three-fold rotational symmetry produces narrow but well-defined band gaps through unique interference patterns, effective for precise frequency-selective attenuation. FIBZ coordinates \( \Gamma = (0,0) \), \( X = \pi/a(1/\sqrt{3},0) \), \( M = \pi/a(1/2\sqrt{3},1/2) \), \( X' = \pi/a(1/2\sqrt{3},1/2) \), \( M' = \pi/a(0,2/3) \) with three identical resonators (\( k_j = 246.16 \) N/m) following path \( M' \longrightarrow \Gamma \longrightarrow X \longrightarrow M \longrightarrow X' \longrightarrow M' \); adjusted frequency \( f_j = 80 \) Hz enables direct honeycomb comparison.}
+
 \newpage
 \begin{figure}[htb]
 	\centering
@@ -910,7 +911,7 @@ The statistical validation confirms the correlation between geometric parameters
 
 This study presents the first systematic comparative analysis of five distinct lattice configurations for flexural wave attenuation in locally resonant metamaterial plates, establishing fundamental relationships between lattice geometry, resonator frequency, and band gap performance through a comprehensive framework combining semi-analytical PWE/EPWE methods with FEM validation.
 
-\textcolor{red}{The systematic comparative investigation of five lattice configurations establishes fundamental performance hierarchies and reveals critical distinctions between system architectures. Single-resonator lattices (square, rectangular, triangular) exhibit single complete band gap behavior with triangular geometry achieving superior broadband performance (35\% superior relative bandwidth: 42.51\% vs 31.40\% for square). Multi-resonator systems (honeycomb with 2 resonators per unit cell, kagomé with 3 resonators) display dual complete band gaps arising from distinct in-phase and anti-phase resonator coupling modes, enabling multi-frequency attenuation capabilities. Comprehensive bandwidth evolution analysis across 15 resonator frequencies (10-150 Hz) for all five geometries establishes frequency-dependent performance maps: kagomé lattices provide exceptional low-frequency attenuation (up to 15 [dB] enhancement) through triple-resonator coupling; honeycomb configurations offer balanced dual-mode capability ideal for broadband applications; square lattices deliver consistent mid-range performance; while rectangular lattices show limited effectiveness but enable directional control applications. Building upon the resonance-Bragg coupling principles established by Xiao et al.~\cite{Xiao_2012}, this work demonstrates that optimal bandgap formation requires simultaneous optimization of both resonator frequency tuning and lattice geometry selection. This establishes a paradigm shift from geometry-only to combined geometry-frequency design approaches, with optimal lattice selection dependent on target frequency ranges and application requirements.}
+\textcolor{red}{The systematic comparative investigation of five lattice configurations establishes fundamental performance hierarchies and reveals critical distinctions between system architectures. Single-resonator lattices (square, rectangular, triangular) exhibit single complete band gap behavior with triangular geometry achieving superior broadband performance (35\% superior relative bandwidth: 42.51\% vs 31.40\% for square). Multi-resonator systems (honeycomb with 2 resonators per unit cell, kagomé with 3 resonators) display dual complete band gaps arising from distinct in-phase and anti-phase resonator coupling modes, enabling multi-frequency attenuation capabilities. Comprehensive bandwidth evolution analysis across 15 resonator frequencies (10-150 Hz) for all five geometries establishes frequency-dependent performance maps: kagomé lattices provide exceptional low-frequency attenuation (up to 15 [dB] enhancement) through triple-resonator coupling; honeycomb configurations offer balanced dual-mode capability ideal for broadband applications; square lattices deliver consistent mid-range performance; while rectangular lattices show limited effectiveness but enable directional control applications. This work demonstrates that optimal bandgap formation requires simultaneous optimization of both resonator frequency tuning and lattice geometry selection. This establishes a paradigm shift from geometry-only to combined geometry-frequency design approaches, with optimal lattice selection dependent on target frequency ranges and application requirements.}
 
 The semi-analytical framework demonstrates computational efficiency gains of two orders of magnitude over conventional FEM approaches, reducing analysis time from hours to minutes while maintaining prediction accuracy within $5\%$. Validation between infinite-domain predictions and finite plate performance confirms practical applicability, with finite plates consistently exhibiting $40-50\%$ bandwidth expansion due to boundary-induced mode coupling effects.
 
@@ -1069,17 +1070,17 @@ Physical interpretation: $\text{Re}(k)$ represents propagating modes while $\tex
 \newpage
 \section{Extension to Structural Materials - Multi-Scale Analysis}\label{multi_material_analysis}
 
-While this study focuses on polymeric materials for practical validation through rapid prototyping, the PWE/EPWE methodology developed is applicable to a broad range of structural materials. \textcolor{red}{This appendix demonstrates the universality of our framework by extending the analysis to metallic and composite materials (aluminum and carbon/epoxy), revealing that the geometric advantages identified for different lattice configurations represent material-independent design principles. For brevity, only the PWE method is implemented in this multi-material analysis, as the main study has already validated the excellent agreement between PWE and EPWE approaches.}
+While this study focuses on polymeric materials for practical validation through rapid prototyping, the PWE/EPWE methodology developed is applicable to a broad range of structural materials. \textcolor{red}{This condensed appendix demonstrates the universality of our framework across aluminum and carbon/epoxy materials, confirming that geometric performance advantages represent material-independent design principles. Only essential findings are presented to maintain manuscript conciseness while addressing material generalizability.}
 
 \subsection{Material Properties and Scaling Analysis}
 
-The choice of Vero White Plus polymeric material was strategically motivated by rapid prototyping capabilities through 3D printing, enabling precise fabrication of complex lattice geometries with controlled tolerances for experimental validation. However, structural engineering applications often require materials with significantly higher bending stiffness, necessitating analysis across multiple material scales. \textcolor{red}{The aluminum material properties (E = 70 GPa, $\nu$ = 0.3) were obtained from the work of Xiao et al. \cite{Xiao_2012}, while the carbon fiber/epoxy composite properties (E = 135 GPa, $\rho$ = 1580 kg/m³, $\nu$ = 0.30) were obtained from the Composite Materials Handbook-17 \cite{CMH17_2012}.}
+\textcolor{red}{Three materials spanning 150× stiffness variation are analyzed: Vero White Plus polymer (baseline), aluminum 6061 \cite{Xiao_2012}, and carbon/epoxy composite \cite{CMH17_2012}.}
 
-Table \ref{tab:material_properties_comparison} presents the comparative material properties used in this multi-scale analysis:
+Table \ref{tab:material_properties_comparison} presents the comparative material properties used in this multi-material analysis:
 
 \begin{table}[!htb]
 \centering
-\caption{Comparative material properties for multi-scale analysis}
+\caption{Comparative material properties for multi-material analysis}
 \label{tab:material_properties_comparison}
 \small
 \begin{tabular}{lccccc}
@@ -1093,11 +1094,9 @@ Carbon/Epoxy UD & 135 & 1580 & 0.30 & 9.89$\times$10$^{1}$ & 150.1 \\
 \end{tabular}
 \end{table}
 
-The bending stiffness $D = Eh^3/12(1-\nu^2)$ scales dramatically across materials, with carbon/epoxy composite exhibiting 150× higher rigidity than the polymer. This scaling directly affects the operational frequency ranges while maintaining the validity of Kirchhoff-Love thin plate assumptions (h/a = 0.02 $\ll$ 0.1).
+\subsection{Frequency Scaling and Key Results}
 
-\subsection{Frequency Scaling and Operational Ranges}
-
-The characteristic frequency scaling follows the relationship $f_{B_1} = (1/2\pi)(\pi/a\cos\phi)^2 \sqrt{D/\rho h}$, resulting in proportional frequency shifts across materials while preserving geometric relationships. \textcolor{red}{It should be noted that these Bragg frequencies are calculated specifically for square lattice configurations, following the methodology established by Xiao et al. \cite{Xiao_2012}, where $\phi = 0$ corresponds to the $\Gamma$-X direction in the first Brillouin zone.} Table \ref{tab:frequency_scaling} summarizes the operational frequency ranges for each material:
+\textcolor{red}{Frequency scaling follows $f_{B_1} \propto \sqrt{D/\rho h}$, shifting operational ranges proportionally while preserving geometric performance hierarchies.} Table \ref{tab:frequency_scaling} summarizes the operational frequency ranges for each material:
 
 \begin{table}[!htb]
 \centering
@@ -1156,7 +1155,7 @@ $f_j$ & Square & Rectangular & Triangular & Honeycomb & Honeycomb & Kagom\'{e} &
 \hline
 \end{tabular}
 \footnotetext[1]{Material properties from Xiao et al. \cite{Xiao_2012}. All FBGW values in Hz. Bold: maximum FBGW. --: no bandgap.}
-\footnotetext[2]{Bragg frequency for square lattice ($f_B = 484$ Hz).}
+\footnotetext[2]{Bragg frequency calculated for square lattice configuration ($f_B = 484$ Hz).}
 \end{table}}
 
 \subsubsection{Carbon/Epoxy Analysis (250-1400 Hz Range)}
@@ -1197,7 +1196,7 @@ $f_j$ & Square & Rectangular & Triangular & Honeycomb & Honeycomb & Kagom\'{e} &
 \hline
 \end{tabular}
 \footnotetext[1]{Material properties from CMH-17 \cite{CMH17_2012}. All FBGW values in Hz. Bold: maximum FBGW. --: no bandgap.}
-\footnotetext[2]{Bragg frequency for square lattice ($f_B = 879$ Hz).}
+\footnotetext[2]{Bragg frequency calculated for square lattice configuration ($f_B = 879$ Hz).}
 \end{table}}
 
 \textcolor{red}{The comparative analysis across aluminum and carbon/epoxy materials reveals consistent lattice performance hierarchy. Tables \ref{tab:aluminum_results} and \ref{tab:carbon_results} demonstrate that triangular lattices achieve superior relative bandwidth (40-42\%) across all materials spanning 150× stiffness variation, validating that geometric advantages represent material-independent design principles. The frequency scaling preserves this hierarchy while shifting operational ranges proportionally to material stiffness ($\sqrt{D/\rho h}$), confirming PWE methodology robustness across the entire structural material spectrum studied.}

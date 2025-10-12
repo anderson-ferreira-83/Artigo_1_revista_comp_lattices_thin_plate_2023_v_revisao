@@ -1,0 +1,758 @@
+COMENTÁRIOS EXTRAÍDOS DO PDF
+==================================================
+Data/Hora: 11/10/2025 21:17:03
+Total de comentários: 67
+
+COMENTÁRIO 1
+Página: 1
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: Edson Jansen Pedrosa de Miranda Junior
+Data criação: D:20251011083501-03'00'
+Data modificação: D:20251011083524-03'00'
+Coordenadas: [158.22909545898438, 227.0234375, 328.1268005371094, 240.65234375]
+----------------------------------------
+
+COMENTÁRIO 2
+Página: 1
+Tipo: Text
+Título: edson.jansen@hotmail.com
+Autor: Comment
+Conteúdo: Antes desses nossos primeiros agradecimentos, eu sugiro incluir os comentários do Editor: 
+
+"Thank you for submitting your paper to Mechanical Systems and Signal Processing.
+
+I have considered the comments of the reviewers (appended below) and decided that the paper should be revised to take into account these comments.
+
+When revising your manuscript please include a point-by-point response to all the reviewers' comments and ensure that all modified text is printed in red. If the response to the reviewers' comments is not complete and descriptive, I will be unable to make a prompt decision on the paper.
+
+Please also consult both the journal's Guide for Authors, and the information on electronic artwork preparation at the following website: https://www.editorialmanager.com/ymssp/.
+
+I would appreciate if you could submit your revised paper by 15 Oct 2025."
+Data criação: D:20251011083619-03'00'
+Data modificação: D:20251011083729-03'00'
+Coordenadas: [272.434814453125, 369.6395263671875, 292.434814453125, 387.6395263671875]
+----------------------------------------
+
+COMENTÁRIO 3
+Página: 1
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: O que seria esse ",5"?
+Data criação: D:20251011083929-03'00'
+Data modificação: D:20251011083955-03'00'
+Coordenadas: [369.59259033203125, 478.6440124511719, 386.47119140625, 491.0804138183594]
+----------------------------------------
+
+COMENTÁRIO 4
+Página: 1
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: Conforme conversamos, aqui parece haver um certo exagero. Talvez, 1 ou 2 já sejam suficientes.
+Data criação: D:20251011084003-03'00'
+Data modificação: D:20251011084108-03'00'
+Coordenadas: [278.07391357421875, 501.1600036621094, 369.1015930175781, 513.596435546875]
+----------------------------------------
+
+COMENTÁRIO 5
+Página: 1
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: Conforme conversamos, esse Apêndice deve ser reduzido.
+Data criação: D:20251011084111-03'00'
+Data modificação: D:20251011084252-03'00'
+Coordenadas: [292.9211120605469, 537.2249755859375, 352.4761047363281, 549.661376953125]
+----------------------------------------
+
+COMENTÁRIO 6
+Página: 1
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: Conforme conversamos, verificar o número máximo de caracteres da Elsevier. Eles continuam grandes e ultrapassam esse limite.
+Data criação: D:20251011084253-03'00'
+Data modificação: D:20251011084408-03'00'
+Coordenadas: [110.32510375976562, 608.9613037109375, 205.08279418945312, 621.7139892578125]
+----------------------------------------
+
+COMENTÁRIO 7
+Página: 1
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: Conforme conversamos, acho que você ficou de reduzir mais ainda essa seção.
+Data criação: D:20251011084409-03'00'
+Data modificação: D:20251011084437-03'00'
+Coordenadas: [110.32510375976562, 631.477294921875, 212.81739807128906, 644.22998046875]
+----------------------------------------
+
+COMENTÁRIO 8
+Página: 2
+Tipo: Text
+Título: edson.jansen@hotmail.com
+Autor: Comment
+Conteúdo: Antes desse nosso agradecimento, sugiro incluir esse comentário geral do Revisor #1:
+
+"This work presents a comparative analysis of band gaps and vibration attenuation of locally resonant metamaterial plate across five distinct periodic configurations. This is an interesting topic worth studying. Before I can recommend the publication of the manuscript in MSSP, I suggest the authors address the following comments:"
+Data criação: D:20251011084536-03'00'
+Data modificação: D:20251011084642-03'00'
+Coordenadas: [97.8125, 84.609130859375, 117.8125, 102.609130859375]
+----------------------------------------
+
+COMENTÁRIO 9
+Página: 2
+Tipo: Text
+Título: edson.jansen@hotmail.com
+Autor: Comment
+Conteúdo: Faltou incluir o restante do primeiro comentário do revisor:
+
+"For example, the beginning frequency of the widest bandgap can be carefully designed to be the same as the case of triangular lattice."
+Data criação: D:20251011085204-03'00'
+Data modificação: D:20251011085239-03'00'
+Coordenadas: [189.0240936279297, 339.0362243652344, 209.0240936279297, 357.0362243652344]
+----------------------------------------
+
+COMENTÁRIO 10
+Página: 3
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: Atualizar. Parece não corresponder corretamente.
+Data criação: D:20251011085954-03'00'
+Data modificação: D:20251011090013-03'00'
+Coordenadas: [249.16909790039062, 132.69329833984375, 299.84320068359375, 145.446044921875]
+----------------------------------------
+
+COMENTÁRIO 11
+Página: 3
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: Atualizar. Parece não corresponder, nem a subseção, nem as linhas.
+Data criação: D:20251011090051-03'00'
+Data modificação: D:20251011090124-03'00'
+Coordenadas: [124.21630096435547, 274.66729736328125, 408.8577880859375, 287.4200439453125]
+----------------------------------------
+
+COMENTÁRIO 12
+Página: 3
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: Atualizar.
+Data criação: D:20251011090242-03'00'
+Data modificação: D:20251011090325-03'00'
+Coordenadas: [124.21630096435547, 416.65130615234375, 459.7488098144531, 429.4040222167969]
+----------------------------------------
+
+COMENTÁRIO 13
+Página: 3
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: Atualizar.
+Data criação: D:20251011090417-03'00'
+Data modificação: D:20251011090442-03'00'
+Coordenadas: [171.16909790039062, 581.622314453125, 212.1448974609375, 594.375]
+----------------------------------------
+
+COMENTÁRIO 14
+Página: 3
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: Atualizar.
+Data criação: D:20251011090452-03'00'
+Data modificação: D:20251011090459-03'00'
+Coordenadas: [186.95449829101562, 661.3233032226562, 238.83949279785156, 674.0760498046875]
+----------------------------------------
+
+COMENTÁRIO 15
+Página: 4
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: Atualizar.
+Data criação: D:20251011090555-03'00'
+Data modificação: D:20251011090604-03'00'
+Coordenadas: [124.21630096435547, 71.352294921875, 370.30511474609375, 84.10504150390625]
+----------------------------------------
+
+COMENTÁRIO 16
+Página: 4
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: Eu removeria essa palavra.
+Data criação: D:20251011090605-03'00'
+Data modificação: D:20251011090648-03'00'
+Coordenadas: [161.79769897460938, 91.27203369140625, 228.96719360351562, 103.70843505859375]
+----------------------------------------
+
+COMENTÁRIO 17
+Página: 5
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: Atualizar e lembrar de reduzir o número de citações.
+Data criação: D:20251011091231-03'00'
+Data modificação: D:20251011091257-03'00'
+Coordenadas: [67.88130187988281, 492.1600036621094, 527.396484375, 518.1453857421875]
+----------------------------------------
+
+COMENTÁRIO 18
+Página: 5
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: Acho que ficou estranho escrever dessa forma. Parece meio forçado e uma tentativa "não natural" de incluir os trabalhos do Xiao et al. [46].
+Data criação: D:20251011091315-03'00'
+Data modificação: D:20251011091405-03'00'
+Coordenadas: [67.8052978515625, 611.9172973632812, 326.3741149902344, 624.6700439453125]
+----------------------------------------
+
+COMENTÁRIO 19
+Página: 5
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: Atualizar.
+Data criação: D:20251011091543-03'00'
+Data modificação: D:20251011091552-03'00'
+Coordenadas: [189.77999877929688, 631.4432983398438, 260.45050048828125, 644.196044921875]
+----------------------------------------
+
+COMENTÁRIO 20
+Página: 6
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: Atualizar.
+Data criação: D:20251011092056-03'00'
+Data modificação: D:20251011092103-03'00'
+Coordenadas: [189.77999877929688, 71.352294921875, 260.45050048828125, 84.10504150390625]
+----------------------------------------
+
+COMENTÁRIO 21
+Página: 6
+Tipo: Text
+Título: edson.jansen@hotmail.com
+Autor: Comment
+Conteúdo: Pode remover talvez esse, pois, neste parágrafo da Introdução, você está discutindo apenas trabalhos recentes.
+Data criação: D:20251011092103-03'00'
+Data modificação: D:20251011092131-03'00'
+Coordenadas: [489.0624084472656, 99.610595703125, 509.0624084472656, 117.610595703125]
+----------------------------------------
+
+COMENTÁRIO 22
+Página: 6
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: 
+Data criação: D:20251011092142-03'00'
+Data modificação: D:20251011092142-03'00'
+Coordenadas: [361.58758544921875, 236.533203125, 373.16351318359375, 249.2860107421875]
+----------------------------------------
+
+COMENTÁRIO 23
+Página: 6
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: 
+Data criação: D:20251011092146-03'00'
+Data modificação: D:20251011092146-03'00'
+Coordenadas: [191.26390075683594, 380.7923278808594, 202.83970642089844, 393.5450134277344]
+----------------------------------------
+
+COMENTÁRIO 24
+Página: 6
+Tipo: Text
+Título: edson.jansen@hotmail.com
+Autor: Comment
+Conteúdo: A seguir, pensar no que remover, para não ficar com as 8 citações ao trabalho do Xiao et al. [46].
+Data criação: D:20251011092211-03'00'
+Data modificação: D:20251011092258-03'00'
+Coordenadas: [493.86309814453125, 177.6190185546875, 513.8629760742188, 195.6190185546875]
+----------------------------------------
+
+COMENTÁRIO 25
+Página: 6
+Tipo: Text
+Título: edson.jansen@hotmail.com
+Autor: Comment
+Conteúdo: Remover?
+Data criação: D:20251011092403-03'00'
+Data modificação: D:20251011092418-03'00'
+Coordenadas: [470.4601135253906, 440.4471130371094, 490.4601135253906, 458.4471130371094]
+----------------------------------------
+
+COMENTÁRIO 26
+Página: 6
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: 
+Data criação: D:20251011092418-03'00'
+Data modificação: D:20251011092418-03'00'
+Coordenadas: [360.2785949707031, 615.11328125, 371.8544006347656, 627.8660278320312]
+----------------------------------------
+
+COMENTÁRIO 27
+Página: 6
+Tipo: Text
+Título: edson.jansen@hotmail.com
+Autor: Comment
+Conteúdo: Remover?
+Data criação: D:20251011092403-03'00'
+Data modificação: D:20251011092418-03'00'
+Coordenadas: [370.247314453125, 684.0731201171875, 390.247314453125, 702.0731201171875]
+----------------------------------------
+
+COMENTÁRIO 28
+Página: 6
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: Atualizar.
+Data criação: D:20251011092516-03'00'
+Data modificação: D:20251011092522-03'00'
+Coordenadas: [356.00189208984375, 174.96429443359375, 402.4324035644531, 187.717041015625]
+----------------------------------------
+
+COMENTÁRIO 29
+Página: 6
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: Atualizar.
+Data criação: D:20251011092523-03'00'
+Data modificação: D:20251011092529-03'00'
+Coordenadas: [293.3836975097656, 278.5751953125, 339.814208984375, 291.3280029296875]
+----------------------------------------
+
+COMENTÁRIO 30
+Página: 6
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: Atualizar.
+Data criação: D:20251011092530-03'00'
+Data modificação: D:20251011092536-03'00'
+Coordenadas: [338.9400939941406, 436.38330078125, 385.37060546875, 449.1360168457031]
+----------------------------------------
+
+COMENTÁRIO 31
+Página: 6
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: Atualizar.
+Data criação: D:20251011092537-03'00'
+Data modificação: D:20251011092542-03'00'
+Coordenadas: [316.33648681640625, 553.5443115234375, 362.76690673828125, 566.2969970703125]
+----------------------------------------
+
+COMENTÁRIO 32
+Página: 6
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: Atualizar.
+Data criação: D:20251011092543-03'00'
+Data modificação: D:20251011092550-03'00'
+Coordenadas: [307.827392578125, 670.705322265625, 354.2578125, 683.4580078125]
+----------------------------------------
+
+COMENTÁRIO 33
+Página: 7
+Tipo: Text
+Título: edson.jansen@hotmail.com
+Autor: Comment
+Conteúdo: Remover. Evitar usar citações nas Conclusões.
+Data criação: D:20251011092403-03'00'
+Data modificação: D:20251011092515-03'00'
+Coordenadas: [252.03219604492188, 72.6077880859375, 272.0321960449219, 90.6077880859375]
+----------------------------------------
+
+COMENTÁRIO 34
+Página: 7
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: Atualizar.
+Data criação: D:20251011092557-03'00'
+Data modificação: D:20251011092627-03'00'
+Coordenadas: [186.95449829101562, 71.352294921875, 238.83949279785156, 84.10504150390625]
+----------------------------------------
+
+COMENTÁRIO 35
+Página: 8
+Tipo: Text
+Título: edson.jansen@hotmail.com
+Autor: Comment
+Conteúdo: Acho que faltou mencionar que um dos nossos objetivos de termos escolhido um parâmetro de rede ("a") próximo de \lambda/2 é para investigar os casos que analisamos (i.e., ressonância local antes, próximo e depois da primeira frequência de Bragg), visando identificar a influência do tipo de rede quando a ressonância local se encontra antes do band gap de Bragg, no acoplamento de Bragg e depois do band gap de Bragg.
+Data criação: D:20251011092906-03'00'
+Data modificação: D:20251011093158-03'00'
+Coordenadas: [298.83819580078125, 551.4589233398438, 318.83819580078125, 569.4589233398438]
+----------------------------------------
+
+COMENTÁRIO 36
+Página: 8
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: Atualizar.
+Data criação: D:20251011093319-03'00'
+Data modificação: D:20251011093426-03'00'
+Coordenadas: [181.59820556640625, 640.6093139648438, 228.02859497070312, 653.3619995117188]
+----------------------------------------
+
+COMENTÁRIO 37
+Página: 9
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: Remover? Acho que ficou estranho essa parte.
+Data criação: D:20251011093427-03'00'
+Data modificação: D:20251011093449-03'00'
+Coordenadas: [67.88130187988281, 71.7449951171875, 478.9601135253906, 180.221435546875]
+----------------------------------------
+
+COMENTÁRIO 38
+Página: 10
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: Atualizar.
+Data criação: D:20251011093655-03'00'
+Data modificação: D:20251011093704-03'00'
+Coordenadas: [71.43810272216797, 581.8892822265625, 153.01759338378906, 594.6420288085938]
+----------------------------------------
+
+COMENTÁRIO 39
+Página: 10
+Tipo: Text
+Título: edson.jansen@hotmail.com
+Autor: Comment
+Conteúdo: Lembrar de reduzir o Apêndice C. Estou com receio do artigo voltar, pois pode ter se alongado com a inclusão desse Apêndice.
+Data criação: D:20251011093704-03'00'
+Data modificação: D:20251011093739-03'00'
+Coordenadas: [532.8679809570312, 552.6591186523438, 552.8679809570312, 570.6591186523438]
+----------------------------------------
+
+COMENTÁRIO 40
+Página: 10
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: Análise de multi-escala acho que pode significar outra coisa no âmbito da Mecânica. Sugiro alterar a nomenclatura para evitar confusão.
+Data criação: D:20251011093744-03'00'
+Data modificação: D:20251011093832-03'00'
+Coordenadas: [418.7184143066406, 568.34033203125, 522.0178833007812, 581.093017578125]
+----------------------------------------
+
+COMENTÁRIO 41
+Página: 10
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: ? Referência?
+Data criação: D:20251011093848-03'00'
+Data modificação: D:20251011093913-03'00'
+Coordenadas: [333.13800048828125, 692.3560180664062, 378.5002136230469, 704.7924194335938]
+----------------------------------------
+
+COMENTÁRIO 42
+Página: 11
+Tipo: Text
+Título: edson.jansen@hotmail.com
+Autor: Comment
+Conteúdo: Para rede quadrada? Especificar.
+Data criação: D:20251011093913-03'00'
+Data modificação: D:20251011093927-03'00'
+Coordenadas: [363.04638671875, 137.41473388671875, 383.04638671875, 155.41473388671875]
+----------------------------------------
+
+COMENTÁRIO 43
+Página: 11
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: Essa conclusão se aplicando à diversos materiais parece ser algo que pode potencializar muito esse nosso artigo. Mencionar algo no Resumo e Conclusões? Ainda vou ler. Estou lendo só as alterações, por enquanto.
+Data criação: D:20251011094005-03'00'
+Data modificação: D:20251011094103-03'00'
+Coordenadas: [95.0781021118164, 259.0533447265625, 478.5238037109375, 271.88238525390625]
+----------------------------------------
+
+COMENTÁRIO 44
+Página: 11
+Tipo: Text
+Título: edson.jansen@hotmail.com
+Autor: Comment
+Conteúdo: Então há uma relação entre o tipo de rede e a escolha do material? Muito interessante. Isso poderia ser outro trabalho para uma revista de materiais, ainda mais se tivermos experimentos e outros materiais.
+Data criação: D:20251011094136-03'00'
+Data modificação: D:20251011094222-03'00'
+Coordenadas: [405.05169677734375, 435.0465087890625, 425.05169677734375, 453.0465087890625]
+----------------------------------------
+
+COMENTÁRIO 45
+Página: 11
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: Atualizar.
+Data criação: D:20251011094303-03'00'
+Data modificação: D:20251011094316-03'00'
+Coordenadas: [234.62730407714844, 572.9493408203125, 281.0577087402344, 585.7020263671875]
+----------------------------------------
+
+COMENTÁRIO 46
+Página: 11
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: Atualizar.
+Data criação: D:20251011094318-03'00'
+Data modificação: D:20251011094406-03'00'
+Coordenadas: [205.70730590820312, 686.9913330078125, 252.1376953125, 699.7440185546875]
+----------------------------------------
+
+COMENTÁRIO 47
+Página: 14
+Tipo: Text
+Título: edson.jansen@hotmail.com
+Autor: Comment
+Conteúdo: Mencionar logo aqui que um dos motivos também para termos mantido o "a" constante foi termos incluído a análise da frequência normalizada.
+Data criação: D:20251011095657-03'00'
+Data modificação: D:20251011095754-03'00'
+Coordenadas: [534.0681762695312, 334.8358154296875, 554.0681762695312, 352.8358154296875]
+----------------------------------------
+
+COMENTÁRIO 48
+Página: 14
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: 
+Data criação: D:20251011100109-03'00'
+Data modificação: D:20251011100109-03'00'
+Coordenadas: [280.78369140625, 574.4703369140625, 292.3595886230469, 587.2230224609375]
+----------------------------------------
+
+COMENTÁRIO 49
+Página: 14
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: Onde está a referência? Incluir ela aqui. Pelo menos o DOI.
+Data criação: D:20251011100125-03'00'
+Data modificação: D:20251011100337-03'00'
+Coordenadas: [404.5578918457031, 624.0230102539062, 527.396484375, 636.4594116210938]
+----------------------------------------
+
+COMENTÁRIO 50
+Página: 15
+Tipo: Text
+Título: edson.jansen@hotmail.com
+Autor: Comment
+Conteúdo: Esse comentário do revisor pode ser uma ideia muito interessante para um futuro trabalho nosso com a inclusão de alguma estratégia de otimização.
+Data criação: D:20251011100337-03'00'
+Data modificação: D:20251011100427-03'00'
+Coordenadas: [537.0684814453125, 499.8534240722656, 557.0684814453125, 517.8533935546875]
+----------------------------------------
+
+COMENTÁRIO 51
+Página: 15
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: Atualizar.
+Data criação: D:20251011100646-03'00'
+Data modificação: D:20251011100745-03'00'
+Coordenadas: [267.0928039550781, 681.2653198242188, 313.523193359375, 694.0180053710938]
+----------------------------------------
+
+COMENTÁRIO 52
+Página: 19
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: ??
+Data criação: D:20251011101109-03'00'
+Data modificação: D:20251011101132-03'00'
+Coordenadas: [398.0669860839844, 350.8900146484375, 497.3201904296875, 363.326416015625]
+----------------------------------------
+
+COMENTÁRIO 53
+Página: 19
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: ??
+Data criação: D:20251011101133-03'00'
+Data modificação: D:20251011101206-03'00'
+Coordenadas: [95.15399932861328, 582.0230102539062, 290.3963928222656, 594.4594116210938]
+----------------------------------------
+
+COMENTÁRIO 54
+Página: 19
+Tipo: Text
+Título: edson.jansen@hotmail.com
+Autor: Comment
+Conteúdo: Conforme conversamos, reduzir o tamanho dos Highlights, segundo as normas da Elsevier.
+Data criação: D:20251011101206-03'00'
+Data modificação: D:20251011101237-03'00'
+Coordenadas: [350.4447021484375, 69.607421875, 370.4447021484375, 87.607421875]
+----------------------------------------
+
+COMENTÁRIO 55
+Página: 20
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: ??
+Data criação: D:20251011101243-03'00'
+Data modificação: D:20251011101340-03'00'
+Coordenadas: [85.88130187988281, 426.01702880859375, 295.6763916015625, 438.4533996582031]
+----------------------------------------
+
+COMENTÁRIO 56
+Página: 22
+Tipo: Text
+Título: edson.jansen@hotmail.com
+Autor: Comment
+Conteúdo: Encurtar essa seção, conforme conversamos na última reunião. Em seguida, atualizar os itens abaixo.
+Data criação: D:20251011101356-03'00'
+Data modificação: D:20251011101426-03'00'
+Coordenadas: [340.243408203125, 132.01409912109375, 360.243408203125, 150.01409912109375]
+----------------------------------------
+
+COMENTÁRIO 57
+Página: 23
+Tipo: Text
+Título: edson.jansen@hotmail.com
+Autor: Comment
+Conteúdo: Alterar a localização das linhas e a numeração das tabelas abaixo, conforme a versão do artigo que será submetida.
+Data criação: D:20251011101501-03'00'
+Data modificação: D:20251011101535-03'00'
+Coordenadas: [272.434814453125, 333.6357116699219, 292.434814453125, 351.6357116699219]
+----------------------------------------
+
+COMENTÁRIO 58
+Página: 24
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: ?
+Data criação: D:20251011101853-03'00'
+Data modificação: D:20251011101910-03'00'
+Coordenadas: [95.44860076904297, 213.0159912109375, 141.70530700683594, 225.452392578125]
+----------------------------------------
+
+COMENTÁRIO 59
+Página: 25
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: 
+Data criação: D:20251011101914-03'00'
+Data modificação: D:20251011101914-03'00'
+Coordenadas: [167.3531951904297, 186.05859375, 286.1890869140625, 209.37091064453125]
+----------------------------------------
+
+COMENTÁRIO 60
+Página: 25
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: 
+Data criação: D:20251011101917-03'00'
+Data modificação: D:20251011101917-03'00'
+Coordenadas: [167.3531951904297, 149.79449462890625, 286.1890869140625, 161.15191650390625]
+----------------------------------------
+
+COMENTÁRIO 61
+Página: 25
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: 
+Data criação: D:20251011101920-03'00'
+Data modificação: D:20251011101920-03'00'
+Coordenadas: [167.3531951904297, 210.36749267578125, 208.50079345703125, 221.72491455078125]
+----------------------------------------
+
+COMENTÁRIO 62
+Página: 25
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: 
+Data criação: D:20251011101921-03'00'
+Data modificação: D:20251011101921-03'00'
+Coordenadas: [167.3531951904297, 234.6766357421875, 280.4507141113281, 246.033935546875]
+----------------------------------------
+
+COMENTÁRIO 63
+Página: 25
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: 
+Data criação: D:20251011101922-03'00'
+Data modificação: D:20251011101922-03'00'
+Coordenadas: [167.3531951904297, 258.9844970703125, 208.50079345703125, 270.3419189453125]
+----------------------------------------
+
+COMENTÁRIO 64
+Página: 25
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: 
+Data criação: D:20251011101924-03'00'
+Data modificação: D:20251011101924-03'00'
+Coordenadas: [167.3531951904297, 283.29364013671875, 230.6376953125, 294.65093994140625]
+----------------------------------------
+
+COMENTÁRIO 65
+Página: 25
+Tipo: Highlight
+Título: edson.jansen@hotmail.com
+Autor: 
+Conteúdo: 
+Data criação: D:20251011101926-03'00'
+Data modificação: D:20251011101926-03'00'
+Coordenadas: [292.6942138671875, 186.05859375, 303.1271057128906, 197.4158935546875]
+----------------------------------------
+
+COMENTÁRIO 66
+Página: 25
+Tipo: Text
+Título: edson.jansen@hotmail.com
+Autor: Comment
+Conteúdo: Atualizar os itens em amarelo.
+Data criação: D:20251011101946-03'00'
+Data modificação: D:20251011101955-03'00'
+Coordenadas: [502.26409912109375, 125.41339111328125, 522.2642211914062, 143.41339111328125]
+----------------------------------------
+
+COMENTÁRIO 67
+Página: 25
+Tipo: Text
+Título: edson.jansen@hotmail.com
+Autor: Comment
+Conteúdo: Faltou agradecer o comentário do segundo revisor: 
+
+"Reviewer #2: This edition of manuscript can be accepted."
+Data criação: D:20251011102043-03'00'
+Data modificação: D:20251011102128-03'00'
+Coordenadas: [388.2496032714844, 528.056396484375, 408.2496032714844, 546.056396484375]
+----------------------------------------
+

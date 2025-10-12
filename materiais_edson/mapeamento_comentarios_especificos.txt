@@ -1,0 +1,165 @@
+MAPEAMENTO ESPECÍFICO: COMENTÁRIOS DO COAUTOR → AÇÕES NO MANUSCRITO
+====================================================================
+Fonte: manuscript_mssp2_vf_rev1.pdf
+Destino: manuscript_mssp2_vf.tex
+Total: 67 comentários analisados
+
+====================================================================
+COMENTÁRIOS COM AÇÃO ESPECÍFICA IDENTIFICADA
+====================================================================
+
+CATEGORIA A: CITAÇÕES E REFERÊNCIAS
+===================================
+
+📍 COMENTÁRIO 17 (Página 5): "Atualizar e lembrar de reduzir número de citações"
+   LOCALIZAÇÃO PDF: [67.88130187988281, 492.1600036621094, 527.396484375, 518.1453857421875]
+   AÇÃO: Revisar seção que contém muitas citações (provavelmente Introdução)
+   MÉTODO: grep -n "cite.*" manuscript_mssp2_vf.tex | head -20
+
+📍 COMENTÁRIO 18 (Página 5): "Ficou estranho... tentativa não natural de incluir Xiao et al."
+   LOCALIZAÇÃO PDF: [67.8052978515625, 611.9172973632812, 326.3741149902344, 624.6700439453125]
+   AÇÃO: Revisar integração natural das citações Xiao et al.
+   MÉTODO: grep -n -A3 -B3 "Xiao" manuscript_mssp2_vf.tex
+
+📍 COMENTÁRIO 24 (Página 6): "Pensar no que remover, para não ficar com 8 citações ao Xiao"
+   LOCALIZAÇÃO PDF: [493.86309814453125, 177.6190185546875, 513.8629760742188, 195.6190185546875]
+   AÇÃO: Reduzir de 13 para ~6-8 citações Xiao et al.
+   MÉTODO: Manter apenas citações essenciais
+
+📍 COMENTÁRIO 33 (Página 7): "Remover. Evitar usar citações nas Conclusões"
+   LOCALIZAÇÃO PDF: [252.03219604492188, 72.6077880859375, 272.0321960449219, 90.6077880859375]
+   AÇÃO: Localizar e remover citações na seção Conclusions
+   MÉTODO: grep -n -A10 -B10 "Conclusion" manuscript_mssp2_vf.tex
+
+📍 COMENTÁRIO 41 (Página 10): "? Referência?"
+   LOCALIZAÇÃO PDF: [333.13800048828125, 692.3560180664062, 378.5002136230469, 704.7924194335938]
+   AÇÃO: Verificar referência faltante ou incompleta
+   MÉTODO: Buscar por "[?]" ou referências quebradas
+
+CATEGORIA B: CONTEÚDO PARA REMOÇÃO/MODIFICAÇÃO
+==============================================
+
+📍 COMENTÁRIO 16 (Página 4): "Eu removeria essa palavra"
+   LOCALIZAÇÃO PDF: [161.79769897460938, 91.27203369140625, 228.96719360351562, 103.70843505859375]
+   AÇÃO: Identificar palavra específica para remoção
+   MÉTODO: Buscar na área correspondente do manuscrito
+
+📍 COMENTÁRIO 21 (Página 6): "Pode remover... discutindo apenas trabalhos recentes"
+   LOCALIZAÇÃO PDF: [489.0624084472656, 99.610595703125, 509.0624084472656, 117.610595703125]
+   AÇÃO: Revisar parágrafo sobre trabalhos recentes
+   MÉTODO: Buscar seção "recent" na Introdução
+
+📍 COMENTÁRIO 25 (Página 6): "Remover?"
+   LOCALIZAÇÃO PDF: [470.4601135253906, 440.4471130371094, 490.4601135253906, 458.4471130371094]
+   AÇÃO: Avaliar se trecho específico deve ser removido
+   MÉTODO: Localizar pelo contexto
+
+📍 COMENTÁRIO 27 (Página 6): "Remover?"
+   LOCALIZAÇÃO PDF: [370.247314453125, 684.0731201171875, 390.247314453125, 702.0731201171875]
+   AÇÃO: Avaliar se trecho específico deve ser removido
+   MÉTODO: Localizar pelo contexto
+
+📍 COMENTÁRIO 37 (Página 9): "Remover? Acho que ficou estranho essa parte"
+   LOCALIZAÇÃO PDF: [67.88130187988281, 71.7449951171875, 478.9601135253906, 180.221435546875]
+   AÇÃO: Localizar e avaliar remoção de trecho extenso
+   MÉTODO: Área grande - provavelmente parágrafo completo
+
+CATEGORIA C: ESPECIFICAÇÕES E CLARIFICAÇÕES
+==========================================
+
+📍 COMENTÁRIO 42 (Página 11): "Para rede quadrada? Especificar"
+   LOCALIZAÇÃO PDF: [363.04638671875, 137.41473388671875, 383.04638671875, 155.41473388671875]
+   AÇÃO: Adicionar especificação sobre rede quadrada
+   MÉTODO: Buscar contexto sobre square lattice
+
+📍 COMENTÁRIO 43 (Página 11): "Essa conclusão... potencializar muito esse artigo. Mencionar no Resumo e Conclusões?"
+   LOCALIZAÇÃO PDF: [95.0781021118164, 259.0533447265625, 478.5238037109375, 271.88238525390625]
+   AÇÃO: Considerar mencionar descoberta no Abstract e Conclusions
+   MÉTODO: Identificar conclusão específica sobre materiais
+
+📍 COMENTÁRIO 47 (Página 14): "Mencionar que um dos motivos para 'a' constante foi análise da frequência normalizada"
+   LOCALIZAÇÃO PDF: [534.0681762695312, 334.8358154296875, 554.0681762695312, 352.8358154296875]
+   AÇÃO: Adicionar justificativa para parâmetro 'a' constante
+   MÉTODO: Buscar seção sobre lattice parameter
+
+CATEGORIA D: ESTRUTURA E ORGANIZAÇÃO
+===================================
+
+📍 COMENTÁRIO 56 (Página 22): "Encurtar essa seção, conforme conversamos na última reunião"
+   LOCALIZAÇÃO PDF: [340.243408203125, 132.01409912109375, 360.243408203125, 150.01409912109375]
+   AÇÃO: Identificar seção específica para encurtamento
+   MÉTODO: Analisar página 22 do PDF original
+
+📍 COMENTÁRIO 57 (Página 23): "Alterar localização das linhas e numeração das tabelas"
+   LOCALIZAÇÃO PDF: [272.434814453125, 333.6357116699219, 292.434814453125, 351.6357116699219]
+   AÇÃO: Verificar numeração sequencial de tabelas
+   MÉTODO: grep "Table.*[0-9]" manuscript_mssp2_vf.tex
+
+CATEGORIA E: COMENTÁRIOS POSITIVOS/INFORMATIVOS
+==============================================
+
+📍 COMENTÁRIO 44 (Página 11): "Relação entre tipo de rede e escolha do material? Muito interessante"
+   TIPO: Comentário positivo - futuro trabalho
+   AÇÃO: Nenhuma ação necessária (sugestão para trabalho futuro)
+
+📍 COMENTÁRIO 50 (Página 15): "Comentário do revisor pode ser ideia interessante para futuro trabalho"
+   TIPO: Comentário positivo - futuro trabalho  
+   AÇÃO: Nenhuma ação necessária
+
+====================================================================
+COMENTÁRIOS JÁ IMPLEMENTADOS (VERIFICADOS)
+====================================================================
+
+✅ COMENTÁRIO 5 (Página 1): Apêndice C reduzido
+✅ COMENTÁRIO 6 (Página 1): Highlights dentro do limite Elsevier
+✅ COMENTÁRIO 40 (Página 10): "Multi-escala" → "multi-material"
+✅ COMENTÁRIO 54 (Página 19): Highlights otimizados
+
+====================================================================
+ROTEIRO DE IMPLEMENTAÇÃO PRIORIZADO
+====================================================================
+
+🔴 PRIORIDADE 1 - CITAÇÕES:
+   1. Revisar naturalidade citações Xiao et al. (Comentários 17, 18, 24)
+   2. Remover citações desnecessárias das Conclusões (Comentário 33)
+   3. Verificar referência faltante (Comentário 41)
+
+🟡 PRIORIDADE 2 - CONTEÚDO:
+   4. Localizar e remover/modificar trechos específicos (Comentários 16, 21, 25, 27, 37)
+   5. Adicionar especificações necessárias (Comentários 42, 47)
+   6. Considerar menções no Abstract/Conclusions (Comentário 43)
+
+🟢 PRIORIDADE 3 - ESTRUTURA:
+   7. Verificar numeração de tabelas (Comentário 57)
+   8. Identificar seção para encurtamento (Comentário 56)
+   9. Verificar todos os comentários "Atualizar"
+
+====================================================================
+FERRAMENTAS DE VERIFICAÇÃO
+====================================================================
+
+# Citações Xiao et al:
+grep -n "Xiao" manuscript_mssp2_vf.tex
+
+# Citações nas Conclusões:
+sed -n '/\\section.*Conclusion/,/\\section/p' manuscript_mssp2_vf.tex | grep cite
+
+# Referências de tabelas:
+grep -n "Table~\\\\ref" manuscript_mssp2_vf.tex
+
+# Verificar referências quebradas:
+grep -n "ref{" manuscript_mssp2_vf.tex | grep -v "label{"
+
+====================================================================
+RESULTADO ESPERADO
+====================================================================
+
+Após implementação completa:
+✅ Citações naturais e bem integradas
+✅ Conclusões sem citações desnecessárias  
+✅ Referências completas e corretas
+✅ Conteúdo otimizado sem redundâncias
+✅ Estrutura clara e bem organizada
+✅ Especificações técnicas adequadas
+
+OBJETIVO: Manuscrito polido, profissional e pronto para submissão final.
