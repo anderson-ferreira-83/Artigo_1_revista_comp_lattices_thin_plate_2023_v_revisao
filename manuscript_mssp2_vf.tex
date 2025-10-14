@@ -236,7 +236,7 @@ These geometries span orthogonal to complex lattice symmetries, enabling compreh
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=0.7\textwidth]{ilustr_unit_cell_type_lattice.pdf}
-\caption{LRSC unit cells and FIBZ paths: (\textit{a}) square, (\textit{b}) rectangular, (\textit{c}) triangular, (\textit{d}) honeycomb, (\textit{e}) kagomé lattices. Red squares: resonators. FIBZ high-symmetry paths: (\textit{f}) Square/Rectangular: $\Gamma(0,0) \to X(\pi/a,0) \to M(\pi/a,\pi/a)$; (\textit{g}) Triangular/Honeycomb/Kagomé: $M'(0,2\pi/3a) \to \Gamma(0,0) \to X(2\pi/3a,0) \to M(\pi/3a,\pi/\sqrt{3}a) \to X'(\pi/3a,\pi/\sqrt{3}a) \to M'$.}
+\caption{LRSC unit cells and FIBZ paths: (\textit{a}) square, (\textit{b}) rectangular, (\textit{c}) triangular, (\textit{d}) honeycomb, (\textit{e}) kagomé lattices. Red squares: resonators. FIBZ high-symmetry paths: (\textit{f}) Square, (\textit{g}) Rectangular and (\textit{h}) Triangular/Honeycomb/Kagomé.}
 	\label{ilustr_unit_cell_type_lattice}
 \end{figure}
 
@@ -415,9 +415,7 @@ Kagomé & $\Gamma$ & 21.37 & 21.52 & 0.70 & \multirow{3}{*}{1.67} \\
 \end{tabular}
 \end{table}
 
-{\footnotesize $^{\text{a}}$For hexagonal lattices (triangular, honeycomb, kagomé), only primary symmetry points ($\Gamma$, $X$, $M$) are validated as they fully define the irreducible Brillouin zone. Additional points ($X'$, $M'$) are equivalent due to 6-fold symmetry.}
-
-\textcolor{red}{PWE-FEM validation shows excellent agreement: 0.68\% ± 0.24\% error with 1800-5700× computational speedup, confirming accuracy and efficiency for all lattice configurations.}
+\textcolor{red}{PWE-FEM validation shows excellent agreement: 0.68\% ± 0.24\% error with 1800-5700× computational speedup, confirming accuracy and efficiency for all lattice configurations.} For hexagonal lattices (triangular, honeycomb, kagomé), only primary symmetry points ($\Gamma$, $X$, $M$) are validated as they fully define the irreducible Brillouin zone; additional points ($X'$, $M'$) are equivalent due to 6-fold symmetry.
 
 %---------------------------------------------------------
 \subsection{Band structures for square, rectangular and triangular SR-SDOF lattices}
@@ -663,7 +661,7 @@ Based on the structural parameters of the finite panel adjusted for the five spe
 
 \begin{table}[htb]
 	\centering
-	\caption{Size mesh discretization in FEM and their respective processing times for simulation in the five studied lattices\protect\footnotemark.}
+	\caption{Size mesh discretization in FEM and their respective processing times for simulation in the five studied lattices (all finite plate simulations performed using the computational setup described in Section~\ref{num_ex_disc}).}
 	\label{panel_param_latt}
 	\begin{tabular}{llllcr}
 		\hline
@@ -673,11 +671,10 @@ Based on the structural parameters of the finite panel adjusted for the five spe
 		Rectangular & 100 &    80  &    8.00e-02  &    9.08e02 &   4.20e01 \\
 		Triangular  & 100 &    80  &    14.48e-02 &     9.08e02 &   7.30e01 \\
 		Honeycomb   & 100 &    80  &    35.60e-02 &     9.08e02 &   8.20e01 \\
-		kagomé      & 100 &    80  &    50.54e-02 &     9.08e02 &   8.90e01  \\ 
+		kagomé      & 100 &    80  &    50.54e-02 &     9.08e02 &   8.90e01  \\
 		\hline
 	\end{tabular}
 \end{table}
-\footnotetext{All finite plate simulations were performed using the same computational setup described in Section~\ref{num_ex_disc}.}
 Table \ref{panel_param_latt} presents the discretization parameters for finite plates with five lattice configurations, following the same approach as Table \ref{param_geo_struc_cell_unit}. The integers \( m \) and \( n \) define the smallest mesh divisions in the \( x \) and \( y \) directions, respectively, while \( L_x \) and \( L_y \) represent the corresponding mesh sizes. Finally, \( t_{\text{FEM}} \) indicates the computational time required for each of the five plates with distinct periodic lattices.
 %%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Analysis of individual finite LRSC plates}\label{indi_panel_lats}
@@ -1120,7 +1117,7 @@ Using identical PWE computational parameters ($M = 3$, convergence tolerance 10$
 
 \textcolor{red}{\begin{table}[!htb]
 \centering
-\caption{Full band gap width evolution for Aluminum 6061 lattices with FBGW 1 and FBGW 2 for multi-resonator configurations\protect\footnotemark[1]}
+\caption{Full band gap width evolution for Aluminum 6061 lattices with FBGW 1 and FBGW 2 for multi-resonator configurations (material properties from Xiao et al.~\cite{Xiao_2012}; all FBGW values in Hz; bold: maximum FBGW; --: no bandgap; $f_B = 484$ Hz for square lattice).}
 \label{tab:aluminum_results}
 \small
 \begin{tabular}{cccccccc}
@@ -1142,16 +1139,15 @@ $f_j$ & Square & Rectangular & Triangular & Honeycomb & Honeycomb & Kagom\'{e} &
 425 & \textbf{131.1} & 74.7 & 145.8 & -- & 87.0 & -- & 26.6 \\
 450 & 111.0 & 5.4 & 161.7 & -- & 92.7 & -- & 23.1 \\
 475 & 111.0 & 30.7 & 172.1 & -- & 98.9 & -- & 20.0 \\
-484\protect\footnotemark[2] & 107.0 & 22.9 & 176.9 & -- & \textbf{101.2} & -- & 19.1 \\
+484$^a$ & 107.0 & 22.9 & 176.9 & -- & \textbf{101.2} & -- & 19.1 \\
 500 & 89.9 & -- & 198.4 & -- & 105.3 & -- & 17.8 \\
 525 & 89.9 & -- & 198.4 & -- & 111.1 & -- & 16.5 \\
 575 & 71.7 & -- & \textbf{222.0} & -- & 113.7 & -- & 16.4 \\
 625 & 56.2 & -- & 219.4 & -- & 93.6 & -- & 17.5 \\
 725 & 31.5 & -- & 196.1 & -- & 62.9 & -- & 17.4 \\
 \hline
+\multicolumn{8}{l}{$^a$Bragg frequency for square lattice configuration.} \\
 \end{tabular}
-\footnotetext[1]{Material properties from Xiao et al. \cite{Xiao_2012}. All FBGW values in Hz. Bold: maximum FBGW. --: no bandgap.}
-\footnotetext[2]{Bragg frequency calculated for square lattice configuration ($f_B = 484$ Hz).}
 \end{table}}
 
 \subsubsection{Carbon/Epoxy Analysis (300-1200 Hz Range)}
@@ -1161,7 +1157,7 @@ $f_j$ & Square & Rectangular & Triangular & Honeycomb & Honeycomb & Kagom\'{e} &
 \newpage
 \textcolor{red}{\begin{table}[!htb]
 \centering
-\caption{Full band gap width evolution for Carbon/Epoxy UD lattices with FBGW 1 and FBGW 2 for multi-resonator configurations\protect\footnotemark[1]}
+\caption{Full band gap width evolution for Carbon/Epoxy UD lattices with FBGW 1 and FBGW 2 for multi-resonator configurations (material properties from CMH-17~\cite{CMH17_2012}; all FBGW values in Hz; bold: maximum FBGW; --: no bandgap; $f_B = 879$ Hz for square lattice).}
 \label{tab:carbon_results}
 \small
 \begin{tabular}{cccccccc}
@@ -1181,7 +1177,7 @@ $f_j$ & Square & Rectangular & Triangular & Honeycomb & Honeycomb & Kagom\'{e} &
 750 & \textbf{231.8} & \textbf{151.7} & 253.7 & -- & 153.5 & -- & 51.5 \\
 800 & 231.5 & 110.2 & 279.5 & -- & 164.4 & -- & 44.2 \\
 850 & 207.3 & 66.4 & 305.9 & -- & 176.4 & -- & 37.7 \\
-879\protect\footnotemark[2] & 194.1 & 41.2 & 321.2 & -- & \textbf{183.8} & -- & 34.7 \\
+879$^a$ & 194.1 & 41.2 & 321.2 & -- & \textbf{183.8} & -- & 34.7 \\
 900 & 164.4 & -- & 334.0 & -- & 189.2 & -- & 32.9 \\
 950 & 164.4 & -- & 358.6 & -- & 201.1 & -- & 30.1 \\
 1000 & 134.2 & -- & 381.8 & -- & 210.8 & -- & 29.3 \\
@@ -1190,9 +1186,8 @@ $f_j$ & Square & Rectangular & Triangular & Honeycomb & Honeycomb & Kagom\'{e} &
 1150 & 88.7 & -- & 398.4 & -- & 164.3 & -- & 32.0 \\
 1200 & 84.2 & -- & 389.8 & -- & 147.4 & -- & 32.5 \\
 \hline
+\multicolumn{8}{l}{$^a$Bragg frequency for square lattice configuration.} \\
 \end{tabular}
-\footnotetext[1]{Material properties from CMH-17 \cite{CMH17_2012}. All FBGW values in Hz. Bold: maximum FBGW. --: no bandgap.}
-\footnotetext[2]{Bragg frequency calculated for square lattice configuration ($f_B = 879$ Hz).}
 \end{table}}
 
 \textcolor{red}{The comparative analysis across aluminum and carbon/epoxy materials reveals consistent lattice performance hierarchy. Tables \ref{tab:aluminum_results} and \ref{tab:carbon_results} demonstrate that triangular lattices achieve superior relative bandwidth (40-42\%) across all materials spanning 150× stiffness variation, validating that geometric advantages represent material-independent design principles. The frequency scaling preserves this hierarchy while shifting operational ranges proportionally to material stiffness ($\sqrt{D/\rho h}$), confirming PWE methodology robustness across the entire structural material spectrum studied.}
