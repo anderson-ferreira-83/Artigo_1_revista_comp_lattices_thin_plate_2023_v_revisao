@@ -67,9 +67,9 @@
 
 \author[ifmappgemaddress,ifmaeibaddress,valeaddress]{E.J.P.~Miranda Jr.}
 
-\author[unicampaddress]{J.M.C.~Dos Santos}
-
 \author[unicampaddress]{A.M.~Goto}
+
+\author[unicampaddress]{J.M.C.~Dos Santos}
 
 \address[unicampaddress]{University of Campinas, UNICAMP-FEM-DMC, Rua Mendeleyev, 200, CEP 13083-970, Campinas, SP, Brazil}
 \address[ifmappgemaddress]{Federal Institute of Maranh\~{a}o, IFMA-PPGEM, CEP 65030-005, S\~{a}o Lu\'{i}s, MA, Brazil}
@@ -77,13 +77,8 @@
 \address[valeaddress]{Vale Institute of Technology, ITV-MI, CEP 35400-000, Ouro Preto, MG, Brazil}
 
 \begin{abstract}
-\par The attenuation of low-frequency flexural waves $(10-200)$[Hz] represents a persistent challenge in structural engineering, requiring innovative solutions that balance efficiency, compactness, and weight constraints. This study presents the first systematic comparative analysis investigating the combined influence of lattice geometry and local resonator frequency on band gap formation in thin Kirchhoff-Love plates across five distinct periodic configurations. The primary objective is to establish quantitative design guidelines for optimal lattice-resonator arrangements in the critical low-frequency range for aerospace, automotive, and civil engineering applications.
-
-\par A comprehensive framework combining semi-analytical Plane Wave Expansion (PWE) and Extended Plane Wave Expansion (EPWE) methods with Finite Element Method (FEM) validation systematically analyzes 15 resonator frequencies across square, rectangular, triangular, honeycomb, and kagomé lattice configurations. The semi-analytical approach demonstrates computational efficiency improvements of two orders of magnitude over conventional FEM while maintaining accuracy within $5\%$ of numerical predictions.
-
-\par Quantitative analysis reveals distinct performance hierarchies: \textcolor{red}{triangular lattices achieve $35\%$ superior relative bandwidth compared to square configurations (42.51\% vs 31.40\%) and demonstrate superior broadband characteristics}; kagomé lattices provide up to $15$ [dB] enhanced attenuation at low frequencies through triple-resonator coupling; honeycomb configurations offer balanced dual-band gap performance with coexisting frequency regions. \textcolor{red}{A critical finding is the observation of two distinct complete band gaps in multi-resonator systems (honeycomb and kagomé), arising from in-phase and anti-phase resonator coupling modes, contrasting with single band gap behavior in single-resonator lattices (square, rectangular, triangular). Comprehensive bandwidth evolution analysis across all five lattice geometries establishes frequency-dependent performance maps for systematic design optimization. Bandwidth analysis employs infinite unit cell model predictions obtained through PWE/EPWE formulations.} Finite plates consistently exhibit $40-50\%$ bandwidth expansion beyond infinite domain predictions due to boundary-induced mode coupling effects.
-
-\par The research establishes the first quantitative hierarchy of lattice performance and provides engineers with systematic design guidelines for metamaterial plate optimization. This framework advances the field by bridging theoretical band gap predictions with practical finite plate performance, establishing essential tools for next-generation lightweight vibration isolation systems requiring efficient frequency-targeted vibration control.
+\par The attenuation of low-frequency flexural waves $(10-200)$[Hz] represents a persistent challenge in structural engineering, requiring innovative solutions that balance efficiency, compactness, and weight constraints. This study presents the first systematic comparative analysis investigating the combined influence of lattice geometry and local resonator frequency on band gap formation in thin Kirchhoff-Love plates across five distinct periodic configurations. The primary objective is to establish quantitative design guidelines for optimal lattice-resonator arrangements in the critical low-frequency range for aerospace, automotive, and civil engineering applications. A comprehensive framework combining semi-analytical Plane Wave Expansion (PWE) and Extended Plane Wave Expansion (EPWE) methods with Finite Element Method (FEM) validation systematically analyzes 15 resonator frequencies across square, rectangular, triangular, honeycomb, and kagomé lattice configurations. The semi-analytical approach demonstrates computational efficiency improvements of two orders of magnitude over conventional FEM while maintaining accuracy within $5\%$ of numerical predictions.
+Quantitative analysis reveals distinct performance hierarchies: \textcolor{red}{triangular lattices achieve $35\%$ superior relative bandwidth compared to square configurations (42.51\% vs 31.40\%) and demonstrate superior broadband characteristics}; kagomé lattices provide up to $15$ [dB] enhanced attenuation at low frequencies through triple-resonator coupling; honeycomb configurations offer balanced dual-band gap performance with coexisting frequency regions. \textcolor{red}{A critical finding is the observation of two distinct complete band gaps in multi-resonator systems (honeycomb and kagomé), arising from in-phase and anti-phase resonator coupling modes, contrasting with single band gap behavior in single-resonator lattices (square, rectangular, triangular). Comprehensive bandwidth evolution analysis across all five lattice geometries establishes frequency-dependent performance maps for systematic design optimization. Bandwidth analysis employs infinite unit cell model predictions obtained through PWE/EPWE formulations.} Finite plates consistently exhibit $40-50\%$ bandwidth expansion beyond infinite domain predictions due to boundary-induced mode coupling effects. The research establishes the first quantitative hierarchy of lattice performance and provides engineers with systematic design guidelines for metamaterial plate optimization. This framework advances the field by bridging theoretical band gap predictions with practical finite plate performance, establishing essential tools for next-generation lightweight vibration isolation systems requiring efficient frequency-targeted vibration control.
 \end{abstract}
 
 \begin{keyword}
@@ -113,7 +108,7 @@ Despite their effectiveness, PCs face a fundamental limitation for low-frequency
 
 % Breakthrough: Locally Resonant Sonic Crystals
 
-The paradigm shift toward subwavelength metamaterials began with Liu et al.'s \cite{Liu2000} groundbreaking proposal of Locally Resonant Sonic Crystals (LRSCs). Unlike conventional PCs that rely on interference, LRSCs utilize internal resonances to form band gaps at subwavelength scales, enabling lattice constants two orders of magnitude smaller than the acoustic wavelength while achieving deep low-frequency attenuation in compact structures.
+The paradigm shift toward subwavelength metamaterials began with Liu et al. \cite{Liu2000} groundbreaking proposal of Locally Resonant Sonic Crystals (LRSCs). Unlike conventional PCs that rely on interference, LRSCs utilize internal resonances to form band gaps at subwavelength scales, enabling lattice constants two orders of magnitude smaller than the acoustic wavelength while achieving deep low-frequency attenuation in compact structures.
 
 Subsequent research rapidly expanded and validated this concept across multiple domains. Wang et al. demonstrated subwavelength band gaps in 2D soft-inclusion composites \cite{Wang2004} and extended the concept to 1D harmonic oscillator systems, revealing that stiffness contrast governs attenuation depth \cite{Wang2005}. Hsu et al. \cite{Hsu2007} showed that Lamb wave band gaps in thin plates depend strongly on inclusion radius and thickness, while Oudich and colleagues explored waveguiding in curved and straight channels \cite{Oudich2010} and experimentally confirmed complete out-of-plane Lamb wave band gaps in stubbed plates using Brillouin spectroscopy and laser vibrometry \cite{Oudich2011}.
 
@@ -135,9 +130,9 @@ Recent investigations have explored the relationship between lattice geometry an
 
 % Research Objectives and Scope
 
-Building upon these extensive developments, this study addresses the challenge of low-frequency noise and vibration control by presenting the first systematic comparative analysis of the elastic band structure of flexural waves in infinite periodic plates with five distinct lattice configurations. The research is motivated by the critical need to quantify design trade-offs: while metamaterial solutions can achieve 20-40 [dB] attenuation with only 5-15\% mass penalties (compared to 150-300\% for conventional approaches), optimal lattice selection remains empirical, leading to suboptimal performance and missed opportunities for weight and cost savings potentially worth millions of dollars in large-scale applications.
+Building upon these extensive developments, this study addresses the challenge of low-frequency noise and vibration control by presenting the first systematic comparative analysis of the elastic band structure of flexural waves in periodic plates with five distinct lattice configurations. The research is motivated by the critical need to quantify design trade-offs: while metamaterial solutions can achieve 20-40 [dB] attenuation with only 5-15\% mass penalties (compared to 150-300\% for conventional approaches), empirical approaches to lattice design prevent full optimization and economic gains.
 
-The investigation examines single-degree-of-freedom (SDOF) local resonator systems (SR-SDOF) arranged in square, rectangular, and triangular lattices, as well as multiple local resonator systems (MR-SDOF) in honeycomb and kagom\'{e} lattices. These five geometries represent the fundamental design space for 2D lattice metamaterials: square and rectangular lattices establish the baseline orthogonal configurations commonly employed in manufacturing; triangular lattices provide the highest symmetry achievable with single resonators per unit cell; honeycomb configurations introduce the simplest dual-resonator architecture with practical manufacturability; and kagom\'{e} lattices represent the most complex multi-resonator arrangement feasible within standard fabrication constraints. This selection encompasses the full spectrum from simple (manufacturing-friendly) to complex (performance-optimized) configurations, enabling systematic evaluation of the geometry-performance-complexity trade-offs critical for engineering implementation.
+The investigation examines single-degree-of-freedom (SDOF) local resonator systems (SR-SDOF) arranged in square, rectangular, and triangular lattices, as well as multiple local resonator systems (MR-SDOF) in honeycomb and kagom\'{e} lattices. These five geometries represent the fundamental design space for 2D lattice metamaterials: square and rectangular lattices establish the baseline orthogonal configurations commonly employed in manufacturing; triangular lattices provide the highest symmetry achievable with single resonators per unit cell; honeycomb configurations introduce the simplest dual-resonator architecture with practical manufacturability; and kagom\'{e} lattices represent the most complex three-resonator arrangement feasible within standard fabrication constraints. This selection encompasses the full spectrum from simple (manufacturing-friendly) to complex (performance-optimized) configurations, enabling systematic evaluation of the geometry-performance-complexity trade-offs critical for engineering implementation.
 
 The comprehensive analysis employs both semi-analytical methods (PWE and EPWE) and numerical simulations (FEM), demonstrating computational efficiency improvements of two orders of magnitude while establishing quantitative performance hierarchies among lattice configurations. This work provides critical insights into the dual influence of lattice geometry and resonator tuning, enabling data-driven design decisions that can reduce development time by 60-80\% compared to trial-and-error approaches, while ensuring optimal solutions for specific application requirements in weight-sensitive and performance-critical engineering systems.
 
@@ -155,12 +150,12 @@ LRSC plates are modeled using Kirchhoff-Love theory for thin plates ($h/a < 0.1$
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=0.7\textwidth]{ilustr_inf_panel_cell_unit.pdf}
-	\caption{LRSC metamaterial configuration: (\textit{a}) Infinite periodic array showing the global structure with spring-mass resonators (red squares) attached to the host plate. The dashed lines indicate the unit cell boundaries. (\textit{b}) Detailed view of a single unit cell showing: plate mass $m_p$, resonator parameters ($m_{r,j}$, $k_j$, $f_j$), geometric dimensions ($a$, $h$), and coordinate system. The resonators provide local resonance at frequency $f_j = {(2\pi^{-1})}\sqrt{k_j/m_{r,j}}$.}
+	\caption{LRSC metamaterial configuration: (\textit{a}) Infinite periodic array showing the global structure with spring-mass resonators (red squares) attached to the host plate. The dashed lines indicate the unit cell boundaries. (\textit{b}) Detailed view of a single unit cell showing: plate mass $m_p$, resonator parameters ($m_{j}$, $k_j$, $f_j$), geometric dimensions ($a$, $h$), and coordinate system. The resonators provide local resonance at frequency $f_j = {(2\pi^{-1})}\sqrt{k_j/m_{j}}$.}
 	\label{ilustr_inf_panel_cell_unit}
 \end{figure}
 
 This classical theory assumes plane sections remain plane and perpendicular to the neutral surface during bending, neglecting transverse shear deformation and rotatory inertia effects. The theory is valid when the plate thickness is much smaller than the characteristic wavelength, ensuring that flexural wave propagation is governed by the plate's bending stiffness rather than shear effects. 
-The governing equation for flexural vibration with periodic resonator coupling is:  
+The governing equation for flexural vibration with periodic resonator coupling is formulated in the frequency domain, as previously defined in works such as \cite{Xiao_2012, MIRANDA2019480}: 
 
 \begin{equation}
 D\nabla^4 w(\mathbf{r}) - \omega^2 \rho h w(\mathbf{r}) = \sum_{j=1}^{N_j} \sum_{\mathbf{R}} p_j(\mathbf{r}_j + \mathbf{R}) \delta[\mathbf{r} - (\mathbf{r}_j + \mathbf{R})], 
@@ -173,20 +168,20 @@ p_j(\mathbf{r}_j + \mathbf{R}) = k_j^*[u_j(\mathbf{r}_j + \mathbf{R}) - w(\mathb
 \label{eq_plate_disp1}
 \end{equation}
 \begin{equation}
--\omega^2 m_{r,j} u_j(\mathbf{r}_j + \mathbf{R}) = -p_j(\mathbf{r}_j + \mathbf{R}),
+-\omega^2 m_{j} u_j(\mathbf{r}_j + \mathbf{R}) = -p_j(\mathbf{r}_j + \mathbf{R}),
 \label{eq_plate_disp2}
 \end{equation}
 
 where \( u_j(\mathbf{r}_j + \mathbf{R}) \) is the displacement of the \( j \)th resonator mass and \( w(\mathbf{r}_j + \mathbf{R}) \) is the flexural displacement of the plate at the resonator attachment point. The complex stiffness \( k_j^* = k_j(1 + i\eta_j) \) incorporates the resonator damping effect.
 
-Eliminating the resonator displacement $u_j$ from equations (\ref{eq_plate_disp1}) and (\ref{eq_plate_disp2}) yields the resonator coupling force:
+Eliminating the resonator displacement $u_j$ from Equations (\ref{eq_plate_disp1}) and (\ref{eq_plate_disp2}) yields the resonator coupling force:
 \begin{equation}
 p_j(\mathbf{r}_j + \mathbf{R}) = \frac{-k_j^* \omega^2}{\omega^2 - \omega_{j,0}^2(1 + i\eta_j)} w(\mathbf{r}_j + \mathbf{R})
 \label{eq:resonator_coupling}
 \end{equation}
-where $\omega_{j,0} = \sqrt{k_j/m_{r,j}}$ is the natural resonator frequency. Substituting this coupling into equation (\ref{eq_kirchoff_fourrier}) and applying periodic Floquet-Bloch conditions transforms the partial differential equation into a matrix eigenvalue problem via reciprocal space expansion, as detailed in the following sections.
+where $\omega_{j,0} = \sqrt{k_j/m_{j}}$ is the natural resonator frequency. Substituting this coupling into Equation (\ref{eq_kirchoff_fourrier}) and applying periodic Floquet-Bloch conditions transforms the partial differential equation into a matrix eigenvalue problem via reciprocal space expansion, as detailed in the \ref{AppenA_supplement_results1}.
 
-The plane wave truncation parameter $M$ in the expansion $(2M+1)^2$ determines the computational accuracy of the PWE method. Based on established practices for similar phononic crystal analyses \cite{Phani2006, Laude2009}, this study employs $M = 3$ for single-resonator and multi-resonator cases in the frequency range 10-200 [Hz] with lattice parameter $a = 0.10$ m, ensuring wavelength resolution $\lambda/a > 5$ for adequate spatial discretization of the wave field.
+The plane wave truncation parameter $M$ in the expansion $(2M+1)^2$ determines the computational accuracy of the PWE method. Based on established practices for similar PC analyses \cite{MIRANDA2019480, MIRANDAJR2020138}, this study employs $M = 3$ for single-resonator and multi-resonator cases in the frequency range 10-200 [Hz] with lattice parameter $a = 0.10$ m, ensuring wavelength resolution $\lambda/a > 5$ for adequate spatial discretization of the wave field.
 
 \subsection{Semi-analytical methods overview}\label{methods_overview}
 
@@ -205,15 +200,15 @@ Wave vector $\mathbf{k}$ & Real values only & $\mathbf{k} \in \mathbb{C}$, $\mat
 \hline
 Evanescent modes & Ignored & Naturally incorporated \\
 \hline
-Primary application & Band structure calculation $\omega(\mathbf{k})$ & Attenuation analysis $\mathbf{k}(\omega)$ \\
+Primary application & Band structure calculation $\omega(\mathbf{k})$ & Unit cell attenuation $\mathbf{k}(\omega)$ \\
 \hline
 Brillouin zone & Restricted to first zone & No restriction \\
 \hline
-Bandgap analysis & Identifies frequency ranges & Quantifies attenuation levels \\
+Bandgap analysis & Identifies frequency ranges & Quantifies unit cell attenuation \\
 \hline
 Computational cost & Lower (eigenvalue problem) & Higher (generalized eigenvalue) \\
 \hline
-Physical insight & Propagating wave modes & Evanescent decay in bandgaps \\
+Physical insight & Propagating wave modes & Evanescent wave modes decay in bandgaps \\
 \hline
 \end{tabular}
 \end{table}
@@ -228,7 +223,7 @@ while EPWE solves the inverse problem for complex wave vectors:
 [\mathbf{A}_3 k^3 + \mathbf{A}_2 k^2 + \mathbf{A}_1 k + \mathbf{A}_0]\boldsymbol{\psi} = 0, \quad k = k(\boldsymbol{\omega})
 \label{eq:epwe_inverse}
 \end{equation}
-The unit cell attenuation constant is defined as $\mu = \text{Im}\{k\} \cdot a$ [$Np$/cell], where $Np$ denotes nepers (natural logarithm unit for attenuation: $\text{Attenuation [dB]} = 8.686 \times \mu$). With these analytical tools established, the following section examines how different lattice geometries influence the band structure formation and attenuation characteristics.
+The unit cell attenuation constant is defined as $\mu = \Im{k}$. With these analytical tools established, the following section examines how different lattice geometries influence the band structure formation and attenuation characteristics, while the corresponding matrix formulation can be found in Appendix~\ref{AppenB_supplement_results2}.
 
 %%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Periodic lattice configurations}\label{lattice_configurations}
@@ -289,24 +284,22 @@ Resonator displacements follow the same expansion as Equation~\eqref{eq_disp_exp
 \end{equation}
 where coefficient matrices $\mathbf{A}_i$ contain lattice geometry and resonator coupling terms. The resonator dynamic stiffness incorporates frequency-dependent effects:
 \begin{equation}
-D_j(\omega) = k_j^* - \frac{(k_j^*)^2}{k_j^* - \omega^2 m_{r,j}}
+D_j(\omega) = k_j^* - \frac{(k_j^*)^2}{k_j^* - \omega^2 m_{j}}
 \label{eq_epwe_dynamic_stiffness}
 \end{equation}
 
-Solution via companion matrix linearization provides complex eigenvalues $k = k_r + ik_i$, where $\text{Im}\{k\} > 0$ quantifies evanescent decay. The unit cell attenuation constant $\mu = \text{Im}\{k\} \cdot a$ [Np/cell] directly measures wave attenuation within bandgaps. The polynomial eigenvalue problem is solved by transforming Eq.~(\ref{eq_epwe_poly}) into a generalized linear eigenvalue problem of size $4N_g \times 4N_g$, where eigenvector tracking ensures mode continuity across frequency. Complete matrix formulations and computational algorithms are provided in \ref{AppenB_supplement_results2}.
+Solution via companion matrix linearization provides complex eigenvalues $k = k_r + ik_i$, where $\Im \{k\}$ quantifies evanescent decay. The unit cell attenuation constant $\mu = \Im \{k\} $ directly measures wave attenuation within bandgaps. The polynomial eigenvalue problem is solved by transforming Eq.~(\ref{eq_epwe_poly}) into a generalized linear eigenvalue problem of size $4N_g \times 4N_g$, where eigenvector tracking ensures mode continuity across frequency. Complete matrix formulations and computational algorithms are provided in \ref{AppenB_supplement_results2}.
 
 The proposed semi-analytical methods (PWE and EPWE($\Re(\mathbf{k})$)) are validated using finite element method (FEM) simulations in COMSOL Multiphysics 5.6 with quadratic shell elements and Floquet periodic boundary conditions. The following section presents comprehensive computational efficiency and accuracy comparisons between PWE/EPWE and FEM through detailed simulated examples.
 
-The semi-analytical formulation is valid under the following constraints: (i) Thin plate approximation: $h/a < 0.1$ ensuring flexural wave dominance over shear effects; (ii) Small amplitude assumption: linear elastic response with plate displacements $w \ll h$; (iii) Frequency limitations: $\omega < \omega_c = 0.5\sqrt{D/(\rho h a^4)}$ to remain within the fundamental dispersion branch; (iv) Weak coupling regime: resonator mass ratio $m_{r,j}/(m_p S) < 0.2$ ensuring perturbative coupling validity. These constraints ensure that the Kirchhoff-Love theory assumptions remain physically meaningful and that the plane wave expansion converges within the specified truncation limits.
-
-The eigenvalue problems exhibit condition numbers $\kappa(\mathbf{K}) < 10^{12}$ for the analyzed configurations, ensuring numerical stability. The complex frequency dependence in EPWE requires careful pole avoidance near resonator frequencies, achieved through frequency regularization $\omega \to \omega + i\epsilon$ with $\epsilon = 10^{-6}\omega_{j,0}$ to maintain numerical robustness while preserving physical accuracy.
+The semi-analytical formulation is valid under the following constraints: (i) thin plate approximation: $h/a < 0.1$ ensuring flexural wave dominance over shear effects; (ii) small amplitude assumption: linear elastic response with plate displacements $w \ll h$; (iii) frequency limitations: $\omega < \omega_c = 0.5\sqrt{D/(\rho h a^4)}$ to remain within the fundamental dispersion branch; (iv) weak coupling regime: resonator mass ratio $m_{j}/(m_p S) < 0.2$ ensuring perturbative coupling validity. These constraints ensure that the Kirchhoff-Love theory assumptions remain physically meaningful and that the plane wave expansion converges within the specified truncation limits.
 
 The comprehensive mathematical framework established in this section provides the theoretical foundation for systematic lattice comparison. The PWE method enables efficient computation of dispersion relations $\omega(\mathbf{k})$ for identifying band gap formation, while EPWE quantifies attenuation coefficients $k(\boldsymbol{\omega})$ within these gaps. The convergence criteria and validity constraints ensure reliable predictions across the target frequency range (10-200 [Hz]) for all five geometric configurations. The results obtained using this EPWE formulation will be examined in detail in Section 4 for the finite plate model. With this robust analytical foundation established, the following section validates these theoretical predictions through systematic numerical analysis, demonstrating the practical applicability of the framework for engineering design and establishing clear performance hierarchies among the investigated lattice geometries.
 
 %%%%%%%%%%%%%%%%%%%%%%%
 \section{Simulated Examples and Validation}\label{num_ex_disc}
 
-\textcolor{red}{This section validates theoretical predictions through systematic analysis of five lattice configurations: single-resonator (square, rectangular, triangular) and multi-resonator systems (honeycomb, kagomé). The investigation establishes quantitative performance hierarchies and demonstrates PWE-FEM correlation using physically realizable parameters optimized for low-frequency applications (10-200 [Hz]) with 3D printable Vero White Plus polymer \cite{MIRANDA2019480}. While this section focuses on polymeric material for experimental validation feasibility, \ref{multi_material_analysis} extends the analysis to structural materials (aluminum alloy \cite{Xiao_2012} and carbon/epoxy composite \cite{CMH17_2012}), demonstrating the universality of geometric performance principles across materials with 150× stiffness variation.}
+\textcolor{red}{This section validates theoretical predictions through systematic analysis of five lattice configurations: single-resonator (square, rectangular and triangular) and multi-resonator systems (honeycomb and kagomé). The investigation establishes quantitative performance hierarchies and demonstrates PWE-FEM correlation using physically realizable parameters optimized for low-frequency applications (10-200 [Hz]) with 3D printable Vero White Plus polymer \cite{MIRANDA2019480}. While this section focuses on polymeric material for experimental validation feasibility, \ref{multi_material_analysis} extends the analysis to structural materials (aluminum alloy \cite{Xiao_2012} and carbon/epoxy composite \cite{CMH17_2012}), demonstrating the universality of geometric performance principles across materials with 150× stiffness variation.}
 
 The material and geometric parameters in Table~\ref{param_geo_struc_cell_unit} enable systematic performance evaluation while maintaining manufacturing constraints:
 \newpage
@@ -340,7 +333,7 @@ Resonator stiffness $k_j^*$ & Complex & $k_j^* = (4\gamma\rho Sh\pi^2 f_j^2)/(1+
 \end{tabular}
 \end{table}
 
-Using these material parameters, the geometric and physical properties for each lattice configuration are calculated as shown in Table~\ref{unit_cell_five_lat_params}, where the lattice parameter $a$ is kept constant to enable direct performance comparison. \textcolor{red}{This constant-parameter approach isolates geometric influences from frequency-scaling effects, providing objective performance hierarchy based on intrinsic properties---essential for engineering applications where devices must fit predetermined spatial constraints (aerospace, automotive). Additionally, maintaining constant $a$ enables meaningful relative bandwidth analysis ($\eta_{rel}$), where normalization by center frequency removes scaling effects and reveals intrinsic geometric efficiency. Theoretically, this maintains Bloch-Floquet consistency: varying lattice constant creates different Brillouin zones ($\propto 2\pi/a$), complicating direct comparison of dispersion relations. This follows established practice in phononic/photonic research \cite{Xiao_2012, Yan2022,Villeneuve1992}.} 
+Using these material parameters, the geometric and physical properties for each lattice configuration are calculated as shown in Table~\ref{unit_cell_five_lat_params}, where the lattice parameter $a$ is kept constant to enable direct performance comparison. \textcolor{red}{This constant-parameter approach isolates geometric influences from frequency-scaling effects, providing objective performance hierarchy based on intrinsic properties---essential for engineering applications where devices must fit predetermined spatial constraints (e.g., aerospace, automotive). Additionally, maintaining constant $a$ enables meaningful relative bandwidth analysis ($\eta_{rel}$), where normalization by center frequency removes scaling effects and reveals intrinsic geometric efficiency. Theoretically, this maintains Bloch-Floquet consistency: varying lattice constant creates different Brillouin zones ($\propto 2\pi/a$), complicating direct comparison of dispersion relations. This follows established practice in phononic/photonic research \cite{Xiao_2012, Yan2022,Villeneuve1992}.} 
 
 \begin{table}[htb]
 	\centering
@@ -361,7 +354,7 @@ Using these material parameters, the geometric and physical properties for each 
 
 \textcolor{red}{The mass ratio is defined as:
 \begin{equation}
-m_{\text{ratio}} = \frac{m_{p,i}}{m_{p,\text{kagomé}}} = \frac{m_{p,i}}{4.16 \times 10^{-2}}
+m_{\text{ratio}} = \frac{m_{p,i}}{m_{p,\text{kagomé}}} = \frac{m_{p,i}}{4.16 \times 10^{-2}}, 
 \label{eq:mass_ratio}
 \end{equation}
 where $m_{p,i}$ is the plate mass per unit cell for lattice configuration $i$, and $m_{p,\text{kagomé}} = 4.16 \times 10^{-2}$ kg represents the reference mass (kagomé lattice with largest unit cell area). This normalization enables direct material efficiency comparison across different lattice geometries. This normalization reveals material efficiency differences: triangular (25\%) and rectangular (14\%) lattices achieve superior performance with minimal material usage compared to kagomé.} The computational implementation employs optimized discretization parameters in Table~\ref{time_process_simu_methods} to balance numerical accuracy with efficiency.
@@ -384,7 +377,7 @@ Kagomé & 24 & \(4.50 \times 10^{-3}\) & 3 & \(50.54 \times 10^2\) & \(8.90 \tim
 \end{tabular}
 \end{table}
 
-The discretization parameters ($n$ for mesh density, $M$ for plane wave truncation) and processing times demonstrate the computational efficiency of PWE over FEM\footnote{All simulations: AMD Ryzen 5 3600 6-Core processor (12 threads, 3.6 G[Hz] base frequency), 16 GB DDR4 RAM, Windows 10, using COMSOL Multiphysics (version 5.6) and MATLAB (version R2021a).}.
+The discretization parameters ($n$ for mesh density, $M$ for plane-wave truncation) and the corresponding computational times illustrate the efficiency of the PWE method compared with FEM. All numerical simulations were performed in COMSOL Multiphysics (v5.6) and MATLAB (R2021a) on an AMD Ryzen 5 3600 workstation (6 cores, 12 threads, 3.6 GHz, 16 GB DDR4 RAM, Windows 10).
 
 Systematic comparison between PWE and FEM predictions validates the semi-analytical framework accuracy. Table \ref{pwe_fem_validation} presents quantitative validation metrics for characteristic frequencies across all lattice configurations.
 
@@ -433,11 +426,11 @@ Kagomé & $\Gamma$ & 21.37 & 21.52 & 0.70 & \multirow{3}{*}{1.67} \\
 \newpage
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=.8\textwidth]{1_1_disp_frf_square.pdf}
+	\includegraphics[width=.9\textwidth]{1_1_disp_frf_square.pdf}
 	\caption{(\textit{a}) Band structure computed with PWE and FEM for a square lattice unit cell with a single resonator with $f_r = 80$ [Hz] in a thin plate. FBGW 1 - $f_1 = 70.72$ [Hz], $f_2 = 93.88$ [Hz], $\Delta f_{12} = 23.16 $ [Hz], PBGW 1 - $f_1 = 61.54$ [Hz], $f_2 = 93.88$ [Hz], $\Delta f_{12} = 32.33 $ [Hz], PBGW 2 - $f_1 = 117.91$ [Hz], $f_2 = 149$ [Hz], $\Delta f_{12} = 31.09 $ [Hz]. (\textit{b}) Waves mode shapes for a square lattice unit cell with a single resonator in a different points of edges in a real band structure computed by FEM: Point $A_s$ ($k = 1.42$ [m$^{-1}$], $f = 93.87$ [Hz]), Point $B_s$ ($k = 3.00$ [m$^{-1}$], $f = 70.55$ [Hz]), Point $C_s$ ($k = 2.00$ [m$^{-1}$], $f = 117.82$ [Hz].}
 	\label{pwe_fem_disp_modal_square}
 \end{figure}
-\textcolor{red}{Dispersion analysis reveals local resonance creating FBGW 1 ($\Delta f_{12} = 23.16$ [Hz], $f_1 = 70.72$ [Hz], $f_2 = 93.88$ [Hz]) with resonator frequency $f_j = 80$ [Hz] strategically positioned between mode edges for optimal energy extraction. Mode shapes (Figure \ref{pwe_fem_disp_modal_square}b) show anti-resonance at point $B_s$, where the resonator creates destructive interference trapping wave energy and preventing propagation.} 
+\textcolor{red}{Dispersion analysis reveals local resonance creating FBGW 1 ($\Delta f_{12} = 23.16$ [Hz], $f_1 = 70.72$ [Hz], $f_2 = 93.88$ [Hz]) with resonator frequency $f_j = 80$ [Hz] strategically positioned between edge wave modes for optimal energy extraction. Mode shapes (Figure \ref{pwe_fem_disp_modal_square}b) show anti-resonance at point $B_s$, where the resonator creates destructive interference trapping wave energy and preventing propagation.} 
 
 \textcolor{red}{Square lattice analysis reveals FBGW 1 ($\Delta f_{12} = 23.16$ [Hz]) and directional PBGWs, demonstrating resonator-plate hybridization through avoided crossings. Bragg scattering contributes additional wave interference at specific crystallographic points.}
 
@@ -445,7 +438,7 @@ Parametric analysis (Figure \ref{pwe_disp_square_all_res}) investigates 15 reson
 
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=.8\textwidth]{2_1_disp_frf_square.pdf}
+	\includegraphics[width=.85\textwidth]{2_1_disp_frf_square.pdf}
 	\caption{Results using in PWE for square lattice (\textit{a}) LRSC in $f_j=10$ [Hz], (\textit{b}) LRSC in $f_j=105$ [Hz] and (\textit{c}) LRSC in $f_j=150$ [Hz]. (\textit{d}) $f_1$ - Lower edge frequencies of the first band mode as a function of local resonance. (\textit{e}) $f_2$ - Upper edge frequencies of the second band mode as a function of local resonance. (\textit{f}) FBGW 1 as function of resonator frequency.}
 	\label{pwe_disp_square_all_res}
 \end{figure}
@@ -461,7 +454,7 @@ Next, rectangular lattice analysis, the transition from square to rectangular ge
 \newpage
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=.8\textwidth]{1_2_disp_frf_rect.pdf}
+	\includegraphics[width=.9\textwidth]{1_2_disp_frf_rect.pdf}
 	\caption{(\textit{a}) Band structure computed with PWE and FEM for a rectangular lattice unit cell with a single resonator with $f_r = 80$ [Hz] in a thin plate. FBGW 1 - $f_1 = 78.23$ [Hz], $f_2 = 95.97$ [Hz], $\Delta f_{12} = 17.74 $ [Hz], PBGW 1 - $f_1 = 62.27$ [Hz], $f_2 = 95.97$ [Hz], $\Delta f_{12} = 33.70 $ [Hz], PBGW 2 - $f_1 = 117.91$ [Hz], $f_2 = 150.66$ [Hz], $\Delta f_{12} = 32.64 $ [Hz]. (\textit{b}) Wave mode shapes for a rectangular lattice unit cell with a single resonator in a different points of edges in a real band structure computed by FEM: Point $A_r$ ($k = 1.31$ [m$^{-1}$], $f = 95.97$ [Hz]), Point $B_r$ ($k = 0$ [m$^{-1}$], $f = 78.23$ [Hz]), Point $C_r$ ($k = 2.00$ [m$^{-1}$], $f = 117.84$ [Hz]).}
 	\label{pwe_fem_disp_modal_rect}
 \end{figure}
@@ -470,30 +463,31 @@ Next, rectangular lattice analysis, the transition from square to rectangular ge
 \newpage
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=.8\textwidth]{2_2_disp_frf_rect.pdf}
+	\includegraphics[width=.85\textwidth]{2_2_disp_frf_rect.pdf}
 	\caption{Results in PWE for rectangular lattice (\textit{a}) LRSC in $f_j=10$ [Hz], (\textit{b}) LRSC in $f_j=99$ [Hz] and (\textit{c}) LRSC in $f_j=150$ [Hz] .(\textit{d}) $f_1$ -  Lower edge frequencies of the first band mode as a function of local resonance. (\textit{e}) $f_2$ -  Upper edge frequencies of the second band mode as a function of local resonance. (\textit{f}) FBGW 1 as function of resonator frequency.}
 	\label{pwe_disp_rect_all_res}
 \end{figure}
 \textcolor{red}{Parametric analysis (Figure \ref{pwe_disp_rect_all_res}) reveals geometric constraints: premature bandwidth maximum at $f_j = 99$ [Hz] (36\% penalty vs. square), complete band gap disappearance at $f_j = 150$ [Hz] (fundamental frequency cutoff), and compressed operational range with rapid decay beyond $f_j = 120$ [Hz]. Aspect ratio creates anisotropic resonator-plate coupling---reduced $a_2$ direction area weakens flexural mode interaction, producing directionality-dependent scattering and establishing geometric aspect ratio as a critical design parameter.}
 
 
-\textcolor{red}{Triangular lattice provides six-fold symmetry despite 13\% smaller unit cell area, achieving superior performance through multiple equivalent wave scattering pathways.} Figure \ref{pwe_fem_disp_modal_trian} demonstrates the geometric advantage of triangular packing:
+\textcolor{red}{Triangular lattice provides six-fold symmetry despite 13\% smaller unit cell area, achieving superior performance through multiple equivalent wave scattering pathways.} 
+
+Figure \ref{pwe_fem_disp_modal_trian} demonstrates the geometric advantage of triangular packing:
 
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=.8\textwidth]{1_3_disp_frf_trian.pdf}
+	\includegraphics[width=.9\textwidth]{1_3_disp_frf_trian.pdf}
 	\caption{(\textit{a}) Band structure computed with PWE and FEM for a triangular lattice unit cell with a single resonator with $f_r = 80$ [Hz] in a thin plate. FBGW 1 - $f_1 = 70.84$ [Hz], $f_2 = 95.08$ [Hz], $\Delta f_{12} = 24.24 $ [Hz]. (\textit{b}) Wave mode shapes for a triangular lattice unit cell with a single resonator in a different points of edges in a real band structure computed by FEM: Point $A_t$ ($k = 0$ [m$^{-1}$], $f = 157.05$ [Hz]), Point $B_t$ ($k = 2.00$ [m$^{-1}$], $f = 70.71$ [Hz]), Point $C_t$ ($k = 2.00$ [m$^{-1}$], $f = 209.99$ [Hz]).}
 	\label{pwe_fem_disp_modal_trian}
 \end{figure}
 
 \textcolor{red}{Triangular lattice achieves FBGW 1 ($\Delta f_{12} = 24.24$ [Hz]) without partial band gaps, demonstrating isotropic wave blocking. Maximum bandwidth $\Delta f_{12} = 55.40$ [Hz] at $f_j = 145$ [Hz] represents 73\% improvement over square lattice, confirming geometric superiority.} The triangular lattice parametric analysis reveals breakthrough performance that establishes this geometry as the optimal single-resonator metamaterial architecture. Figure \ref{pwe_disp_trian_all_res}a) ($f_j = 10$ [Hz]) shows typical low-frequency behavior, while Figure \ref{pwe_disp_trian_all_res}b) ($f_j = 145$ [Hz]) captures the remarkable peak performance where the triangular lattice achieves its maximum bandwidth.
 
-\newpage
 Figure \ref{pwe_disp_trian_all_res}c) ($f_j = 150$ [Hz]) demonstrates the exceptional bandwidth stability that distinguishes the triangular lattice from square and rectangular configurations. The edge frequency evolution in Figures \ref{pwe_disp_trian_all_res}d-e) reveals the underlying mechanisms responsible for superior performance.
 
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=.9\textwidth]{2_3_disp_frf_trian.pdf}
+	\includegraphics[width=.85\textwidth]{2_3_disp_frf_trian.pdf}
 	\caption{Results in PWE for triangular lattice (\textit{a}) LRSC in $f_j=10$ [Hz], (\textit{b}) LRSC in $f_j=99$ [Hz] and (\textit{c}) LRSC in $f_j=150$ [Hz] .(\textit{d}) $f_1$ - Lower edge frequencies of the first band mode as a function of local resonance. (\textit{e}) $f_2$ - Upper edge frequencies of the second band mode as a function of local resonance. (\textit{f}) FBGW 1 as function of resonator frequency.}
 	\label{pwe_disp_trian_all_res}
 \end{figure}
@@ -521,17 +515,17 @@ Figure~\ref{pwe_fem_disp_modal_hex} demonstrates the revolutionary advance achie
 \newpage
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=1\textwidth]{1_4_disp_frf_hex.pdf}
+	\includegraphics[width=.9\textwidth]{1_4_disp_frf_hex.pdf}
 	\caption{(\textit{a}) Band structure computed with PWE and FEM for a honeycomb lattice unit cell with two resonators with $f_r = 80$ [Hz] in a thin plate. FBGW 1 - $f_2 = 67.57$ [Hz], $f_3 = 69.87$ [Hz], $\Delta f_{23} = 2.30 $ [Hz], FBGW 2 - $f_3 = 89.38$ [Hz], $f_3 = 106.61$ [Hz], $\Delta f_{34} = 17.23 $ [Hz], PBGW 3 - $f_3 = 89.38$ [Hz], $f_4 = 110.57$ [Hz], $\Delta f_{34} = 21.19 $ [Hz]. (\textit{b}) Wave mode shapes for a honeycomb lattice unit cell with a two resonators in a different points of edges in a real band structure computed by FEM: Point $A_h$ ($k = 0$ [m$^{-1}$], $f = 37.13$ [Hz]), Point $B_h$ ($k = 1.00$ [m$^{-1}$], $f = 67.24$ [Hz]), Point $C_h$ ($k = 2.00$ [m$^{-1}$], $f = 69.84$ [Hz]).}
 	\label{pwe_fem_disp_modal_hex}
 \end{figure}
 
 \textcolor{red}{Breakthrough capability (Figure \ref{pwe_fem_disp_modal_hex}a): simultaneous two distinct full band gaps (FBGW 1: $\Delta f_{23} = 2.30$ [Hz], FBGW 2: $\Delta f_{34} = 17.23$ [Hz])---qualitative leap beyond single-resonator systems with only one primary band gap. Anti-phase coupling mode (point $B_h$, Figure \ref{pwe_fem_disp_modal_hex}b) creates FBGW 1 through destructive interference where resonators oscillate $180^\circ$ out-of-phase, trapping energy and preventing propagation. In-phase coupling mode generates stronger, broader FBGW 2 through collective resonance with coherent resonator motion maximizing energy extraction. Dual-resonator systems access different regimes via frequency adjustment: low-frequency ($f_j < 50$ Hz, anti-phase dominant), intermediate ($50 < f_j < 100$ [Hz], dual band gap coexistence), high-frequency ($f_j > 100$ Hz, in-phase dominant), enabling single geometry optimization for different frequency ranges.} \textcolor{red}{The demonstrated tuning capability extends the resonator frequency optimization principles of Xiao et al.~\cite{Xiao_2012} from single-resonator to multi-resonator systems, revealing that coupled oscillators introduce new degrees of freedom for bandgap engineering beyond what is achievable through frequency tuning alone.}
 
-\newpage
+
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=.8\textwidth]{2_4_disp_frf_hex.pdf}
+	\includegraphics[width=.85\textwidth]{2_4_disp_frf_hex.pdf}
 	\caption{Results in PWE for honeycomb lattice (\textit{a}) LRSC in $f_j=10$ [Hz], (\textit{b}) LRSC in $f_j=60$ [Hz] and (\textit{c}) LRSC in $f_j=150$ [Hz] .(\textit{d}) $f_2$, $f_3$ - Lower edge frequencies of the second and third band mode as a function of local resonance. (\textit{e}) $f_3$, $f_4$ - Upper edge frequencies of the third and fourth band mode as a function of local resonance. (\textit{f}) FBGW 1 and FBGW 2 as function of resonator frequency. }
 	\label{pwe_disp_hex_all_res12}
 \end{figure}
@@ -544,7 +538,7 @@ Figure~\ref{pwe_fem_disp_modal_hex} demonstrates the revolutionary advance achie
 \newpage
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=1\textwidth]{1_5_disp_frf_kag.pdf}
+	\includegraphics[width=.9\textwidth]{1_5_disp_frf_kag.pdf}
 	\caption{(\textit{a}) Band structure computed with PWE and FEM for a kagomé lattice unit cell with two resonators with $f_r = 80$ [Hz] in a thin plate. PBGW 1 - $f_1 = 34.65$ [Hz], $f_2 = 39.37$ [Hz], $\Delta f_{12} = 4.71 $ [Hz], FBGW 1 - $f_3 = 74.76$ [Hz], $f_4 = 78.80$ [Hz], $\Delta f_{34} = 4.04 $ [Hz], FBGW 2 - $f_4 = 83.51$ [Hz], $f_5 = 88.54$ [Hz], $\Delta f_{45} = 5.03 $ [Hz]. (\textit{b}) Wave mode shapes for a kagomé lattice unit cell with a two resonators in a different points of edges in a real band structure computed by FEM: Point $A_k$ ($k = 0$ [m$^{-1}$], $f = 27.19$ [Hz]), Point $B_k$ ($k = 1.00$ [m$^{-1}$], $f = 74.17$ [Hz]), Point $C_k$ ($k = 0$ [m$^{-1}$], $f = 61.08$ [Hz]).}
 	\label{pwe_fem_disp_modal_kag}
 \end{figure}
@@ -553,10 +547,11 @@ Figure~\ref{pwe_fem_disp_modal_hex} demonstrates the revolutionary advance achie
 
 A more detailed analysis of FBGW 1 and FBGW 2 is presented in Figure \ref{pwe_disp_kag_all_res}.
 
+\newpage
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=.8\textwidth]{2_5_disp_frf_kag.pdf}
-	\caption{Results in PWE for kagomé lattice (\textit{a}) LRSC in $f_j=10$ [Hz], (\textit{b}) LRSC in $f_j=50$ [Hz] and (\textit{c}) LRSC in $f_j=150$ [Hz] .(\textit{d}) $f_3$, $f_4$ Lower edge frequencies of the third and fourth band mode as a function of local resonance. (\textit{e}) $f_4$, $f_5$ Upper edge frequencies of the fourth and fifth band mode as a function of local resonance. (\textit{f}) FBGW 1 and FBGW 2 as function of resonator frequency. }
+	\includegraphics[width=.85\textwidth]{2_5_disp_frf_kag.pdf}
+	\caption{Results in PWE for kagomé lattice (\textit{a}) LRSC in $f_j=10$ [Hz], (\textit{b}) LRSC in $f_j=50$ [Hz] and (\textit{c}) LRSC in $f_j=150$ [Hz]. (\textit{d}) $f_3$, $f_4$ Lower edge frequencies of the third and fourth band mode as a function of local resonance. (\textit{e}) $f_4$, $f_5$ Upper edge frequencies of the fourth and fifth band mode as a function of local resonance. (\textit{f}) FBGW 1 and FBGW 2 as function of resonator frequency. }
 	\label{pwe_disp_kag_all_res}
 \end{figure}
 
@@ -569,6 +564,7 @@ Having established the individual performance characteristics and underlying phy
 \label{comp_performance_lattices}
 
 \textcolor{red}{The individual analyses enable quantitative comparison using two complementary metrics: (1) \textbf{absolute bandwidth} (FBGW in [Hz]) for applications with specific frequency targets, and (2) \textbf{relative bandwidth} ($\eta_{rel}$ in [\%]) for frequency-independent geometric comparison. These metrics address both practical engineering requirements and fundamental geometric efficiency.}
+
 \newpage
 \begin{figure}[htb]  
 	\centering  
@@ -577,7 +573,7 @@ Having established the individual performance characteristics and underlying phy
 	\label{comp_all_latices_FBGW 1}  
 \end{figure}  
 
-\textcolor{red}{The triangular lattice emerges as the superior single-resonator architecture, achieving exceptional FBGW 1 performance ($\Delta f_{12} = 55.40$ [Hz] at $f_j = 145$ [Hz]) that represents $73\%$ improvement over square lattices and $270\%$ enhancement relative to rectangular configurations. This outstanding performance stems from six-fold crystallographic symmetry creating multiple equivalent wave scattering pathways. The square lattice provides balanced performance ($\Delta f_{12} = 32.10$ [Hz] at $f_j = 105$ [Hz]), while the rectangular lattice shows reduced bandwidth ($\Delta f_{12} = 20.53$ [Hz] at $f_j = 99$ [Hz]) due to geometric anisotropy. These results extend the findings of Xiao et al.~\cite{Xiao_2012} on square lattice optimization to multiple geometric configurations, demonstrating that the resonance-Bragg coupling mechanism is universally applicable but lattice symmetry governs achievable bandwidth limits.}
+\textcolor{red}{The triangular lattice emerges as the superior single-resonator architecture, achieving exceptional FBGW 1 performance ($\Delta f_{12} = 55.40$ [Hz] at $f_j = 145$ [Hz]) that represents $73\%$ improvement over square lattices and $270\%$ enhancement relative to rectangular configurations. This outstanding performance stems from six-fold symmetry creating multiple equivalent wave scattering pathways. The square lattice provides balanced performance ($\Delta f_{12} = 32.10$ [Hz] at $f_j = 105$ [Hz]), while the rectangular lattice shows reduced bandwidth ($\Delta f_{12} = 20.53$ [Hz] at $f_j = 99$ [Hz]) due to geometric anisotropy.}
 
 Multi-resonator systems introduce dual bandgap capability. The honeycomb lattice demonstrates optimal dual-resonator engineering with FBGW 2 achieving remarkable performance ($\Delta f_{34} = 28.67$ [Hz] at $f_j = 137$ [Hz]) that nearly doubles its FBGW 1. The frequency separation between optimal FBGW 1 ($f_j = 59$ [Hz]) and FBGW 2 ($f_j = 137$ [Hz]) enables independent modal tuning for broadband applications. The kagomé lattice exhibits narrow band gaps (FBGW 1: $\Delta f_{34} = 6.54$ [Hz] at $f_j = 35$ [Hz]; FBGW 2: $\Delta f_{45} = 6.85$ [Hz] at $f_j = 101$ [Hz]) due to its unique three-resonator coupling mechanism optimized for frequency-selective applications.
 
@@ -593,10 +589,10 @@ Efficiency analysis (bandwidth per resonator) establishes the hierarchy: Triangu
 Lattice & FBGW & $f_j$ & Eff. & Primary \\
 Type & [Hz] & [Hz] & [Hz]/res & Mechanism \\
 \hline
-Triangular & 55.40 & 145 & 55.40 & 6-fold symmetry \\
-Square & 32.10 & 105 & 32.10 & Bragg-resonance \\
+Triangular & 55.40 & 145 & 55.40 & 6-fold \\
+Square & 32.10 & 105 & 32.10 & 4-fold \\
 Honeycomb & 28.67 & 137 & 14.34 & Dual-resonator \\
-Rectangular & 20.53 & 99 & 20.53 & Anisotropy \\
+Rectangular & 20.53 & 99 & 20.53 & 2-fold \\
 Kagomé & 6.85 & 101 & 2.28 & Triple-coupling \\
 \hline
 \end{tabular}
@@ -611,7 +607,7 @@ Kagomé & 6.85 & 101 & 2.28 & Triple-coupling \\
 \end{equation}
 where $f_c = (f_1 + f_2)/2$ is the bandgap center frequency. This dimensionless metric removes frequency-dependent scaling, isolating purely geometric contributions to metamaterial efficiency.}
 
-\textcolor{red}{Table \ref{tab:relative_bandwidth_comparison} applies this normalized metric across the complete frequency range (10-150 Hz) for all five lattices. The analysis reveals triangular lattices achieve consistently superior performance: peak 42.51\% vs 31.40\% for square lattices---a 35\% improvement demonstrating that geometric optimization maintains advantage across the entire frequency spectrum.}
+\textcolor{red}{Table \ref{tab:relative_bandwidth_comparison} applies this normalized metric across the complete frequency range (10-150 Hz) for all five lattices. The analysis reveals triangular lattices achieve consistently superior performance: peak 42.51\% vs 31.40\% for square lattice---a 35\% improvement demonstrating that geometric optimization maintains advantage across the entire frequency spectrum.}
 
 \begin{table}[htb]
 \centering
@@ -636,7 +632,7 @@ $f_j$ [Hz] & Square & Rectangular & Triangular & Honeycomb & Kagomé \\
 }
 \end{table}
 
-\textcolor{red}{The dual-metric framework provides comprehensive design guidelines: (1) \textbf{Absolute bandwidth (FBGW)} guides frequency-specific applications (e.g., machinery vibration at 100-150 [Hz]); (2) \textbf{Relative bandwidth ($\eta_{rel}$)} reveals intrinsic geometric efficiency with frequency-independent ranking (triangular 42.51\% consistently superior). These metrics address both the practical question "which lattice for my target frequency?" and the scientific question "which geometry is intrinsically superior?".}
+\textcolor{red}{The dual-metric framework provides comprehensive design guidelines: (1) \textbf{Absolute bandwidth (FBGW)} guides frequency-specific applications (e.g., machinery vibration at 100-150 [Hz]); (2) \textbf{Relative bandwidth ($\eta_{rel}$)} reveals intrinsic geometric efficiency with frequency-independent ranking (triangular 42.51\% consistently superior).}
 
 This comparative analysis establishes clear design guidelines for metamaterial architecture selection based on application requirements: triangular lattices for maximum bandwidth, honeycomb for broadband dual-mode operation, and kagomé for frequency-selective attenuation. The performance hierarchy validates the theoretical framework and demonstrates that geometric optimization outperforms simple resonator multiplication strategies.
 
@@ -646,9 +642,9 @@ This comparative analysis establishes clear design guidelines for metamaterial a
 \section{Vibration receptance of the LRSC plate}\label{simul_trans}
 \textcolor{red}{This section validates infinite-domain predictions through finite plate receptance analysis using 10×8 unit cell structures with realistic boundary conditions.}
 
-While the dispersion curves $k(\boldsymbol{\omega})$ and $\omega(\boldsymbol{k})$ from PWE/EPWE analysis predict fundamental wave propagation behavior, practical engineering applications require understanding vibration transmission in finite plates with spatial limitations. This section analyzes receptance behavior in finite LRSC plates subjected to unit point force excitation, establishing direct correlations between the infinite-domain theoretical predictions from Section \ref{num_ex_disc} and measurable vibration attenuation in finite structures. The receptance  $R_z(\omega)$  is obtained from the Frequency Response Functions (FRFs) of excitation $F_z(\omega)$ and displacement $u_z(\omega)$, given by:
+While the dispersion curves $\boldsymbol {k}({\omega})$ and $\boldsymbol{\omega}({k})$ from PWE/EPWE analysis predict fundamental wave propagation behavior, practical engineering applications require understanding vibration transmission in finite plates with spatial limitations. This section analyzes receptance behavior in finite LRSC plates subjected to unit point force excitation, establishing direct correlations between the infinite-domain theoretical predictions from Section \ref{num_ex_disc} and measurable vibration attenuation in finite structures. The receptance  $\boldsymbol {R_z}(\omega)$  is obtained from the Frequency Response Functions (FRFs) of excitation $\boldsymbol {F_z}(\omega)$ and displacement $\boldsymbol {u_z}(\omega)$, given by:
 \begin{equation}
-	R_z(\omega) = 20 \log_{10} \left( \frac{u_z(\omega)}{F_z(\omega)} \right) \text{ [dB]},
+	\boldsymbol {R_z} = 20 \log_{10} \left( \frac{\boldsymbol {u_z}(\omega)}{\boldsymbol {F_z}(\omega)} \right) \text{ [dB]},
 	\label{receptance}
 \end{equation}
 This equation will be applied to a finite-sized plate with local resonators to assess vibration attenuation at their resonance frequencies. A similar methodology was employed by \cite{MIRANDA2019480} to evaluate the performance of locally resonant acoustic metamaterials in engineering applications. For this analysis, five LRSC-type plates, each comprising 10 × 8 unit cells, will be considered. All plates will have free boundary conditions on three sides, as illustrated in Figure \ref{bound_frf_modal}.
@@ -656,13 +652,13 @@ This equation will be applied to a finite-sized plate with local resonators to a
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=0.6\textwidth]{ilustr_bound_force_frf_modal.pdf}
-	\caption{Boundary conditions in a finite plate with a square lattice, in blue indicate free-free boundary conditions and $\mathbf{F_z}$ direction of excitation point of force and $\mathbf{u_z}$ measurement point of vibration.}
+	\caption{Boundary conditions in a finite plate with a square lattice, in blue indicate free-free boundary conditions and $\boldsymbol {F_z}$ direction of excitation point of force and $\boldsymbol {u_z}$ measurement point of vibration.}
 	\label{bound_frf_modal}
 \end{figure}
 
 Also according to the Figure \ref{bound_frf_modal}, the plate will be excited by a unit point force with a magnitude of 1 [N] applied in the out-of-plane direction (z-direction). 
 
-To evaluate the structural response of receptance, the out-of-plane harmonic displacement $\mathbf{u_z}$ is calculated at the location shown in Figure \ref{bound_frf_modal}. This structure was modeled using FEM approach. The analysis of all FRFs was conducted in a frequency range from 1 [Hz] to 200 [Hz]. 
+To evaluate the structural response of receptance, the out-of-plane harmonic displacement $\boldsymbol {u_z}$ is calculated at the location shown in Figure \ref{bound_frf_modal}. This structure was modeled using FEM approach. The analysis of all FRFs was conducted in a frequency range from 1 [Hz] to 200 [Hz]. 
 Based on the structural parameters of the finite panel adjusted for the five specified lattices in Table \ref{panel_param_latt}:
 
 \begin{table}[htb]
@@ -675,17 +671,17 @@ Based on the structural parameters of the finite panel adjusted for the five spe
 		\hline
 		Square      & 100 &    80  &    1.00e-02  &    8.00e-02 &   2.12e01 \\
 		Rectangular & 100 &    80  &    8.00e-02  &    9.08e02 &   4.20e01 \\
-		Triangular  & 100 &    80  &    14.48e02 &     9.08e02 &   7.30e01 \\
-		Honeycomb   & 100 &    80  &    35.60e02 &     9.08e02 &   8.20e01 \\
-		kagomé      & 100 &    80  &    50.54e02 &     9.08e02 &   8.90e01  \\ 
+		Triangular  & 100 &    80  &    14.48e-02 &     9.08e02 &   7.30e01 \\
+		Honeycomb   & 100 &    80  &    35.60e-02 &     9.08e02 &   8.20e01 \\
+		kagomé      & 100 &    80  &    50.54e-02 &     9.08e02 &   8.90e01  \\ 
 		\hline
 	\end{tabular}
 \end{table}
 \footnotetext{All finite plate simulations were performed using the same computational setup described in Section~\ref{num_ex_disc}.}
 Table \ref{panel_param_latt} presents the discretization parameters for finite plates with five lattice configurations, following the same approach as Table \ref{param_geo_struc_cell_unit}. The integers \( m \) and \( n \) define the smallest mesh divisions in the \( x \) and \( y \) directions, respectively, while \( L_x \) and \( L_y \) represent the corresponding mesh sizes. Finally, \( t_{\text{FEM}} \) indicates the computational time required for each of the five plates with distinct periodic lattices.
 %%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Analysis of Individual finite LRSC plates}\label{indi_panel_lats}
-This subsection establishes the correlation between infinite lattice band gap predictions and finite plate attenuation performance through systematic validation of five distinct geometric configurations. The analysis correlates theoretical band gap widths (FBGW) obtained from PWE/EPWE methods with receptance attenuation measurements at the $\mathbf{u_z}$ point in finite LRSC plates.
+\subsection{Analysis of individual finite LRSC plates}\label{indi_panel_lats}
+This subsection establishes the correlation between infinite lattice band gap predictions and finite plate attenuation performance through systematic validation of five distinct geometric configurations. The analysis correlates theoretical band gap widths (FBGW) obtained from PWE/EPWE methods with receptance attenuation measurements at the $\boldsymbol {u_z}$ point in finite LRSC plates.
 
 Finite plates consistently exhibit $40-60\%$ bandwidth expansion beyond infinite model predictions due to boundary-induced mode coupling. Peak splitting phenomenon occurs at higher resonance frequencies when local resonators interfere with multiple global plate modes, transitioning from constructive to destructive coupling mechanisms.
 
@@ -702,7 +698,7 @@ Figure \ref{lat_s_pwe_epwe_tr_frf} presents the band structure analysis for loca
 \newpage
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=0.8\textwidth]{1_1_disp_frf_square_pwe_epwe_recep1.pdf}
+	\includegraphics[width=0.9\textwidth]{1_1_disp_frf_square_pwe_epwe_recep1.pdf}
 	\caption{(\textit{a}) Real band structures computed for a square unit cell with a single resonator by using PWE and real part EPWE ($\Re$). (\textit{b}) Imaginary band structures in a square unit cell with a single resonator computed by EPWE ($\Im$). (\textit{c}) Receptance computed by FEM in a LRSC panel. (\textit{d}) Vibration modes of the finite plate in a LRSC panel for frequency selection at $f_j = 20$ [Hz], (\textit{e}) $f_j = 38.65$ [Hz] and (\textit{f}) $f_j = 61.47$ [Hz].}
 	\label{lat_s_pwe_epwe_tr_frf}
 \end{figure}
@@ -919,13 +915,13 @@ These findings enable data-driven metamaterial design through quantitative guide
 
 While the present framework provides comprehensive design guidelines, several limitations should be acknowledged. The analysis is restricted to Kirchhoff-Love thin plate theory ($h/a < 0.1$), limiting applicability to thick plates where shear effects become significant. The investigation focused on a single polymer material (Vero White Plus) and fixed lattice parameter ($a = 0.10$ m), constraining the generalizability across different material systems and scale lengths. Furthermore, the study considered only simple point resonators, whereas practical applications may benefit from more complex resonator designs including distributed mass systems or multi-degree-of-freedom configurations. The frequency range limitation (10-200 [Hz]) and assumption of perfect periodicity also represent theoretical constraints that may affect practical implementations. Future investigations should address these limitations by extending the framework to Mindlin-Reissner plate theory, exploring diverse material systems, and incorporating manufacturing imperfections and finite-size effects.
 
-Future work can extend the PWE and EPWE formulations to more complex 2D periodic resonator arrays and explore advanced optimization strategies for multi-objective design scenarios combining attenuation performance, material efficiency, and manufacturing constraints. \textcolor{red}{Experimental validation of the theoretical predictions represents a critical next step, particularly utilizing the structural materials analyzed in Appendix \ref{multi_material_analysis} (aluminum alloys and carbon/epoxy composites). Such experimental campaigns would validate the universal geometric performance principles across the 150× stiffness variation demonstrated analytically, while addressing practical considerations including manufacturing tolerances, boundary condition effects, and damping characteristics in real engineering materials. The demonstrated frequency scaling relationships ($f \propto \sqrt{D/\rho h}$) provide clear guidelines for specimen design and testing protocols across different material systems.} Additionally, the integration of the Wave Finite Element (WFE) method presents particularly promising opportunities for analyzing finite metamaterial plates with superior computational efficiency. The WFE approach, which combines finite element discretization of unit cells with wave propagation analysis, could dramatically reduce computational costs compared to conventional FEM by exploiting the periodic nature of the structures. This method would enable efficient analysis of large-scale finite plates while maintaining the accuracy demonstrated by the PWE/EPWE framework for infinite structures. Furthermore, spectral element approaches and machine learning-assisted optimization could complement the WFE methodology to accelerate the design process and unlock new possibilities for real-time optimization and adaptive metamaterial systems.
+Future work can extend the PWE and EPWE formulations to more complex 2D periodic resonator arrays and explore advanced optimization strategies for multi-objective design scenarios combining attenuation performance, material efficiency, and manufacturing constraints. \textcolor{red}{Experimental validation of the theoretical predictions represents a critical next step, particularly utilizing the structural materials analyzed in \ref{multi_material_analysis} (aluminum alloys and carbon/epoxy composites). Such experimental campaigns would validate the universal geometric performance principles across the 150× stiffness variation demonstrated analytically, while addressing practical considerations including manufacturing tolerances, boundary condition effects, and damping characteristics in real engineering materials. The demonstrated frequency scaling relationships ($f \propto \sqrt{D/\rho h}$) provide clear guidelines for specimen design and testing protocols across different material systems.} Additionally, the integration of the Wave Finite Element (WFE) method presents particularly promising opportunities for analyzing finite metamaterial plates with superior computational efficiency. The WFE approach, which combines finite element discretization of unit cells with wave propagation analysis, could dramatically reduce computational costs compared to conventional FEM by exploiting the periodic nature of the structures. This method would enable efficient analysis of large-scale finite plates while maintaining the accuracy demonstrated by the PWE/EPWE framework for infinite structures. Furthermore, spectral element approaches and machine learning-assisted optimization could complement the WFE methodology to accelerate the design process and unlock new possibilities for real-time optimization and adaptive metamaterial systems.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \section*{Acknowledgments}
-The authors gratefully acknowledge the financial support of this investigation by the Brazilian research funding agency CNPQ (Conselho Nacional de Desenvolvimento Cientifico e Tecnológico) and by UNICAMP (Universidade Estadual de Campinas).
+The authors acknowledge the support of the Brazilian National Council for Scientific and Technological Development (CNPq, Grant Nos. 157159/2013-2, 403234/2021-2, 405638/2022-1, 404417/2024-8, and 305286/2025-0), the Coordination for the Improvement of Higher Education Personnel (CAPES, Finance Code 001), the Maranhão State Research Foundation (FAPEMA, Grant No. APP-01842/25), and the São Paulo Research Foundation (FAPESP, Grant No. 2018/15894-0). The authors also thank the Federal Institute of Maranhão (IFMA) and the Vale Institute of Technology (ITV) for institutional support.
 
 %%%%%%%%%%%%%%%%%%%%%%%
 \numberwithin{equation}{section}
@@ -941,7 +937,7 @@ The resonator forces follow Eq.~(\ref{eq_plate_disp1}) with complex dynamic stif
 p_j(\mathbf{r}_j + \mathbf{R}) = k_j^*[u_j(\mathbf{r}_j + \mathbf{R}) - w(\mathbf{r}_j + \mathbf{R})]
 \label{eq:resonator_force_app}
 \end{equation}
-where $k_j^* = k_j(1 + i\eta_j)$ incorporates resonator damping effects as established in Section~\ref{theoretical_foundations}, with $k_j = m_{r,j}\omega_{r,j}^2$ being the resonator stiffness, $u_j$ the resonator displacement, and $\eta_j$ the loss factor.
+where $k_j^* = k_j(1 + i\eta_j)$ incorporates resonator damping effects as established in Section~\ref{theoretical_foundations}, with $k_j = m_{j}\omega_{j}^2$ being the resonator stiffness, $u_j$ the resonator displacement, and $\eta_j$ the loss factor.
 
 Applying the plane wave expansion to the governing equation and utilizing orthogonality of exponential functions yields the matrix eigenvalue problem:
 \begin{equation}
@@ -968,7 +964,7 @@ The augmented system matrices are assembled as:
 \end{bmatrix}
 \label{eq:augmented_eigenvalue_app}
 \end{equation}
-where $\mathbf{K}_{pp}$ and $\mathbf{M}_{pp}$ are the plate stiffness and mass matrices, $\mathbf{K}_j = \text{diag}(k_1^*, k_2^*, \ldots, k_{N_j}^*)$ contains resonator stiffnesses, $\mathbf{M}_{rr} = \text{diag}(m_{r,1}, m_{r,2}, \ldots, m_{r,N_j})$ contains resonator masses with $m_{r,j} = \gamma \rho S h / N_j$, and $\mathbf{P}$ is the coupling matrix with elements $P_{i,j} = e^{i\mathbf{G}_i \cdot \mathbf{r}_j}$.
+where $\mathbf{K}_{pp}$ and $\mathbf{M}_{pp}$ are the plate stiffness and mass matrices, $\mathbf{K}_j = \text{diag}(k_1^*, k_2^*, \ldots, k_{N_j}^*)$ contains resonator stiffnesses, $\mathbf{M}_{rr} = \text{diag}(m_{r,1}, m_{r,2}, \ldots, m_{r,N_j})$ contains resonator masses with $m_{j} = \gamma \rho S h / N_j$, and $\mathbf{P}$ is the coupling matrix with elements $P_{i,j} = e^{i\mathbf{G}_i \cdot \mathbf{r}_j}$.
 
 The diagonal elements of the plate matrices are computed as:
 \begin{align}
