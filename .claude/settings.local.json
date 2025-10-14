@@ -64,7 +64,9 @@
       "Bash(\"/mnt/c/Program Files/MiKTeX/miktex/bin/x64/pdflatex.exe\" -interaction=nonstopmode highlights.tex)",
       "Read(///**)",
       "Bash(pip install:*)",
-      "Bash(dpkg:*)"
+      "Bash(dpkg:*)",
+      "Bash(\"/mnt/c/Program Files/MiKTeX/miktex/bin/x64/pdflatex.exe\" -interaction=nonstopmode manuscript_mssp2_vf_clean.tex)",
+      "Bash(\"/mnt/c/Program Files/MiKTeX/miktex/bin/x64/bibtex.exe\" manuscript_mssp2_vf_clean)"
     ],
     "deny": []
   }
