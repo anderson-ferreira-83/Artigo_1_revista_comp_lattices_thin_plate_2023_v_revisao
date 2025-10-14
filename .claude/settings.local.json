@@ -66,7 +66,8 @@
       "Bash(pip install:*)",
       "Bash(dpkg:*)",
       "Bash(\"/mnt/c/Program Files/MiKTeX/miktex/bin/x64/pdflatex.exe\" -interaction=nonstopmode manuscript_mssp2_vf_clean.tex)",
-      "Bash(\"/mnt/c/Program Files/MiKTeX/miktex/bin/x64/bibtex.exe\" manuscript_mssp2_vf_clean)"
+      "Bash(\"/mnt/c/Program Files/MiKTeX/miktex/bin/x64/bibtex.exe\" manuscript_mssp2_vf_clean)",
+      "Bash(\"/mnt/c/Program Files/MiKTeX/miktex/bin/x64/bibtex.exe\" response_to_reviewers)"
     ],
     "deny": []
   }
